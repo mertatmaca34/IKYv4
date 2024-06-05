@@ -41,7 +41,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IIzinManager.cs" />
+    <Compile Include="Abstract\IKullaniciManager.cs" />
+    <Compile Include="Abstract\IMudurlukManager.cs" />
+    <Compile Include="Abstract\IPersonelManager.cs" />
+    <Compile Include="Abstract\ISeflikManager.cs" />
+    <Compile Include="Abstract\ITesisManager.cs" />
+    <Compile Include="Concrete\IzinManager.cs" />
+    <Compile Include="Concrete\KullaniciManager.cs" />
+    <Compile Include="Concrete\MudurlukManager.cs" />
+    <Compile Include="Concrete\PersonelManager.cs" />
+    <Compile Include="Concrete\SeflikManager.cs" />
+    <Compile Include="Concrete\TesisManager.cs" />
+    <Compile Include="Constants\Messages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{74ab16be-3ee0-4173-8aa7-2619637fe380}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{1696d17f-240c-4274-a941-5bc5e80bd2c6}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{ee5b3918-8b91-40d2-9e0f-613473daa8c9}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
