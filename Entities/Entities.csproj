@@ -41,7 +41,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\Iletisim.cs" />
+    <Compile Include="Concrete\Izin.cs" />
+    <Compile Include="Concrete\Kullanici.cs" />
+    <Compile Include="Concrete\Mudurluk.cs" />
+    <Compile Include="Concrete\Nakil.cs" />
+    <Compile Include="Concrete\Nufus.cs" />
+    <Compile Include="Concrete\Personel.cs" />
+    <Compile Include="Concrete\Puantage.cs" />
+    <Compile Include="Concrete\Seflik.cs" />
+    <Compile Include="Concrete\Sertifika.cs" />
+    <Compile Include="Concrete\Tahsil.cs" />
+    <Compile Include="Concrete\Tesis.cs" />
+    <Compile Include="Concrete\Unvan.cs" />
+    <Compile Include="Concrete\UnvanGrubu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{74AB16BE-3EE0-4173-8AA7-2619637FE380}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTOs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
