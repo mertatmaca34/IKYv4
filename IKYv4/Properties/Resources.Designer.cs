@@ -73,9 +73,29 @@ namespace IKYv4.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap eye_21px {
+            get {
+                object obj = ResourceManager.GetObject("eye_21px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap Power_Off_Button_16px {
             get {
                 object obj = ResourceManager.GetObject("Power Off Button_16px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_groups_512px {
+            get {
+                object obj = ResourceManager.GetObject("user_groups_512px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

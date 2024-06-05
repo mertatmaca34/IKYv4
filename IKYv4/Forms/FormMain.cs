@@ -16,5 +16,18 @@ namespace IKYv4.Forms
         {
             InitializeComponent();
         }
+
+        private void ButtonEmployeeListing_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormMain_SizeChanged(object sender, EventArgs e)
+        {
+            foreach (Form activeForm in PanelContent.Controls)
+            {
+                activeForm.Size = PanelContent.Size;
+            }
+        }
     }
 }

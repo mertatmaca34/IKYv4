@@ -194,6 +194,7 @@ namespace IKYv4.Forms
             this.ButtonEmployeeListing.TabIndex = 5;
             this.ButtonEmployeeListing.Text = "PERSONEL LİSTELEME";
             this.ButtonEmployeeListing.UseVisualStyleBackColor = true;
+            this.ButtonEmployeeListing.Click += new System.EventHandler(this.ButtonEmployeeListing_Click);
             // 
             // ButtonMainPage
             // 
@@ -311,6 +312,7 @@ namespace IKYv4.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ATİK - ATIKSU TESİSLERİ İNSAN KAYNAKLARI";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.SizeChanged += new System.EventHandler(this.FormMain_SizeChanged);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);

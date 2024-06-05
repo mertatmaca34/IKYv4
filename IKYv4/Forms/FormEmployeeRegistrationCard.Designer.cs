@@ -296,7 +296,7 @@ namespace IKYv4.Forms
             this.tabPage6.Location = new System.Drawing.Point(4, 24);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(959, 437);
+            this.tabPage6.Size = new System.Drawing.Size(1125, 510);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "İLETİŞİM";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -331,7 +331,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-            this.tableLayoutPanel12.Padding = new System.Windows.Forms.Padding(26, 26, 26, 26);
+            this.tableLayoutPanel12.Padding = new System.Windows.Forms.Padding(26);
             this.tableLayoutPanel12.RowCount = 11;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.00052F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
@@ -344,7 +344,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.00052F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.00052F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.00052F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(953, 431);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(1119, 504);
             this.tableLayoutPanel12.TabIndex = 3;
             // 
             // label48
@@ -352,7 +352,7 @@ namespace IKYv4.Forms
             this.label48.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label48.Location = new System.Drawing.Point(187, 34);
+            this.label48.Location = new System.Drawing.Point(228, 37);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(61, 21);
             this.label48.TabIndex = 0;
@@ -363,9 +363,9 @@ namespace IKYv4.Forms
             this.panel6.BackColor = System.Drawing.Color.DarkRed;
             this.tableLayoutPanel12.SetColumnSpan(this.panel6, 4);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(29, 66);
+            this.panel6.Location = new System.Drawing.Point(29, 73);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(895, 2);
+            this.panel6.Size = new System.Drawing.Size(1061, 2);
             this.panel6.TabIndex = 7;
             // 
             // label49
@@ -373,7 +373,7 @@ namespace IKYv4.Forms
             this.label49.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label49.Location = new System.Drawing.Point(164, 79);
+            this.label49.Location = new System.Drawing.Point(205, 89);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(84, 21);
             this.label49.TabIndex = 0;
@@ -384,7 +384,7 @@ namespace IKYv4.Forms
             this.label50.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label50.Location = new System.Drawing.Point(186, 116);
+            this.label50.Location = new System.Drawing.Point(227, 133);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(62, 21);
             this.label50.TabIndex = 0;
@@ -395,7 +395,7 @@ namespace IKYv4.Forms
             this.label51.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label51.Location = new System.Drawing.Point(173, 153);
+            this.label51.Location = new System.Drawing.Point(214, 177);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(75, 21);
             this.label51.TabIndex = 0;
@@ -406,7 +406,7 @@ namespace IKYv4.Forms
             this.label52.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label52.Location = new System.Drawing.Point(206, 190);
+            this.label52.Location = new System.Drawing.Point(247, 221);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(42, 21);
             this.label52.TabIndex = 0;
@@ -418,7 +418,7 @@ namespace IKYv4.Forms
             this.textBox56.BackColor = System.Drawing.Color.White;
             this.textBox56.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox56.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox56.Location = new System.Drawing.Point(255, 75);
+            this.textBox56.Location = new System.Drawing.Point(316, 85);
             this.textBox56.Name = "textBox56";
             this.textBox56.Size = new System.Drawing.Size(217, 29);
             this.textBox56.TabIndex = 8;
@@ -429,7 +429,7 @@ namespace IKYv4.Forms
             this.textBox57.BackColor = System.Drawing.Color.White;
             this.textBox57.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox57.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox57.Location = new System.Drawing.Point(255, 112);
+            this.textBox57.Location = new System.Drawing.Point(316, 129);
             this.textBox57.Name = "textBox57";
             this.textBox57.Size = new System.Drawing.Size(217, 29);
             this.textBox57.TabIndex = 8;
@@ -440,7 +440,7 @@ namespace IKYv4.Forms
             this.textBox58.BackColor = System.Drawing.Color.White;
             this.textBox58.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox58.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox58.Location = new System.Drawing.Point(255, 149);
+            this.textBox58.Location = new System.Drawing.Point(316, 173);
             this.textBox58.Name = "textBox58";
             this.textBox58.Size = new System.Drawing.Size(217, 29);
             this.textBox58.TabIndex = 8;
@@ -451,7 +451,7 @@ namespace IKYv4.Forms
             this.textBox59.BackColor = System.Drawing.Color.White;
             this.textBox59.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox59.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox59.Location = new System.Drawing.Point(255, 186);
+            this.textBox59.Location = new System.Drawing.Point(316, 217);
             this.textBox59.Name = "textBox59";
             this.textBox59.Size = new System.Drawing.Size(217, 29);
             this.textBox59.TabIndex = 8;
@@ -462,7 +462,7 @@ namespace IKYv4.Forms
             this.textBox60.BackColor = System.Drawing.Color.White;
             this.textBox60.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox60.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox60.Location = new System.Drawing.Point(255, 223);
+            this.textBox60.Location = new System.Drawing.Point(316, 261);
             this.textBox60.Name = "textBox60";
             this.textBox60.Size = new System.Drawing.Size(217, 29);
             this.textBox60.TabIndex = 8;
@@ -472,7 +472,7 @@ namespace IKYv4.Forms
             this.label53.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label53.Location = new System.Drawing.Point(225, 227);
+            this.label53.Location = new System.Drawing.Point(266, 265);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(23, 21);
             this.label53.TabIndex = 0;
@@ -483,7 +483,7 @@ namespace IKYv4.Forms
             this.label62.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label62.AutoSize = true;
             this.label62.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label62.Location = new System.Drawing.Point(612, 116);
+            this.label62.Location = new System.Drawing.Point(735, 133);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(86, 21);
             this.label62.TabIndex = 0;
@@ -494,7 +494,7 @@ namespace IKYv4.Forms
             this.label61.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label61.Location = new System.Drawing.Point(559, 34);
+            this.label61.Location = new System.Drawing.Point(682, 37);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(139, 21);
             this.label61.TabIndex = 0;
@@ -506,7 +506,7 @@ namespace IKYv4.Forms
             this.textBox61.BackColor = System.Drawing.Color.White;
             this.textBox61.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox61.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox61.Location = new System.Drawing.Point(705, 112);
+            this.textBox61.Location = new System.Drawing.Point(850, 129);
             this.textBox61.Name = "textBox61";
             this.textBox61.Size = new System.Drawing.Size(217, 29);
             this.textBox61.TabIndex = 8;
@@ -517,7 +517,7 @@ namespace IKYv4.Forms
             this.textBox62.BackColor = System.Drawing.Color.White;
             this.textBox62.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox62.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox62.Location = new System.Drawing.Point(705, 75);
+            this.textBox62.Location = new System.Drawing.Point(850, 85);
             this.textBox62.Name = "textBox62";
             this.textBox62.Size = new System.Drawing.Size(217, 29);
             this.textBox62.TabIndex = 8;
@@ -527,7 +527,7 @@ namespace IKYv4.Forms
             this.label54.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label54.Location = new System.Drawing.Point(625, 79);
+            this.label54.Location = new System.Drawing.Point(748, 89);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(73, 21);
             this.label54.TabIndex = 0;
@@ -538,7 +538,7 @@ namespace IKYv4.Forms
             this.label55.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label55.Location = new System.Drawing.Point(574, 153);
+            this.label55.Location = new System.Drawing.Point(697, 177);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(124, 21);
             this.label55.TabIndex = 0;
@@ -550,7 +550,7 @@ namespace IKYv4.Forms
             this.textBox63.BackColor = System.Drawing.Color.White;
             this.textBox63.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox63.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox63.Location = new System.Drawing.Point(705, 149);
+            this.textBox63.Location = new System.Drawing.Point(850, 173);
             this.textBox63.Name = "textBox63";
             this.textBox63.Size = new System.Drawing.Size(217, 29);
             this.textBox63.TabIndex = 8;
@@ -561,7 +561,7 @@ namespace IKYv4.Forms
             this.tabPage5.Location = new System.Drawing.Point(4, 24);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(959, 437);
+            this.tabPage5.Size = new System.Drawing.Size(1125, 510);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "NAKİL";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -622,7 +622,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.Padding = new System.Windows.Forms.Padding(26, 26, 26, 26);
+            this.tableLayoutPanel11.Padding = new System.Windows.Forms.Padding(26);
             this.tableLayoutPanel11.RowCount = 9;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 3F));
@@ -633,7 +633,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(953, 431);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(1119, 504);
             this.tableLayoutPanel11.TabIndex = 4;
             // 
             // label42
@@ -641,7 +641,7 @@ namespace IKYv4.Forms
             this.label42.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label42.Location = new System.Drawing.Point(45, 37);
+            this.label42.Location = new System.Drawing.Point(54, 37);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(69, 21);
             this.label42.TabIndex = 0;
@@ -652,7 +652,7 @@ namespace IKYv4.Forms
             this.label43.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label43.Location = new System.Drawing.Point(189, 37);
+            this.label43.Location = new System.Drawing.Point(223, 37);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(55, 21);
             this.label43.TabIndex = 0;
@@ -663,7 +663,7 @@ namespace IKYv4.Forms
             this.label44.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label44.Location = new System.Drawing.Point(359, 37);
+            this.label44.Location = new System.Drawing.Point(426, 37);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(63, 21);
             this.label44.TabIndex = 0;
@@ -674,9 +674,9 @@ namespace IKYv4.Forms
             this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label45.Location = new System.Drawing.Point(508, 26);
+            this.label45.Location = new System.Drawing.Point(579, 37);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(89, 42);
+            this.label45.Size = new System.Drawing.Size(140, 21);
             this.label45.TabIndex = 0;
             this.label45.Text = "BAŞLAMA TARİHİ";
             // 
@@ -688,7 +688,7 @@ namespace IKYv4.Forms
             this.panel4.Location = new System.Drawing.Point(26, 69);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(901, 3);
+            this.panel4.Size = new System.Drawing.Size(1067, 3);
             this.panel4.TabIndex = 7;
             // 
             // textBox32
@@ -697,7 +697,7 @@ namespace IKYv4.Forms
             this.textBox32.BackColor = System.Drawing.Color.White;
             this.textBox32.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox32.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox32.Location = new System.Drawing.Point(136, 77);
+            this.textBox32.Location = new System.Drawing.Point(170, 77);
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(161, 29);
             this.textBox32.TabIndex = 1;
@@ -708,7 +708,7 @@ namespace IKYv4.Forms
             this.textBox33.BackColor = System.Drawing.Color.White;
             this.textBox33.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox33.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox33.Location = new System.Drawing.Point(303, 77);
+            this.textBox33.Location = new System.Drawing.Point(369, 77);
             this.textBox33.Name = "textBox33";
             this.textBox33.Size = new System.Drawing.Size(176, 29);
             this.textBox33.TabIndex = 1;
@@ -719,8 +719,8 @@ namespace IKYv4.Forms
             this.dateTimePicker9.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker9.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker9.Location = new System.Drawing.Point(489, 79);
-            this.dateTimePicker9.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker9.Location = new System.Drawing.Point(585, 79);
+            this.dateTimePicker9.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker9.Name = "dateTimePicker9";
             this.dateTimePicker9.Size = new System.Drawing.Size(128, 29);
             this.dateTimePicker9.TabIndex = 6;
@@ -731,7 +731,7 @@ namespace IKYv4.Forms
             this.textBox34.BackColor = System.Drawing.Color.White;
             this.textBox34.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox34.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox34.Location = new System.Drawing.Point(136, 116);
+            this.textBox34.Location = new System.Drawing.Point(170, 116);
             this.textBox34.Name = "textBox34";
             this.textBox34.Size = new System.Drawing.Size(161, 29);
             this.textBox34.TabIndex = 1;
@@ -742,7 +742,7 @@ namespace IKYv4.Forms
             this.textBox35.BackColor = System.Drawing.Color.White;
             this.textBox35.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox35.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox35.Location = new System.Drawing.Point(303, 116);
+            this.textBox35.Location = new System.Drawing.Point(369, 116);
             this.textBox35.Name = "textBox35";
             this.textBox35.Size = new System.Drawing.Size(176, 29);
             this.textBox35.TabIndex = 1;
@@ -753,8 +753,8 @@ namespace IKYv4.Forms
             this.dateTimePicker10.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker10.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker10.Location = new System.Drawing.Point(489, 118);
-            this.dateTimePicker10.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker10.Location = new System.Drawing.Point(585, 118);
+            this.dateTimePicker10.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker10.Name = "dateTimePicker10";
             this.dateTimePicker10.Size = new System.Drawing.Size(128, 29);
             this.dateTimePicker10.TabIndex = 6;
@@ -765,7 +765,7 @@ namespace IKYv4.Forms
             this.textBox36.BackColor = System.Drawing.Color.White;
             this.textBox36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox36.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox36.Location = new System.Drawing.Point(136, 155);
+            this.textBox36.Location = new System.Drawing.Point(170, 155);
             this.textBox36.Name = "textBox36";
             this.textBox36.Size = new System.Drawing.Size(161, 29);
             this.textBox36.TabIndex = 1;
@@ -776,7 +776,7 @@ namespace IKYv4.Forms
             this.textBox37.BackColor = System.Drawing.Color.White;
             this.textBox37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox37.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox37.Location = new System.Drawing.Point(136, 194);
+            this.textBox37.Location = new System.Drawing.Point(170, 194);
             this.textBox37.Name = "textBox37";
             this.textBox37.Size = new System.Drawing.Size(161, 29);
             this.textBox37.TabIndex = 1;
@@ -787,7 +787,7 @@ namespace IKYv4.Forms
             this.textBox38.BackColor = System.Drawing.Color.White;
             this.textBox38.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox38.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox38.Location = new System.Drawing.Point(136, 233);
+            this.textBox38.Location = new System.Drawing.Point(170, 233);
             this.textBox38.Name = "textBox38";
             this.textBox38.Size = new System.Drawing.Size(161, 29);
             this.textBox38.TabIndex = 1;
@@ -798,7 +798,7 @@ namespace IKYv4.Forms
             this.textBox39.BackColor = System.Drawing.Color.White;
             this.textBox39.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox39.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox39.Location = new System.Drawing.Point(136, 272);
+            this.textBox39.Location = new System.Drawing.Point(170, 272);
             this.textBox39.Name = "textBox39";
             this.textBox39.Size = new System.Drawing.Size(161, 29);
             this.textBox39.TabIndex = 1;
@@ -809,7 +809,7 @@ namespace IKYv4.Forms
             this.textBox40.BackColor = System.Drawing.Color.White;
             this.textBox40.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox40.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox40.Location = new System.Drawing.Point(303, 155);
+            this.textBox40.Location = new System.Drawing.Point(369, 155);
             this.textBox40.Name = "textBox40";
             this.textBox40.Size = new System.Drawing.Size(176, 29);
             this.textBox40.TabIndex = 1;
@@ -820,7 +820,7 @@ namespace IKYv4.Forms
             this.textBox41.BackColor = System.Drawing.Color.White;
             this.textBox41.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox41.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox41.Location = new System.Drawing.Point(303, 194);
+            this.textBox41.Location = new System.Drawing.Point(369, 194);
             this.textBox41.Name = "textBox41";
             this.textBox41.Size = new System.Drawing.Size(176, 29);
             this.textBox41.TabIndex = 1;
@@ -831,7 +831,7 @@ namespace IKYv4.Forms
             this.textBox42.BackColor = System.Drawing.Color.White;
             this.textBox42.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox42.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox42.Location = new System.Drawing.Point(303, 233);
+            this.textBox42.Location = new System.Drawing.Point(369, 233);
             this.textBox42.Name = "textBox42";
             this.textBox42.Size = new System.Drawing.Size(176, 29);
             this.textBox42.TabIndex = 1;
@@ -842,7 +842,7 @@ namespace IKYv4.Forms
             this.textBox43.BackColor = System.Drawing.Color.White;
             this.textBox43.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox43.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox43.Location = new System.Drawing.Point(303, 272);
+            this.textBox43.Location = new System.Drawing.Point(369, 272);
             this.textBox43.Name = "textBox43";
             this.textBox43.Size = new System.Drawing.Size(176, 29);
             this.textBox43.TabIndex = 1;
@@ -853,8 +853,8 @@ namespace IKYv4.Forms
             this.dateTimePicker11.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker11.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker11.Location = new System.Drawing.Point(489, 157);
-            this.dateTimePicker11.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker11.Location = new System.Drawing.Point(585, 157);
+            this.dateTimePicker11.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker11.Name = "dateTimePicker11";
             this.dateTimePicker11.Size = new System.Drawing.Size(128, 29);
             this.dateTimePicker11.TabIndex = 6;
@@ -865,8 +865,8 @@ namespace IKYv4.Forms
             this.dateTimePicker12.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker12.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker12.Location = new System.Drawing.Point(489, 196);
-            this.dateTimePicker12.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker12.Location = new System.Drawing.Point(585, 196);
+            this.dateTimePicker12.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker12.Name = "dateTimePicker12";
             this.dateTimePicker12.Size = new System.Drawing.Size(128, 29);
             this.dateTimePicker12.TabIndex = 6;
@@ -877,8 +877,8 @@ namespace IKYv4.Forms
             this.dateTimePicker13.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker13.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker13.Location = new System.Drawing.Point(489, 235);
-            this.dateTimePicker13.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker13.Location = new System.Drawing.Point(585, 235);
+            this.dateTimePicker13.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker13.Name = "dateTimePicker13";
             this.dateTimePicker13.Size = new System.Drawing.Size(128, 29);
             this.dateTimePicker13.TabIndex = 6;
@@ -889,8 +889,8 @@ namespace IKYv4.Forms
             this.dateTimePicker14.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker14.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker14.Location = new System.Drawing.Point(489, 274);
-            this.dateTimePicker14.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker14.Location = new System.Drawing.Point(585, 274);
+            this.dateTimePicker14.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker14.Name = "dateTimePicker14";
             this.dateTimePicker14.Size = new System.Drawing.Size(128, 29);
             this.dateTimePicker14.TabIndex = 6;
@@ -900,7 +900,7 @@ namespace IKYv4.Forms
             this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label46.Location = new System.Drawing.Point(638, 37);
+            this.label46.Location = new System.Drawing.Point(762, 37);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(122, 21);
             this.label46.TabIndex = 0;
@@ -911,7 +911,7 @@ namespace IKYv4.Forms
             this.label47.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label47.Location = new System.Drawing.Point(805, 37);
+            this.label47.Location = new System.Drawing.Point(957, 37);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(91, 21);
             this.label47.TabIndex = 0;
@@ -923,8 +923,8 @@ namespace IKYv4.Forms
             this.dateTimePicker15.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker15.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker15.Location = new System.Drawing.Point(634, 79);
-            this.dateTimePicker15.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker15.Location = new System.Drawing.Point(758, 79);
+            this.dateTimePicker15.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker15.Name = "dateTimePicker15";
             this.dateTimePicker15.Size = new System.Drawing.Size(130, 29);
             this.dateTimePicker15.TabIndex = 6;
@@ -935,8 +935,8 @@ namespace IKYv4.Forms
             this.dateTimePicker16.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker16.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker16.Location = new System.Drawing.Point(634, 118);
-            this.dateTimePicker16.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker16.Location = new System.Drawing.Point(758, 118);
+            this.dateTimePicker16.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker16.Name = "dateTimePicker16";
             this.dateTimePicker16.Size = new System.Drawing.Size(130, 29);
             this.dateTimePicker16.TabIndex = 6;
@@ -947,8 +947,8 @@ namespace IKYv4.Forms
             this.dateTimePicker17.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker17.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker17.Location = new System.Drawing.Point(634, 157);
-            this.dateTimePicker17.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker17.Location = new System.Drawing.Point(758, 157);
+            this.dateTimePicker17.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker17.Name = "dateTimePicker17";
             this.dateTimePicker17.Size = new System.Drawing.Size(130, 29);
             this.dateTimePicker17.TabIndex = 6;
@@ -959,8 +959,8 @@ namespace IKYv4.Forms
             this.dateTimePicker18.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker18.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker18.Location = new System.Drawing.Point(634, 196);
-            this.dateTimePicker18.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker18.Location = new System.Drawing.Point(758, 196);
+            this.dateTimePicker18.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker18.Name = "dateTimePicker18";
             this.dateTimePicker18.Size = new System.Drawing.Size(130, 29);
             this.dateTimePicker18.TabIndex = 6;
@@ -971,8 +971,8 @@ namespace IKYv4.Forms
             this.dateTimePicker19.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker19.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker19.Location = new System.Drawing.Point(634, 235);
-            this.dateTimePicker19.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker19.Location = new System.Drawing.Point(758, 235);
+            this.dateTimePicker19.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker19.Name = "dateTimePicker19";
             this.dateTimePicker19.Size = new System.Drawing.Size(130, 29);
             this.dateTimePicker19.TabIndex = 6;
@@ -983,8 +983,8 @@ namespace IKYv4.Forms
             this.dateTimePicker20.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker20.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker20.Location = new System.Drawing.Point(634, 274);
-            this.dateTimePicker20.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker20.Location = new System.Drawing.Point(758, 274);
+            this.dateTimePicker20.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker20.Name = "dateTimePicker20";
             this.dateTimePicker20.Size = new System.Drawing.Size(130, 29);
             this.dateTimePicker20.TabIndex = 6;
@@ -995,7 +995,7 @@ namespace IKYv4.Forms
             this.textBox44.BackColor = System.Drawing.Color.White;
             this.textBox44.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox44.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox44.Location = new System.Drawing.Point(777, 77);
+            this.textBox44.Location = new System.Drawing.Point(929, 77);
             this.textBox44.Name = "textBox44";
             this.textBox44.Size = new System.Drawing.Size(147, 29);
             this.textBox44.TabIndex = 1;
@@ -1006,7 +1006,7 @@ namespace IKYv4.Forms
             this.textBox45.BackColor = System.Drawing.Color.White;
             this.textBox45.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox45.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox45.Location = new System.Drawing.Point(777, 116);
+            this.textBox45.Location = new System.Drawing.Point(929, 116);
             this.textBox45.Name = "textBox45";
             this.textBox45.Size = new System.Drawing.Size(147, 29);
             this.textBox45.TabIndex = 1;
@@ -1017,7 +1017,7 @@ namespace IKYv4.Forms
             this.textBox46.BackColor = System.Drawing.Color.White;
             this.textBox46.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox46.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox46.Location = new System.Drawing.Point(777, 155);
+            this.textBox46.Location = new System.Drawing.Point(929, 155);
             this.textBox46.Name = "textBox46";
             this.textBox46.Size = new System.Drawing.Size(147, 29);
             this.textBox46.TabIndex = 1;
@@ -1028,7 +1028,7 @@ namespace IKYv4.Forms
             this.textBox47.BackColor = System.Drawing.Color.White;
             this.textBox47.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox47.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox47.Location = new System.Drawing.Point(777, 194);
+            this.textBox47.Location = new System.Drawing.Point(929, 194);
             this.textBox47.Name = "textBox47";
             this.textBox47.Size = new System.Drawing.Size(147, 29);
             this.textBox47.TabIndex = 1;
@@ -1039,7 +1039,7 @@ namespace IKYv4.Forms
             this.textBox48.BackColor = System.Drawing.Color.White;
             this.textBox48.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox48.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox48.Location = new System.Drawing.Point(777, 233);
+            this.textBox48.Location = new System.Drawing.Point(929, 233);
             this.textBox48.Name = "textBox48";
             this.textBox48.Size = new System.Drawing.Size(147, 29);
             this.textBox48.TabIndex = 1;
@@ -1050,7 +1050,7 @@ namespace IKYv4.Forms
             this.textBox49.BackColor = System.Drawing.Color.White;
             this.textBox49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox49.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox49.Location = new System.Drawing.Point(777, 272);
+            this.textBox49.Location = new System.Drawing.Point(929, 272);
             this.textBox49.Name = "textBox49";
             this.textBox49.Size = new System.Drawing.Size(147, 29);
             this.textBox49.TabIndex = 1;
@@ -1061,7 +1061,7 @@ namespace IKYv4.Forms
             this.textBox50.BackColor = System.Drawing.Color.White;
             this.textBox50.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox50.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox50.Location = new System.Drawing.Point(29, 272);
+            this.textBox50.Location = new System.Drawing.Point(38, 272);
             this.textBox50.Name = "textBox50";
             this.textBox50.Size = new System.Drawing.Size(101, 29);
             this.textBox50.TabIndex = 1;
@@ -1072,7 +1072,7 @@ namespace IKYv4.Forms
             this.textBox51.BackColor = System.Drawing.Color.White;
             this.textBox51.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox51.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox51.Location = new System.Drawing.Point(29, 233);
+            this.textBox51.Location = new System.Drawing.Point(38, 233);
             this.textBox51.Name = "textBox51";
             this.textBox51.Size = new System.Drawing.Size(101, 29);
             this.textBox51.TabIndex = 1;
@@ -1083,7 +1083,7 @@ namespace IKYv4.Forms
             this.textBox52.BackColor = System.Drawing.Color.White;
             this.textBox52.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox52.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox52.Location = new System.Drawing.Point(29, 194);
+            this.textBox52.Location = new System.Drawing.Point(38, 194);
             this.textBox52.Name = "textBox52";
             this.textBox52.Size = new System.Drawing.Size(101, 29);
             this.textBox52.TabIndex = 1;
@@ -1094,7 +1094,7 @@ namespace IKYv4.Forms
             this.textBox53.BackColor = System.Drawing.Color.White;
             this.textBox53.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox53.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox53.Location = new System.Drawing.Point(29, 155);
+            this.textBox53.Location = new System.Drawing.Point(38, 155);
             this.textBox53.Name = "textBox53";
             this.textBox53.Size = new System.Drawing.Size(101, 29);
             this.textBox53.TabIndex = 1;
@@ -1105,7 +1105,7 @@ namespace IKYv4.Forms
             this.textBox54.BackColor = System.Drawing.Color.White;
             this.textBox54.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox54.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox54.Location = new System.Drawing.Point(29, 116);
+            this.textBox54.Location = new System.Drawing.Point(38, 116);
             this.textBox54.Name = "textBox54";
             this.textBox54.Size = new System.Drawing.Size(101, 29);
             this.textBox54.TabIndex = 1;
@@ -1116,7 +1116,7 @@ namespace IKYv4.Forms
             this.textBox55.BackColor = System.Drawing.Color.White;
             this.textBox55.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox55.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox55.Location = new System.Drawing.Point(29, 77);
+            this.textBox55.Location = new System.Drawing.Point(38, 77);
             this.textBox55.Name = "textBox55";
             this.textBox55.Size = new System.Drawing.Size(101, 29);
             this.textBox55.TabIndex = 1;
@@ -1127,7 +1127,7 @@ namespace IKYv4.Forms
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(959, 437);
+            this.tabPage4.Size = new System.Drawing.Size(1125, 510);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "SERTİFİKA";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1155,7 +1155,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.Padding = new System.Windows.Forms.Padding(26, 26, 26, 26);
+            this.tableLayoutPanel10.Padding = new System.Windows.Forms.Padding(26);
             this.tableLayoutPanel10.RowCount = 9;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 3F));
@@ -1166,7 +1166,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(953, 431);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(1119, 504);
             this.tableLayoutPanel10.TabIndex = 4;
             // 
             // label35
@@ -1174,7 +1174,7 @@ namespace IKYv4.Forms
             this.label35.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label35.Location = new System.Drawing.Point(446, 37);
+            this.label35.Location = new System.Drawing.Point(529, 37);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(86, 21);
             this.label35.TabIndex = 0;
@@ -1184,7 +1184,7 @@ namespace IKYv4.Forms
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.DarkRed;
-            this.panel3.Location = new System.Drawing.Point(51, 69);
+            this.panel3.Location = new System.Drawing.Point(134, 69);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(876, 3);
@@ -1194,7 +1194,7 @@ namespace IKYv4.Forms
             // 
             this.textBox26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox26.Location = new System.Drawing.Point(54, 77);
+            this.textBox26.Location = new System.Drawing.Point(137, 77);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(870, 29);
             this.textBox26.TabIndex = 8;
@@ -1203,7 +1203,7 @@ namespace IKYv4.Forms
             // 
             this.textBox27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox27.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox27.Location = new System.Drawing.Point(54, 116);
+            this.textBox27.Location = new System.Drawing.Point(137, 116);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(870, 29);
             this.textBox27.TabIndex = 8;
@@ -1212,7 +1212,7 @@ namespace IKYv4.Forms
             // 
             this.textBox28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox28.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox28.Location = new System.Drawing.Point(54, 155);
+            this.textBox28.Location = new System.Drawing.Point(137, 155);
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(870, 29);
             this.textBox28.TabIndex = 8;
@@ -1221,7 +1221,7 @@ namespace IKYv4.Forms
             // 
             this.textBox29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox29.Location = new System.Drawing.Point(54, 194);
+            this.textBox29.Location = new System.Drawing.Point(137, 194);
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(870, 29);
             this.textBox29.TabIndex = 8;
@@ -1230,7 +1230,7 @@ namespace IKYv4.Forms
             // 
             this.textBox30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox30.Location = new System.Drawing.Point(54, 233);
+            this.textBox30.Location = new System.Drawing.Point(137, 233);
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(870, 29);
             this.textBox30.TabIndex = 8;
@@ -1239,7 +1239,7 @@ namespace IKYv4.Forms
             // 
             this.textBox31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox31.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox31.Location = new System.Drawing.Point(54, 272);
+            this.textBox31.Location = new System.Drawing.Point(137, 272);
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(870, 29);
             this.textBox31.TabIndex = 8;
@@ -1316,7 +1316,7 @@ namespace IKYv4.Forms
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(959, 437);
+            this.tabPage3.Size = new System.Drawing.Size(1125, 510);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "TAHSİL";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1361,7 +1361,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.Padding = new System.Windows.Forms.Padding(26, 26, 26, 26);
+            this.tableLayoutPanel2.Padding = new System.Windows.Forms.Padding(26);
             this.tableLayoutPanel2.RowCount = 9;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 3F));
@@ -1372,7 +1372,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(953, 431);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1119, 504);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // label12
@@ -1380,7 +1380,7 @@ namespace IKYv4.Forms
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(107, 37);
+            this.label12.Location = new System.Drawing.Point(127, 37);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(63, 21);
             this.label12.TabIndex = 0;
@@ -1391,7 +1391,7 @@ namespace IKYv4.Forms
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(337, 37);
+            this.label13.Location = new System.Drawing.Point(399, 37);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(52, 21);
             this.label13.TabIndex = 0;
@@ -1402,7 +1402,7 @@ namespace IKYv4.Forms
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(555, 37);
+            this.label14.Location = new System.Drawing.Point(657, 37);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(67, 21);
             this.label14.TabIndex = 0;
@@ -1413,7 +1413,7 @@ namespace IKYv4.Forms
             this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label34.Location = new System.Drawing.Point(735, 37);
+            this.label34.Location = new System.Drawing.Point(880, 37);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(157, 21);
             this.label34.TabIndex = 0;
@@ -1424,7 +1424,7 @@ namespace IKYv4.Forms
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.DarkRed;
             this.tableLayoutPanel2.SetColumnSpan(this.panel2, 4);
-            this.panel2.Location = new System.Drawing.Point(27, 69);
+            this.panel2.Location = new System.Drawing.Point(110, 69);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(898, 3);
@@ -1446,7 +1446,7 @@ namespace IKYv4.Forms
             "LİSE",
             "ORTAOKUL",
             "İLKOKUL"});
-            this.comboBox5.Location = new System.Drawing.Point(33, 77);
+            this.comboBox5.Location = new System.Drawing.Point(53, 77);
             this.comboBox5.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(215, 29);
@@ -1458,7 +1458,7 @@ namespace IKYv4.Forms
             this.textBox7.BackColor = System.Drawing.Color.White;
             this.textBox7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox7.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox7.Location = new System.Drawing.Point(255, 77);
+            this.textBox7.Location = new System.Drawing.Point(316, 77);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(217, 29);
             this.textBox7.TabIndex = 1;
@@ -1469,7 +1469,7 @@ namespace IKYv4.Forms
             this.textBox8.BackColor = System.Drawing.Color.White;
             this.textBox8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox8.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox8.Location = new System.Drawing.Point(480, 77);
+            this.textBox8.Location = new System.Drawing.Point(582, 77);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(217, 29);
             this.textBox8.TabIndex = 1;
@@ -1480,8 +1480,8 @@ namespace IKYv4.Forms
             this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker1.Location = new System.Drawing.Point(711, 79);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker1.Location = new System.Drawing.Point(856, 79);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(205, 29);
             this.dateTimePicker1.TabIndex = 6;
@@ -1492,7 +1492,7 @@ namespace IKYv4.Forms
             this.textBox6.BackColor = System.Drawing.Color.White;
             this.textBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox6.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox6.Location = new System.Drawing.Point(255, 116);
+            this.textBox6.Location = new System.Drawing.Point(316, 116);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(217, 29);
             this.textBox6.TabIndex = 1;
@@ -1503,7 +1503,7 @@ namespace IKYv4.Forms
             this.textBox12.BackColor = System.Drawing.Color.White;
             this.textBox12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox12.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox12.Location = new System.Drawing.Point(480, 116);
+            this.textBox12.Location = new System.Drawing.Point(582, 116);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(217, 29);
             this.textBox12.TabIndex = 1;
@@ -1514,8 +1514,8 @@ namespace IKYv4.Forms
             this.dateTimePicker4.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker4.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker4.Location = new System.Drawing.Point(711, 118);
-            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker4.Location = new System.Drawing.Point(856, 118);
+            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(205, 29);
             this.dateTimePicker4.TabIndex = 6;
@@ -1536,7 +1536,7 @@ namespace IKYv4.Forms
             "LİSE",
             "ORTAOKUL",
             "İLKOKUL"});
-            this.comboBox3.Location = new System.Drawing.Point(33, 116);
+            this.comboBox3.Location = new System.Drawing.Point(53, 116);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(215, 29);
@@ -1558,7 +1558,7 @@ namespace IKYv4.Forms
             "LİSE",
             "ORTAOKUL",
             "İLKOKUL"});
-            this.comboBox4.Location = new System.Drawing.Point(33, 155);
+            this.comboBox4.Location = new System.Drawing.Point(53, 155);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(215, 29);
@@ -1570,7 +1570,7 @@ namespace IKYv4.Forms
             this.textBox13.BackColor = System.Drawing.Color.White;
             this.textBox13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox13.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox13.Location = new System.Drawing.Point(255, 155);
+            this.textBox13.Location = new System.Drawing.Point(316, 155);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(217, 29);
             this.textBox13.TabIndex = 1;
@@ -1591,7 +1591,7 @@ namespace IKYv4.Forms
             "LİSE",
             "ORTAOKUL",
             "İLKOKUL"});
-            this.comboBox11.Location = new System.Drawing.Point(33, 194);
+            this.comboBox11.Location = new System.Drawing.Point(53, 194);
             this.comboBox11.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(215, 29);
@@ -1613,7 +1613,7 @@ namespace IKYv4.Forms
             "LİSE",
             "ORTAOKUL",
             "İLKOKUL"});
-            this.comboBox12.Location = new System.Drawing.Point(33, 233);
+            this.comboBox12.Location = new System.Drawing.Point(53, 233);
             this.comboBox12.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(215, 29);
@@ -1635,7 +1635,7 @@ namespace IKYv4.Forms
             "LİSE",
             "ORTAOKUL",
             "İLKOKUL"});
-            this.comboBox13.Location = new System.Drawing.Point(33, 272);
+            this.comboBox13.Location = new System.Drawing.Point(53, 272);
             this.comboBox13.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(215, 29);
@@ -1647,7 +1647,7 @@ namespace IKYv4.Forms
             this.textBox14.BackColor = System.Drawing.Color.White;
             this.textBox14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox14.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox14.Location = new System.Drawing.Point(255, 194);
+            this.textBox14.Location = new System.Drawing.Point(316, 194);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(217, 29);
             this.textBox14.TabIndex = 1;
@@ -1658,7 +1658,7 @@ namespace IKYv4.Forms
             this.textBox20.BackColor = System.Drawing.Color.White;
             this.textBox20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox20.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox20.Location = new System.Drawing.Point(255, 233);
+            this.textBox20.Location = new System.Drawing.Point(316, 233);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(217, 29);
             this.textBox20.TabIndex = 1;
@@ -1669,7 +1669,7 @@ namespace IKYv4.Forms
             this.textBox21.BackColor = System.Drawing.Color.White;
             this.textBox21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox21.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox21.Location = new System.Drawing.Point(255, 272);
+            this.textBox21.Location = new System.Drawing.Point(316, 272);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(217, 29);
             this.textBox21.TabIndex = 1;
@@ -1680,7 +1680,7 @@ namespace IKYv4.Forms
             this.textBox22.BackColor = System.Drawing.Color.White;
             this.textBox22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox22.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox22.Location = new System.Drawing.Point(480, 155);
+            this.textBox22.Location = new System.Drawing.Point(582, 155);
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(217, 29);
             this.textBox22.TabIndex = 1;
@@ -1691,7 +1691,7 @@ namespace IKYv4.Forms
             this.textBox23.BackColor = System.Drawing.Color.White;
             this.textBox23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox23.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox23.Location = new System.Drawing.Point(480, 194);
+            this.textBox23.Location = new System.Drawing.Point(582, 194);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(217, 29);
             this.textBox23.TabIndex = 1;
@@ -1702,7 +1702,7 @@ namespace IKYv4.Forms
             this.textBox24.BackColor = System.Drawing.Color.White;
             this.textBox24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox24.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox24.Location = new System.Drawing.Point(480, 233);
+            this.textBox24.Location = new System.Drawing.Point(582, 233);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(217, 29);
             this.textBox24.TabIndex = 1;
@@ -1713,7 +1713,7 @@ namespace IKYv4.Forms
             this.textBox25.BackColor = System.Drawing.Color.White;
             this.textBox25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox25.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox25.Location = new System.Drawing.Point(480, 272);
+            this.textBox25.Location = new System.Drawing.Point(582, 272);
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(217, 29);
             this.textBox25.TabIndex = 1;
@@ -1724,8 +1724,8 @@ namespace IKYv4.Forms
             this.dateTimePicker5.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker5.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker5.Location = new System.Drawing.Point(711, 157);
-            this.dateTimePicker5.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker5.Location = new System.Drawing.Point(856, 157);
+            this.dateTimePicker5.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker5.Name = "dateTimePicker5";
             this.dateTimePicker5.Size = new System.Drawing.Size(205, 29);
             this.dateTimePicker5.TabIndex = 6;
@@ -1736,8 +1736,8 @@ namespace IKYv4.Forms
             this.dateTimePicker6.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker6.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker6.Location = new System.Drawing.Point(711, 196);
-            this.dateTimePicker6.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker6.Location = new System.Drawing.Point(856, 196);
+            this.dateTimePicker6.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker6.Name = "dateTimePicker6";
             this.dateTimePicker6.Size = new System.Drawing.Size(205, 29);
             this.dateTimePicker6.TabIndex = 6;
@@ -1748,8 +1748,8 @@ namespace IKYv4.Forms
             this.dateTimePicker7.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker7.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker7.Location = new System.Drawing.Point(711, 235);
-            this.dateTimePicker7.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker7.Location = new System.Drawing.Point(856, 235);
+            this.dateTimePicker7.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker7.Name = "dateTimePicker7";
             this.dateTimePicker7.Size = new System.Drawing.Size(205, 29);
             this.dateTimePicker7.TabIndex = 6;
@@ -1760,8 +1760,8 @@ namespace IKYv4.Forms
             this.dateTimePicker8.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker8.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker8.Location = new System.Drawing.Point(711, 274);
-            this.dateTimePicker8.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker8.Location = new System.Drawing.Point(856, 274);
+            this.dateTimePicker8.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker8.Name = "dateTimePicker8";
             this.dateTimePicker8.Size = new System.Drawing.Size(205, 29);
             this.dateTimePicker8.TabIndex = 6;
@@ -1772,7 +1772,7 @@ namespace IKYv4.Forms
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(959, 437);
+            this.tabPage2.Size = new System.Drawing.Size(1125, 510);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "NÜFUS-AİLE";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1819,7 +1819,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(26, 26, 26, 26);
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(26);
             this.tableLayoutPanel1.RowCount = 11;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
@@ -1832,7 +1832,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(953, 431);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1119, 504);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // label1
@@ -1840,7 +1840,7 @@ namespace IKYv4.Forms
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(168, 32);
+            this.label1.Location = new System.Drawing.Point(209, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 21);
             this.label1.TabIndex = 0;
@@ -1854,7 +1854,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.radioButton3, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.radioButton4, 1, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(258, 27);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(299, 30);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
@@ -1893,7 +1893,7 @@ namespace IKYv4.Forms
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(121, 66);
+            this.label3.Location = new System.Drawing.Point(162, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(127, 21);
             this.label3.TabIndex = 0;
@@ -1905,7 +1905,7 @@ namespace IKYv4.Forms
             this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox3.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox3.Location = new System.Drawing.Point(258, 63);
+            this.textBox3.Location = new System.Drawing.Point(299, 73);
             this.textBox3.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(150, 29);
@@ -1916,7 +1916,7 @@ namespace IKYv4.Forms
             this.label30.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label30.Location = new System.Drawing.Point(138, 100);
+            this.label30.Location = new System.Drawing.Point(179, 118);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(110, 21);
             this.label30.TabIndex = 0;
@@ -1928,7 +1928,7 @@ namespace IKYv4.Forms
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox1.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox1.Location = new System.Drawing.Point(258, 97);
+            this.textBox1.Location = new System.Drawing.Point(299, 114);
             this.textBox1.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(150, 29);
@@ -1939,9 +1939,9 @@ namespace IKYv4.Forms
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label31.Location = new System.Drawing.Point(37, 128);
+            this.label31.Location = new System.Drawing.Point(65, 159);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(211, 34);
+            this.label31.Size = new System.Drawing.Size(224, 21);
             this.label31.TabIndex = 0;
             this.label31.Text = "NÜFUSA KAYITLI OLDUĞU İL";
             // 
@@ -1951,7 +1951,7 @@ namespace IKYv4.Forms
             this.textBox4.BackColor = System.Drawing.Color.White;
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox4.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox4.Location = new System.Drawing.Point(258, 131);
+            this.textBox4.Location = new System.Drawing.Point(299, 155);
             this.textBox4.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(150, 29);
@@ -1962,7 +1962,7 @@ namespace IKYv4.Forms
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(160, 168);
+            this.label2.Location = new System.Drawing.Point(201, 200);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 21);
             this.label2.TabIndex = 0;
@@ -1974,7 +1974,7 @@ namespace IKYv4.Forms
             this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox2.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox2.Location = new System.Drawing.Point(258, 165);
+            this.textBox2.Location = new System.Drawing.Point(299, 196);
             this.textBox2.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(150, 29);
@@ -1988,7 +1988,7 @@ namespace IKYv4.Forms
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.comboBox1.ForeColor = System.Drawing.Color.DarkRed;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(258, 233);
+            this.comboBox1.Location = new System.Drawing.Point(299, 278);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(150, 29);
@@ -1999,7 +1999,7 @@ namespace IKYv4.Forms
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(145, 236);
+            this.label4.Location = new System.Drawing.Point(186, 282);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 21);
             this.label4.TabIndex = 0;
@@ -2010,7 +2010,7 @@ namespace IKYv4.Forms
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label29.Location = new System.Drawing.Point(164, 202);
+            this.label29.Location = new System.Drawing.Point(205, 241);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(84, 21);
             this.label29.TabIndex = 0;
@@ -2022,7 +2022,7 @@ namespace IKYv4.Forms
             this.textBox18.BackColor = System.Drawing.Color.White;
             this.textBox18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox18.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox18.Location = new System.Drawing.Point(258, 199);
+            this.textBox18.Location = new System.Drawing.Point(299, 237);
             this.textBox18.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(150, 29);
@@ -2034,7 +2034,7 @@ namespace IKYv4.Forms
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(600, 134);
+            this.label7.Location = new System.Drawing.Point(723, 159);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 21);
             this.label7.TabIndex = 0;
@@ -2046,7 +2046,7 @@ namespace IKYv4.Forms
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(582, 168);
+            this.label8.Location = new System.Drawing.Point(705, 200);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(116, 21);
             this.label8.TabIndex = 0;
@@ -2059,7 +2059,7 @@ namespace IKYv4.Forms
             this.textBox16.Enabled = false;
             this.textBox16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox16.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox16.Location = new System.Drawing.Point(708, 131);
+            this.textBox16.Location = new System.Drawing.Point(831, 155);
             this.textBox16.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(150, 29);
@@ -2072,7 +2072,7 @@ namespace IKYv4.Forms
             this.textBox17.Enabled = false;
             this.textBox17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox17.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox17.Location = new System.Drawing.Point(708, 165);
+            this.textBox17.Location = new System.Drawing.Point(831, 196);
             this.textBox17.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(150, 29);
@@ -2083,7 +2083,7 @@ namespace IKYv4.Forms
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(585, 32);
+            this.label5.Location = new System.Drawing.Point(708, 36);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(113, 21);
             this.label5.TabIndex = 0;
@@ -2097,7 +2097,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.5F));
             this.tableLayoutPanel3.Controls.Add(this.radioButton2, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.radioButton1, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(708, 27);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(831, 30);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
@@ -2137,7 +2137,7 @@ namespace IKYv4.Forms
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(638, 66);
+            this.label6.Location = new System.Drawing.Point(761, 77);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 21);
             this.label6.TabIndex = 0;
@@ -2149,7 +2149,7 @@ namespace IKYv4.Forms
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label32.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label32.Location = new System.Drawing.Point(520, 100);
+            this.label32.Location = new System.Drawing.Point(643, 118);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(178, 21);
             this.label32.TabIndex = 0;
@@ -2163,7 +2163,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.64516F));
             this.tableLayoutPanel9.Controls.Add(this.radioButton5, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.radioButton6, 1, 0);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(708, 95);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(831, 112);
             this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
@@ -2203,7 +2203,7 @@ namespace IKYv4.Forms
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label33.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label33.Location = new System.Drawing.Point(498, 202);
+            this.label33.Location = new System.Drawing.Point(621, 241);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(200, 21);
             this.label33.TabIndex = 0;
@@ -2216,7 +2216,7 @@ namespace IKYv4.Forms
             this.textBox19.Enabled = false;
             this.textBox19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox19.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox19.Location = new System.Drawing.Point(708, 199);
+            this.textBox19.Location = new System.Drawing.Point(831, 237);
             this.textBox19.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(150, 29);
@@ -2227,7 +2227,7 @@ namespace IKYv4.Forms
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(81, 338);
+            this.label10.Location = new System.Drawing.Point(122, 405);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(167, 21);
             this.label10.TabIndex = 0;
@@ -2238,8 +2238,8 @@ namespace IKYv4.Forms
             this.dateTimePicker3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dateTimePicker3.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker3.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.dateTimePicker3.Location = new System.Drawing.Point(258, 339);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker3.Location = new System.Drawing.Point(299, 404);
+            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(181, 23);
             this.dateTimePicker3.TabIndex = 6;
@@ -2257,7 +2257,7 @@ namespace IKYv4.Forms
             "YAPILDI",
             "TECİLLİ",
             "MUAF"});
-            this.comboBox2.Location = new System.Drawing.Point(258, 301);
+            this.comboBox2.Location = new System.Drawing.Point(299, 360);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(150, 29);
@@ -2268,7 +2268,7 @@ namespace IKYv4.Forms
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(166, 304);
+            this.label9.Location = new System.Drawing.Point(207, 364);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 21);
             this.label9.TabIndex = 0;
@@ -2279,7 +2279,7 @@ namespace IKYv4.Forms
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 2);
-            this.panel1.Location = new System.Drawing.Point(29, 292);
+            this.panel1.Location = new System.Drawing.Point(70, 348);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(444, 3);
             this.panel1.TabIndex = 7;
@@ -2291,7 +2291,7 @@ namespace IKYv4.Forms
             this.textBox15.Enabled = false;
             this.textBox15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox15.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox15.Location = new System.Drawing.Point(708, 63);
+            this.textBox15.Location = new System.Drawing.Point(831, 73);
             this.textBox15.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(150, 29);
@@ -2340,7 +2340,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.Padding = new System.Windows.Forms.Padding(26, 26, 26, 26);
+            this.tableLayoutPanel5.Padding = new System.Windows.Forms.Padding(26);
             this.tableLayoutPanel5.RowCount = 11;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
@@ -2779,7 +2779,7 @@ namespace IKYv4.Forms
             this.ButtonSave.ForeColor = System.Drawing.Color.White;
             this.ButtonSave.Location = new System.Drawing.Point(986, 570);
             this.ButtonSave.Name = "ButtonSave";
-            this.ButtonSave.Size = new System.Drawing.Size(173, 29);
+            this.ButtonSave.Size = new System.Drawing.Size(173, 38);
             this.ButtonSave.TabIndex = 0;
             this.ButtonSave.Text = "Kaydet";
             this.ButtonSave.UseVisualStyleBackColor = false;
@@ -2794,7 +2794,7 @@ namespace IKYv4.Forms
             this.Controls.Add(this.tabControl1);
             this.MaximizeBox = false;
             this.Name = "FormEmployeeRegistrationCard";
-            this.Padding = new System.Windows.Forms.Padding(26, 26, 26, 26);
+            this.Padding = new System.Windows.Forms.Padding(26);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yeni Sicil Kartı";
             this.tabPage6.ResumeLayout(false);
