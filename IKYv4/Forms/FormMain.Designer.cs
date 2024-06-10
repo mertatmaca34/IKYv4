@@ -164,6 +164,7 @@ namespace IKYv4.Forms
             this.ButtonPuantage.TabIndex = 8;
             this.ButtonPuantage.Text = "PUANTAJ";
             this.ButtonPuantage.UseVisualStyleBackColor = true;
+            this.ButtonPuantage.Click += new System.EventHandler(this.ButtonPuantage_Click);
             // 
             // ButtonEmployeVacation
             // 
@@ -179,6 +180,7 @@ namespace IKYv4.Forms
             this.ButtonEmployeVacation.TabIndex = 7;
             this.ButtonEmployeVacation.Text = "PERSONEL İZİN";
             this.ButtonEmployeVacation.UseVisualStyleBackColor = true;
+            this.ButtonEmployeVacation.Click += new System.EventHandler(this.ButtonEmployeVacation_Click);
             // 
             // ButtonEmployeeListing
             // 
@@ -312,6 +314,7 @@ namespace IKYv4.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ATİK - ATIKSU TESİSLERİ İNSAN KAYNAKLARI";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.SizeChanged += new System.EventHandler(this.FormMain_SizeChanged);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);

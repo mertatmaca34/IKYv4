@@ -5,18 +5,41 @@ namespace DataAccess.Concrete.Context
 {
     public class IKYContext : DbContext
     {
-        DbSet<Personel> Personeller { get; set; }
-        DbSet<Nufus> Nufuslar { get; set; }
-        DbSet<Sertifika> Sertifikalar { get; set; }
-        DbSet<Nakil> Nakiller { get; set; }
-        DbSet<Tahsil> Tahsiller { get; set; }
-        DbSet<Iletisim> Iletisimler { get; set; }
-        DbSet<Kullanici> Kullanicilar { get; set; }
-        DbSet<Mudurluk> Mudurlukler { get; set; }
-        DbSet<Seflik> Seflikler { get; set; }
-        DbSet<Tesis> Tesisler { get; set; }
-        DbSet<UnvanGrubu> UnvanGuruplari { get; set; }
-        DbSet<Unvan> Unvanlar { get; set; }
-        DbSet<Izin> Izinler { get; set; }
+        public IKYContext() : base(@"Server=(localdb)\MSSQLLocalDB;Database=IKYDatabase;Trusted_Connection=True;MultipleActiveResultSets=true")
+        { }
+
+        public DbSet<Personel> Personeller { get; set; }
+        public DbSet<Nufus> Nufuslar { get; set; }
+        public DbSet<Sertifika> Sertifikalar { get; set; }
+        public DbSet<Nakil> Nakiller { get; set; }
+        public DbSet<Tahsil> Tahsiller { get; set; }
+        public DbSet<Iletisim> Iletisimler { get; set; }
+        public DbSet<Kullanici> Kullanicilar { get; set; }
+        public DbSet<Mudurluk> Mudurlukler { get; set; }
+        public DbSet<Seflik> Seflikler { get; set; }
+        public DbSet<Tesis> Tesisler { get; set; }
+        public DbSet<UnvanGrubu> UnvanGuruplari { get; set; }
+        public DbSet<Unvan> Unvanlar { get; set; }
+        public DbSet<Izin> Izinler { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Fluent API kullanarak tablo adlarını belirleyelim
+            modelBuilder.Entity<Personel>().ToTable("Personeller");
+            modelBuilder.Entity<Nufus>().ToTable("Nufuslar");
+            modelBuilder.Entity<Sertifika>().ToTable("Sertifikalar");
+            modelBuilder.Entity<Nakil>().ToTable("Nakiller");
+            modelBuilder.Entity<Tahsil>().ToTable("Tahsiller");
+            modelBuilder.Entity<Iletisim>().ToTable("Iletisimler");
+            modelBuilder.Entity<Kullanici>().ToTable("Kullanicilar");
+            modelBuilder.Entity<Mudurluk>().ToTable("Mudurlukler");
+            modelBuilder.Entity<Seflik>().ToTable("Seflikler");
+            modelBuilder.Entity<Tesis>().ToTable("Tesisler");
+            modelBuilder.Entity<UnvanGrubu>().ToTable("UnvanGuruplari");
+            modelBuilder.Entity<Unvan>().ToTable("Unvanlar");
+            modelBuilder.Entity<Izin>().ToTable("Izinler");
+        }
     }
 }

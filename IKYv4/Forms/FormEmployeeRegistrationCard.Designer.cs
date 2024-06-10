@@ -2600,6 +2600,7 @@ namespace IKYv4.Forms
             this.ComboBoxDirectorate.Name = "ComboBoxDirectorate";
             this.ComboBoxDirectorate.Size = new System.Drawing.Size(357, 29);
             this.ComboBoxDirectorate.TabIndex = 5;
+            this.ComboBoxDirectorate.SelectedIndexChanged += new System.EventHandler(this.ComboBoxDirectorate_SelectedIndexChanged);
             // 
             // DateTimePickerStartDate
             // 
@@ -2627,6 +2628,7 @@ namespace IKYv4.Forms
             this.ComboBoxConducting.Name = "ComboBoxConducting";
             this.ComboBoxConducting.Size = new System.Drawing.Size(357, 29);
             this.ComboBoxConducting.TabIndex = 6;
+            this.ComboBoxConducting.SelectedIndexChanged += new System.EventHandler(this.ComboBoxConducting_SelectedIndexChanged);
             // 
             // ComboBoxDutyStation
             // 
@@ -2685,6 +2687,7 @@ namespace IKYv4.Forms
             this.PictureBoxEmployeePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBoxEmployeePicture.TabIndex = 5;
             this.PictureBoxEmployeePicture.TabStop = false;
+            this.PictureBoxEmployeePicture.Click += new System.EventHandler(this.PictureBoxEmployeePicture_Click);
             // 
             // label16
             // 
@@ -2777,12 +2780,13 @@ namespace IKYv4.Forms
             this.ButtonSave.BackColor = System.Drawing.Color.DarkRed;
             this.ButtonSave.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ButtonSave.ForeColor = System.Drawing.Color.White;
-            this.ButtonSave.Location = new System.Drawing.Point(986, 570);
+            this.ButtonSave.Location = new System.Drawing.Point(962, 570);
             this.ButtonSave.Name = "ButtonSave";
-            this.ButtonSave.Size = new System.Drawing.Size(173, 38);
+            this.ButtonSave.Size = new System.Drawing.Size(197, 38);
             this.ButtonSave.TabIndex = 0;
             this.ButtonSave.Text = "Kaydet";
             this.ButtonSave.UseVisualStyleBackColor = false;
+            this.ButtonSave.Click += new System.EventHandler(this.ButtonSave_Click);
             // 
             // FormEmployeeRegistrationCard
             // 
@@ -2797,6 +2801,7 @@ namespace IKYv4.Forms
             this.Padding = new System.Windows.Forms.Padding(26);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yeni Sicil Kartı";
+            this.Load += new System.EventHandler(this.FormEmployeeRegistrationCard_Load);
             this.tabPage6.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();

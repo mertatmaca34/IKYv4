@@ -1,25 +1,59 @@
-﻿using IKYv4.Forms;
+﻿using Business.Abstract;
+using Business.Concrete;
+using DataAccess.Abstract;
+using DataAccess.Concrete;
+using DataAccess.Concrete.Context;
+using IKYv4.Forms;
+using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IKYv4
 {
     internal static class Program
     {
-        /// <summary>
-        /// Uygulamanın ana girdi noktası.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain());
+
+            var services = AddServices();
+            var serviceProvider = services.BuildServiceProvider();
+
+            var context = serviceProvider.GetRequiredService<IKYContext>();
+            context.Database.CreateIfNotExists();
+
+            var formMain = serviceProvider.GetRequiredService<FormMain>();
+            Application.Run(formMain);
         }
 
+        private static IServiceCollection AddServices()
+        {
+            var services = new ServiceCollection();
 
+            services.AddSingleton<IPersonelDal, PersonelDal>();
+            services.AddSingleton<IPersonelManager, PersonelManager>();
+
+            services.AddSingleton<IKullaniciDal, KullaniciDal>();
+            services.AddSingleton<IKullaniciManager, KullaniciManager>();
+
+            services.AddSingleton<IMudurlukDal, MudurlukDal>();
+            services.AddSingleton<IMudurlukManager, MudurlukManager>();
+
+            services.AddSingleton<ISeflikDal, SeflikDal>();
+            services.AddSingleton<ISeflikManager, SeflikManager>();
+
+            services.AddSingleton<ITesisDal, TesisDal>();
+            services.AddSingleton<ITesisManager, TesisManager>();
+
+            services.AddSingleton<IIzinDal, IzinDal>();
+            services.AddSingleton<IIzinManager, IzinManager>();
+
+            services.AddScoped<IKYContext>();
+            services.AddTransient<FormMain>();
+
+            return services;
+        }
     }
 }

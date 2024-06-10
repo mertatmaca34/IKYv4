@@ -31,10 +31,10 @@ namespace IKYv4.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -48,7 +48,7 @@ namespace IKYv4.Forms
             this.panel5 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TextBoxEmployee = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label17 = new System.Windows.Forms.Label();
@@ -139,7 +139,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel5.Controls.Add(this.panel5, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.label16, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label11, 0, 2);
-            this.tableLayoutPanel5.Controls.Add(this.textBox5, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.TextBoxEmployee, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.label15, 0, 4);
             this.tableLayoutPanel5.Controls.Add(this.dateTimePicker2, 1, 4);
             this.tableLayoutPanel5.Controls.Add(this.label17, 0, 6);
@@ -152,7 +152,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.Padding = new System.Windows.Forms.Padding(26, 26, 26, 26);
+            this.tableLayoutPanel5.Padding = new System.Windows.Forms.Padding(26);
             this.tableLayoutPanel5.RowCount = 11;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.50016F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
@@ -186,7 +186,7 @@ namespace IKYv4.Forms
             this.dateTimePicker23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.dateTimePicker23.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePicker23.Location = new System.Drawing.Point(234, 354);
-            this.dateTimePicker23.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker23.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker23.Name = "dateTimePicker23";
             this.dateTimePicker23.Size = new System.Drawing.Size(285, 29);
             this.dateTimePicker23.TabIndex = 16;
@@ -199,7 +199,7 @@ namespace IKYv4.Forms
             this.dateTimePicker22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.dateTimePicker22.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimePicker22.Location = new System.Drawing.Point(234, 232);
-            this.dateTimePicker22.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker22.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker22.Name = "dateTimePicker22";
             this.dateTimePicker22.Size = new System.Drawing.Size(285, 29);
             this.dateTimePicker22.TabIndex = 15;
@@ -233,7 +233,7 @@ namespace IKYv4.Forms
             this.dateTimePicker21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateTimePicker21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.dateTimePicker21.Location = new System.Drawing.Point(234, 293);
-            this.dateTimePicker21.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker21.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker21.Name = "dateTimePicker21";
             this.dateTimePicker21.Size = new System.Drawing.Size(285, 29);
             this.dateTimePicker21.TabIndex = 12;
@@ -280,20 +280,21 @@ namespace IKYv4.Forms
             this.label11.TabIndex = 0;
             this.label11.Text = "İZİN TÜRÜ";
             // 
-            // textBox5
+            // TextBoxEmployee
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox5.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox5.Location = new System.Drawing.Point(234, 42);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(225, 29);
-            this.textBox5.TabIndex = 1;
+            this.TextBoxEmployee.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TextBoxEmployee.BackColor = System.Drawing.Color.White;
+            this.TextBoxEmployee.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.TextBoxEmployee.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxEmployee.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TextBoxEmployee.ForeColor = System.Drawing.Color.DarkRed;
+            this.TextBoxEmployee.Location = new System.Drawing.Point(234, 42);
+            this.TextBoxEmployee.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.TextBoxEmployee.Name = "TextBoxEmployee";
+            this.TextBoxEmployee.ReadOnly = true;
+            this.TextBoxEmployee.Size = new System.Drawing.Size(225, 29);
+            this.TextBoxEmployee.TabIndex = 1;
+            this.TextBoxEmployee.Click += new System.EventHandler(this.TextBoxEmployee_Click);
             // 
             // label15
             // 
@@ -313,7 +314,7 @@ namespace IKYv4.Forms
             this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.dateTimePicker2.Location = new System.Drawing.Point(234, 171);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(7);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(285, 29);
             this.dateTimePicker2.TabIndex = 11;
@@ -791,40 +792,40 @@ namespace IKYv4.Forms
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(959, 437);
+            this.tabPage2.Size = new System.Drawing.Size(1156, 576);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "TÜM İZİNLER";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Brown;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EditRow});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.WhiteSmoke;
@@ -833,15 +834,15 @@ namespace IKYv4.Forms
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Brown;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridView1.RowTemplate.DividerHeight = 10;
             this.dataGridView1.RowTemplate.Height = 50;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(953, 431);
+            this.dataGridView1.Size = new System.Drawing.Size(1150, 570);
             this.dataGridView1.TabIndex = 2;
             // 
             // EditRow
@@ -883,7 +884,7 @@ namespace IKYv4.Forms
         private TableLayoutPanel tableLayoutPanel5;
         private Label label16;
         private Label label11;
-        private TextBox textBox5;
+        private TextBox TextBoxEmployee;
         private TabPage tabPage2;
         private Panel panel5;
         private Panel panel8;

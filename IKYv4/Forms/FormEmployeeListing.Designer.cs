@@ -1079,6 +1079,7 @@ namespace IKYv4.Forms
             this.ButtonNewEmployee.TabIndex = 3;
             this.ButtonNewEmployee.Text = "Yeni Personel";
             this.ButtonNewEmployee.UseVisualStyleBackColor = false;
+            this.ButtonNewEmployee.Click += new System.EventHandler(this.ButtonNewEmployee_Click);
             // 
             // tableLayoutPanel18
             // 
