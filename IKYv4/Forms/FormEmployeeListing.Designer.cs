@@ -31,10 +31,10 @@ namespace IKYv4.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
@@ -1055,11 +1055,10 @@ namespace IKYv4.Forms
             this.tableLayoutPanel17.Margin = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
             this.tableLayoutPanel17.RowCount = 4;
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
             this.tableLayoutPanel17.Size = new System.Drawing.Size(983, 482);
             this.tableLayoutPanel17.TabIndex = 2;
             // 
@@ -1075,7 +1074,7 @@ namespace IKYv4.Forms
             this.ButtonNewEmployee.Location = new System.Drawing.Point(782, 0);
             this.ButtonNewEmployee.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.ButtonNewEmployee.Name = "ButtonNewEmployee";
-            this.ButtonNewEmployee.Size = new System.Drawing.Size(201, 27);
+            this.ButtonNewEmployee.Size = new System.Drawing.Size(201, 32);
             this.ButtonNewEmployee.TabIndex = 3;
             this.ButtonNewEmployee.Text = "Yeni Personel";
             this.ButtonNewEmployee.UseVisualStyleBackColor = false;
@@ -1085,28 +1084,28 @@ namespace IKYv4.Forms
             // 
             this.tableLayoutPanel18.BackColor = System.Drawing.Color.DarkRed;
             this.tableLayoutPanel18.ColumnCount = 8;
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 85F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 78F));
             this.tableLayoutPanel18.Controls.Add(this.comboBox14, 2, 0);
             this.tableLayoutPanel18.Controls.Add(this.button3, 0, 0);
             this.tableLayoutPanel18.Controls.Add(this.button2, 7, 0);
-            this.tableLayoutPanel18.Controls.Add(this.label7, 4, 0);
             this.tableLayoutPanel18.Controls.Add(this.textBox4, 6, 0);
             this.tableLayoutPanel18.Controls.Add(this.comboBox4, 5, 0);
             this.tableLayoutPanel18.Controls.Add(this.label14, 1, 0);
+            this.tableLayoutPanel18.Controls.Add(this.label7, 4, 0);
             this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel18.Location = new System.Drawing.Point(0, 30);
+            this.tableLayoutPanel18.Location = new System.Drawing.Point(0, 35);
             this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel18.Name = "tableLayoutPanel18";
             this.tableLayoutPanel18.RowCount = 1;
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(983, 30);
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(983, 35);
             this.tableLayoutPanel18.TabIndex = 0;
             // 
             // comboBox14
@@ -1122,10 +1121,10 @@ namespace IKYv4.Forms
             "Girişe Göre Eski ↓",
             "Birime Göre A-Z ↓",
             "Birime Göre Z-A ↓"});
-            this.comboBox14.Location = new System.Drawing.Point(172, 5);
+            this.comboBox14.Location = new System.Drawing.Point(236, 5);
             this.comboBox14.Margin = new System.Windows.Forms.Padding(5);
             this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(119, 25);
+            this.comboBox14.Size = new System.Drawing.Size(153, 25);
             this.comboBox14.TabIndex = 5;
             // 
             // button3
@@ -1139,7 +1138,7 @@ namespace IKYv4.Forms
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(3, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 24);
+            this.button3.Size = new System.Drawing.Size(144, 29);
             this.button3.TabIndex = 3;
             this.button3.Text = "Sütunları Düzenle";
             this.button3.UseVisualStyleBackColor = false;
@@ -1155,7 +1154,7 @@ namespace IKYv4.Forms
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(908, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(72, 24);
+            this.button2.Size = new System.Drawing.Size(72, 29);
             this.button2.TabIndex = 2;
             this.button2.Text = "Ara";
             this.button2.UseVisualStyleBackColor = false;
@@ -1166,10 +1165,10 @@ namespace IKYv4.Forms
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(591, 7);
+            this.label7.Location = new System.Drawing.Point(557, 9);
             this.label7.Margin = new System.Windows.Forms.Padding(7);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 16);
+            this.label7.Size = new System.Drawing.Size(83, 17);
             this.label7.TabIndex = 2;
             this.label7.Text = "Filtre Grubu:";
             // 
@@ -1206,10 +1205,10 @@ namespace IKYv4.Forms
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(127, 7);
+            this.label14.Location = new System.Drawing.Point(181, 9);
             this.label14.Margin = new System.Windows.Forms.Padding(7);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(33, 16);
+            this.label14.Size = new System.Drawing.Size(43, 17);
             this.label14.TabIndex = 2;
             this.label14.Text = "Sırala:";
             // 
@@ -1217,51 +1216,51 @@ namespace IKYv4.Forms
             // 
             this.DataGridViewEmployees.AllowUserToAddRows = false;
             this.DataGridViewEmployees.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataGridViewEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.DataGridViewEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.DataGridViewEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridViewEmployees.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewEmployees.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewEmployees.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridViewEmployees.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.DataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridViewEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EditRow});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewEmployees.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewEmployees.DefaultCellStyle = dataGridViewCellStyle11;
             this.DataGridViewEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridViewEmployees.EnableHeadersVisualStyles = false;
             this.DataGridViewEmployees.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.DataGridViewEmployees.Location = new System.Drawing.Point(0, 69);
+            this.DataGridViewEmployees.Location = new System.Drawing.Point(0, 78);
             this.DataGridViewEmployees.Margin = new System.Windows.Forms.Padding(0);
             this.DataGridViewEmployees.Name = "DataGridViewEmployees";
             this.DataGridViewEmployees.ReadOnly = true;
             this.DataGridViewEmployees.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridViewEmployees.RowHeadersVisible = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.DataGridViewEmployees.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGridViewEmployees.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.DataGridViewEmployees.RowTemplate.DividerHeight = 10;
             this.DataGridViewEmployees.RowTemplate.Height = 50;
             this.DataGridViewEmployees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridViewEmployees.Size = new System.Drawing.Size(983, 413);
+            this.DataGridViewEmployees.Size = new System.Drawing.Size(983, 404);
             this.DataGridViewEmployees.TabIndex = 1;
             // 
             // EditRow

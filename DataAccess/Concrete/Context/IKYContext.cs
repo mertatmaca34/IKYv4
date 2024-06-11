@@ -26,7 +26,6 @@ namespace DataAccess.Concrete.Context
         {
             base.OnModelCreating(modelBuilder);
 
-            // Fluent API kullanarak tablo adlarını belirleyelim
             modelBuilder.Entity<Personel>().ToTable("Personeller");
             modelBuilder.Entity<Nufus>().ToTable("Nufuslar");
             modelBuilder.Entity<Sertifika>().ToTable("Sertifikalar");

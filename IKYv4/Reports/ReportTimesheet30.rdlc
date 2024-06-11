@@ -10,42 +10,6 @@
       <rd:DataSourceID>fd076c9e-7bb9-4a98-b208-2cfb1cbcd002</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet1">
-      <Query>
-        <DataSourceName>DataAccessConcreteContext</DataSourceName>
-        <CommandText>/* Local Query */</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="Id">
-          <DataField>Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="MK">
-          <DataField>MK</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="PK">
-          <DataField>PK</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="TK">
-          <DataField>TK</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="UnvanGrubuAdi">
-          <DataField>UnvanGrubuAdi</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>DataAccess.Concrete.Context</rd:DataSetName>
-        <rd:TableName>IKYContext</rd:TableName>
-        <rd:ObjectDataSourceSelectMethod>UnvanGuruplari</rd:ObjectDataSourceSelectMethod>
-        <rd:ObjectDataSourceType>DataAccess.Concrete.Context.IKYContext, DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
-      </rd:DataSetInfo>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -3887,7 +3851,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!UnvanGrubuAdi.Value</Value>
+                                  <Value />
                                   <Style />
                                 </TextRun>
                               </TextRuns>
