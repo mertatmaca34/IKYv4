@@ -112,7 +112,6 @@ namespace IKYv4.Forms
             formPuantage.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("",));
 
             PageChange.Change(PanelContent, this, formPuantage);
-
         }
 
         private void ButtonEmployeVacation_Click(object sender, EventArgs e)

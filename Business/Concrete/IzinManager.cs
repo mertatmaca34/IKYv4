@@ -11,92 +11,92 @@ using System.Linq.Expressions;
 
 namespace Business.Concrete
 {
-    public class UnvanManager : IUnvanManager
+    public class IzinManager : IIzinManager
     {
-        readonly IUnvanDal _unvanDal;
+        readonly IIzinDal _izinDal;
 
-        public UnvanManager(IUnvanDal unvanDal)
+        public IzinManager(IIzinDal izinDal)
         {
-            _unvanDal = unvanDal;
+            _izinDal = izinDal;
         }
 
-        public IResult Add(Unvan unvan)
+        public IResult Add(Izin izin)
         {
-            IResult result = BusinessRules.Run(CheckUnvanExist(unvan));
+            IResult result = BusinessRules.Run(CheckIzinExist(izin));
 
             if (result == null)
             {
-                this.Update(unvan);
+                this.Update(izin);
 
-                return new SuccessResult(Messages.UnvanUpdated);
+                return new SuccessResult(Messages.IzinUpdated);
             }
             else if (result != null)
             {
-                _unvanDal.Add(unvan);
+                _izinDal.Add(izin);
 
-                return new SuccessResult(Messages.UnvanAdded);
+                return new SuccessResult(Messages.IzinAdded);
             }
 
             return new ErrorResult(Messages.IncompleteInfo);
         }
 
-        public IResult Delete(Unvan unvan)
+        public IResult Delete(Izin izin)
         {
-            IResult result = BusinessRules.Run(CheckUnvanExist(unvan));
+            IResult result = BusinessRules.Run(CheckIzinExist(izin));
 
             if (result == null)
             {
-                _unvanDal.Delete(unvan);
+                _izinDal.Delete(izin);
 
-                return new SuccessResult(Messages.UnvanDeleted);
+                return new SuccessResult(Messages.IzinDeleted);
             }
 
-            return new ErrorDataResult<Unvan>(Messages.InvalidDelete);
+            return new ErrorDataResult<Izin>(Messages.InvalidDelete);
         }
 
-        public IDataResult<List<Unvan>> GetAll(Expression<Func<Unvan, bool>> filter = null)
+        public IDataResult<List<Izin>> GetAll(Expression<Func<Izin, bool>> filter = null)
         {
-            var data = _unvanDal.GetAll(filter);
+            var data = _izinDal.GetAll(filter);
 
             if (data.Count == 0)
             {
-                return new ErrorDataResult<List<Unvan>>(data);
+                return new ErrorDataResult<List<Izin>>(data);
             }
             else
             {
-                return new SuccessDataResult<List<Unvan>>(data);
+                return new SuccessDataResult<List<Izin>>(data);
             }
         }
 
-        public IResult Update(Unvan unvan)
+        public IResult Update(Izin izin)
         {
-            IResult result = BusinessRules.Run(CheckUnvanExist(unvan));
+            IResult result = BusinessRules.Run(CheckIzinExist(izin));
 
             if (result == null)
             {
-                var existEntity = _unvanDal.GetAll().Where(c => c.Id == unvan.Id).FirstOrDefault();
+                var existEntity = _izinDal.GetAll().Where(c => c.Id == izin.Id).FirstOrDefault();
 
                 if (existEntity != null)
                 {
-                    unvan.Id = existEntity.Id;
+                    izin.Id = existEntity.Id;
 
-                    _unvanDal.Update(unvan);
+                    _izinDal.Update(izin);
 
-                    return new SuccessResult(Messages.UnvanUpdated);
+                    return new SuccessResult(Messages.IzinUpdated);
                 }
             }
 
-            this.Add(unvan);
+            this.Add(izin);
 
-            return new SuccessResult(Messages.UnvanAdded);
+            return new SuccessResult(Messages.IzinAdded);
         }
-        private IResult CheckUnvanExist(Unvan unvan)
+        private IResult CheckIzinExist(Izin izin)
         {
-            if (unvan != null)
+            if (izin != null)
             {
-                var data = _unvanDal.GetAll();
+                var data = _izinDal.GetAll();
 
-                var filteredData = data.Where(d => d.Id == unvan.Id).FirstOrDefault();
+                var filteredData = data.Where(d => d.Id == izin.Id).FirstOrDefault();
 
                 if (filteredData != null)
                 {

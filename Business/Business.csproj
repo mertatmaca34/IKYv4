@@ -49,8 +49,9 @@
     <Compile Include="Abstract\IPersonelManager.cs" />
     <Compile Include="Abstract\ISeflikManager.cs" />
     <Compile Include="Abstract\ITesisManager.cs" />
-    <Compile Include="Concrete\IzinManager - Kopyala.cs" />
+    <Compile Include="Concrete\UnvanGrubuManager.cs" />
     <Compile Include="Concrete\IzinManager.cs" />
+    <Compile Include="Concrete\UnvanManager.cs" />
     <Compile Include="Concrete\KullaniciManager.cs" />
     <Compile Include="Concrete\MudurlukManager.cs" />
     <Compile Include="Concrete\PersonelManager.cs" />
