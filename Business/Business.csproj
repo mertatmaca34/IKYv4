@@ -41,12 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IUnvanGrubuManager.cs" />
+    <Compile Include="Abstract\IUnvanManager.cs" />
     <Compile Include="Abstract\IIzinManager.cs" />
     <Compile Include="Abstract\IKullaniciManager.cs" />
     <Compile Include="Abstract\IMudurlukManager.cs" />
     <Compile Include="Abstract\IPersonelManager.cs" />
     <Compile Include="Abstract\ISeflikManager.cs" />
     <Compile Include="Abstract\ITesisManager.cs" />
+    <Compile Include="Concrete\IzinManager - Kopyala.cs" />
     <Compile Include="Concrete\IzinManager.cs" />
     <Compile Include="Concrete\KullaniciManager.cs" />
     <Compile Include="Concrete\MudurlukManager.cs" />

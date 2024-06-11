@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
 using IKYv4.Utilities;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Windows.Forms;
 
@@ -106,7 +107,11 @@ namespace IKYv4.Forms
 
         private void ButtonPuantage_Click(object sender, EventArgs e)
         {
-            PageChange.Change(PanelContent, this, new FormPuantage());
+            FormPuantage formPuantage = new FormPuantage();
+
+            formPuantage.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("",));
+
+            PageChange.Change(PanelContent, this, formPuantage);
 
         }
 

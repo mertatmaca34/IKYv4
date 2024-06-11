@@ -51,6 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IUnvanGrubuDal.cs" />
+    <Compile Include="Abstract\IUnvanDal.cs" />
     <Compile Include="Abstract\IIzinDal.cs" />
     <Compile Include="Abstract\IKullaniciDal.cs" />
     <Compile Include="Abstract\IMudurlukDal.cs" />
@@ -58,6 +60,8 @@
     <Compile Include="Abstract\ISeflikDal.cs" />
     <Compile Include="Abstract\ITesisDal.cs" />
     <Compile Include="Concrete\Context\IKYContext.cs" />
+    <Compile Include="Concrete\UnvanDal.cs" />
+    <Compile Include="Concrete\UnvanGrubuDal.cs" />
     <Compile Include="Concrete\IzinDal.cs" />
     <Compile Include="Concrete\KullaniciDal.cs" />
     <Compile Include="Concrete\MudurlukDal.cs" />

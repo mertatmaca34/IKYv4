@@ -32,6 +32,14 @@ namespace Business.Constants
         public static readonly string IzinUpdated = "Izin bilgileri başarıyla güncellendi";
         public static readonly string IzinDeleted = "Izin bilgileri başarıyla silindi";
 
+        public static readonly string UnvanAdded = "Unvan bilgileri başarıyla oluşturuldu";
+        public static readonly string UnvanUpdated = "Unvan bilgileri başarıyla güncellendi";
+        public static readonly string UnvanDeleted = "Unvan bilgileri başarıyla silindi";
+
+        public static readonly string UnvanGrubuAdded = "UnvanGrubu bilgileri başarıyla oluşturuldu";
+        public static readonly string UnvanGrubuUpdated = "UnvanGrubu bilgileri başarıyla güncellendi";
+        public static readonly string UnvanGrubuDeleted = "UnvanGrubu bilgileri başarıyla silindi";
+
         public static readonly string IncompleteInfo = "Lütfen bilgileri tam şekilde girin";
         public static readonly string ItsAlreadyExist = "Bu bilgiler zaten sisteme tanımlanmış";
         public static readonly string InvalidDateTimes = "Seçilen tarih aralıkları geçersiz";
