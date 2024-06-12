@@ -50,6 +50,9 @@ namespace IKYv4
             services.AddSingleton<IIzinDal, IzinDal>();
             services.AddSingleton<IIzinManager, IzinManager>();
 
+            services.AddSingleton<IUnvanGrubuDal, UnvanGrubuDal>();
+            services.AddSingleton<IUnvanGrubuManager, UnvanGrubuManager>();
+
             services.AddScoped<IKYContext>();
             services.AddTransient<FormMain>();
 

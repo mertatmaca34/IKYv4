@@ -49,6 +49,7 @@
     <Compile Include="Concrete\Nufus.cs" />
     <Compile Include="Concrete\Personel.cs" />
     <Compile Include="Concrete\Puantage.cs" />
+    <Compile Include="Concrete\Puantaj.cs" />
     <Compile Include="Concrete\Seflik.cs" />
     <Compile Include="Concrete\Sertifika.cs" />
     <Compile Include="Concrete\Tahsil.cs" />

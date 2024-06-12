@@ -158,6 +158,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Reports\ReportTimesheet30.rdlc" />
+    <EmbeddedResource Include="Reports\ReportTimeSheet30New.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DataAccess.Concrete.Context.IKYContext.datasource" />
     <None Include="Properties\Settings.settings">
