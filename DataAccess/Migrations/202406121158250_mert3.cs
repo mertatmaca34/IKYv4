@@ -3,16 +3,16 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class mert : DbMigration
+    public partial class mert3 : DbMigration
     {
         public override void Up()
         {
-            AddColumn("dbo.Unvanlar", "UnvanAdi", c => c.String());
+            AddColumn("dbo.Puantajlar", "AdiSoyadi", c => c.String());
         }
         
         public override void Down()
         {
-            DropColumn("dbo.Unvanlar", "UnvanAdi");
+            DropColumn("dbo.Puantajlar", "AdiSoyadi");
         }
     }
 }

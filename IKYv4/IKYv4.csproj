@@ -89,6 +89,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormEmployeeChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEmployeeChoose.Designer.cs">
+      <DependentUpon>FormEmployeeChoose.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormEmployeeListing.cs">
       <SubType>Form</SubType>
     </Compile>

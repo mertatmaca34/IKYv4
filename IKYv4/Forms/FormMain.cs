@@ -16,6 +16,7 @@ namespace IKYv4.Forms
         private readonly ITesisManager _tesisManager;
         private readonly IIzinManager _izinManager;
         private readonly IUnvanGrubuManager _unvanGrubuManager;
+        private readonly IPuantajManager _puantajManager;
 
         public FormMain(
             IPersonelManager personelManager,
@@ -24,8 +25,11 @@ namespace IKYv4.Forms
             ISeflikManager seflikManager,
             ITesisManager tesisManager,
             IIzinManager izinManager,
-            IUnvanGrubuManager unvanGrubuManager)
+            IUnvanGrubuManager unvanGrubuManager,
+            IPuantajManager puantajManager)
         {
+            InitializeComponent();
+
             _personelManager = personelManager;
             _kullaniciManager = kullaniciManager;
             _mudurlukManager = mudurlukManager;
@@ -33,8 +37,7 @@ namespace IKYv4.Forms
             _tesisManager = tesisManager;
             _izinManager = izinManager;
             _unvanGrubuManager = unvanGrubuManager;
-
-            InitializeComponent();
+            _puantajManager = puantajManager;
         }
 
         private void FormMain_SizeChanged(object sender, EventArgs e)
@@ -112,7 +115,7 @@ namespace IKYv4.Forms
         {
             var unvanGrubuData = _unvanGrubuManager.GetAll().Data;
 
-            FormPuantage formPuantage = new FormPuantage();
+            FormPuantage formPuantage = new FormPuantage(_personelManager, _puantajManager, _unvanGrubuManager);
 
             formPuantage.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("UnvanGruplariDataSet", unvanGrubuData));
 

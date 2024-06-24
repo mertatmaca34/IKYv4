@@ -71,6 +71,8 @@ namespace IKYv4.Forms
 
         private void ComboBoxDirectorate_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ComboBoxConducting.Items.Clear();
+
             string filterParameter = ComboBoxDirectorate.Text;
 
             var res = _seflikManager.GetAll(s => s.MudurlukAdi == filterParameter);
@@ -88,6 +90,8 @@ namespace IKYv4.Forms
 
         private void ComboBoxConducting_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ComboBoxDutyStation.Items.Clear();
+
             var res = _tesisManager.GetAll(s => s.SeflikAdi == ComboBoxConducting.Text);
 
             if (res.Data.Count > 0)

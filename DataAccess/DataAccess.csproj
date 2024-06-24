@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IPuantajDal.cs" />
     <Compile Include="Abstract\IUnvanGrubuDal.cs" />
     <Compile Include="Abstract\IUnvanDal.cs" />
     <Compile Include="Abstract\IIzinDal.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Abstract\ISeflikDal.cs" />
     <Compile Include="Abstract\ITesisDal.cs" />
     <Compile Include="Concrete\Context\IKYContext.cs" />
+    <Compile Include="Concrete\PuantajDal.cs" />
     <Compile Include="Concrete\UnvanDal.cs" />
     <Compile Include="Concrete\UnvanGrubuDal.cs" />
     <Compile Include="Concrete\IzinDal.cs" />
@@ -72,9 +74,13 @@
     <Compile Include="Migrations\202406051227105_InitialCreate.Designer.cs">
       <DependentUpon>202406051227105_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202406110853399_mert.cs" />
-    <Compile Include="Migrations\202406110853399_mert.Designer.cs">
-      <DependentUpon>202406110853399_mert.cs</DependentUpon>
+    <Compile Include="Migrations\202406121051104_mert2.cs" />
+    <Compile Include="Migrations\202406121051104_mert2.Designer.cs">
+      <DependentUpon>202406121051104_mert2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202406121158250_mert3.cs" />
+    <Compile Include="Migrations\202406121158250_mert3.Designer.cs">
+      <DependentUpon>202406121158250_mert3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,8 +103,11 @@
     <EmbeddedResource Include="Migrations\202406051227105_InitialCreate.resx">
       <DependentUpon>202406051227105_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202406110853399_mert.resx">
-      <DependentUpon>202406110853399_mert.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202406121051104_mert2.resx">
+      <DependentUpon>202406121051104_mert2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406121158250_mert3.resx">
+      <DependentUpon>202406121158250_mert3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

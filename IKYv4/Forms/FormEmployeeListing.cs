@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,8 @@ namespace IKYv4.Forms
 {
     public partial class FormEmployeeListing : Form
     {
+        public Personel ChoosedPersonel { get; set; }
+
         IPersonelManager _personelManager;
         IMudurlukManager _mudurlukManager;
         ISeflikManager _seflikManager;

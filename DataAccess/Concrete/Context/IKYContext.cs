@@ -21,6 +21,7 @@ namespace DataAccess.Concrete.Context
         public DbSet<UnvanGrubu> UnvanGuruplari { get; set; }
         public DbSet<Unvan> Unvanlar { get; set; }
         public DbSet<Izin> Izinler { get; set; }
+        public DbSet<Puantaj> Puantajlar { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -39,6 +40,7 @@ namespace DataAccess.Concrete.Context
             modelBuilder.Entity<UnvanGrubu>().ToTable("UnvanGuruplari");
             modelBuilder.Entity<Unvan>().ToTable("Unvanlar");
             modelBuilder.Entity<Izin>().ToTable("Izinler");
+            modelBuilder.Entity<Puantaj>().ToTable("Puantajlar");
         }
     }
 }

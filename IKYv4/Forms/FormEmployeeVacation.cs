@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace IKYv4.Forms
 {
     public partial class FormEmployeeVacation : Form
     {
+        
         IPersonelManager _personelManager;
         IMudurlukManager _mudurlukManager;
         ISeflikManager _seflikManager;
@@ -28,13 +30,7 @@ namespace IKYv4.Forms
             InitializeComponent();
         }
 
-        private void TextBoxEmployee_TextChanged(object sender, EventArgs e)
-        {
-            FormEmployeeListing formEmployeeListing = new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager);
-            formEmployeeListing.ShowDialog();
-        }
-
-        private void TextBoxEmployee_Click(object sender, EventArgs e)
+        private void ButtonEmployeeChoose_Click(object sender, EventArgs e)
         {
             FormEmployeeListing formEmployeeListing = new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager);
             formEmployeeListing.FormBorderStyle = FormBorderStyle.Fixed3D;

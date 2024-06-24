@@ -40,6 +40,10 @@ namespace Business.Constants
         public static readonly string UnvanGrubuUpdated = "UnvanGrubu bilgileri başarıyla güncellendi";
         public static readonly string UnvanGrubuDeleted = "UnvanGrubu bilgileri başarıyla silindi";
 
+        public static readonly string PuantajAdded   = "Puantaj bilgileri başarıyla oluşturuldu";
+        public static readonly string PuantajUpdated = "Puantaj bilgileri başarıyla güncellendi";
+        public static readonly string PuantajDeleted = "Puantaj bilgileri başarıyla silindi";
+
         public static readonly string IncompleteInfo = "Lütfen bilgileri tam şekilde girin";
         public static readonly string ItsAlreadyExist = "Bu bilgiler zaten sisteme tanımlanmış";
         public static readonly string InvalidDateTimes = "Seçilen tarih aralıkları geçersiz";

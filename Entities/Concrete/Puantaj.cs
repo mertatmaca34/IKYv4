@@ -6,6 +6,7 @@ namespace Entities.Concrete
     {
         public int Id { get; set; }
         public int PersonelId { get; set; }
+        public string AdiSoyadi { get; set; }
         public DateTime YilAy { get; set; }
         public string Gun1 { get; set; }
         public string Gun2 { get; set; }

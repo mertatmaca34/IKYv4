@@ -53,6 +53,9 @@ namespace IKYv4
             services.AddSingleton<IUnvanGrubuDal, UnvanGrubuDal>();
             services.AddSingleton<IUnvanGrubuManager, UnvanGrubuManager>();
 
+            services.AddSingleton<IPuantajDal, PuantajDal>();
+            services.AddSingleton<IPuantajManager, PuantajManager>();
+
             services.AddScoped<IKYContext>();
             services.AddTransient<FormMain>();
 
