@@ -70,33 +70,19 @@ namespace Business.Concrete
 
         public IResult Update(Puantaj puantaj)
         {
-            IResult result = BusinessRules.Run(CheckPuantajExist(puantaj));
+            var existEntity = _puantajDal.GetAll().Where(c => c.AdiSoyadi == puantaj.AdiSoyadi && c.YilAy == puantaj.YilAy).FirstOrDefault();
 
-            if (result == null)
-            {
-                var existEntity = _puantajDal.GetAll().Where(c => c.AdiSoyadi == puantaj.AdiSoyadi && c.YilAy == puantaj.YilAy).FirstOrDefault();
+            puantaj.Id = existEntity.Id;
 
-                if (existEntity != null)
-                {
-                    puantaj.Id = existEntity.Id;
+            _puantajDal.Update(puantaj);
 
-                    _puantajDal.Update(puantaj);
-
-                    return new SuccessResult(Messages.PuantajUpdated);
-                }
-            }
-
-            this.Add(puantaj);
-
-            return new SuccessResult(Messages.PuantajAdded);
+            return new SuccessResult(Messages.PuantajUpdated);
         }
 
         private IResult CheckPuantajExist(Puantaj puantaj)
         {
             if (puantaj != null)
             {
-                var data = _puantajDal.GetAll();
-
                 var filteredData = _puantajDal.GetAll().Where(c => c.AdiSoyadi == puantaj.AdiSoyadi && c.YilAy == puantaj.YilAy).FirstOrDefault();
 
                 if (filteredData != null)

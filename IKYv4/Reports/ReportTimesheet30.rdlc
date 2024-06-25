@@ -1219,7 +1219,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Gun110">
+                        <Textbox Name="Gun1">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1235,12 +1235,25 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Gun110</rd:DefaultName>
+                          <rd:DefaultName>Gun1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+        Fields!Gun1.Value = "R", "Red",
+        Fields!Gun1.Value = "M", "#fd99ff",
+        Fields!Gun1.Value = "İ", "Yellow",
+        Fields!Gun1.Value = "Üİ", "#ffc000",
+        Fields!Gun1.Value = "Yİ", "Blue",
+        Fields!Gun1.Value = "T", "#a6a6a6",
+        Fields!Gun1.Value = "Ç", "#ff7c80",
+        Fields!Gun1.Value = "O", "#33cccc",
+        Fields!Gun1.Value = "RT", "#92d050",
+        Fields!Gun1.Value = "İC", "#7030a0",
+        true, "White"
+    )</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1274,6 +1287,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun2.Value = "R", "Red",
+    Fields!Gun2.Value = "M", "#fd99ff",
+    Fields!Gun2.Value = "İ", "Yellow",
+    Fields!Gun2.Value = "Üİ", "#ffc000",
+    Fields!Gun2.Value = "Yİ", "Blue",
+    Fields!Gun2.Value = "T", "#a6a6a6",
+    Fields!Gun2.Value = "Ç", "#ff7c80",
+    Fields!Gun2.Value = "O", "#33cccc",
+    Fields!Gun2.Value = "RT", "#92d050",
+    Fields!Gun2.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1307,6 +1333,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun3.Value = "R", "Red",
+    Fields!Gun3.Value = "M", "#fd99ff",
+    Fields!Gun3.Value = "İ", "Yellow",
+    Fields!Gun3.Value = "Üİ", "#ffc000",
+    Fields!Gun3.Value = "Yİ", "Blue",
+    Fields!Gun3.Value = "T", "#a6a6a6",
+    Fields!Gun3.Value = "Ç", "#ff7c80",
+    Fields!Gun3.Value = "O", "#33cccc",
+    Fields!Gun3.Value = "RT", "#92d050",
+    Fields!Gun3.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1340,6 +1379,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun4.Value = "R", "Red",
+    Fields!Gun4.Value = "M", "#fd99ff",
+    Fields!Gun4.Value = "İ", "Yellow",
+    Fields!Gun4.Value = "Üİ", "#ffc000",
+    Fields!Gun4.Value = "Yİ", "Blue",
+    Fields!Gun4.Value = "T", "#a6a6a6",
+    Fields!Gun4.Value = "Ç", "#ff7c80",
+    Fields!Gun4.Value = "O", "#33cccc",
+    Fields!Gun4.Value = "RT", "#92d050",
+    Fields!Gun4.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1373,6 +1425,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun5.Value = "R", "Red",
+    Fields!Gun5.Value = "M", "#fd99ff",
+    Fields!Gun5.Value = "İ", "Yellow",
+    Fields!Gun5.Value = "Üİ", "#ffc000",
+    Fields!Gun5.Value = "Yİ", "Blue",
+    Fields!Gun5.Value = "T", "#a6a6a6",
+    Fields!Gun5.Value = "Ç", "#ff7c80",
+    Fields!Gun5.Value = "O", "#33cccc",
+    Fields!Gun5.Value = "RT", "#92d050",
+    Fields!Gun5.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1406,6 +1471,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun6.Value = "R", "Red",
+    Fields!Gun6.Value = "M", "#fd99ff",
+    Fields!Gun6.Value = "İ", "Yellow",
+    Fields!Gun6.Value = "Üİ", "#ffc000",
+    Fields!Gun6.Value = "Yİ", "Blue",
+    Fields!Gun6.Value = "T", "#a6a6a6",
+    Fields!Gun6.Value = "Ç", "#ff7c80",
+    Fields!Gun6.Value = "O", "#33cccc",
+    Fields!Gun6.Value = "RT", "#92d050",
+    Fields!Gun6.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1439,6 +1517,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun7.Value = "R", "Red",
+    Fields!Gun7.Value = "M", "#fd99ff",
+    Fields!Gun7.Value = "İ", "Yellow",
+    Fields!Gun7.Value = "Üİ", "#ffc000",
+    Fields!Gun7.Value = "Yİ", "Blue",
+    Fields!Gun7.Value = "T", "#a6a6a6",
+    Fields!Gun7.Value = "Ç", "#ff7c80",
+    Fields!Gun7.Value = "O", "#33cccc",
+    Fields!Gun7.Value = "RT", "#92d050",
+    Fields!Gun7.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1472,6 +1563,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun8.Value = "R", "Red",
+    Fields!Gun8.Value = "M", "#fd99ff",
+    Fields!Gun8.Value = "İ", "Yellow",
+    Fields!Gun8.Value = "Üİ", "#ffc000",
+    Fields!Gun8.Value = "Yİ", "Blue",
+    Fields!Gun8.Value = "T", "#a6a6a6",
+    Fields!Gun8.Value = "Ç", "#ff7c80",
+    Fields!Gun8.Value = "O", "#33cccc",
+    Fields!Gun8.Value = "RT", "#92d050",
+    Fields!Gun8.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1505,6 +1609,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun9.Value = "R", "Red",
+    Fields!Gun9.Value = "M", "#fd99ff",
+    Fields!Gun9.Value = "İ", "Yellow",
+    Fields!Gun9.Value = "Üİ", "#ffc000",
+    Fields!Gun9.Value = "Yİ", "Blue",
+    Fields!Gun9.Value = "T", "#a6a6a6",
+    Fields!Gun9.Value = "Ç", "#ff7c80",
+    Fields!Gun9.Value = "O", "#33cccc",
+    Fields!Gun9.Value = "RT", "#92d050",
+    Fields!Gun9.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1538,6 +1655,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun10.Value = "R", "Red",
+    Fields!Gun10.Value = "M", "#fd99ff",
+    Fields!Gun10.Value = "İ", "Yellow",
+    Fields!Gun10.Value = "Üİ", "#ffc000",
+    Fields!Gun10.Value = "Yİ", "Blue",
+    Fields!Gun10.Value = "T", "#a6a6a6",
+    Fields!Gun10.Value = "Ç", "#ff7c80",
+    Fields!Gun10.Value = "O", "#33cccc",
+    Fields!Gun10.Value = "RT", "#92d050",
+    Fields!Gun10.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1571,6 +1701,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun11.Value = "R", "Red",
+    Fields!Gun11.Value = "M", "#fd99ff",
+    Fields!Gun11.Value = "İ", "Yellow",
+    Fields!Gun11.Value = "Üİ", "#ffc000",
+    Fields!Gun11.Value = "Yİ", "Blue",
+    Fields!Gun11.Value = "T", "#a6a6a6",
+    Fields!Gun11.Value = "Ç", "#ff7c80",
+    Fields!Gun11.Value = "O", "#33cccc",
+    Fields!Gun11.Value = "RT", "#92d050",
+    Fields!Gun11.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1604,6 +1747,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun12.Value = "R", "Red",
+    Fields!Gun12.Value = "M", "#fd99ff",
+    Fields!Gun12.Value = "İ", "Yellow",
+    Fields!Gun12.Value = "Üİ", "#ffc000",
+    Fields!Gun12.Value = "Yİ", "Blue",
+    Fields!Gun12.Value = "T", "#a6a6a6",
+    Fields!Gun12.Value = "Ç", "#ff7c80",
+    Fields!Gun12.Value = "O", "#33cccc",
+    Fields!Gun12.Value = "RT", "#92d050",
+    Fields!Gun12.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1637,6 +1793,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun13.Value = "R", "Red",
+    Fields!Gun13.Value = "M", "#fd99ff",
+    Fields!Gun13.Value = "İ", "Yellow",
+    Fields!Gun13.Value = "Üİ", "#ffc000",
+    Fields!Gun13.Value = "Yİ", "Blue",
+    Fields!Gun13.Value = "T", "#a6a6a6",
+    Fields!Gun13.Value = "Ç", "#ff7c80",
+    Fields!Gun13.Value = "O", "#33cccc",
+    Fields!Gun13.Value = "RT", "#92d050",
+    Fields!Gun13.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1670,6 +1839,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun14.Value = "R", "Red",
+    Fields!Gun14.Value = "M", "#fd99ff",
+    Fields!Gun14.Value = "İ", "Yellow",
+    Fields!Gun14.Value = "Üİ", "#ffc000",
+    Fields!Gun14.Value = "Yİ", "Blue",
+    Fields!Gun14.Value = "T", "#a6a6a6",
+    Fields!Gun14.Value = "Ç", "#ff7c80",
+    Fields!Gun14.Value = "O", "#33cccc",
+    Fields!Gun14.Value = "RT", "#92d050",
+    Fields!Gun14.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1703,6 +1885,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun15.Value = "R", "Red",
+    Fields!Gun15.Value = "M", "#fd99ff",
+    Fields!Gun15.Value = "İ", "Yellow",
+    Fields!Gun15.Value = "Üİ", "#ffc000",
+    Fields!Gun15.Value = "Yİ", "Blue",
+    Fields!Gun15.Value = "T", "#a6a6a6",
+    Fields!Gun15.Value = "Ç", "#ff7c80",
+    Fields!Gun15.Value = "O", "#33cccc",
+    Fields!Gun15.Value = "RT", "#92d050",
+    Fields!Gun15.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1736,6 +1931,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun16.Value = "R", "Red",
+    Fields!Gun16.Value = "M", "#fd99ff",
+    Fields!Gun16.Value = "İ", "Yellow",
+    Fields!Gun16.Value = "Üİ", "#ffc000",
+    Fields!Gun16.Value = "Yİ", "Blue",
+    Fields!Gun16.Value = "T", "#a6a6a6",
+    Fields!Gun16.Value = "Ç", "#ff7c80",
+    Fields!Gun16.Value = "O", "#33cccc",
+    Fields!Gun16.Value = "RT", "#92d050",
+    Fields!Gun16.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1769,6 +1977,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun17.Value = "R", "Red",
+    Fields!Gun17.Value = "M", "#fd99ff",
+    Fields!Gun17.Value = "İ", "Yellow",
+    Fields!Gun17.Value = "Üİ", "#ffc000",
+    Fields!Gun17.Value = "Yİ", "Blue",
+    Fields!Gun17.Value = "T", "#a6a6a6",
+    Fields!Gun17.Value = "Ç", "#ff7c80",
+    Fields!Gun17.Value = "O", "#33cccc",
+    Fields!Gun17.Value = "RT", "#92d050",
+    Fields!Gun17.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1802,6 +2023,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun18.Value = "R", "Red",
+    Fields!Gun18.Value = "M", "#fd99ff",
+    Fields!Gun18.Value = "İ", "Yellow",
+    Fields!Gun18.Value = "Üİ", "#ffc000",
+    Fields!Gun18.Value = "Yİ", "Blue",
+    Fields!Gun18.Value = "T", "#a6a6a6",
+    Fields!Gun18.Value = "Ç", "#ff7c80",
+    Fields!Gun18.Value = "O", "#33cccc",
+    Fields!Gun18.Value = "RT", "#92d050",
+    Fields!Gun18.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1835,6 +2069,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun19.Value = "R", "Red",
+    Fields!Gun19.Value = "M", "#fd99ff",
+    Fields!Gun19.Value = "İ", "Yellow",
+    Fields!Gun19.Value = "Üİ", "#ffc000",
+    Fields!Gun19.Value = "Yİ", "Blue",
+    Fields!Gun19.Value = "T", "#a6a6a6",
+    Fields!Gun19.Value = "Ç", "#ff7c80",
+    Fields!Gun19.Value = "O", "#33cccc",
+    Fields!Gun19.Value = "RT", "#92d050",
+    Fields!Gun19.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1868,6 +2115,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun20.Value = "R", "Red",
+    Fields!Gun20.Value = "M", "#fd99ff",
+    Fields!Gun20.Value = "İ", "Yellow",
+    Fields!Gun20.Value = "Üİ", "#ffc000",
+    Fields!Gun20.Value = "Yİ", "Blue",
+    Fields!Gun20.Value = "T", "#a6a6a6",
+    Fields!Gun20.Value = "Ç", "#ff7c80",
+    Fields!Gun20.Value = "O", "#33cccc",
+    Fields!Gun20.Value = "RT", "#92d050",
+    Fields!Gun20.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1901,6 +2161,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun21.Value = "R", "Red",
+    Fields!Gun21.Value = "M", "#fd99ff",
+    Fields!Gun21.Value = "İ", "Yellow",
+    Fields!Gun21.Value = "Üİ", "#ffc000",
+    Fields!Gun21.Value = "Yİ", "Blue",
+    Fields!Gun21.Value = "T", "#a6a6a6",
+    Fields!Gun21.Value = "Ç", "#ff7c80",
+    Fields!Gun21.Value = "O", "#33cccc",
+    Fields!Gun21.Value = "RT", "#92d050",
+    Fields!Gun21.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1934,6 +2207,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun22.Value = "R", "Red",
+    Fields!Gun22.Value = "M", "#fd99ff",
+    Fields!Gun22.Value = "İ", "Yellow",
+    Fields!Gun22.Value = "Üİ", "#ffc000",
+    Fields!Gun22.Value = "Yİ", "Blue",
+    Fields!Gun22.Value = "T", "#a6a6a6",
+    Fields!Gun22.Value = "Ç", "#ff7c80",
+    Fields!Gun22.Value = "O", "#33cccc",
+    Fields!Gun22.Value = "RT", "#92d050",
+    Fields!Gun22.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1967,6 +2253,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun23.Value = "R", "Red",
+    Fields!Gun23.Value = "M", "#fd99ff",
+    Fields!Gun23.Value = "İ", "Yellow",
+    Fields!Gun23.Value = "Üİ", "#ffc000",
+    Fields!Gun23.Value = "Yİ", "Blue",
+    Fields!Gun23.Value = "T", "#a6a6a6",
+    Fields!Gun23.Value = "Ç", "#ff7c80",
+    Fields!Gun23.Value = "O", "#33cccc",
+    Fields!Gun23.Value = "RT", "#92d050",
+    Fields!Gun23.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2000,6 +2299,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun24.Value = "R", "Red",
+    Fields!Gun24.Value = "M", "#fd99ff",
+    Fields!Gun24.Value = "İ", "Yellow",
+    Fields!Gun24.Value = "Üİ", "#ffc000",
+    Fields!Gun24.Value = "Yİ", "Blue",
+    Fields!Gun24.Value = "T", "#a6a6a6",
+    Fields!Gun24.Value = "Ç", "#ff7c80",
+    Fields!Gun24.Value = "O", "#33cccc",
+    Fields!Gun24.Value = "RT", "#92d050",
+    Fields!Gun24.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2033,6 +2345,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun25.Value = "R", "Red",
+    Fields!Gun25.Value = "M", "#fd99ff",
+    Fields!Gun25.Value = "İ", "Yellow",
+    Fields!Gun25.Value = "Üİ", "#ffc000",
+    Fields!Gun25.Value = "Yİ", "Blue",
+    Fields!Gun25.Value = "T", "#a6a6a6",
+    Fields!Gun25.Value = "Ç", "#ff7c80",
+    Fields!Gun25.Value = "O", "#33cccc",
+    Fields!Gun25.Value = "RT", "#92d050",
+    Fields!Gun25.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2066,6 +2391,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun26.Value = "R", "Red",
+    Fields!Gun26.Value = "M", "#fd99ff",
+    Fields!Gun26.Value = "İ", "Yellow",
+    Fields!Gun26.Value = "Üİ", "#ffc000",
+    Fields!Gun26.Value = "Yİ", "Blue",
+    Fields!Gun26.Value = "T", "#a6a6a6",
+    Fields!Gun26.Value = "Ç", "#ff7c80",
+    Fields!Gun26.Value = "O", "#33cccc",
+    Fields!Gun26.Value = "RT", "#92d050",
+    Fields!Gun26.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2099,6 +2437,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun27.Value = "R", "Red",
+    Fields!Gun27.Value = "M", "#fd99ff",
+    Fields!Gun27.Value = "İ", "Yellow",
+    Fields!Gun27.Value = "Üİ", "#ffc000",
+    Fields!Gun27.Value = "Yİ", "Blue",
+    Fields!Gun27.Value = "T", "#a6a6a6",
+    Fields!Gun27.Value = "Ç", "#ff7c80",
+    Fields!Gun27.Value = "O", "#33cccc",
+    Fields!Gun27.Value = "RT", "#92d050",
+    Fields!Gun27.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2132,6 +2483,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun28.Value = "R", "Red",
+    Fields!Gun28.Value = "M", "#fd99ff",
+    Fields!Gun28.Value = "İ", "Yellow",
+    Fields!Gun28.Value = "Üİ", "#ffc000",
+    Fields!Gun28.Value = "Yİ", "Blue",
+    Fields!Gun28.Value = "T", "#a6a6a6",
+    Fields!Gun28.Value = "Ç", "#ff7c80",
+    Fields!Gun28.Value = "O", "#33cccc",
+    Fields!Gun28.Value = "RT", "#92d050",
+    Fields!Gun28.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2165,6 +2529,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun29.Value = "R", "Red",
+    Fields!Gun29.Value = "M", "#fd99ff",
+    Fields!Gun29.Value = "İ", "Yellow",
+    Fields!Gun29.Value = "Üİ", "#ffc000",
+    Fields!Gun29.Value = "Yİ", "Blue",
+    Fields!Gun29.Value = "T", "#a6a6a6",
+    Fields!Gun29.Value = "Ç", "#ff7c80",
+    Fields!Gun29.Value = "O", "#33cccc",
+    Fields!Gun29.Value = "RT", "#92d050",
+    Fields!Gun29.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2198,6 +2575,19 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>=Switch(
+    Fields!Gun30.Value = "R", "Red",
+    Fields!Gun30.Value = "M", "#fd99ff",
+    Fields!Gun30.Value = "İ", "Yellow",
+    Fields!Gun30.Value = "Üİ", "#ffc000",
+    Fields!Gun30.Value = "Yİ", "Blue",
+    Fields!Gun30.Value = "T", "#a6a6a6",
+    Fields!Gun30.Value = "Ç", "#ff7c80",
+    Fields!Gun30.Value = "O", "#33cccc",
+    Fields!Gun30.Value = "RT", "#92d050",
+    Fields!Gun30.Value = "İC", "#7030a0",
+    true, "White"
+)</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2944,7 +3334,6 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                           <WritingMode>Rotate270</WritingMode>
                         </Style>
                       </Textbox>
-                      <rd:Selected>true</rd:Selected>
                     </CellContents>
                   </TablixHeader>
                 </TablixMember>
@@ -4637,7 +5026,9 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
-                            <Style />
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>AdiSoyadi1</rd:DefaultName>
@@ -4646,6 +5037,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                             <Color>LightGrey</Color>
                             <Style>Solid</Style>
                           </Border>
+                          <VerticalAlign>Middle</VerticalAlign>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -4660,7 +5052,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
             <DataSetName>Puantajlar</DataSetName>
             <Top>2.3cm</Top>
             <Height>3.71354cm</Height>
-            <Width>40cm</Width>
+            <Width>40.00009cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>

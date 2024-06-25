@@ -115,7 +115,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPuantage";
             this.Text = "FormPuantage";
-            this.Load += new System.EventHandler(this.FormPuantage_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);

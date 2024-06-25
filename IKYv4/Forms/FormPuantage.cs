@@ -4,13 +4,7 @@ using IKYv4.Utilities.Extensions;
 using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Drawing.Printing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IKYv4.Forms
@@ -21,88 +15,63 @@ namespace IKYv4.Forms
         private readonly IPuantajManager _puantajManager;
         private readonly IUnvanGrubuManager _unvanGrubuManager;
 
+        private List<Personel> _personelData;
+        private List<Puantaj> _puantajData;
+        private List<UnvanGrubu> _unvanGrubuData;
+
         public FormPuantage(IPersonelManager personelManager, IPuantajManager puantajManager, IUnvanGrubuManager unvanGrubuManager)
         {
-            InitializeComponent();
-
             _personelManager = personelManager;
             _puantajManager = puantajManager;
             _unvanGrubuManager = unvanGrubuManager;
+
+            _personelData = _personelManager.GetAll().Data;
+            _puantajData = _puantajManager.GetAll().Data;
+            _unvanGrubuData = _unvanGrubuManager.GetAll().Data;
+
+            UpdatePuantageTable();
+
+            InitializeComponent();
+
+            AddPuantageToReportViewer();
         }
 
         private void FormPuantage_Load(object sender, EventArgs e)
         {
-            var personelDatas = _personelManager.GetAll().Data;
-            var puantajDatas = _puantajManager.GetAll().Data;
-            var unvanGruplariDatas = _unvanGrubuManager.GetAll().Data;
-
-            this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("Personeller", personelDatas));
-            this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("UnvanGruplari", unvanGruplariDatas));
-            this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("Puantajlar", puantajDatas));
-
-            this.reportViewer1.RefreshReport();
-
-            SetReportViewer();
-        }
-
-        private void SetReportViewer()
-        {
-            this.reportViewer1.SetDisplayMode(DisplayMode.PrintLayout);
-            this.reportViewer1.ZoomMode = ZoomMode.Percent;
-            this.reportViewer1.ZoomPercent = 100;
-
-            PaperSize paperSize = new PaperSize("A3", 297, 420)
-            {
-                Width = (int)(297 / 25.4 * 100), // 297 mm to hundredths of an inch
-                Height = (int)(420 / 25.4 * 100) // 420 mm to hundredths of an inch
-            };
-
-            // Sayfa ayarlarını tanımlayın
-            PageSettings pageSettings = new PageSettings
-            {
-                PaperSize = paperSize,
-                Landscape = true,
-                Margins = new Margins(38, 38, 38, 38) // 1 cm = 40 hundredths of an inch
-            };
-
-            // ReportViewer'a sayfa ayarlarını uygulayın
-            reportViewer1.SetPageSettings(pageSettings);
+            UpdatePuantageTable();
+            AddPuantageToReportViewer();
         }
 
         private void ButtonSetPuantage_Click(object sender, EventArgs e)
         {
-            var personelDatas = _personelManager.GetAll().Data;
-            var puantajDatas = _puantajManager.GetAll().Data;
-            var unvanGruplariDatas = _unvanGrubuManager.GetAll().Data;
+            UpdatePuantageTable();
+            AddPuantageToReportViewer();
+        }
 
-            this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("Personeller", personelDatas));
-            this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("UnvanGruplari", unvanGruplariDatas));
-            this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("Puantajlar", puantajDatas));
+        private void UpdatePuantageTable()
+        {
+            DateTime YilAy = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
 
-            this.reportViewer1.RefreshReport();
-
-            DateTime YilAy = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-
-            if (personelDatas.Count > 0)
+            if (_personelData.Count > 0)
             {
-                foreach (var item in personelDatas)
+                foreach (var item in _personelData)
                 {
-                    var personelPuantaj = puantajDatas.Find(x => x.PersonelId == item.Id);
+                    var personelPuantaj = _puantajData.Find(x => x.PersonelId == item.Id) ?? new Puantaj();
 
                     Puantaj puantaj = new Puantaj
                     {
                         PersonelId = item.Id,
                         AdiSoyadi = item.Adi + " " + item.Soyadi,
                         YilAy = YilAy,
-                        Gun1 =  personelPuantaj.Gun1.DidTheyWork(),
-                        Gun2 =  personelPuantaj.Gun2.DidTheyWork(),
-                        Gun3 =  personelPuantaj.Gun3.DidTheyWork(),
-                        Gun4 =  personelPuantaj.Gun4.DidTheyWork(),
-                        Gun5 =  personelPuantaj.Gun5.DidTheyWork(),
-                        Gun6 =  personelPuantaj.Gun6.DidTheyWork(),
-                        Gun7 =  personelPuantaj.Gun7.DidTheyWork(),
-                        Gun8 =  personelPuantaj.Gun8.DidTheyWork(),
-                        Gun9 =  personelPuantaj.Gun9.DidTheyWork(),
+                        Gun1 = personelPuantaj.Gun1.DidTheyWork(),
+                        Gun2 = personelPuantaj.Gun2.DidTheyWork(),
+                        Gun3 = personelPuantaj.Gun3.DidTheyWork(),
+                        Gun4 = personelPuantaj.Gun4.DidTheyWork(),
+                        Gun5 = personelPuantaj.Gun5.DidTheyWork(),
+                        Gun6 = personelPuantaj.Gun6.DidTheyWork(),
+                        Gun7 = personelPuantaj.Gun7.DidTheyWork(),
+                        Gun8 = personelPuantaj.Gun8.DidTheyWork(),
+                        Gun9 = personelPuantaj.Gun9.DidTheyWork(),
                         Gun10 = personelPuantaj.Gun10.DidTheyWork(),
                         Gun11 = personelPuantaj.Gun11.DidTheyWork(),
                         Gun12 = personelPuantaj.Gun12.DidTheyWork(),
@@ -130,8 +99,45 @@ namespace IKYv4.Forms
                     _puantajManager.Add(puantaj);
                 }
             }
+        }
+
+        private void AddPuantageToReportViewer()
+        {
+            _personelData = _personelManager.GetAll().Data;
+            _puantajData = _puantajManager.GetAll().Data;
+            _unvanGrubuData = _unvanGrubuManager.GetAll().Data;
+
+            this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("Personeller", _personelData));
+            this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("UnvanGruplari", _unvanGrubuData));
+            this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("Puantajlar", _puantajData));
 
             SetReportViewer();
+
+            this.reportViewer1.RefreshReport();
+        }
+
+        private void SetReportViewer()
+        {
+            this.reportViewer1.SetDisplayMode(DisplayMode.PrintLayout);
+            this.reportViewer1.ZoomMode = ZoomMode.Percent;
+            this.reportViewer1.ZoomPercent = 100;
+
+            PaperSize paperSize = new PaperSize("A3", 297, 420)
+            {
+                Width = (int)(297 / 25.4 * 100), // 297 mm to hundredths of an inch
+                Height = (int)(420 / 25.4 * 100) // 420 mm to hundredths of an inch
+            };
+
+            // Sayfa ayarlarını tanımlayın
+            PageSettings pageSettings = new PageSettings
+            {
+                PaperSize = paperSize,
+                Landscape = true,
+                Margins = new Margins(38, 38, 38, 38) // 1 cm = 40 hundredths of an inch
+            };
+
+            // ReportViewer'a sayfa ayarlarını uygulayın
+            reportViewer1.SetPageSettings(pageSettings);
         }
     }
 }
