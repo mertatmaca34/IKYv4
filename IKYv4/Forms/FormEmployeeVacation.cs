@@ -144,6 +144,8 @@ namespace IKYv4.Forms
                 _puantajManager.Add(puantaj);
 
                 MessageBox.Show(res.Message);
+
+                this.Close();
             }
         }
     }
