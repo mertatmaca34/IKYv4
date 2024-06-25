@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
+using IKYv4.Utilities.Extensions;
 using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
@@ -86,42 +87,44 @@ namespace IKYv4.Forms
             {
                 foreach (var item in personelDatas)
                 {
+                    var personelPuantaj = puantajDatas.Find(x => x.PersonelId == item.Id);
+
                     Puantaj puantaj = new Puantaj
                     {
                         PersonelId = item.Id,
                         AdiSoyadi = item.Adi + " " + item.Soyadi,
                         YilAy = YilAy,
-                        Gun1 = "X",
-                        Gun2 = "X",
-                        Gun3 = "X",
-                        Gun4 = "X",
-                        Gun5 = "X",
-                        Gun6 = "X",
-                        Gun7 = "X",
-                        Gun8 = "X",
-                        Gun9 = "X",
-                        Gun10 = "X",
-                        Gun11 = "X",
-                        Gun12 = "X",
-                        Gun13 = "X",
-                        Gun14 = "X",
-                        Gun15 = "X",
-                        Gun16 = "X",
-                        Gun17 = "X",
-                        Gun18 = "X",
-                        Gun19 = "X",
-                        Gun20 = "X",
-                        Gun21 = "X",
-                        Gun22 = "X",
-                        Gun23 = "X",
-                        Gun24 = "X",
-                        Gun25 = "X",
-                        Gun26 = "X",
-                        Gun27 = "X",
-                        Gun28 = "X",
-                        Gun29 = "X",
-                        Gun30 = "X",
-                        Gun31 = "X",
+                        Gun1 =  personelPuantaj.Gun1.DidTheyWork(),
+                        Gun2 =  personelPuantaj.Gun2.DidTheyWork(),
+                        Gun3 =  personelPuantaj.Gun3.DidTheyWork(),
+                        Gun4 =  personelPuantaj.Gun4.DidTheyWork(),
+                        Gun5 =  personelPuantaj.Gun5.DidTheyWork(),
+                        Gun6 =  personelPuantaj.Gun6.DidTheyWork(),
+                        Gun7 =  personelPuantaj.Gun7.DidTheyWork(),
+                        Gun8 =  personelPuantaj.Gun8.DidTheyWork(),
+                        Gun9 =  personelPuantaj.Gun9.DidTheyWork(),
+                        Gun10 = personelPuantaj.Gun10.DidTheyWork(),
+                        Gun11 = personelPuantaj.Gun11.DidTheyWork(),
+                        Gun12 = personelPuantaj.Gun12.DidTheyWork(),
+                        Gun13 = personelPuantaj.Gun13.DidTheyWork(),
+                        Gun14 = personelPuantaj.Gun14.DidTheyWork(),
+                        Gun15 = personelPuantaj.Gun15.DidTheyWork(),
+                        Gun16 = personelPuantaj.Gun16.DidTheyWork(),
+                        Gun17 = personelPuantaj.Gun17.DidTheyWork(),
+                        Gun18 = personelPuantaj.Gun18.DidTheyWork(),
+                        Gun19 = personelPuantaj.Gun19.DidTheyWork(),
+                        Gun20 = personelPuantaj.Gun20.DidTheyWork(),
+                        Gun21 = personelPuantaj.Gun21.DidTheyWork(),
+                        Gun22 = personelPuantaj.Gun22.DidTheyWork(),
+                        Gun23 = personelPuantaj.Gun23.DidTheyWork(),
+                        Gun24 = personelPuantaj.Gun24.DidTheyWork(),
+                        Gun25 = personelPuantaj.Gun25.DidTheyWork(),
+                        Gun26 = personelPuantaj.Gun26.DidTheyWork(),
+                        Gun27 = personelPuantaj.Gun27.DidTheyWork(),
+                        Gun28 = personelPuantaj.Gun28.DidTheyWork(),
+                        Gun29 = personelPuantaj.Gun29.DidTheyWork(),
+                        Gun30 = personelPuantaj.Gun30.DidTheyWork(),
+                        Gun31 = personelPuantaj.Gun31.DidTheyWork(),
                     };
 
                     _puantajManager.Add(puantaj);

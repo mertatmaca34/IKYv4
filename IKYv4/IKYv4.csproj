@@ -134,7 +134,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Utilities\Extensions\StringExtensions.cs" />
     <Compile Include="Utilities\PageChange.cs" />
+    <EmbeddedResource Include="Forms\FormEmployeeChoose.resx">
+      <DependentUpon>FormEmployeeChoose.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEmployeeListing.resx">
       <DependentUpon>FormEmployeeListing.cs</DependentUpon>
     </EmbeddedResource>
