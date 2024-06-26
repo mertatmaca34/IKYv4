@@ -39,5 +39,22 @@ namespace Entities.Concrete
         public string Gun29 { get; set; }
         public string Gun30 { get; set; }
         public string Gun31 { get; set; }
+        public int CalisilanGun { get; set; }
+        public int RaporluGun { get; set; }
+        public int MazeretliGun { get; set; }
+        public int UcretsizIzin { get; set; }
+        public int YillikIzin { get; set; }
+        public int UcretliIzin { get; set; }
+        public int HaftalikTatil { get; set; }
+        public int ResmiTatil { get; set; }
+        public int IdariDisiplinCezasi { get; set; }
+        public int EgitimGorevi { get; set; }
+        public int ToplamGun { get; set; }
+        public int MaasOdemeYapilmamasinaEsasGun { get; set; }
+        public int MaasOdemesineEsasGun { get; set; }
+        public int YolOdemesineEsasGun { get; set; }
+        public int YemekOdemesineEsasGun { get; set; }
+        public double UlBayVeGenResTatCalisilanGun { get; set; }
+        public double FazlCalismaSaati { get; set; }
     }
 }

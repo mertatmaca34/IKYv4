@@ -131,7 +131,6 @@ namespace IKYv4.Forms
                 DateTime vacationStart = new DateTime(start.Year, start.Month, start.Day, startTime.Hour, startTime.Minute, startTime.Second);
                 DateTime vacationEnd = new DateTime(end.Year, end.Month, end.Day, endTime.Hour, endTime.Minute, endTime.Second);
 
-
                 Izin izin = new Izin
                 {
                     IzinBaslama = vacationStart,

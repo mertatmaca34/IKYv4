@@ -65,8 +65,8 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.03497F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.96502F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
             this.tableLayoutPanel2.Controls.Add(this.ButtonSetPuantage, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.DateTimePickerPuantageMonth, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -99,10 +99,11 @@
             // 
             this.DateTimePickerPuantageMonth.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.DateTimePickerPuantageMonth.CustomFormat = "yyyy MMMM";
+            this.DateTimePickerPuantageMonth.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.DateTimePickerPuantageMonth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateTimePickerPuantageMonth.Location = new System.Drawing.Point(909, 12);
+            this.DateTimePickerPuantageMonth.Location = new System.Drawing.Point(912, 9);
             this.DateTimePickerPuantageMonth.Name = "DateTimePickerPuantageMonth";
-            this.DateTimePickerPuantageMonth.Size = new System.Drawing.Size(120, 20);
+            this.DateTimePickerPuantageMonth.Size = new System.Drawing.Size(130, 25);
             this.DateTimePickerPuantageMonth.TabIndex = 6;
             // 
             // FormPuantage

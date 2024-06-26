@@ -58,6 +58,87 @@ namespace IKYv4.Forms
                 {
                     var personelPuantaj = _puantajData.Find(x => x.PersonelId == item.Id) ?? new Puantaj();
 
+                    var zeroPuantaj = new Puantaj();
+
+                    var gunler = new List<string>
+                    {
+                        nameof(personelPuantaj.Gun1),
+                        nameof(personelPuantaj.Gun2),
+                        nameof(personelPuantaj.Gun3),
+                        nameof(personelPuantaj.Gun4),
+                        nameof(personelPuantaj.Gun5),
+                        nameof(personelPuantaj.Gun6),
+                        nameof(personelPuantaj.Gun7),
+                        nameof(personelPuantaj.Gun8),
+                        nameof(personelPuantaj.Gun9),
+                        nameof(personelPuantaj.Gun10),
+                        nameof(personelPuantaj.Gun11),
+                        nameof(personelPuantaj.Gun12),
+                        nameof(personelPuantaj.Gun13),
+                        nameof(personelPuantaj.Gun14),
+                        nameof(personelPuantaj.Gun15),
+                        nameof(personelPuantaj.Gun16),
+                        nameof(personelPuantaj.Gun17),
+                        nameof(personelPuantaj.Gun18),
+                        nameof(personelPuantaj.Gun19),
+                        nameof(personelPuantaj.Gun20),
+                        nameof(personelPuantaj.Gun21),
+                        nameof(personelPuantaj.Gun22),
+                        nameof(personelPuantaj.Gun23),
+                        nameof(personelPuantaj.Gun24),
+                        nameof(personelPuantaj.Gun25),
+                        nameof(personelPuantaj.Gun26),
+                        nameof(personelPuantaj.Gun27),
+                        nameof(personelPuantaj.Gun28),
+                        nameof(personelPuantaj.Gun29),
+                        nameof(personelPuantaj.Gun30),
+                        nameof(personelPuantaj.Gun31)
+                    };
+
+                    for (int i = 1; i <= 31; i++)
+                    {
+                        var property = personelPuantaj.GetType().GetProperty(gunler[i - 1]);
+
+                        if ((string)property.GetValue(property) == "X")
+                        {
+                            zeroPuantaj.CalisilanGun += 1;
+                        }
+                        else if ((string)property.GetValue(property) == "R")
+                        {
+                            zeroPuantaj.RaporluGun += 1;
+                        }
+                        else if ((string)property.GetValue(property) == "M")
+                        {
+                            zeroPuantaj.MazeretliGun += 1;
+                        }
+                        else if ((string)property.GetValue(property) == "İ")
+                        {
+                            zeroPuantaj.UcretliIzin += 1;
+                        }
+                        else if ((string)property.GetValue(property) == "Üİ")
+                        {
+                            zeroPuantaj.UcretsizIzin += 1;
+                        }
+                        else if ((string)property.GetValue(property) == "Yİ")
+                        {
+                            zeroPuantaj.YillikIzin += 1;
+                        }
+                        else if ((string)property.GetValue(property) == "T")
+                        {
+                            zeroPuantaj.HaftalikTatil += 1;
+                        }
+                        else if ((string)property.GetValue(property) == "RT")
+                        {
+                            zeroPuantaj.ResmiTatil += 1;
+                        }
+                        else if ((string)property.GetValue(property) == "İC")
+                        {
+                            zeroPuantaj.IdariDisiplinCezasi += 1;
+                        }
+                    }
+
+                    zeroPuantaj.ToplamGun = gunler.Count;
+
                     Puantaj puantaj = new Puantaj
                     {
                         PersonelId = item.Id,
@@ -94,6 +175,23 @@ namespace IKYv4.Forms
                         Gun29 = personelPuantaj.Gun29.DidTheyWork(),
                         Gun30 = personelPuantaj.Gun30.DidTheyWork(),
                         Gun31 = personelPuantaj.Gun31.DidTheyWork(),
+                        CalisilanGun = zeroPuantaj.CalisilanGun,
+                        RaporluGun = zeroPuantaj.RaporluGun,
+                        MazeretliGun = zeroPuantaj.MazeretliGun,
+                        UcretsizIzin = zeroPuantaj.UcretsizIzin,
+                        YillikIzin = zeroPuantaj.YillikIzin,
+                        UcretliIzin = zeroPuantaj.UcretliIzin,
+                        HaftalikTatil = zeroPuantaj.HaftalikTatil,
+                        ResmiTatil = zeroPuantaj.ResmiTatil,
+                        IdariDisiplinCezasi = zeroPuantaj.IdariDisiplinCezasi,
+                        ToplamGun = zeroPuantaj.ToplamGun,
+                        MaasOdemeYapilmamasinaEsasGun = zeroPuantaj.MaasOdemeYapilmamasinaEsasGun,
+                        MaasOdemesineEsasGun = zeroPuantaj.MaasOdemesineEsasGun,
+                        YolOdemesineEsasGun = zeroPuantaj.YolOdemesineEsasGun,
+                        YemekOdemesineEsasGun = zeroPuantaj.YemekOdemesineEsasGun,
+                        UlBayVeGenResTatCalisilanGun = zeroPuantaj.UlBayVeGenResTatCalisilanGun,
+                        FazlCalismaSaati = zeroPuantaj.FazlCalismaSaati,
+
                     };
 
                     _puantajManager.Add(puantaj);
