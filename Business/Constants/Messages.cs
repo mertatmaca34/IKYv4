@@ -12,6 +12,10 @@ namespace Business.Constants
         public static readonly string PersonelUpdated = "Personel bilgileri başarıyla güncellendi";
         public static readonly string PersonelDeleted = "Personel bilgileri başarıyla silindi";
 
+        public static readonly string CalismaSaatleriAdded = "Personel bilgileri başarıyla oluşturuldu";
+        public static readonly string CalismaSaatleriUpdated = "Personel bilgileri başarıyla güncellendi";
+        public static readonly string CalismaSaatleriDeleted = "Personel bilgileri başarıyla silindi";
+
         public static readonly string KullaniciAdded = "Kullanici bilgileri başarıyla oluşturuldu";
         public static readonly string KullaniciUpdated = "Kullanici bilgileri başarıyla güncellendi";
         public static readonly string KullaniciDeleted = "Kullanici bilgileri başarıyla silindi";

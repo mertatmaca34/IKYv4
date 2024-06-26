@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IKullaniciManager.cs" />
+    <Compile Include="Abstract\ICalismaSaatleriManager.cs" />
     <Compile Include="Abstract\IUnvanGrubuManager.cs" />
     <Compile Include="Abstract\IUnvanManager.cs" />
     <Compile Include="Abstract\IIzinManager.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="Abstract\IPersonelManager.cs" />
     <Compile Include="Abstract\ISeflikManager.cs" />
     <Compile Include="Abstract\ITesisManager.cs" />
+    <Compile Include="Concrete\CalismaSaatleriManager.cs" />
     <Compile Include="Concrete\PuantajManager.cs" />
     <Compile Include="Concrete\UnvanGrubuManager.cs" />
     <Compile Include="Concrete\IzinManager.cs" />
