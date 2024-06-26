@@ -2914,8 +2914,6 @@ namespace IKYv4.Forms
         private Panel panel1;
         private TabPage tabPage1;
         private TableLayoutPanel tableLayoutPanel5;
-        private TextBox TextBoxSurname;
-        private TextBox TextBoxSicilNo;
         private Label label18;
         private Label label19;
         private Label label20;
@@ -2926,22 +2924,10 @@ namespace IKYv4.Forms
         private Label label24;
         private Label label25;
         private Label label26;
-        private MaskedTextBox TextBoxMk;
-        private MaskedTextBox TextBoxPk;
-        private MaskedTextBox TextBoxTotalK;
-        private ComboBox ComboBoxDirectorate;
-        private DateTimePicker DateTimePickerStartDate;
-        private ComboBox ComboBoxConducting;
-        private ComboBox ComboBoxDutyStation;
-        private ComboBox ComboBoxTitle;
-        private ComboBox ComboBoxPosition;
-        private PictureBox PictureBoxEmployeePicture;
         private Label label16;
         private Label label17;
         private Label label15;
         private Label label11;
-        private TextBox TextBoxName;
-        private TextBox TextBoxUserId;
         private TabControl tabControl1;
         private TableLayoutPanel tableLayoutPanel10;
         private Label label35;
@@ -3024,5 +3010,19 @@ namespace IKYv4.Forms
         private TextBox textBox63;
         private Button ButtonSave;
         private TextBox textBox15;
+        public TextBox TextBoxSurname;
+        public TextBox TextBoxSicilNo;
+        public MaskedTextBox TextBoxMk;
+        public MaskedTextBox TextBoxPk;
+        public MaskedTextBox TextBoxTotalK;
+        public ComboBox ComboBoxDirectorate;
+        public DateTimePicker DateTimePickerStartDate;
+        public ComboBox ComboBoxConducting;
+        public ComboBox ComboBoxDutyStation;
+        public ComboBox ComboBoxTitle;
+        public ComboBox ComboBoxPosition;
+        public PictureBox PictureBoxEmployeePicture;
+        public TextBox TextBoxName;
+        public TextBox TextBoxUserId;
     }
 }

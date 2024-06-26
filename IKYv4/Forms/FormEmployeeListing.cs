@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -72,13 +73,78 @@ namespace IKYv4.Forms
             {
                 var row = DataGridViewEmployees.Rows[e.RowIndex];
 
-                int selectedPersonelId = Convert.ToInt16(row.Cells[3].Value);
+                int selectedPersonelId = Convert.ToInt16(row.Cells[2].Value);
 
                 var selectedPersonel = _personelManager.GetAll(p => p.Id == selectedPersonelId).Data.FirstOrDefault();
 
                 FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager);
 
-                formEmployeeRegistrationCard.
+                formEmployeeRegistrationCard.TextBoxName.Text = selectedPersonel.Adi;
+                formEmployeeRegistrationCard.TextBoxSurname.Text = selectedPersonel.Soyadi;
+                formEmployeeRegistrationCard.TextBoxUserId.Text = selectedPersonel.TCKimlikNo;
+                formEmployeeRegistrationCard.TextBoxSicilNo.Text = selectedPersonel.SicilNo;
+                formEmployeeRegistrationCard.DateTimePickerStartDate.Value = selectedPersonel.IseGirisTarihi;
+                formEmployeeRegistrationCard.ComboBoxDirectorate.Text = selectedPersonel.Mudurluk;
+                formEmployeeRegistrationCard.ComboBoxConducting.Text = selectedPersonel.Seflik;
+                formEmployeeRegistrationCard.ComboBoxDutyStation.Text = selectedPersonel.GorevYeri;
+                formEmployeeRegistrationCard.ComboBoxTitle.Text = selectedPersonel.Unvani;
+                formEmployeeRegistrationCard.ComboBoxPosition.Text = selectedPersonel.Pozisyonu;
+                formEmployeeRegistrationCard.TextBoxMk.Text = selectedPersonel.MK.ToString();
+                formEmployeeRegistrationCard.TextBoxPk.Text = selectedPersonel.PK.ToString();
+                formEmployeeRegistrationCard.TextBoxTotalK.Text = selectedPersonel.ToplamKatsayi.ToString();
+
+                Bitmap bmp;
+
+                if(selectedPersonel.ImageData != null)
+                {
+                    using (var ms = new MemoryStream(selectedPersonel.ImageData))
+                    {
+                        bmp = new Bitmap(ms);
+                    }
+
+                    formEmployeeRegistrationCard.PictureBoxEmployeePicture.Image = bmp;
+                }
+
+                formEmployeeRegistrationCard.ShowDialog();
+            }
+
+            else if (e.ColumnIndex == 1 && e.RowIndex >= 0)
+            {
+                var row = DataGridViewEmployees.Rows[e.RowIndex];
+
+                int selectedPersonelId = Convert.ToInt16(row.Cells[2].Value);
+
+                var selectedPersonel = _personelManager.GetAll(p => p.Id == selectedPersonelId).Data.FirstOrDefault();
+
+                FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager);
+
+                formEmployeeRegistrationCard.TextBoxName.Text = selectedPersonel.Adi;
+                formEmployeeRegistrationCard.TextBoxSurname.Text = selectedPersonel.Soyadi;
+                formEmployeeRegistrationCard.TextBoxUserId.Text = selectedPersonel.TCKimlikNo;
+                formEmployeeRegistrationCard.TextBoxSicilNo.Text = selectedPersonel.SicilNo;
+                formEmployeeRegistrationCard.DateTimePickerStartDate.Value = selectedPersonel.IseGirisTarihi;
+                formEmployeeRegistrationCard.ComboBoxDirectorate.Text = selectedPersonel.Mudurluk;
+                formEmployeeRegistrationCard.ComboBoxConducting.Text = selectedPersonel.Seflik;
+                formEmployeeRegistrationCard.ComboBoxDutyStation.Text = selectedPersonel.GorevYeri;
+                formEmployeeRegistrationCard.ComboBoxTitle.Text = selectedPersonel.Unvani;
+                formEmployeeRegistrationCard.ComboBoxPosition.Text = selectedPersonel.Pozisyonu;
+                formEmployeeRegistrationCard.TextBoxMk.Text = selectedPersonel.MK.ToString();
+                formEmployeeRegistrationCard.TextBoxPk.Text = selectedPersonel.PK.ToString();
+                formEmployeeRegistrationCard.TextBoxTotalK.Text = selectedPersonel.ToplamKatsayi.ToString();
+
+                Bitmap bmp;
+
+                if(selectedPersonel.ImageData != null)
+                {
+                    using (var ms = new MemoryStream(selectedPersonel.ImageData))
+                    {
+                        bmp = new Bitmap(ms);
+                    }
+
+                    formEmployeeRegistrationCard.PictureBoxEmployeePicture.Image = bmp;
+                }
+
+                formEmployeeRegistrationCard.ShowDialog();
             }
         }
     }
