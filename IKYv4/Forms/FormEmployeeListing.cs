@@ -47,15 +47,14 @@ namespace IKYv4.Forms
             DataGridViewEmployees.DataSource = _personelManager.GetAll().Data.ToList();
             DataGridViewEmployees.Refresh();
 
-            DataGridViewEmployees.Columns[1].Visible = false;
+            DataGridViewEmployees.Columns[2].Visible = false;
 
-            (DataGridViewEmployees.Columns[2] as DataGridViewImageColumn).ImageLayout = DataGridViewImageCellLayout.Zoom;
+            (DataGridViewEmployees.Columns[3] as DataGridViewImageColumn).ImageLayout = DataGridViewImageCellLayout.Zoom;
 
-            DataGridViewEmployees.Columns[2].HeaderText = "Fotoğraf";
-            DataGridViewEmployees.Columns[3].HeaderText = "TC Kimlik No";
-            DataGridViewEmployees.Columns[4].HeaderText = "Adı";
-            DataGridViewEmployees.Columns[5].HeaderText = "Soyadı";
-            DataGridViewEmployees.Columns[6].HeaderText = "İşe Giriş Tarihi";
+            DataGridViewEmployees.Columns[3].HeaderText = "Fotoğraf";
+            DataGridViewEmployees.Columns[4].HeaderText = "TC Kimlik No";
+            DataGridViewEmployees.Columns[5].HeaderText = "Adı";
+            DataGridViewEmployees.Columns[6].HeaderText = "Soyadı";
             DataGridViewEmployees.Columns[7].HeaderText = "Müdürlük";
             DataGridViewEmployees.Columns[8].HeaderText = "Şeflik";
             DataGridViewEmployees.Columns[9].HeaderText = "Görev Yeri";
@@ -64,6 +63,23 @@ namespace IKYv4.Forms
             DataGridViewEmployees.Columns[12].HeaderText = "Prim Katsayısı";
             DataGridViewEmployees.Columns[13].HeaderText = "Toplam Katsayısı";
             DataGridViewEmployees.Columns[14].HeaderText = "Çalışma Durumu";
+            DataGridViewEmployees.Columns[15].HeaderText = "İşe Giriş Tarihi";
+        }
+
+        private void DataGridViewEmployees_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0 && e.RowIndex >= 0)
+            {
+                var row = DataGridViewEmployees.Rows[e.RowIndex];
+
+                int selectedPersonelId = Convert.ToInt16(row.Cells[3].Value);
+
+                var selectedPersonel = _personelManager.GetAll(p => p.Id == selectedPersonelId).Data.FirstOrDefault();
+
+                FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager);
+
+                formEmployeeRegistrationCard.
+            }
         }
     }
 }

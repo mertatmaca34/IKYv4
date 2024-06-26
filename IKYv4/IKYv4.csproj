@@ -107,6 +107,12 @@
     <Compile Include="Forms\FormEmployeeRegistrationCard.Designer.cs">
       <DependentUpon>FormEmployeeRegistrationCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormEmployeeShifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEmployeeShifts.Designer.cs">
+      <DependentUpon>FormEmployeeShifts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormEmployeeVacation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEmployeeRegistrationCard.resx">
       <DependentUpon>FormEmployeeRegistrationCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEmployeeShifts.resx">
+      <DependentUpon>FormEmployeeShifts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEmployeeVacation.resx">
       <DependentUpon>FormEmployeeVacation.cs</DependentUpon>
@@ -215,6 +224,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\clock_24px.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

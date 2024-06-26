@@ -172,6 +172,18 @@
           <DataField>AdiSoyadi</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="CalisilanGun">
+          <DataField>CalisilanGun</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="EgitimGorevi">
+          <DataField>EgitimGorevi</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FazlCalismaSaati">
+          <DataField>FazlCalismaSaati</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
         <Field Name="Gun1">
           <DataField>Gun1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -296,17 +308,73 @@
           <DataField>Gun9</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="HaftalikTatil">
+          <DataField>HaftalikTatil</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="Id">
           <DataField>Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IdariDisiplinCezasi">
+          <DataField>IdariDisiplinCezasi</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MaasOdemesineEsasGun">
+          <DataField>MaasOdemesineEsasGun</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MaasOdemeYapilmamasinaEsasGun">
+          <DataField>MaasOdemeYapilmamasinaEsasGun</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MazeretliGun">
+          <DataField>MazeretliGun</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="PersonelId">
           <DataField>PersonelId</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="RaporluGun">
+          <DataField>RaporluGun</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ResmiTatil">
+          <DataField>ResmiTatil</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ToplamGun">
+          <DataField>ToplamGun</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="UcretliIzin">
+          <DataField>UcretliIzin</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="UcretsizIzin">
+          <DataField>UcretsizIzin</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="UlBayVeGenResTatCalisilanGun">
+          <DataField>UlBayVeGenResTatCalisilanGun</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="YemekOdemesineEsasGun">
+          <DataField>YemekOdemesineEsasGun</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="YilAy">
           <DataField>YilAy</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="YillikIzin">
+          <DataField>YillikIzin</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="YolOdemesineEsasGun">
+          <DataField>YolOdemesineEsasGun</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
@@ -1181,15 +1249,6 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.94889cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>0.951cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>0.94889cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>0.951cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.94889cm</Width>
@@ -2599,14 +2658,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox139">
+                        <Textbox Name="CalisilanGun">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!CalisilanGun.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2615,7 +2674,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox139</rd:DefaultName>
+                          <rd:DefaultName>CalisilanGun</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2632,14 +2691,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox141">
+                        <Textbox Name="RaporluGun">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!RaporluGun.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2648,7 +2707,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox141</rd:DefaultName>
+                          <rd:DefaultName>RaporluGun</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2665,14 +2724,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox143">
+                        <Textbox Name="MazeretliGun">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!MazeretliGun.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2681,7 +2740,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox143</rd:DefaultName>
+                          <rd:DefaultName>MazeretliGun</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2698,14 +2757,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox145">
+                        <Textbox Name="UcretsizIzin">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!UcretsizIzin.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2714,7 +2773,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox145</rd:DefaultName>
+                          <rd:DefaultName>UcretsizIzin</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2731,14 +2790,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox147">
+                        <Textbox Name="YillikIzin">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!YillikIzin.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2747,7 +2806,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox147</rd:DefaultName>
+                          <rd:DefaultName>YillikIzin</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2764,14 +2823,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox149">
+                        <Textbox Name="UcretliIzin">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!UcretliIzin.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2780,7 +2839,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox149</rd:DefaultName>
+                          <rd:DefaultName>UcretliIzin</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2797,14 +2856,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox151">
+                        <Textbox Name="HaftalikTatil">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!HaftalikTatil.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2813,7 +2872,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox151</rd:DefaultName>
+                          <rd:DefaultName>HaftalikTatil</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2830,14 +2889,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox153">
+                        <Textbox Name="ResmiTatil">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!ResmiTatil.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2846,7 +2905,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox153</rd:DefaultName>
+                          <rd:DefaultName>ResmiTatil</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2863,14 +2922,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox155">
+                        <Textbox Name="IdariDisiplinCezasi">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!IdariDisiplinCezasi.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2879,7 +2938,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox155</rd:DefaultName>
+                          <rd:DefaultName>IdariDisiplinCezasi</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2896,14 +2955,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox157">
+                        <Textbox Name="ToplamGun">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!ToplamGun.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2912,7 +2971,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox157</rd:DefaultName>
+                          <rd:DefaultName>ToplamGun</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2929,14 +2988,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox159">
+                        <Textbox Name="MaasOdemeYapilmamasinaEsasGun">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!MaasOdemeYapilmamasinaEsasGun.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2945,7 +3004,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox159</rd:DefaultName>
+                          <rd:DefaultName>MaasOdemeYapilmamasinaEsasGun</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2962,14 +3021,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox161">
+                        <Textbox Name="MaasOdemesineEsasGun">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!MaasOdemesineEsasGun.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -2978,7 +3037,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox161</rd:DefaultName>
+                          <rd:DefaultName>MaasOdemesineEsasGun</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2995,14 +3054,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox163">
+                        <Textbox Name="YolOdemesineEsasGun">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!YolOdemesineEsasGun.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3011,7 +3070,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox163</rd:DefaultName>
+                          <rd:DefaultName>YolOdemesineEsasGun</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -3028,14 +3087,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox165">
+                        <Textbox Name="YemekOdemesineEsasGun">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!YemekOdemesineEsasGun.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3044,7 +3103,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox165</rd:DefaultName>
+                          <rd:DefaultName>YemekOdemesineEsasGun</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -3061,14 +3120,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox167">
+                        <Textbox Name="UlBayVeGenResTatCalisilanGun">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!UlBayVeGenResTatCalisilanGun.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3077,7 +3136,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox167</rd:DefaultName>
+                          <rd:DefaultName>UlBayVeGenResTatCalisilanGun</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -3094,14 +3153,14 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox169">
+                        <Textbox Name="FazlCalismaSaati">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!FazlCalismaSaati.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -3110,7 +3169,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox169</rd:DefaultName>
+                          <rd:DefaultName>FazlCalismaSaati</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -3123,105 +3182,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox171">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox171</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox173">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox173</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox175">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox175</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -4611,45 +4572,6 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                   <TablixHeader>
                     <Size>3.11354cm</Size>
                     <CellContents>
-                      <Textbox Name="Textbox156">
-                        <CanGrow>true</CanGrow>
-                        <KeepTogether>true</KeepTogether>
-                        <Paragraphs>
-                          <Paragraph>
-                            <TextRuns>
-                              <TextRun>
-                                <Value>Eğitim Görevi</Value>
-                                <Style>
-                                  <FontSize>7pt</FontSize>
-                                </Style>
-                              </TextRun>
-                            </TextRuns>
-                            <Style>
-                              <TextAlign>Center</TextAlign>
-                            </Style>
-                          </Paragraph>
-                        </Paragraphs>
-                        <rd:DefaultName>Textbox156</rd:DefaultName>
-                        <Style>
-                          <Border>
-                            <Color>LightGrey</Color>
-                            <Style>Solid</Style>
-                          </Border>
-                          <VerticalAlign>Middle</VerticalAlign>
-                          <PaddingLeft>2pt</PaddingLeft>
-                          <PaddingRight>2pt</PaddingRight>
-                          <PaddingTop>2pt</PaddingTop>
-                          <PaddingBottom>2pt</PaddingBottom>
-                          <WritingMode>Rotate270</WritingMode>
-                        </Style>
-                      </Textbox>
-                    </CellContents>
-                  </TablixHeader>
-                </TablixMember>
-                <TablixMember>
-                  <TablixHeader>
-                    <Size>3.11354cm</Size>
-                    <CellContents>
                       <Textbox Name="Textbox158">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
@@ -4774,7 +4696,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Yol Ödemesi (Nakdi) Gün </Value>
+                                <Value>Yol Ödemesine Esas Gün</Value>
                                 <Style>
                                   <FontSize>7pt</FontSize>
                                 </Style>
@@ -4813,7 +4735,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Yol Ödemesi (Ayni) Gün </Value>
+                                <Value>Yemek Ödemesine Esas Gün</Value>
                                 <Style>
                                   <FontSize>7pt</FontSize>
                                 </Style>
@@ -4825,84 +4747,6 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox166</rd:DefaultName>
-                        <Style>
-                          <Border>
-                            <Color>LightGrey</Color>
-                            <Style>Solid</Style>
-                          </Border>
-                          <VerticalAlign>Middle</VerticalAlign>
-                          <PaddingLeft>2pt</PaddingLeft>
-                          <PaddingRight>2pt</PaddingRight>
-                          <PaddingTop>2pt</PaddingTop>
-                          <PaddingBottom>2pt</PaddingBottom>
-                          <WritingMode>Rotate270</WritingMode>
-                        </Style>
-                      </Textbox>
-                    </CellContents>
-                  </TablixHeader>
-                </TablixMember>
-                <TablixMember>
-                  <TablixHeader>
-                    <Size>3.11354cm</Size>
-                    <CellContents>
-                      <Textbox Name="Textbox168">
-                        <CanGrow>true</CanGrow>
-                        <KeepTogether>true</KeepTogether>
-                        <Paragraphs>
-                          <Paragraph>
-                            <TextRuns>
-                              <TextRun>
-                                <Value>Yemek (Nakdi) Gün </Value>
-                                <Style>
-                                  <FontSize>7pt</FontSize>
-                                </Style>
-                              </TextRun>
-                            </TextRuns>
-                            <Style>
-                              <TextAlign>Center</TextAlign>
-                            </Style>
-                          </Paragraph>
-                        </Paragraphs>
-                        <rd:DefaultName>Textbox168</rd:DefaultName>
-                        <Style>
-                          <Border>
-                            <Color>LightGrey</Color>
-                            <Style>Solid</Style>
-                          </Border>
-                          <VerticalAlign>Middle</VerticalAlign>
-                          <PaddingLeft>2pt</PaddingLeft>
-                          <PaddingRight>2pt</PaddingRight>
-                          <PaddingTop>2pt</PaddingTop>
-                          <PaddingBottom>2pt</PaddingBottom>
-                          <WritingMode>Rotate270</WritingMode>
-                        </Style>
-                      </Textbox>
-                    </CellContents>
-                  </TablixHeader>
-                </TablixMember>
-                <TablixMember>
-                  <TablixHeader>
-                    <Size>3.11354cm</Size>
-                    <CellContents>
-                      <Textbox Name="Textbox170">
-                        <CanGrow>true</CanGrow>
-                        <KeepTogether>true</KeepTogether>
-                        <Paragraphs>
-                          <Paragraph>
-                            <TextRuns>
-                              <TextRun>
-                                <Value>Yemek (Ayni) Gün </Value>
-                                <Style>
-                                  <FontSize>7pt</FontSize>
-                                </Style>
-                              </TextRun>
-                            </TextRuns>
-                            <Style>
-                              <TextAlign>Center</TextAlign>
-                            </Style>
-                          </Paragraph>
-                        </Paragraphs>
-                        <rd:DefaultName>Textbox170</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>LightGrey</Color>
@@ -5052,7 +4896,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
             <DataSetName>Puantajlar</DataSetName>
             <Top>2.3cm</Top>
             <Height>3.71354cm</Height>
-            <Width>40.00009cm</Width>
+            <Width>37.1492cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>

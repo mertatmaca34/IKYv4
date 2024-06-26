@@ -127,5 +127,10 @@ namespace IKYv4.Forms
             FormEmployeeVacation formEmployeeVacation = new FormEmployeeVacation(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _izinManager, _puantajManager);
             formEmployeeVacation.ShowDialog();
         }
+
+        private void ButtonEmployeeShift_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

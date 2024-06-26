@@ -124,12 +124,10 @@ namespace IKYv4.Forms
                 }
 
                 DateTime start = DateTimePickerVacationStart.Value;
-                DateTime startTime = DateTimePickerVacationStartTime.Value;
                 DateTime end = DateTimePickerVacationEnd.Value;
-                DateTime endTime = DateTimePickerVacationEndTime.Value;
 
-                DateTime vacationStart = new DateTime(start.Year, start.Month, start.Day, startTime.Hour, startTime.Minute, startTime.Second);
-                DateTime vacationEnd = new DateTime(end.Year, end.Month, end.Day, endTime.Hour, endTime.Minute, endTime.Second);
+                DateTime vacationStart = new DateTime(start.Year, start.Month, start.Day);
+                DateTime vacationEnd = new DateTime(end.Year, end.Month, end.Day);
 
                 Izin izin = new Izin
                 {

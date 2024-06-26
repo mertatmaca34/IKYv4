@@ -99,39 +99,39 @@ namespace IKYv4.Forms
                     {
                         var property = personelPuantaj.GetType().GetProperty(gunler[i - 1]);
 
-                        if ((string)property.GetValue(property) == "X")
+                        if ((string)property.GetValue(personelPuantaj) == "X")
                         {
                             zeroPuantaj.CalisilanGun += 1;
                         }
-                        else if ((string)property.GetValue(property) == "R")
+                        else if ((string)property.GetValue(personelPuantaj) == "R")
                         {
                             zeroPuantaj.RaporluGun += 1;
                         }
-                        else if ((string)property.GetValue(property) == "M")
+                        else if ((string)property.GetValue(personelPuantaj) == "M")
                         {
                             zeroPuantaj.MazeretliGun += 1;
                         }
-                        else if ((string)property.GetValue(property) == "İ")
+                        else if ((string)property.GetValue(personelPuantaj) == "İ")
                         {
                             zeroPuantaj.UcretliIzin += 1;
                         }
-                        else if ((string)property.GetValue(property) == "Üİ")
+                        else if ((string)property.GetValue(personelPuantaj) == "Üİ")
                         {
                             zeroPuantaj.UcretsizIzin += 1;
                         }
-                        else if ((string)property.GetValue(property) == "Yİ")
+                        else if ((string)property.GetValue(personelPuantaj) == "Yİ")
                         {
                             zeroPuantaj.YillikIzin += 1;
                         }
-                        else if ((string)property.GetValue(property) == "T")
+                        else if ((string)property.GetValue(personelPuantaj) == "T")
                         {
                             zeroPuantaj.HaftalikTatil += 1;
                         }
-                        else if ((string)property.GetValue(property) == "RT")
+                        else if ((string)property.GetValue(personelPuantaj) == "RT")
                         {
                             zeroPuantaj.ResmiTatil += 1;
                         }
-                        else if ((string)property.GetValue(property) == "İC")
+                        else if ((string)property.GetValue(personelPuantaj) == "İC")
                         {
                             zeroPuantaj.IdariDisiplinCezasi += 1;
                         }
