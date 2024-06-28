@@ -118,7 +118,7 @@ namespace IKYv4.Forms
         {
             var unvanGrubuData = _unvanGrubuManager.GetAll().Data;
 
-            FormPuantage formPuantage = new FormPuantage(_personelManager, _puantajManager, _unvanGrubuManager);
+            FormPuantage formPuantage = new FormPuantage(_personelManager, _puantajManager, _unvanGrubuManager, _calismaSaatleriManager);
 
             formPuantage.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("UnvanGruplariDataSet", unvanGrubuData));
 

@@ -5,6 +5,7 @@ using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.Drawing.Printing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace IKYv4.Forms
@@ -14,22 +15,24 @@ namespace IKYv4.Forms
         private readonly IPersonelManager _personelManager;
         private readonly IPuantajManager _puantajManager;
         private readonly IUnvanGrubuManager _unvanGrubuManager;
+        private readonly ICalismaSaatleriManager _calismaSaatleriManager;
 
         private List<Personel> _personelData;
         private List<Puantaj> _puantajData;
         private List<UnvanGrubu> _unvanGrubuData;
 
-        public FormPuantage(IPersonelManager personelManager, IPuantajManager puantajManager, IUnvanGrubuManager unvanGrubuManager)
+        public FormPuantage(IPersonelManager personelManager, IPuantajManager puantajManager, IUnvanGrubuManager unvanGrubuManager, ICalismaSaatleriManager calismaSaatleriManager)
         {
             _personelManager = personelManager;
             _puantajManager = puantajManager;
             _unvanGrubuManager = unvanGrubuManager;
+            _calismaSaatleriManager = calismaSaatleriManager;
 
             _personelData = _personelManager.GetAll().Data;
             _puantajData = _puantajManager.GetAll().Data;
             _unvanGrubuData = _unvanGrubuManager.GetAll().Data;
 
-            UpdatePuantageTable();
+            UpdatePuantageTable(DateTime.Now);
 
             InitializeComponent();
 
@@ -38,19 +41,19 @@ namespace IKYv4.Forms
 
         private void FormPuantage_Load(object sender, EventArgs e)
         {
-            UpdatePuantageTable();
+            UpdatePuantageTable(DateTime.Now);
             AddPuantageToReportViewer();
         }
 
         private void ButtonSetPuantage_Click(object sender, EventArgs e)
         {
-            UpdatePuantageTable();
+            UpdatePuantageTable(DateTimePickerPuantageMonth.Value);
             AddPuantageToReportViewer();
         }
 
-        private void UpdatePuantageTable()
+        private void UpdatePuantageTable(DateTime dateTime)
         {
-            DateTime YilAy = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+            DateTime YilAy = new DateTime(dateTime.Year, dateTime.Month, 1);
 
             if (_personelData.Count > 0)
             {
@@ -139,42 +142,48 @@ namespace IKYv4.Forms
 
                     zeroPuantaj.ToplamGun = gunler.Count;
 
+                    var ayinGunu = YilAy.AddDays(1).DayOfWeek;
+
+                    //bool haftaTatiliMi = 
+
+                    var resCalismaSaatleri = _calismaSaatleriManager.GetAll(p => p.PersonelId == item.Id).Data.FirstOrDefault();
+
                     Puantaj puantaj = new Puantaj
                     {
                         PersonelId = item.Id,
                         AdiSoyadi = item.Adi + " " + item.Soyadi,
                         YilAy = YilAy,
-                        Gun1 = personelPuantaj.Gun1.DidTheyWork(),
-                        Gun2 = personelPuantaj.Gun2.DidTheyWork(),
-                        Gun3 = personelPuantaj.Gun3.DidTheyWork(),
-                        Gun4 = personelPuantaj.Gun4.DidTheyWork(),
-                        Gun5 = personelPuantaj.Gun5.DidTheyWork(),
-                        Gun6 = personelPuantaj.Gun6.DidTheyWork(),
-                        Gun7 = personelPuantaj.Gun7.DidTheyWork(),
-                        Gun8 = personelPuantaj.Gun8.DidTheyWork(),
-                        Gun9 = personelPuantaj.Gun9.DidTheyWork(),
-                        Gun10 = personelPuantaj.Gun10.DidTheyWork(),
-                        Gun11 = personelPuantaj.Gun11.DidTheyWork(),
-                        Gun12 = personelPuantaj.Gun12.DidTheyWork(),
-                        Gun13 = personelPuantaj.Gun13.DidTheyWork(),
-                        Gun14 = personelPuantaj.Gun14.DidTheyWork(),
-                        Gun15 = personelPuantaj.Gun15.DidTheyWork(),
-                        Gun16 = personelPuantaj.Gun16.DidTheyWork(),
-                        Gun17 = personelPuantaj.Gun17.DidTheyWork(),
-                        Gun18 = personelPuantaj.Gun18.DidTheyWork(),
-                        Gun19 = personelPuantaj.Gun19.DidTheyWork(),
-                        Gun20 = personelPuantaj.Gun20.DidTheyWork(),
-                        Gun21 = personelPuantaj.Gun21.DidTheyWork(),
-                        Gun22 = personelPuantaj.Gun22.DidTheyWork(),
-                        Gun23 = personelPuantaj.Gun23.DidTheyWork(),
-                        Gun24 = personelPuantaj.Gun24.DidTheyWork(),
-                        Gun25 = personelPuantaj.Gun25.DidTheyWork(),
-                        Gun26 = personelPuantaj.Gun26.DidTheyWork(),
-                        Gun27 = personelPuantaj.Gun27.DidTheyWork(),
-                        Gun28 = personelPuantaj.Gun28.DidTheyWork(),
-                        Gun29 = personelPuantaj.Gun29.DidTheyWork(),
-                        Gun30 = personelPuantaj.Gun30.DidTheyWork(),
-                        Gun31 = personelPuantaj.Gun31.DidTheyWork(),
+                        Gun1 = personelPuantaj.Gun1.DidTheyWork(YilAy.DayOfWeek, resCalismaSaatleri),
+                        Gun2 = personelPuantaj.Gun2.DidTheyWork(YilAy.AddDays(1).DayOfWeek, resCalismaSaatleri),
+                        Gun3 = personelPuantaj.Gun3.DidTheyWork(YilAy.AddDays(2).DayOfWeek, resCalismaSaatleri),
+                        Gun4 = personelPuantaj.Gun4.DidTheyWork(YilAy.AddDays(3).DayOfWeek, resCalismaSaatleri),
+                        Gun5 = personelPuantaj.Gun5.DidTheyWork(YilAy.AddDays(4).DayOfWeek, resCalismaSaatleri),
+                        Gun6 = personelPuantaj.Gun6.DidTheyWork(YilAy.AddDays(5).DayOfWeek, resCalismaSaatleri),
+                        Gun7 = personelPuantaj.Gun7.DidTheyWork(YilAy.AddDays(6).DayOfWeek, resCalismaSaatleri),
+                        Gun8 = personelPuantaj.Gun8.DidTheyWork(YilAy.AddDays(7).DayOfWeek, resCalismaSaatleri),
+                        Gun9 = personelPuantaj.Gun9.DidTheyWork(YilAy.AddDays(8).DayOfWeek, resCalismaSaatleri),
+                        Gun10 = personelPuantaj.Gun10.DidTheyWork(YilAy.AddDays(9).DayOfWeek, resCalismaSaatleri),
+                        Gun11 = personelPuantaj.Gun11.DidTheyWork(YilAy.AddDays(10).DayOfWeek, resCalismaSaatleri),
+                        Gun12 = personelPuantaj.Gun12.DidTheyWork(YilAy.AddDays(11).DayOfWeek, resCalismaSaatleri),
+                        Gun13 = personelPuantaj.Gun13.DidTheyWork(YilAy.AddDays(12).DayOfWeek, resCalismaSaatleri),
+                        Gun14 = personelPuantaj.Gun14.DidTheyWork(YilAy.AddDays(13).DayOfWeek, resCalismaSaatleri),
+                        Gun15 = personelPuantaj.Gun15.DidTheyWork(YilAy.AddDays(14).DayOfWeek, resCalismaSaatleri),
+                        Gun16 = personelPuantaj.Gun16.DidTheyWork(YilAy.AddDays(15).DayOfWeek, resCalismaSaatleri),
+                        Gun17 = personelPuantaj.Gun17.DidTheyWork(YilAy.AddDays(16).DayOfWeek, resCalismaSaatleri),
+                        Gun18 = personelPuantaj.Gun18.DidTheyWork(YilAy.AddDays(17).DayOfWeek, resCalismaSaatleri),
+                        Gun19 = personelPuantaj.Gun19.DidTheyWork(YilAy.AddDays(18).DayOfWeek, resCalismaSaatleri),
+                        Gun20 = personelPuantaj.Gun20.DidTheyWork(YilAy.AddDays(19).DayOfWeek, resCalismaSaatleri),
+                        Gun21 = personelPuantaj.Gun21.DidTheyWork(YilAy.AddDays(20).DayOfWeek, resCalismaSaatleri),
+                        Gun22 = personelPuantaj.Gun22.DidTheyWork(YilAy.AddDays(21).DayOfWeek, resCalismaSaatleri),
+                        Gun23 = personelPuantaj.Gun23.DidTheyWork(YilAy.AddDays(22).DayOfWeek, resCalismaSaatleri),
+                        Gun24 = personelPuantaj.Gun24.DidTheyWork(YilAy.AddDays(23).DayOfWeek, resCalismaSaatleri),
+                        Gun25 = personelPuantaj.Gun25.DidTheyWork(YilAy.AddDays(24).DayOfWeek, resCalismaSaatleri),
+                        Gun26 = personelPuantaj.Gun26.DidTheyWork(YilAy.AddDays(25).DayOfWeek, resCalismaSaatleri),
+                        Gun27 = personelPuantaj.Gun27.DidTheyWork(YilAy.AddDays(26).DayOfWeek, resCalismaSaatleri),
+                        Gun28 = personelPuantaj.Gun28.DidTheyWork(YilAy.AddDays(27).DayOfWeek, resCalismaSaatleri),
+                        Gun29 = personelPuantaj.Gun29.DidTheyWork(YilAy.AddDays(28).DayOfWeek, resCalismaSaatleri),
+                        Gun30 = personelPuantaj.Gun30.DidTheyWork(YilAy.AddDays(29).DayOfWeek, resCalismaSaatleri),
+                        Gun31 = personelPuantaj.Gun31.DidTheyWork(YilAy.AddDays(30).DayOfWeek, resCalismaSaatleri),
                         CalisilanGun = zeroPuantaj.CalisilanGun,
                         RaporluGun = zeroPuantaj.RaporluGun,
                         MazeretliGun = zeroPuantaj.MazeretliGun,
