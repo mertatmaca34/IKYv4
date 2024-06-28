@@ -17,6 +17,7 @@ namespace IKYv4.Forms
         private readonly IIzinManager _izinManager;
         private readonly IUnvanGrubuManager _unvanGrubuManager;
         private readonly IPuantajManager _puantajManager;
+        private readonly ICalismaSaatleriManager _calismaSaatleriManager;
 
         public FormMain(
             IPersonelManager personelManager,
@@ -26,7 +27,8 @@ namespace IKYv4.Forms
             ITesisManager tesisManager,
             IIzinManager izinManager,
             IUnvanGrubuManager unvanGrubuManager,
-            IPuantajManager puantajManager)
+            IPuantajManager puantajManager,
+            ICalismaSaatleriManager calismaSaatleriManager)
         {
             InitializeComponent();
 
@@ -38,6 +40,7 @@ namespace IKYv4.Forms
             _izinManager = izinManager;
             _unvanGrubuManager = unvanGrubuManager;
             _puantajManager = puantajManager;
+            _calismaSaatleriManager = calismaSaatleriManager;
         }
 
         private void FormMain_SizeChanged(object sender, EventArgs e)
@@ -59,19 +62,19 @@ namespace IKYv4.Forms
         {
             if (LabelUserName.Text != "Adı Soyadı")
             {
-                PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager));
+                PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager));
             }
         }
 
         private void ButtonHelp_Click(object sender, EventArgs e)
         {
-            FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager);
+            FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager);
             formEmployeeRegistrationCard.Show();
         }
 
         public void ShowEmployeeListingForm()
         {
-            PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager));
+            PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager));
         }
 
         private void AddAdminToSystem()

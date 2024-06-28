@@ -29,37 +29,37 @@
         private void InitializeComponent()
         {
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.ButtonSave = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ComboBoxDirectorate = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.ButtonEmployeeChoose = new System.Windows.Forms.Button();
-            this.TextBoxEmployee = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.TableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
+            this.ComboBoxSundayEnd = new System.Windows.Forms.ComboBox();
+            this.ComboBoxSundayStart = new System.Windows.Forms.ComboBox();
+            this.ComboBoxSaturdayEnd = new System.Windows.Forms.ComboBox();
+            this.ComboBoxSaturdayStart = new System.Windows.Forms.ComboBox();
+            this.ComboBoxFridayEnd = new System.Windows.Forms.ComboBox();
+            this.ComboBoxFridayStart = new System.Windows.Forms.ComboBox();
+            this.ComboBoxThursdayEnd = new System.Windows.Forms.ComboBox();
+            this.ComboBoxThursdayStart = new System.Windows.Forms.ComboBox();
+            this.ComboBoxWednesdayEnd = new System.Windows.Forms.ComboBox();
+            this.ComboBoxWednesdayStart = new System.Windows.Forms.ComboBox();
+            this.ComboBoxTuesdayEnd = new System.Windows.Forms.ComboBox();
+            this.ComboBoxTuesdayStart = new System.Windows.Forms.ComboBox();
+            this.ComboBoxMondayEnd = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.TextBoxEmployee = new System.Windows.Forms.TextBox();
+            this.ButtonEmployeeChoose = new System.Windows.Forms.Button();
+            this.ComboBoxMondayStart = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ButtonSave = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
+            this.TableLayoutPanelMain.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +67,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.tableLayoutPanel5);
+            this.tabPage1.Controls.Add(this.TableLayoutPanelMain);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -75,146 +75,226 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ÇALIŞMA SAATLERİ";
             // 
-            // tableLayoutPanel5
+            // TableLayoutPanelMain
             // 
-            this.tableLayoutPanel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel5.Controls.Add(this.comboBox13, 2, 8);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox12, 1, 8);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox11, 2, 7);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox10, 1, 7);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox9, 2, 6);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox8, 1, 6);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox7, 2, 5);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox6, 1, 5);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox5, 2, 4);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox4, 1, 4);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox3, 2, 3);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox2, 1, 3);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox1, 2, 2);
-            this.tableLayoutPanel5.Controls.Add(this.panel5, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.label16, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.label11, 0, 2);
-            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel1, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.ComboBoxDirectorate, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.label1, 0, 3);
-            this.tableLayoutPanel5.Controls.Add(this.label2, 0, 4);
-            this.tableLayoutPanel5.Controls.Add(this.label3, 0, 5);
-            this.tableLayoutPanel5.Controls.Add(this.label4, 0, 6);
-            this.tableLayoutPanel5.Controls.Add(this.label5, 0, 7);
-            this.tableLayoutPanel5.Controls.Add(this.ButtonSave, 2, 9);
-            this.tableLayoutPanel5.Controls.Add(this.label6, 0, 8);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.Padding = new System.Windows.Forms.Padding(26);
-            this.tableLayoutPanel5.RowCount = 10;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(542, 570);
-            this.tableLayoutPanel5.TabIndex = 1;
+            this.TableLayoutPanelMain.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TableLayoutPanelMain.ColumnCount = 3;
+            this.TableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.TableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.TableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxSundayEnd, 2, 8);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxSundayStart, 1, 8);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxSaturdayEnd, 2, 7);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxSaturdayStart, 1, 7);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxFridayEnd, 2, 6);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxFridayStart, 1, 6);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxThursdayEnd, 2, 5);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxThursdayStart, 1, 5);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxWednesdayEnd, 2, 4);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxWednesdayStart, 1, 4);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxTuesdayEnd, 2, 3);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxTuesdayStart, 1, 3);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxMondayEnd, 2, 2);
+            this.TableLayoutPanelMain.Controls.Add(this.panel5, 0, 1);
+            this.TableLayoutPanelMain.Controls.Add(this.label16, 0, 0);
+            this.TableLayoutPanelMain.Controls.Add(this.label11, 0, 2);
+            this.TableLayoutPanelMain.Controls.Add(this.tableLayoutPanel1, 1, 0);
+            this.TableLayoutPanelMain.Controls.Add(this.ComboBoxMondayStart, 1, 2);
+            this.TableLayoutPanelMain.Controls.Add(this.label1, 0, 3);
+            this.TableLayoutPanelMain.Controls.Add(this.label2, 0, 4);
+            this.TableLayoutPanelMain.Controls.Add(this.label3, 0, 5);
+            this.TableLayoutPanelMain.Controls.Add(this.label4, 0, 6);
+            this.TableLayoutPanelMain.Controls.Add(this.label5, 0, 7);
+            this.TableLayoutPanelMain.Controls.Add(this.ButtonSave, 2, 9);
+            this.TableLayoutPanelMain.Controls.Add(this.label6, 0, 8);
+            this.TableLayoutPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TableLayoutPanelMain.Location = new System.Drawing.Point(3, 3);
+            this.TableLayoutPanelMain.Name = "TableLayoutPanelMain";
+            this.TableLayoutPanelMain.Padding = new System.Windows.Forms.Padding(26);
+            this.TableLayoutPanelMain.RowCount = 10;
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TableLayoutPanelMain.Size = new System.Drawing.Size(542, 570);
+            this.TableLayoutPanelMain.TabIndex = 1;
             // 
-            // label6
+            // ComboBoxSundayEnd
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(125, 473);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 21);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "PAZAR";
+            this.ComboBoxSundayEnd.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxSundayEnd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxSundayEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxSundayEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxSundayEnd.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxSundayEnd.FormattingEnabled = true;
+            this.ComboBoxSundayEnd.Items.AddRange(new object[] {
+            "HAFTA TATİLİ",
+            "00:00",
+            "01:00",
+            "02:00",
+            "03:00",
+            "04:00",
+            "05:00",
+            "06:00",
+            "07:00",
+            "08:00",
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00",
+            "23:00"});
+            this.ComboBoxSundayEnd.Location = new System.Drawing.Point(364, 466);
+            this.ComboBoxSundayEnd.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxSundayEnd.Name = "ComboBoxSundayEnd";
+            this.ComboBoxSundayEnd.Size = new System.Drawing.Size(140, 29);
+            this.ComboBoxSundayEnd.TabIndex = 37;
             // 
-            // ButtonSave
+            // ComboBoxSundayStart
             // 
-            this.ButtonSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonSave.BackColor = System.Drawing.Color.DarkRed;
-            this.ButtonSave.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ButtonSave.ForeColor = System.Drawing.Color.White;
-            this.ButtonSave.Location = new System.Drawing.Point(352, 514);
-            this.ButtonSave.Margin = new System.Windows.Forms.Padding(0);
-            this.ButtonSave.Name = "ButtonSave";
-            this.ButtonSave.Size = new System.Drawing.Size(164, 30);
-            this.ButtonSave.TabIndex = 22;
-            this.ButtonSave.Text = "Kaydet";
-            this.ButtonSave.UseVisualStyleBackColor = false;
+            this.ComboBoxSundayStart.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxSundayStart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxSundayStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxSundayStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxSundayStart.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxSundayStart.FormattingEnabled = true;
+            this.ComboBoxSundayStart.Items.AddRange(new object[] {
+            "HAFTA TATİLİ",
+            "00:00",
+            "01:00",
+            "02:00",
+            "03:00",
+            "04:00",
+            "05:00",
+            "06:00",
+            "07:00",
+            "08:00",
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00",
+            "23:00"});
+            this.ComboBoxSundayStart.Location = new System.Drawing.Point(201, 466);
+            this.ComboBoxSundayStart.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxSundayStart.Name = "ComboBoxSundayStart";
+            this.ComboBoxSundayStart.Size = new System.Drawing.Size(139, 29);
+            this.ComboBoxSundayStart.TabIndex = 36;
             // 
-            // label5
+            // ComboBoxSaturdayEnd
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(86, 413);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 21);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "CUMARTESİ";
+            this.ComboBoxSaturdayEnd.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxSaturdayEnd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxSaturdayEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxSaturdayEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxSaturdayEnd.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxSaturdayEnd.FormattingEnabled = true;
+            this.ComboBoxSaturdayEnd.Items.AddRange(new object[] {
+            "HAFTA TATİLİ",
+            "00:00",
+            "01:00",
+            "02:00",
+            "03:00",
+            "04:00",
+            "05:00",
+            "06:00",
+            "07:00",
+            "08:00",
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00",
+            "23:00"});
+            this.ComboBoxSaturdayEnd.Location = new System.Drawing.Point(364, 406);
+            this.ComboBoxSaturdayEnd.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxSaturdayEnd.Name = "ComboBoxSaturdayEnd";
+            this.ComboBoxSaturdayEnd.Size = new System.Drawing.Size(140, 29);
+            this.ComboBoxSaturdayEnd.TabIndex = 35;
             // 
-            // label4
+            // ComboBoxSaturdayStart
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(128, 353);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 21);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "CUMA";
+            this.ComboBoxSaturdayStart.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxSaturdayStart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxSaturdayStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxSaturdayStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxSaturdayStart.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxSaturdayStart.FormattingEnabled = true;
+            this.ComboBoxSaturdayStart.Items.AddRange(new object[] {
+            "HAFTA TATİLİ",
+            "00:00",
+            "01:00",
+            "02:00",
+            "03:00",
+            "04:00",
+            "05:00",
+            "06:00",
+            "07:00",
+            "08:00",
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00",
+            "23:00"});
+            this.ComboBoxSaturdayStart.Location = new System.Drawing.Point(201, 406);
+            this.ComboBoxSaturdayStart.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxSaturdayStart.Name = "ComboBoxSaturdayStart";
+            this.ComboBoxSaturdayStart.Size = new System.Drawing.Size(139, 29);
+            this.ComboBoxSaturdayStart.TabIndex = 34;
             // 
-            // label3
+            // ComboBoxFridayEnd
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(95, 293);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 21);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "PERŞEMBE";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(89, 233);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 21);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "ÇARŞAMBA";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(143, 173);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "SALI";
-            // 
-            // ComboBoxDirectorate
-            // 
-            this.ComboBoxDirectorate.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ComboBoxDirectorate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxDirectorate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxDirectorate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.ComboBoxDirectorate.ForeColor = System.Drawing.Color.DarkRed;
-            this.ComboBoxDirectorate.FormattingEnabled = true;
-            this.ComboBoxDirectorate.Items.AddRange(new object[] {
+            this.ComboBoxFridayEnd.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxFridayEnd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxFridayEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxFridayEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxFridayEnd.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxFridayEnd.FormattingEnabled = true;
+            this.ComboBoxFridayEnd.Items.AddRange(new object[] {
             "00:00",
             "01:00",
             "02:00",
@@ -240,16 +320,368 @@
             "22:00",
             "23:00",
             "HAFTA TATİLİ"});
-            this.ComboBoxDirectorate.Location = new System.Drawing.Point(201, 106);
-            this.ComboBoxDirectorate.Margin = new System.Windows.Forms.Padding(12);
-            this.ComboBoxDirectorate.Name = "ComboBoxDirectorate";
-            this.ComboBoxDirectorate.Size = new System.Drawing.Size(139, 29);
-            this.ComboBoxDirectorate.TabIndex = 24;
+            this.ComboBoxFridayEnd.Location = new System.Drawing.Point(364, 346);
+            this.ComboBoxFridayEnd.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxFridayEnd.Name = "ComboBoxFridayEnd";
+            this.ComboBoxFridayEnd.Size = new System.Drawing.Size(140, 29);
+            this.ComboBoxFridayEnd.TabIndex = 33;
+            // 
+            // ComboBoxFridayStart
+            // 
+            this.ComboBoxFridayStart.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxFridayStart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxFridayStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxFridayStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxFridayStart.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxFridayStart.FormattingEnabled = true;
+            this.ComboBoxFridayStart.Items.AddRange(new object[] {
+            "00:00",
+            "01:00",
+            "02:00",
+            "03:00",
+            "04:00",
+            "05:00",
+            "06:00",
+            "07:00",
+            "08:00",
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00",
+            "23:00",
+            "HAFTA TATİLİ"});
+            this.ComboBoxFridayStart.Location = new System.Drawing.Point(201, 346);
+            this.ComboBoxFridayStart.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxFridayStart.Name = "ComboBoxFridayStart";
+            this.ComboBoxFridayStart.Size = new System.Drawing.Size(139, 29);
+            this.ComboBoxFridayStart.TabIndex = 32;
+            // 
+            // ComboBoxThursdayEnd
+            // 
+            this.ComboBoxThursdayEnd.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxThursdayEnd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxThursdayEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxThursdayEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxThursdayEnd.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxThursdayEnd.FormattingEnabled = true;
+            this.ComboBoxThursdayEnd.Items.AddRange(new object[] {
+            "00:00",
+            "01:00",
+            "02:00",
+            "03:00",
+            "04:00",
+            "05:00",
+            "06:00",
+            "07:00",
+            "08:00",
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00",
+            "23:00",
+            "HAFTA TATİLİ"});
+            this.ComboBoxThursdayEnd.Location = new System.Drawing.Point(364, 286);
+            this.ComboBoxThursdayEnd.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxThursdayEnd.Name = "ComboBoxThursdayEnd";
+            this.ComboBoxThursdayEnd.Size = new System.Drawing.Size(140, 29);
+            this.ComboBoxThursdayEnd.TabIndex = 31;
+            // 
+            // ComboBoxThursdayStart
+            // 
+            this.ComboBoxThursdayStart.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxThursdayStart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxThursdayStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxThursdayStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxThursdayStart.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxThursdayStart.FormattingEnabled = true;
+            this.ComboBoxThursdayStart.Items.AddRange(new object[] {
+            "00:00",
+            "01:00",
+            "02:00",
+            "03:00",
+            "04:00",
+            "05:00",
+            "06:00",
+            "07:00",
+            "08:00",
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00",
+            "23:00",
+            "HAFTA TATİLİ"});
+            this.ComboBoxThursdayStart.Location = new System.Drawing.Point(201, 286);
+            this.ComboBoxThursdayStart.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxThursdayStart.Name = "ComboBoxThursdayStart";
+            this.ComboBoxThursdayStart.Size = new System.Drawing.Size(139, 29);
+            this.ComboBoxThursdayStart.TabIndex = 30;
+            // 
+            // ComboBoxWednesdayEnd
+            // 
+            this.ComboBoxWednesdayEnd.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxWednesdayEnd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxWednesdayEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxWednesdayEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxWednesdayEnd.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxWednesdayEnd.FormattingEnabled = true;
+            this.ComboBoxWednesdayEnd.Items.AddRange(new object[] {
+            "00:00",
+            "01:00",
+            "02:00",
+            "03:00",
+            "04:00",
+            "05:00",
+            "06:00",
+            "07:00",
+            "08:00",
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00",
+            "23:00",
+            "HAFTA TATİLİ"});
+            this.ComboBoxWednesdayEnd.Location = new System.Drawing.Point(364, 226);
+            this.ComboBoxWednesdayEnd.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxWednesdayEnd.Name = "ComboBoxWednesdayEnd";
+            this.ComboBoxWednesdayEnd.Size = new System.Drawing.Size(140, 29);
+            this.ComboBoxWednesdayEnd.TabIndex = 29;
+            // 
+            // ComboBoxWednesdayStart
+            // 
+            this.ComboBoxWednesdayStart.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxWednesdayStart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxWednesdayStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxWednesdayStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxWednesdayStart.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxWednesdayStart.FormattingEnabled = true;
+            this.ComboBoxWednesdayStart.Items.AddRange(new object[] {
+            "00:00",
+            "01:00",
+            "02:00",
+            "03:00",
+            "04:00",
+            "05:00",
+            "06:00",
+            "07:00",
+            "08:00",
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00",
+            "23:00",
+            "HAFTA TATİLİ"});
+            this.ComboBoxWednesdayStart.Location = new System.Drawing.Point(201, 226);
+            this.ComboBoxWednesdayStart.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxWednesdayStart.Name = "ComboBoxWednesdayStart";
+            this.ComboBoxWednesdayStart.Size = new System.Drawing.Size(139, 29);
+            this.ComboBoxWednesdayStart.TabIndex = 28;
+            // 
+            // ComboBoxTuesdayEnd
+            // 
+            this.ComboBoxTuesdayEnd.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxTuesdayEnd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxTuesdayEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxTuesdayEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxTuesdayEnd.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxTuesdayEnd.FormattingEnabled = true;
+            this.ComboBoxTuesdayEnd.Items.AddRange(new object[] {
+            "00:00",
+            "01:00",
+            "02:00",
+            "03:00",
+            "04:00",
+            "05:00",
+            "06:00",
+            "07:00",
+            "08:00",
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00",
+            "23:00",
+            "HAFTA TATİLİ"});
+            this.ComboBoxTuesdayEnd.Location = new System.Drawing.Point(364, 166);
+            this.ComboBoxTuesdayEnd.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxTuesdayEnd.Name = "ComboBoxTuesdayEnd";
+            this.ComboBoxTuesdayEnd.Size = new System.Drawing.Size(140, 29);
+            this.ComboBoxTuesdayEnd.TabIndex = 27;
+            // 
+            // ComboBoxTuesdayStart
+            // 
+            this.ComboBoxTuesdayStart.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxTuesdayStart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxTuesdayStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxTuesdayStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxTuesdayStart.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxTuesdayStart.FormattingEnabled = true;
+            this.ComboBoxTuesdayStart.Items.AddRange(new object[] {
+            "00:00",
+            "01:00",
+            "02:00",
+            "03:00",
+            "04:00",
+            "05:00",
+            "06:00",
+            "07:00",
+            "08:00",
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00",
+            "23:00",
+            "HAFTA TATİLİ"});
+            this.ComboBoxTuesdayStart.Location = new System.Drawing.Point(201, 166);
+            this.ComboBoxTuesdayStart.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxTuesdayStart.Name = "ComboBoxTuesdayStart";
+            this.ComboBoxTuesdayStart.Size = new System.Drawing.Size(139, 29);
+            this.ComboBoxTuesdayStart.TabIndex = 26;
+            // 
+            // ComboBoxMondayEnd
+            // 
+            this.ComboBoxMondayEnd.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxMondayEnd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMondayEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxMondayEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxMondayEnd.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxMondayEnd.FormattingEnabled = true;
+            this.ComboBoxMondayEnd.Items.AddRange(new object[] {
+            "00:00",
+            "01:00",
+            "02:00",
+            "03:00",
+            "04:00",
+            "05:00",
+            "06:00",
+            "07:00",
+            "08:00",
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00",
+            "21:00",
+            "22:00",
+            "23:00",
+            "HAFTA TATİLİ"});
+            this.ComboBoxMondayEnd.Location = new System.Drawing.Point(364, 106);
+            this.ComboBoxMondayEnd.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxMondayEnd.Name = "ComboBoxMondayEnd";
+            this.ComboBoxMondayEnd.Size = new System.Drawing.Size(140, 29);
+            this.ComboBoxMondayEnd.TabIndex = 25;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DarkRed;
+            this.TableLayoutPanelMain.SetColumnSpan(this.panel5, 3);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(29, 89);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(484, 2);
+            this.panel5.TabIndex = 8;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label16.Location = new System.Drawing.Point(96, 45);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(90, 21);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "PERSONEL";
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(93, 113);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(93, 21);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "PAZARTESİ";
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel5.SetColumnSpan(this.tableLayoutPanel1, 2);
+            this.TableLayoutPanelMain.SetColumnSpan(this.tableLayoutPanel1, 2);
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.7352F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.2648F));
             this.tableLayoutPanel1.Controls.Add(this.TextBoxEmployee, 0, 0);
@@ -261,17 +693,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(321, 54);
             this.tableLayoutPanel1.TabIndex = 21;
-            // 
-            // ButtonEmployeeChoose
-            // 
-            this.ButtonEmployeeChoose.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.ButtonEmployeeChoose.Location = new System.Drawing.Point(276, 11);
-            this.ButtonEmployeeChoose.Margin = new System.Windows.Forms.Padding(5);
-            this.ButtonEmployeeChoose.Name = "ButtonEmployeeChoose";
-            this.ButtonEmployeeChoose.Size = new System.Drawing.Size(40, 31);
-            this.ButtonEmployeeChoose.TabIndex = 2;
-            this.ButtonEmployeeChoose.Text = "Seç";
-            this.ButtonEmployeeChoose.UseVisualStyleBackColor = true;
             // 
             // TextBoxEmployee
             // 
@@ -287,47 +708,26 @@
             this.TextBoxEmployee.Size = new System.Drawing.Size(247, 29);
             this.TextBoxEmployee.TabIndex = 1;
             // 
-            // label11
+            // ButtonEmployeeChoose
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(93, 113);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(93, 21);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "PAZARTESİ";
+            this.ButtonEmployeeChoose.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ButtonEmployeeChoose.Location = new System.Drawing.Point(276, 11);
+            this.ButtonEmployeeChoose.Margin = new System.Windows.Forms.Padding(5);
+            this.ButtonEmployeeChoose.Name = "ButtonEmployeeChoose";
+            this.ButtonEmployeeChoose.Size = new System.Drawing.Size(40, 31);
+            this.ButtonEmployeeChoose.TabIndex = 2;
+            this.ButtonEmployeeChoose.Text = "Seç";
+            this.ButtonEmployeeChoose.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // ComboBoxMondayStart
             // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(96, 45);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(90, 21);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "PERSONEL";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.DarkRed;
-            this.tableLayoutPanel5.SetColumnSpan(this.panel5, 3);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(29, 89);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(484, 2);
-            this.panel5.TabIndex = 8;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.ComboBoxMondayStart.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxMondayStart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMondayStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxMondayStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxMondayStart.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxMondayStart.FormattingEnabled = true;
+            this.ComboBoxMondayStart.Items.AddRange(new object[] {
             "00:00",
             "01:00",
             "02:00",
@@ -353,491 +753,92 @@
             "22:00",
             "23:00",
             "HAFTA TATİLİ"});
-            this.comboBox1.Location = new System.Drawing.Point(364, 106);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(140, 29);
-            this.comboBox1.TabIndex = 25;
+            this.ComboBoxMondayStart.Location = new System.Drawing.Point(201, 106);
+            this.ComboBoxMondayStart.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBoxMondayStart.Name = "ComboBoxMondayStart";
+            this.ComboBoxMondayStart.Size = new System.Drawing.Size(139, 29);
+            this.ComboBoxMondayStart.TabIndex = 24;
             // 
-            // comboBox2
+            // label1
             // 
-            this.comboBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox2.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
-            "08:00",
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00",
-            "HAFTA TATİLİ"});
-            this.comboBox2.Location = new System.Drawing.Point(201, 166);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(139, 29);
-            this.comboBox2.TabIndex = 26;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(143, 173);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "SALI";
             // 
-            // comboBox3
+            // label2
             // 
-            this.comboBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox3.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
-            "08:00",
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00",
-            "HAFTA TATİLİ"});
-            this.comboBox3.Location = new System.Drawing.Point(364, 166);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(140, 29);
-            this.comboBox3.TabIndex = 27;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(89, 233);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 21);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "ÇARŞAMBA";
             // 
-            // comboBox4
+            // label3
             // 
-            this.comboBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox4.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
-            "08:00",
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00",
-            "HAFTA TATİLİ"});
-            this.comboBox4.Location = new System.Drawing.Point(201, 226);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(139, 29);
-            this.comboBox4.TabIndex = 28;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(95, 293);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 21);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "PERŞEMBE";
             // 
-            // comboBox5
+            // label4
             // 
-            this.comboBox5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox5.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
-            "08:00",
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00",
-            "HAFTA TATİLİ"});
-            this.comboBox5.Location = new System.Drawing.Point(364, 226);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(140, 29);
-            this.comboBox5.TabIndex = 29;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(128, 353);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 21);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "CUMA";
             // 
-            // comboBox6
+            // label5
             // 
-            this.comboBox6.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox6.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
-            "08:00",
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00",
-            "HAFTA TATİLİ"});
-            this.comboBox6.Location = new System.Drawing.Point(201, 286);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(139, 29);
-            this.comboBox6.TabIndex = 30;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(86, 413);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 21);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "CUMARTESİ";
             // 
-            // comboBox7
+            // ButtonSave
             // 
-            this.comboBox7.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox7.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
-            "08:00",
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00",
-            "HAFTA TATİLİ"});
-            this.comboBox7.Location = new System.Drawing.Point(364, 286);
-            this.comboBox7.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(140, 29);
-            this.comboBox7.TabIndex = 31;
+            this.ButtonSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonSave.BackColor = System.Drawing.Color.DarkRed;
+            this.ButtonSave.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ButtonSave.ForeColor = System.Drawing.Color.White;
+            this.ButtonSave.Location = new System.Drawing.Point(352, 514);
+            this.ButtonSave.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonSave.Name = "ButtonSave";
+            this.ButtonSave.Size = new System.Drawing.Size(164, 30);
+            this.ButtonSave.TabIndex = 22;
+            this.ButtonSave.Text = "Kaydet";
+            this.ButtonSave.UseVisualStyleBackColor = false;
+            this.ButtonSave.Click += new System.EventHandler(this.ButtonSave_Click);
             // 
-            // comboBox8
+            // label6
             // 
-            this.comboBox8.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox8.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
-            "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
-            "08:00",
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00",
-            "HAFTA TATİLİ"});
-            this.comboBox8.Location = new System.Drawing.Point(201, 346);
-            this.comboBox8.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(139, 29);
-            this.comboBox8.TabIndex = 32;
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox9.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
-            "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
-            "08:00",
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00",
-            "HAFTA TATİLİ"});
-            this.comboBox9.Location = new System.Drawing.Point(364, 346);
-            this.comboBox9.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(140, 29);
-            this.comboBox9.TabIndex = 33;
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox10.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
-            "HAFTA TATİLİ",
-            "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
-            "08:00",
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00"});
-            this.comboBox10.Location = new System.Drawing.Point(201, 406);
-            this.comboBox10.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(139, 29);
-            this.comboBox10.TabIndex = 34;
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox11.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
-            "HAFTA TATİLİ",
-            "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
-            "08:00",
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00"});
-            this.comboBox11.Location = new System.Drawing.Point(364, 406);
-            this.comboBox11.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(140, 29);
-            this.comboBox11.TabIndex = 35;
-            // 
-            // comboBox12
-            // 
-            this.comboBox12.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox12.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
-            "HAFTA TATİLİ",
-            "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
-            "08:00",
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00"});
-            this.comboBox12.Location = new System.Drawing.Point(201, 466);
-            this.comboBox12.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(139, 29);
-            this.comboBox12.TabIndex = 36;
-            // 
-            // comboBox13
-            // 
-            this.comboBox13.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox13.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
-            "HAFTA TATİLİ",
-            "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
-            "08:00",
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00"});
-            this.comboBox13.Location = new System.Drawing.Point(364, 466);
-            this.comboBox13.Margin = new System.Windows.Forms.Padding(12);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(140, 29);
-            this.comboBox13.TabIndex = 37;
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(125, 473);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 21);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "PAZAR";
             // 
             // tabControl1
             // 
@@ -862,8 +863,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ÇALIŞMA SAATLERİ";
             this.tabPage1.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
+            this.TableLayoutPanelMain.ResumeLayout(false);
+            this.TableLayoutPanelMain.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -873,27 +874,10 @@
 
         #endregion
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox TextBoxEmployee;
-        private System.Windows.Forms.Button ButtonEmployeeChoose;
-        private System.Windows.Forms.ComboBox ComboBoxDirectorate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -902,5 +886,22 @@
         private System.Windows.Forms.Button ButtonSave;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TabControl tabControl1;
+        public System.Windows.Forms.ComboBox ComboBoxSundayEnd;
+        public System.Windows.Forms.ComboBox ComboBoxSundayStart;
+        public System.Windows.Forms.ComboBox ComboBoxSaturdayEnd;
+        public System.Windows.Forms.ComboBox ComboBoxSaturdayStart;
+        public System.Windows.Forms.ComboBox ComboBoxFridayEnd;
+        public System.Windows.Forms.ComboBox ComboBoxFridayStart;
+        public System.Windows.Forms.ComboBox ComboBoxThursdayEnd;
+        public System.Windows.Forms.ComboBox ComboBoxThursdayStart;
+        public System.Windows.Forms.ComboBox ComboBoxWednesdayEnd;
+        public System.Windows.Forms.ComboBox ComboBoxWednesdayStart;
+        public System.Windows.Forms.ComboBox ComboBoxTuesdayEnd;
+        public System.Windows.Forms.ComboBox ComboBoxTuesdayStart;
+        public System.Windows.Forms.ComboBox ComboBoxMondayEnd;
+        public System.Windows.Forms.TextBox TextBoxEmployee;
+        public System.Windows.Forms.ComboBox ComboBoxMondayStart;
+        public System.Windows.Forms.Button ButtonEmployeeChoose;
+        public System.Windows.Forms.TableLayoutPanel TableLayoutPanelMain;
     }
 }

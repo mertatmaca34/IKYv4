@@ -56,6 +56,9 @@ namespace IKYv4
             services.AddSingleton<IPuantajDal, PuantajDal>();
             services.AddSingleton<IPuantajManager, PuantajManager>();
 
+            services.AddSingleton<ICalismaSaatleriDal, CalismaSaatleriDal>();
+            services.AddSingleton<ICalismaSaatleriManager, CalismaSaatleriManager>();
+
             services.AddScoped<IKYContext>();
             services.AddTransient<FormMain>();
 

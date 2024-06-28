@@ -108,10 +108,10 @@ namespace IKYv4.Forms
             this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.DataGridViewEmployees = new System.Windows.Forms.DataGridView();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.EditRow = new System.Windows.Forms.DataGridViewImageColumn();
             this.EditShifts = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
@@ -393,7 +393,7 @@ namespace IKYv4.Forms
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(152, 23);
             this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "Müdürlük";
+            this.comboBox1.Text = "MÜDÜRLÜK";
             // 
             // label1
             // 
@@ -445,6 +445,7 @@ namespace IKYv4.Forms
             // comboBox6
             // 
             this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(7, 37);
@@ -452,7 +453,6 @@ namespace IKYv4.Forms
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(152, 23);
             this.comboBox6.TabIndex = 2;
-            this.comboBox6.Text = "Ünvan";
             // 
             // label2
             // 
@@ -487,6 +487,7 @@ namespace IKYv4.Forms
             // comboBox11
             // 
             this.comboBox11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.comboBox11.Items.AddRange(new object[] {
             "A Rh (+)",
@@ -850,6 +851,7 @@ namespace IKYv4.Forms
             // comboBox13
             // 
             this.comboBox13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox13.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.comboBox13.FormattingEnabled = true;
             this.comboBox13.Location = new System.Drawing.Point(7, 37);
@@ -857,7 +859,6 @@ namespace IKYv4.Forms
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(152, 23);
             this.comboBox13.TabIndex = 2;
-            this.comboBox13.Text = "İl";
             // 
             // label13
             // 
@@ -909,6 +910,7 @@ namespace IKYv4.Forms
             // comboBox18
             // 
             this.comboBox18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox18.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.comboBox18.FormattingEnabled = true;
             this.comboBox18.Location = new System.Drawing.Point(7, 37);
@@ -916,7 +918,6 @@ namespace IKYv4.Forms
             this.comboBox18.Name = "comboBox18";
             this.comboBox18.Size = new System.Drawing.Size(152, 23);
             this.comboBox18.TabIndex = 2;
-            this.comboBox18.Text = "İl";
             // 
             // label16
             // 
@@ -1268,27 +1269,6 @@ namespace IKYv4.Forms
             this.DataGridViewEmployees.TabIndex = 1;
             this.DataGridViewEmployees.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewEmployees_CellContentClick);
             // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.Description = "Düzenle";
-            this.dataGridViewImageColumn1.FillWeight = 30F;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::IKYv4.Properties.Resources.edit_row_24px;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn1.ToolTipText = "Düzenle";
-            this.dataGridViewImageColumn1.Width = 492;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.Description = "Mesai Saatlerini Düzenle";
-            this.dataGridViewImageColumn2.FillWeight = 30F;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::IKYv4.Properties.Resources.clock_24px;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn2.Width = 491;
-            // 
             // EditRow
             // 
             this.EditRow.Description = "Düzenle";
@@ -1309,6 +1289,27 @@ namespace IKYv4.Forms
             this.EditShifts.Name = "EditShifts";
             this.EditShifts.ReadOnly = true;
             this.EditShifts.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.Description = "Düzenle";
+            this.dataGridViewImageColumn1.FillWeight = 30F;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::IKYv4.Properties.Resources.edit_row_24px;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.ToolTipText = "Düzenle";
+            this.dataGridViewImageColumn1.Width = 492;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.Description = "Mesai Saatlerini Düzenle";
+            this.dataGridViewImageColumn2.FillWeight = 30F;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::IKYv4.Properties.Resources.clock_24px;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn2.Width = 491;
             // 
             // FormEmployeeListing
             // 

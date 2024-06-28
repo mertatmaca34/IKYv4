@@ -19,10 +19,14 @@ namespace IKYv4.Forms
         readonly IMudurlukManager _mudurlukManager;
         readonly ISeflikManager _seflikManager;
         readonly ITesisManager _tesisManager;
+        readonly ICalismaSaatleriManager _calismaSaatleriManager;
+
+        bool tiklandi = false;
+        bool isItNew = true;
 
         private Personel _personel = new Personel();
 
-        public FormEmployeeRegistrationCard(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager)
+        public FormEmployeeRegistrationCard(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager)
         {
             InitializeComponent();
 
@@ -30,10 +34,25 @@ namespace IKYv4.Forms
             _mudurlukManager = mudurlukManager;
             _seflikManager = seflikManager;
             _tesisManager = tesisManager;
+            _calismaSaatleriManager = calismaSaatleriManager;
         }
 
         private void ButtonSave_Click(object sender, EventArgs e)
         {
+            var resPersonsel = _personelManager.GetAll(p=> p.TCKimlikNo == TextBoxUserId.Text);
+
+            if(resPersonsel.Data.Count > 0)
+            {
+                _personel.Id = resPersonsel.Data.FirstOrDefault().Id;
+
+                isItNew = false;
+
+                if (resPersonsel.Data.FirstOrDefault().ImageData != null && tiklandi == false)
+                {
+                    _personel.ImageData = resPersonsel.Data.FirstOrDefault().ImageData;
+                }
+            }
+
             _personel.Adi = TextBoxName.Text;
             _personel.Soyadi = TextBoxSurname.Text;
             _personel.TCKimlikNo = TextBoxUserId.Text;
@@ -51,9 +70,38 @@ namespace IKYv4.Forms
 
             var res = _personelManager.Add(_personel);
 
+            AssignDefaultShifts();
+
             MessageBox.Show(res.Message);
 
             this.Close();
+        }
+
+        private void AssignDefaultShifts()
+        {
+            if(isItNew)
+            {
+                CalismaSaatleri calismaSaatleri = new CalismaSaatleri
+                {
+                    PersonelId = _personel.Id,
+                    PazartesiBaslama = "08:00",
+                    PazartesiBitme = "18:00",
+                    SaliBaslama = "08:00",
+                    SaliBitme = "18:00",
+                    CarsambaBaslama = "08:00",
+                    CarsambaBitme = "18:00",
+                    PersembeBaslama = "08:00",
+                    PersembeBitme = "18:00",
+                    CumaBaslama = "08:00",
+                    CumaBitme = "18:00",
+                    CumartesiBaslama = "HAFTA TATİLİ",
+                    CumartesiBitme = "HAFTA TATİLİ",
+                    PazarBaslama = "HAFTA TATİLİ",
+                    PazarBitme = "HAFTA TATİLİ",
+                };
+
+                _calismaSaatleriManager.Add(calismaSaatleri);
+            }
         }
 
         private void FormEmployeeRegistrationCard_Load(object sender, EventArgs e)
@@ -126,6 +174,8 @@ namespace IKYv4.Forms
                         PictureBoxEmployeePicture.Image.Save(ms, PictureBoxEmployeePicture.Image.RawFormat);
                         imageData = ms.ToArray();
                     }
+
+                    tiklandi = true;
 
                     _personel.ImageData = imageData;
                 }
