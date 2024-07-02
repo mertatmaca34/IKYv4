@@ -549,7 +549,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>2</Value>
+                                  <Value>1</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -616,7 +616,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>5</Value>
+                                  <Value>7</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -682,7 +682,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>3</Value>
+                                  <Value>1</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1305,7 +1305,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
         Fields!Gun1.Value = "M", "#fd99ff",
         Fields!Gun1.Value = "İ", "Yellow",
         Fields!Gun1.Value = "Üİ", "#ffc000",
-        Fields!Gun1.Value = "Yİ", "Blue",
+        Fields!Gun1.Value = "Yİ", "#00B0F0",
         Fields!Gun1.Value = "T", "#a6a6a6",
         Fields!Gun1.Value = "Ç", "#ff7c80",
         Fields!Gun1.Value = "O", "#33cccc",
@@ -1351,7 +1351,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun2.Value = "M", "#fd99ff",
     Fields!Gun2.Value = "İ", "Yellow",
     Fields!Gun2.Value = "Üİ", "#ffc000",
-    Fields!Gun2.Value = "Yİ", "Blue",
+    Fields!Gun2.Value = "Yİ", "#00B0F0",
     Fields!Gun2.Value = "T", "#a6a6a6",
     Fields!Gun2.Value = "Ç", "#ff7c80",
     Fields!Gun2.Value = "O", "#33cccc",
@@ -1397,7 +1397,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun3.Value = "M", "#fd99ff",
     Fields!Gun3.Value = "İ", "Yellow",
     Fields!Gun3.Value = "Üİ", "#ffc000",
-    Fields!Gun3.Value = "Yİ", "Blue",
+    Fields!Gun3.Value = "Yİ", "#00B0F0",
     Fields!Gun3.Value = "T", "#a6a6a6",
     Fields!Gun3.Value = "Ç", "#ff7c80",
     Fields!Gun3.Value = "O", "#33cccc",
@@ -1443,7 +1443,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun4.Value = "M", "#fd99ff",
     Fields!Gun4.Value = "İ", "Yellow",
     Fields!Gun4.Value = "Üİ", "#ffc000",
-    Fields!Gun4.Value = "Yİ", "Blue",
+    Fields!Gun4.Value = "Yİ", "#00B0F0",
     Fields!Gun4.Value = "T", "#a6a6a6",
     Fields!Gun4.Value = "Ç", "#ff7c80",
     Fields!Gun4.Value = "O", "#33cccc",
@@ -1489,7 +1489,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun5.Value = "M", "#fd99ff",
     Fields!Gun5.Value = "İ", "Yellow",
     Fields!Gun5.Value = "Üİ", "#ffc000",
-    Fields!Gun5.Value = "Yİ", "Blue",
+    Fields!Gun5.Value = "Yİ", "#00B0F0",
     Fields!Gun5.Value = "T", "#a6a6a6",
     Fields!Gun5.Value = "Ç", "#ff7c80",
     Fields!Gun5.Value = "O", "#33cccc",
@@ -1535,7 +1535,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun6.Value = "M", "#fd99ff",
     Fields!Gun6.Value = "İ", "Yellow",
     Fields!Gun6.Value = "Üİ", "#ffc000",
-    Fields!Gun6.Value = "Yİ", "Blue",
+    Fields!Gun6.Value = "Yİ", "#00B0F0",
     Fields!Gun6.Value = "T", "#a6a6a6",
     Fields!Gun6.Value = "Ç", "#ff7c80",
     Fields!Gun6.Value = "O", "#33cccc",
@@ -1581,7 +1581,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun7.Value = "M", "#fd99ff",
     Fields!Gun7.Value = "İ", "Yellow",
     Fields!Gun7.Value = "Üİ", "#ffc000",
-    Fields!Gun7.Value = "Yİ", "Blue",
+    Fields!Gun7.Value = "Yİ", "#00B0F0",
     Fields!Gun7.Value = "T", "#a6a6a6",
     Fields!Gun7.Value = "Ç", "#ff7c80",
     Fields!Gun7.Value = "O", "#33cccc",
@@ -1627,7 +1627,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun8.Value = "M", "#fd99ff",
     Fields!Gun8.Value = "İ", "Yellow",
     Fields!Gun8.Value = "Üİ", "#ffc000",
-    Fields!Gun8.Value = "Yİ", "Blue",
+    Fields!Gun8.Value = "Yİ", "#00B0F0",
     Fields!Gun8.Value = "T", "#a6a6a6",
     Fields!Gun8.Value = "Ç", "#ff7c80",
     Fields!Gun8.Value = "O", "#33cccc",
@@ -1673,7 +1673,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun9.Value = "M", "#fd99ff",
     Fields!Gun9.Value = "İ", "Yellow",
     Fields!Gun9.Value = "Üİ", "#ffc000",
-    Fields!Gun9.Value = "Yİ", "Blue",
+    Fields!Gun9.Value = "Yİ", "#00B0F0",
     Fields!Gun9.Value = "T", "#a6a6a6",
     Fields!Gun9.Value = "Ç", "#ff7c80",
     Fields!Gun9.Value = "O", "#33cccc",
@@ -1719,7 +1719,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun10.Value = "M", "#fd99ff",
     Fields!Gun10.Value = "İ", "Yellow",
     Fields!Gun10.Value = "Üİ", "#ffc000",
-    Fields!Gun10.Value = "Yİ", "Blue",
+    Fields!Gun10.Value = "Yİ", "#00B0F0",
     Fields!Gun10.Value = "T", "#a6a6a6",
     Fields!Gun10.Value = "Ç", "#ff7c80",
     Fields!Gun10.Value = "O", "#33cccc",
@@ -1765,7 +1765,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun11.Value = "M", "#fd99ff",
     Fields!Gun11.Value = "İ", "Yellow",
     Fields!Gun11.Value = "Üİ", "#ffc000",
-    Fields!Gun11.Value = "Yİ", "Blue",
+    Fields!Gun11.Value = "Yİ", "#00B0F0",
     Fields!Gun11.Value = "T", "#a6a6a6",
     Fields!Gun11.Value = "Ç", "#ff7c80",
     Fields!Gun11.Value = "O", "#33cccc",
@@ -1811,7 +1811,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun12.Value = "M", "#fd99ff",
     Fields!Gun12.Value = "İ", "Yellow",
     Fields!Gun12.Value = "Üİ", "#ffc000",
-    Fields!Gun12.Value = "Yİ", "Blue",
+    Fields!Gun12.Value = "Yİ", "#00B0F0",
     Fields!Gun12.Value = "T", "#a6a6a6",
     Fields!Gun12.Value = "Ç", "#ff7c80",
     Fields!Gun12.Value = "O", "#33cccc",
@@ -1857,7 +1857,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun13.Value = "M", "#fd99ff",
     Fields!Gun13.Value = "İ", "Yellow",
     Fields!Gun13.Value = "Üİ", "#ffc000",
-    Fields!Gun13.Value = "Yİ", "Blue",
+    Fields!Gun13.Value = "Yİ", "#00B0F0",
     Fields!Gun13.Value = "T", "#a6a6a6",
     Fields!Gun13.Value = "Ç", "#ff7c80",
     Fields!Gun13.Value = "O", "#33cccc",
@@ -1903,7 +1903,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun14.Value = "M", "#fd99ff",
     Fields!Gun14.Value = "İ", "Yellow",
     Fields!Gun14.Value = "Üİ", "#ffc000",
-    Fields!Gun14.Value = "Yİ", "Blue",
+    Fields!Gun14.Value = "Yİ", "#00B0F0",
     Fields!Gun14.Value = "T", "#a6a6a6",
     Fields!Gun14.Value = "Ç", "#ff7c80",
     Fields!Gun14.Value = "O", "#33cccc",
@@ -1949,7 +1949,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun15.Value = "M", "#fd99ff",
     Fields!Gun15.Value = "İ", "Yellow",
     Fields!Gun15.Value = "Üİ", "#ffc000",
-    Fields!Gun15.Value = "Yİ", "Blue",
+    Fields!Gun15.Value = "Yİ", "#00B0F0",
     Fields!Gun15.Value = "T", "#a6a6a6",
     Fields!Gun15.Value = "Ç", "#ff7c80",
     Fields!Gun15.Value = "O", "#33cccc",
@@ -1995,7 +1995,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun16.Value = "M", "#fd99ff",
     Fields!Gun16.Value = "İ", "Yellow",
     Fields!Gun16.Value = "Üİ", "#ffc000",
-    Fields!Gun16.Value = "Yİ", "Blue",
+    Fields!Gun16.Value = "Yİ", "#00B0F0",
     Fields!Gun16.Value = "T", "#a6a6a6",
     Fields!Gun16.Value = "Ç", "#ff7c80",
     Fields!Gun16.Value = "O", "#33cccc",
@@ -2041,7 +2041,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun17.Value = "M", "#fd99ff",
     Fields!Gun17.Value = "İ", "Yellow",
     Fields!Gun17.Value = "Üİ", "#ffc000",
-    Fields!Gun17.Value = "Yİ", "Blue",
+    Fields!Gun17.Value = "Yİ", "#00B0F0",
     Fields!Gun17.Value = "T", "#a6a6a6",
     Fields!Gun17.Value = "Ç", "#ff7c80",
     Fields!Gun17.Value = "O", "#33cccc",
@@ -2087,7 +2087,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun18.Value = "M", "#fd99ff",
     Fields!Gun18.Value = "İ", "Yellow",
     Fields!Gun18.Value = "Üİ", "#ffc000",
-    Fields!Gun18.Value = "Yİ", "Blue",
+    Fields!Gun18.Value = "Yİ", "#00B0F0",
     Fields!Gun18.Value = "T", "#a6a6a6",
     Fields!Gun18.Value = "Ç", "#ff7c80",
     Fields!Gun18.Value = "O", "#33cccc",
@@ -2133,7 +2133,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun19.Value = "M", "#fd99ff",
     Fields!Gun19.Value = "İ", "Yellow",
     Fields!Gun19.Value = "Üİ", "#ffc000",
-    Fields!Gun19.Value = "Yİ", "Blue",
+    Fields!Gun19.Value = "Yİ", "#00B0F0",
     Fields!Gun19.Value = "T", "#a6a6a6",
     Fields!Gun19.Value = "Ç", "#ff7c80",
     Fields!Gun19.Value = "O", "#33cccc",
@@ -2179,7 +2179,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun20.Value = "M", "#fd99ff",
     Fields!Gun20.Value = "İ", "Yellow",
     Fields!Gun20.Value = "Üİ", "#ffc000",
-    Fields!Gun20.Value = "Yİ", "Blue",
+    Fields!Gun20.Value = "Yİ", "#00B0F0",
     Fields!Gun20.Value = "T", "#a6a6a6",
     Fields!Gun20.Value = "Ç", "#ff7c80",
     Fields!Gun20.Value = "O", "#33cccc",
@@ -2225,7 +2225,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun21.Value = "M", "#fd99ff",
     Fields!Gun21.Value = "İ", "Yellow",
     Fields!Gun21.Value = "Üİ", "#ffc000",
-    Fields!Gun21.Value = "Yİ", "Blue",
+    Fields!Gun21.Value = "Yİ", "#00B0F0",
     Fields!Gun21.Value = "T", "#a6a6a6",
     Fields!Gun21.Value = "Ç", "#ff7c80",
     Fields!Gun21.Value = "O", "#33cccc",
@@ -2271,7 +2271,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun22.Value = "M", "#fd99ff",
     Fields!Gun22.Value = "İ", "Yellow",
     Fields!Gun22.Value = "Üİ", "#ffc000",
-    Fields!Gun22.Value = "Yİ", "Blue",
+    Fields!Gun22.Value = "Yİ", "#00B0F0",
     Fields!Gun22.Value = "T", "#a6a6a6",
     Fields!Gun22.Value = "Ç", "#ff7c80",
     Fields!Gun22.Value = "O", "#33cccc",
@@ -2317,7 +2317,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun23.Value = "M", "#fd99ff",
     Fields!Gun23.Value = "İ", "Yellow",
     Fields!Gun23.Value = "Üİ", "#ffc000",
-    Fields!Gun23.Value = "Yİ", "Blue",
+    Fields!Gun23.Value = "Yİ", "#00B0F0",
     Fields!Gun23.Value = "T", "#a6a6a6",
     Fields!Gun23.Value = "Ç", "#ff7c80",
     Fields!Gun23.Value = "O", "#33cccc",
@@ -2363,7 +2363,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun24.Value = "M", "#fd99ff",
     Fields!Gun24.Value = "İ", "Yellow",
     Fields!Gun24.Value = "Üİ", "#ffc000",
-    Fields!Gun24.Value = "Yİ", "Blue",
+    Fields!Gun24.Value = "Yİ", "#00B0F0",
     Fields!Gun24.Value = "T", "#a6a6a6",
     Fields!Gun24.Value = "Ç", "#ff7c80",
     Fields!Gun24.Value = "O", "#33cccc",
@@ -2409,7 +2409,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun25.Value = "M", "#fd99ff",
     Fields!Gun25.Value = "İ", "Yellow",
     Fields!Gun25.Value = "Üİ", "#ffc000",
-    Fields!Gun25.Value = "Yİ", "Blue",
+    Fields!Gun25.Value = "Yİ", "#00B0F0",
     Fields!Gun25.Value = "T", "#a6a6a6",
     Fields!Gun25.Value = "Ç", "#ff7c80",
     Fields!Gun25.Value = "O", "#33cccc",
@@ -2455,7 +2455,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun26.Value = "M", "#fd99ff",
     Fields!Gun26.Value = "İ", "Yellow",
     Fields!Gun26.Value = "Üİ", "#ffc000",
-    Fields!Gun26.Value = "Yİ", "Blue",
+    Fields!Gun26.Value = "Yİ", "#00B0F0",
     Fields!Gun26.Value = "T", "#a6a6a6",
     Fields!Gun26.Value = "Ç", "#ff7c80",
     Fields!Gun26.Value = "O", "#33cccc",
@@ -2501,7 +2501,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun27.Value = "M", "#fd99ff",
     Fields!Gun27.Value = "İ", "Yellow",
     Fields!Gun27.Value = "Üİ", "#ffc000",
-    Fields!Gun27.Value = "Yİ", "Blue",
+    Fields!Gun27.Value = "Yİ", "#00B0F0",
     Fields!Gun27.Value = "T", "#a6a6a6",
     Fields!Gun27.Value = "Ç", "#ff7c80",
     Fields!Gun27.Value = "O", "#33cccc",
@@ -2547,7 +2547,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun28.Value = "M", "#fd99ff",
     Fields!Gun28.Value = "İ", "Yellow",
     Fields!Gun28.Value = "Üİ", "#ffc000",
-    Fields!Gun28.Value = "Yİ", "Blue",
+    Fields!Gun28.Value = "Yİ", "#00B0F0",
     Fields!Gun28.Value = "T", "#a6a6a6",
     Fields!Gun28.Value = "Ç", "#ff7c80",
     Fields!Gun28.Value = "O", "#33cccc",
@@ -2593,7 +2593,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun29.Value = "M", "#fd99ff",
     Fields!Gun29.Value = "İ", "Yellow",
     Fields!Gun29.Value = "Üİ", "#ffc000",
-    Fields!Gun29.Value = "Yİ", "Blue",
+    Fields!Gun29.Value = "Yİ", "#00B0F0",
     Fields!Gun29.Value = "T", "#a6a6a6",
     Fields!Gun29.Value = "Ç", "#ff7c80",
     Fields!Gun29.Value = "O", "#33cccc",
@@ -2639,7 +2639,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
     Fields!Gun30.Value = "M", "#fd99ff",
     Fields!Gun30.Value = "İ", "Yellow",
     Fields!Gun30.Value = "Üİ", "#ffc000",
-    Fields!Gun30.Value = "Yİ", "Blue",
+    Fields!Gun30.Value = "Yİ", "#00B0F0",
     Fields!Gun30.Value = "T", "#a6a6a6",
     Fields!Gun30.Value = "Ç", "#ff7c80",
     Fields!Gun30.Value = "O", "#33cccc",
@@ -4895,7 +4895,7 @@ ATIKSU ARITMA DAİRESİ BAŞKANLIĞI</Value>
             <DataSetName>Puantajlar</DataSetName>
             <Top>2.3cm</Top>
             <Height>3.71354cm</Height>
-            <Width>40cm</Width>
+            <Width>40.00022cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>

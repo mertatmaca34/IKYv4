@@ -36,19 +36,19 @@ namespace IKYv4.Forms
 
             InitializeComponent();
 
-            AddPuantageToReportViewer();
+            AddPuantageToReportViewer(DateTimePickerPuantageMonth.Value);
         }
 
         private void FormPuantage_Load(object sender, EventArgs e)
         {
-            UpdatePuantageTable(DateTime.Now);
-            AddPuantageToReportViewer();
+            UpdatePuantageTable(DateTimePickerPuantageMonth.Value);
+            AddPuantageToReportViewer(DateTimePickerPuantageMonth.Value);
         }
 
         private void ButtonSetPuantage_Click(object sender, EventArgs e)
         {
             UpdatePuantageTable(DateTimePickerPuantageMonth.Value);
-            AddPuantageToReportViewer();
+            AddPuantageToReportViewer(DateTimePickerPuantageMonth.Value);
         }
 
         private void UpdatePuantageTable(DateTime dateTime)
@@ -57,9 +57,11 @@ namespace IKYv4.Forms
 
             if (_personelData.Count > 0)
             {
-                foreach (var item in _personelData)
+                foreach (var personel in _personelData)
                 {
-                    var personelPuantaj = _puantajData.Find(x => x.PersonelId == item.Id) ?? new Puantaj();
+                    _puantajData = _puantajManager.GetAll().Data;
+
+                    var personelPuantaj = _puantajData.Find(x=> x.YilAy.Month == YilAy.Month);
 
                     var zeroPuantaj = new Puantaj();
 
@@ -144,14 +146,12 @@ namespace IKYv4.Forms
 
                     var ayinGunu = YilAy.AddDays(1).DayOfWeek;
 
-                    //bool haftaTatiliMi = 
-
-                    var resCalismaSaatleri = _calismaSaatleriManager.GetAll(p => p.PersonelId == item.Id).Data.FirstOrDefault();
+                    var resCalismaSaatleri = _calismaSaatleriManager.GetAll(p => p.PersonelId == personel.Id).Data.FirstOrDefault();
 
                     Puantaj puantaj = new Puantaj
                     {
-                        PersonelId = item.Id,
-                        AdiSoyadi = item.Adi + " " + item.Soyadi,
+                        PersonelId = personel.Id,
+                        AdiSoyadi = personel.Adi + " " + personel.Soyadi,
                         YilAy = YilAy,
                         Gun1 = personelPuantaj.Gun1.DidTheyWork(YilAy.DayOfWeek, resCalismaSaatleri),
                         Gun2 = personelPuantaj.Gun2.DidTheyWork(YilAy.AddDays(1).DayOfWeek, resCalismaSaatleri),
@@ -208,18 +208,27 @@ namespace IKYv4.Forms
             }
         }
 
-        private void AddPuantageToReportViewer()
+        private void AddPuantageToReportViewer(DateTime yilAy)
         {
             _personelData = _personelManager.GetAll().Data;
-            _puantajData = _puantajManager.GetAll().Data;
+            _puantajData = _puantajManager.GetAll(x=> x.YilAy.Month ==  yilAy.Month).Data;
             _unvanGrubuData = _unvanGrubuManager.GetAll().Data;
 
+            if(this.reportViewer1.LocalReport.DataSources.Count >= 1)
+            {
+                for (int i = 0; i < reportViewer1.LocalReport.DataSources.Count; i++)
+                {
+                    this.reportViewer1.LocalReport.DataSources.Remove(reportViewer1.LocalReport.DataSources[i]);
+                }
+            }
+            
             this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("Personeller", _personelData));
             this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("UnvanGruplari", _unvanGrubuData));
             this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("Puantajlar", _puantajData));
 
             SetReportViewer();
 
+            this.reportViewer1.Refresh();
             this.reportViewer1.RefreshReport();
         }
 
