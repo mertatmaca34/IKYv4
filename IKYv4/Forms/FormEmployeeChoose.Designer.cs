@@ -43,7 +43,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.DataGridViewEmployees = new System.Windows.Forms.DataGridView();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.EditRow = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel17.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewEmployees)).BeginInit();
@@ -219,8 +218,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridViewEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridViewEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.EditRow});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -261,17 +258,6 @@
             this.dataGridViewImageColumn1.ToolTipText = "Düzenle";
             this.dataGridViewImageColumn1.Width = 800;
             // 
-            // EditRow
-            // 
-            this.EditRow.Description = "Düzenle";
-            this.EditRow.FillWeight = 30F;
-            this.EditRow.HeaderText = "";
-            this.EditRow.Image = global::IKYv4.Properties.Resources.edit_row_24px;
-            this.EditRow.Name = "EditRow";
-            this.EditRow.ReadOnly = true;
-            this.EditRow.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.EditRow.ToolTipText = "Düzenle";
-            // 
             // FormEmployeeChoose
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,7 +288,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView DataGridViewEmployees;
-        private System.Windows.Forms.DataGridViewImageColumn EditRow;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
     }
 }

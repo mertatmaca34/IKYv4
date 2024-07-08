@@ -1,14 +1,9 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IKYv4.Forms
@@ -20,13 +15,14 @@ namespace IKYv4.Forms
         readonly ISeflikManager _seflikManager;
         readonly ITesisManager _tesisManager;
         readonly ICalismaSaatleriManager _calismaSaatleriManager;
+        readonly IUnvanGrubuManager _unvanGrubuManager;
 
         bool tiklandi = false;
         bool isItNew = true;
 
         private Personel _personel = new Personel();
 
-        public FormEmployeeRegistrationCard(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager)
+        public FormEmployeeRegistrationCard(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager, IUnvanGrubuManager unvanGrubuManager)
         {
             InitializeComponent();
 
@@ -35,13 +31,24 @@ namespace IKYv4.Forms
             _seflikManager = seflikManager;
             _tesisManager = tesisManager;
             _calismaSaatleriManager = calismaSaatleriManager;
+            _unvanGrubuManager = unvanGrubuManager;
+
+            var res = _mudurlukManager.GetAll();
+
+            if (res.Data.Count > 0)
+            {
+                foreach (var item in res.Data)
+                {
+                    ComboBoxDirectorate.Items.Add(item.MudurlukAdi);
+                }
+            }
         }
 
         private void ButtonSave_Click(object sender, EventArgs e)
         {
-            var resPersonsel = _personelManager.GetAll(p=> p.TCKimlikNo == TextBoxUserId.Text);
+            var resPersonsel = _personelManager.GetAll(p => p.TCKimlikNo == TextBoxUserId.Text);
 
-            if(resPersonsel.Data.Count > 0)
+            if (resPersonsel.Data.Count > 0)
             {
                 _personel.Id = resPersonsel.Data.FirstOrDefault().Id;
 
@@ -63,9 +70,9 @@ namespace IKYv4.Forms
             _personel.GorevYeri = ComboBoxDutyStation.Text;
             _personel.Unvani = ComboBoxTitle.Text;
             _personel.Pozisyonu = ComboBoxPosition.Text;
-            _personel.MK = double.Parse(TextBoxMk.Text);
-            _personel.PK = double.Parse(TextBoxPk.Text);
-            _personel.ToplamKatsayi = double.Parse(TextBoxTotalK.Text);
+            _personel.MK = TextBoxMk.Text;
+            _personel.PK = TextBoxPk.Text;
+            _personel.ToplamKatsayi = TextBoxTotalK.Text;
             _personel.CalisiyorMu = true;
 
             var res = _personelManager.Add(_personel);
@@ -79,7 +86,7 @@ namespace IKYv4.Forms
 
         private void AssignDefaultShifts()
         {
-            if(isItNew)
+            if (isItNew)
             {
                 CalismaSaatleri calismaSaatleri = new CalismaSaatleri
                 {
@@ -106,13 +113,13 @@ namespace IKYv4.Forms
 
         private void FormEmployeeRegistrationCard_Load(object sender, EventArgs e)
         {
-            var res = _mudurlukManager.GetAll();
+            var res = _unvanGrubuManager.GetAll().Data;
 
-            if (res.Data.Count > 0)
+            if(string.IsNullOrEmpty(ComboBoxTitle.Text))
             {
-                foreach (var item in res.Data)
+                foreach (var unvanGrubu in res)
                 {
-                    ComboBoxDirectorate.Items.Add(item.MudurlukAdi);
+                    ComboBoxTitle.Items.Add(unvanGrubu.UnvanGrubuAdi);
                 }
             }
         }
@@ -180,7 +187,15 @@ namespace IKYv4.Forms
                     _personel.ImageData = imageData;
                 }
             }
-            
+        }
+
+        private void ComboBoxTitle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var res = _unvanGrubuManager.GetAll(x=> x.UnvanGrubuAdi == ComboBoxTitle.Text).Data.FirstOrDefault();
+
+            TextBoxMk.Text = res.MK.ToString();
+            TextBoxPk.Text = res.PK.ToString();
+            TextBoxTotalK.Text = res.TK.ToString();
         }
     }
 }

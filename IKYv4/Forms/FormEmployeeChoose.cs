@@ -29,6 +29,8 @@ namespace IKYv4.Forms
         private void FormEmployeeChoose_Load(object sender, EventArgs e)
         {
             DataGridViewEmployees.DataSource = _personelManager.GetAll().Data;
+
+            //DataGridViewCustomization();
         }
 
         private void DataGridViewEmployees_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -45,6 +47,38 @@ namespace IKYv4.Forms
             }
 
             this.Close();
+        }
+
+        private void DataGridViewCustomization()
+        {
+            DataGridViewEmployees.DataSource = _personelManager.GetAll().Data.ToList();
+            DataGridViewEmployees.Refresh();
+
+            DataGridViewEmployees.Columns[0].Visible = false;
+            DataGridViewEmployees.Columns[10].Visible = false;
+            DataGridViewEmployees.Columns[12].Visible = false;
+            DataGridViewEmployees.Columns[13].Visible = false;
+            DataGridViewEmployees.Columns[15].Visible = false;
+            DataGridViewEmployees.Columns[16].Visible = false;
+
+            (DataGridViewEmployees.Columns[3] as DataGridViewImageColumn).ImageLayout = DataGridViewImageCellLayout.Zoom;
+
+            DataGridViewEmployees.Columns[3].HeaderText = "Fotoğraf";
+            DataGridViewEmployees.Columns[4].HeaderText = "TC Kimlik No";
+            DataGridViewEmployees.Columns[5].HeaderText = "Sicil No";
+            DataGridViewEmployees.Columns[6].HeaderText = "Adı";
+            DataGridViewEmployees.Columns[7].HeaderText = "Soyadı";
+            DataGridViewEmployees.Columns[8].HeaderText = "İşe Giriş Tarihi";
+            DataGridViewEmployees.Columns[9].HeaderText = "Müdürlük";
+            DataGridViewEmployees.Columns[10].HeaderText = "Şeflik";
+            DataGridViewEmployees.Columns[11].HeaderText = "Görev Yeri";
+            DataGridViewEmployees.Columns[12].HeaderText = "Ünvanı";
+            DataGridViewEmployees.Columns[13].HeaderText = "Pozisyonu";
+            DataGridViewEmployees.Columns[14].HeaderText = "Maaş Katsayısı";
+            DataGridViewEmployees.Columns[15].HeaderText = "Prim Katsayısı";
+            DataGridViewEmployees.Columns[16].HeaderText = "Toplam Katsayısı";
+            DataGridViewEmployees.Columns[17].HeaderText = "Çalışma Durumu";
+            DataGridViewEmployees.Columns[18].HeaderText = "Yıllık İzin Sayısı";
         }
     }
 }

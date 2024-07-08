@@ -2557,6 +2557,7 @@ namespace IKYv4.Forms
             // TextBoxMk
             // 
             this.TextBoxMk.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TextBoxMk.Enabled = false;
             this.TextBoxMk.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TextBoxMk.Location = new System.Drawing.Point(361, 4);
             this.TextBoxMk.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
@@ -2568,6 +2569,7 @@ namespace IKYv4.Forms
             // TextBoxPk
             // 
             this.TextBoxPk.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TextBoxPk.Enabled = false;
             this.TextBoxPk.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TextBoxPk.Location = new System.Drawing.Point(528, 4);
             this.TextBoxPk.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
@@ -2579,6 +2581,7 @@ namespace IKYv4.Forms
             // TextBoxTotalK
             // 
             this.TextBoxTotalK.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TextBoxTotalK.Enabled = false;
             this.TextBoxTotalK.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TextBoxTotalK.Location = new System.Drawing.Point(779, 4);
             this.TextBoxTotalK.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
@@ -2659,6 +2662,7 @@ namespace IKYv4.Forms
             this.ComboBoxTitle.Name = "ComboBoxTitle";
             this.ComboBoxTitle.Size = new System.Drawing.Size(569, 29);
             this.ComboBoxTitle.TabIndex = 8;
+            this.ComboBoxTitle.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTitle_SelectedIndexChanged);
             // 
             // ComboBoxPosition
             // 

@@ -11,8 +11,8 @@ namespace Entities.Concrete
     {
         public int Id { get; set; }
         public string UnvanGrubuAdi { get; set; }
-        public double PK { get; set; }
-        public double MK { get; set; }
-        public double TK { get; set; }
+        public string PK { get; set; }
+        public string MK { get; set; }
+        public string TK { get; set; }
     }
 }

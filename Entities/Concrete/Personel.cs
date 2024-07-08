@@ -17,9 +17,9 @@ namespace Entities.Concrete
         public string GorevYeri { get; set; }
         public string Unvani { get; set; }
         public string Pozisyonu { get; set; }
-        public double? MK { get; set; }
-        public double? PK { get; set; }
-        public double? ToplamKatsayi { get; set; }
+        public string MK { get; set; }
+        public string PK { get; set; }
+        public string ToplamKatsayi { get; set; }
         public bool? CalisiyorMu { get; set; }
         public int YillikIzinSayisi { get; set; }
     }

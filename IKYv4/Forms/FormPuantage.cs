@@ -61,7 +61,7 @@ namespace IKYv4.Forms
                 {
                     _puantajData = _puantajManager.GetAll().Data;
 
-                    var personelPuantaj = _puantajData.Find(x=> x.YilAy.Month == YilAy.Month);
+                    var personelPuantaj = _puantajData.Find(x=> x.PersonelId == personel.Id && x.YilAy.Month == YilAy.Month) ?? new Puantaj();
 
                     var zeroPuantaj = new Puantaj();
 
@@ -148,7 +148,7 @@ namespace IKYv4.Forms
 
                     var resCalismaSaatleri = _calismaSaatleriManager.GetAll(p => p.PersonelId == personel.Id).Data.FirstOrDefault();
 
-                    Puantaj puantaj = new Puantaj
+                    Puantaj puantaj = new Puantaj   
                     {
                         PersonelId = personel.Id,
                         AdiSoyadi = personel.Adi + " " + personel.Soyadi,
@@ -200,7 +200,6 @@ namespace IKYv4.Forms
                         YemekOdemesineEsasGun = zeroPuantaj.YemekOdemesineEsasGun,
                         UlBayVeGenResTatCalisilanGun = zeroPuantaj.UlBayVeGenResTatCalisilanGun,
                         FazlCalismaSaati = zeroPuantaj.FazlCalismaSaati,
-
                     };
 
                     _puantajManager.Add(puantaj);

@@ -22,8 +22,9 @@ namespace IKYv4.Forms
         ISeflikManager _seflikManager;
         ITesisManager _tesisManager;
         ICalismaSaatleriManager _calismaSaatleriManager;
+        IUnvanGrubuManager _unvanGrubuManager;
 
-        public FormEmployeeListing(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager)
+        public FormEmployeeListing(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager, IUnvanGrubuManager unvanGrubuManager)
         {
             InitializeComponent();
 
@@ -32,13 +33,14 @@ namespace IKYv4.Forms
             _seflikManager = seflikManager;
             _tesisManager = tesisManager;
             _calismaSaatleriManager = calismaSaatleriManager;
+            _unvanGrubuManager = unvanGrubuManager;
 
             DataGridViewCustomization();
         }
 
         private void ButtonNewEmployee_Click(object sender, EventArgs e)
         {
-            FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager);
+            FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager);
 
             formEmployeeRegistrationCard.ShowDialog();
 
@@ -87,7 +89,11 @@ namespace IKYv4.Forms
 
                 var selectedPersonel = _personelManager.GetAll(p => p.Id == selectedPersonelId).Data.FirstOrDefault();
 
-                FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager);
+                FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager);
+
+                formEmployeeRegistrationCard.ComboBoxConducting.Enabled = true;
+                formEmployeeRegistrationCard.ComboBoxDirectorate.Enabled = true;
+                formEmployeeRegistrationCard.ComboBoxDutyStation.Enabled = true;
 
                 formEmployeeRegistrationCard.TextBoxName.Text = selectedPersonel.Adi;
                 formEmployeeRegistrationCard.TextBoxSurname.Text = selectedPersonel.Soyadi;
