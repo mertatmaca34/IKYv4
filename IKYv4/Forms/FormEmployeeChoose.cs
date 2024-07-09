@@ -37,7 +37,7 @@ namespace IKYv4.Forms
         {
             var row = DataGridViewEmployees.SelectedRows[0];
 
-            int id = (int)row.Cells[1].Value;
+            int id = (int)row.Cells[0].Value;
 
             var getEmployeeData = _personelManager.GetAll(x => x.Id == id).Data.FirstOrDefault();
 

@@ -16,6 +16,7 @@ namespace IKYv4.Forms
         private readonly ITesisManager _tesisManager;
         private readonly IIzinManager _izinManager;
         private readonly IUnvanGrubuManager _unvanGrubuManager;
+        private readonly IUnvanManager _unvanManager;
         private readonly IPuantajManager _puantajManager;
         private readonly ICalismaSaatleriManager _calismaSaatleriManager;
 
@@ -27,6 +28,7 @@ namespace IKYv4.Forms
             ITesisManager tesisManager,
             IIzinManager izinManager,
             IUnvanGrubuManager unvanGrubuManager,
+            IUnvanManager unvanManager,
             IPuantajManager puantajManager,
             ICalismaSaatleriManager calismaSaatleriManager)
         {
@@ -39,6 +41,7 @@ namespace IKYv4.Forms
             _tesisManager = tesisManager;
             _izinManager = izinManager;
             _unvanGrubuManager = unvanGrubuManager;
+            _unvanManager = unvanManager;
             _puantajManager = puantajManager;
             _calismaSaatleriManager = calismaSaatleriManager;
         }
@@ -62,7 +65,7 @@ namespace IKYv4.Forms
         {
             if (LabelUserName.Text != "Adı Soyadı")
             {
-                PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager));
+                PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager));
             }
         }
 
@@ -74,7 +77,7 @@ namespace IKYv4.Forms
 
         public void ShowEmployeeListingForm()
         {
-            PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager));
+            PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager));
         }
 
         private void AddAdminToSystem()
