@@ -16,13 +16,14 @@ namespace IKYv4.Forms
         readonly ITesisManager _tesisManager;
         readonly ICalismaSaatleriManager _calismaSaatleriManager;
         readonly IUnvanGrubuManager _unvanGrubuManager;
+        readonly IUnvanManager _unvanManager;
 
         bool tiklandi = false;
         bool isItNew = true;
 
         private Personel _personel = new Personel();
 
-        public FormEmployeeRegistrationCard(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager, IUnvanGrubuManager unvanGrubuManager)
+        public FormEmployeeRegistrationCard(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager, IUnvanGrubuManager unvanGrubuManager, IUnvanManager unvanManager)
         {
             InitializeComponent();
 
@@ -32,6 +33,7 @@ namespace IKYv4.Forms
             _tesisManager = tesisManager;
             _calismaSaatleriManager = calismaSaatleriManager;
             _unvanGrubuManager = unvanGrubuManager;
+            _unvanManager = unvanManager;
 
             var res = _mudurlukManager.GetAll();
 
@@ -40,6 +42,16 @@ namespace IKYv4.Forms
                 foreach (var item in res.Data)
                 {
                     ComboBoxDirectorate.Items.Add(item.MudurlukAdi);
+                }
+            }
+
+            var resUnvanGrubu = _unvanGrubuManager.GetAll().Data;
+
+            if (string.IsNullOrEmpty(ComboBoxTitle.Text))
+            {
+                foreach (var unvanGrubu in resUnvanGrubu)
+                {
+                    ComboBoxTitle.Items.Add(unvanGrubu.UnvanGrubuAdi);
                 }
             }
         }
@@ -110,10 +122,10 @@ namespace IKYv4.Forms
                 _calismaSaatleriManager.Add(calismaSaatleri);
             }
         }
-
+        
         private void FormEmployeeRegistrationCard_Load(object sender, EventArgs e)
         {
-            var res = _unvanGrubuManager.GetAll().Data;
+            /*var res = _unvanGrubuManager.GetAll().Data;
 
             if(string.IsNullOrEmpty(ComboBoxTitle.Text))
             {
@@ -121,7 +133,7 @@ namespace IKYv4.Forms
                 {
                     ComboBoxTitle.Items.Add(unvanGrubu.UnvanGrubuAdi);
                 }
-            }
+            }*/
         }
 
         private void ComboBoxDirectorate_SelectedIndexChanged(object sender, EventArgs e)
@@ -191,6 +203,16 @@ namespace IKYv4.Forms
 
         private void ComboBoxTitle_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ComboBoxPosition.Items.Clear();
+
+            var resUnvanGrubuId = _unvanGrubuManager.GetAll(x => x.UnvanGrubuAdi == ComboBoxTitle.Text).Data.FirstOrDefault().Id;
+            var resUnvan = _unvanManager.GetAll(x => x.UnvanGrubuId == resUnvanGrubuId).Data;
+
+            foreach (var unvan in resUnvan)
+            {
+                ComboBoxPosition.Items.Add(unvan.UnvanAdi);
+            }
+
             var res = _unvanGrubuManager.GetAll(x=> x.UnvanGrubuAdi == ComboBoxTitle.Text).Data.FirstOrDefault();
 
             TextBoxMk.Text = res.MK.ToString();

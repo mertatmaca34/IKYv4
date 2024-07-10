@@ -102,7 +102,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ButtonSearch = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -1085,7 +1085,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 78F));
             this.tableLayoutPanel18.Controls.Add(this.comboBox14, 2, 0);
             this.tableLayoutPanel18.Controls.Add(this.button3, 0, 0);
-            this.tableLayoutPanel18.Controls.Add(this.button2, 7, 0);
+            this.tableLayoutPanel18.Controls.Add(this.ButtonSearch, 7, 0);
             this.tableLayoutPanel18.Controls.Add(this.textBox4, 6, 0);
             this.tableLayoutPanel18.Controls.Add(this.comboBox4, 5, 0);
             this.tableLayoutPanel18.Controls.Add(this.label14, 1, 0);
@@ -1134,21 +1134,22 @@ namespace IKYv4.Forms
             this.button3.Text = "Sütunları Düzenle";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // ButtonSearch
             // 
-            this.button2.BackColor = System.Drawing.Color.Brown;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(859, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(72, 29);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Ara";
-            this.button2.UseVisualStyleBackColor = false;
+            this.ButtonSearch.BackColor = System.Drawing.Color.Brown;
+            this.ButtonSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonSearch.FlatAppearance.BorderSize = 0;
+            this.ButtonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonSearch.ForeColor = System.Drawing.Color.White;
+            this.ButtonSearch.Location = new System.Drawing.Point(859, 3);
+            this.ButtonSearch.Name = "ButtonSearch";
+            this.ButtonSearch.Size = new System.Drawing.Size(72, 29);
+            this.ButtonSearch.TabIndex = 2;
+            this.ButtonSearch.Text = "Ara";
+            this.ButtonSearch.UseVisualStyleBackColor = false;
+            this.ButtonSearch.Click += new System.EventHandler(this.ButtonSearch_Click);
             // 
             // textBox4
             // 
@@ -1214,7 +1215,7 @@ namespace IKYv4.Forms
             this.DataGridViewEmployees.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewEmployees.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridViewEmployees.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkRed;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
@@ -1227,7 +1228,7 @@ namespace IKYv4.Forms
             this.DataGridViewEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EditRow,
             this.EditShifts});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -1244,6 +1245,7 @@ namespace IKYv4.Forms
             this.DataGridViewEmployees.ReadOnly = true;
             this.DataGridViewEmployees.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridViewEmployees.RowHeadersVisible = false;
+            this.DataGridViewEmployees.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.MistyRose;
@@ -1418,7 +1420,7 @@ namespace IKYv4.Forms
         private TableLayoutPanel tableLayoutPanel18;
         private ComboBox comboBox14;
         private Button button3;
-        private Button button2;
+        private Button ButtonSearch;
         private Label label7;
         private TextBox textBox4;
         private ComboBox comboBox4;

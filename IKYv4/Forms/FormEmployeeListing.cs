@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
+using LinqKit;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -43,7 +45,7 @@ namespace IKYv4.Forms
 
         private void ButtonNewEmployee_Click(object sender, EventArgs e)
         {
-            FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager);
+            FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager);
 
             formEmployeeRegistrationCard.ShowDialog();
 
@@ -92,7 +94,7 @@ namespace IKYv4.Forms
 
                 var selectedPersonel = _personelManager.GetAll(p => p.Id == selectedPersonelId).Data.FirstOrDefault();
 
-                FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager);
+                FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager);
 
                 formEmployeeRegistrationCard.ComboBoxConducting.Enabled = true;
                 formEmployeeRegistrationCard.ComboBoxDirectorate.Enabled = true;
@@ -106,8 +108,8 @@ namespace IKYv4.Forms
                 formEmployeeRegistrationCard.ComboBoxDirectorate.Text = selectedPersonel.Mudurluk;
                 formEmployeeRegistrationCard.ComboBoxConducting.Text = selectedPersonel.Seflik;
                 formEmployeeRegistrationCard.ComboBoxDutyStation.Text = selectedPersonel.GorevYeri;
-                formEmployeeRegistrationCard.ComboBoxTitle.Text = selectedPersonel.Unvani;
-                formEmployeeRegistrationCard.ComboBoxPosition.Text = selectedPersonel.Pozisyonu;
+                formEmployeeRegistrationCard.ComboBoxTitle.SelectedItem = selectedPersonel.Unvani;
+                formEmployeeRegistrationCard.ComboBoxPosition.SelectedItem = selectedPersonel.Pozisyonu;
                 formEmployeeRegistrationCard.TextBoxMk.Text = selectedPersonel.MK.ToString();
                 formEmployeeRegistrationCard.TextBoxPk.Text = selectedPersonel.PK.ToString();
                 formEmployeeRegistrationCard.TextBoxTotalK.Text = selectedPersonel.ToplamKatsayi.ToString();
@@ -295,6 +297,53 @@ namespace IKYv4.Forms
                 ComboBoxUnvanGrubu.Text = ComboBoxUnvanGrubu.SelectedIndex < 0 ? "POZİSYON"
                     : ComboBoxUnvanGrubu.Text = ComboBoxUnvanGrubu.SelectedText;
             }
+        }
+
+        private void ButtonSearch_Click(object sender, EventArgs e)
+        {
+            Expression<Func<Personel, bool>> filterText = null;
+            Expression<Func<Personel, bool>> filterBirim = null;
+            Expression<Func<Personel, bool>> filterUnvan = null;
+            Expression<Func<Nufus, bool>> filterNufusKanGrubu = null;
+            Expression<Func<Personel, bool>> filterKanGrubu = null;
+
+            if (ComboBoxTesisFilter.Text != "TESİS")
+            {
+                filterBirim = x => x.GorevYeri == ComboBoxTesisFilter.Text;
+            }
+            else if (ComboBoxSeflikFilter.Text != "ŞEFLİK")
+            {
+                filterBirim = x => x.Seflik == ComboBoxSeflikFilter.Text;
+            }
+            else if (ComboBoxMudurlukFilter.Text != "MÜDÜRLÜK")
+            {
+                filterBirim = x => x.Mudurluk == ComboBoxMudurlukFilter.Text;
+            }
+
+            if (ComboBoxPozisyon.Text != "POZİSYON")
+            {
+                filterUnvan = x => x.Pozisyonu == ComboBoxPozisyon.Text;
+            }
+            else if (ComboBoxUnvanGrubu.Text != "ÜNVAN GRUBU")
+            {
+                filterUnvan = x => x.Unvani == ComboBoxUnvanGrubu.Text;
+            }
+
+            if(ComboBoxKanGrubu.Text != "KAN GRUBU")
+            {
+                filterNufusKanGrubu = x=> x.KanGrubu == ComboBoxKanGrubu.Text;
+
+                var resNufus = _nufusManager.GetAll();
+            }
+
+            filterText = filterBirim != null && filterUnvan != null ? PredicateBuilder.And(filterBirim, filterUnvan)
+                : filterBirim != null && filterUnvan == null ? filterBirim
+                : filterUnvan != null && filterBirim == null ? filterUnvan : null;
+
+            var res = _personelManager.GetAll(filterText).Data.ToList();
+
+            DataGridViewEmployees.DataSource = res;
+            DataGridViewEmployees.Refresh();
         }
     }
 }
