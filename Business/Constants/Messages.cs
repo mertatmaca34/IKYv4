@@ -36,6 +36,10 @@ namespace Business.Constants
         public static readonly string IzinUpdated = "Izin bilgileri başarıyla güncellendi";
         public static readonly string IzinDeleted = "Izin bilgileri başarıyla silindi";
 
+        public static readonly string NufusAdded   = "Nüfus bilgileri başarıyla oluşturuldu";
+        public static readonly string NufusUpdated = "Nüfus bilgileri başarıyla güncellendi";
+        public static readonly string NufusDeleted = "Nüfus bilgileri başarıyla silindi";
+
         public static readonly string UnvanAdded = "Unvan bilgileri başarıyla oluşturuldu";
         public static readonly string UnvanUpdated = "Unvan bilgileri başarıyla güncellendi";
         public static readonly string UnvanDeleted = "Unvan bilgileri başarıyla silindi";

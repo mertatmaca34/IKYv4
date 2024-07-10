@@ -2,17 +2,11 @@
 using Entities.Concrete;
 using LinqKit;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace IKYv4.Forms
 {
@@ -27,8 +21,9 @@ namespace IKYv4.Forms
         ICalismaSaatleriManager _calismaSaatleriManager;
         IUnvanGrubuManager _unvanGrubuManager;
         IUnvanManager _unvanManager;
+        INufusManager _nufusManager;
 
-        public FormEmployeeListing(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager, IUnvanGrubuManager unvanGrubuManager, IUnvanManager unvanManager)
+        public FormEmployeeListing(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager, IUnvanGrubuManager unvanGrubuManager, IUnvanManager unvanManager, INufusManager nufusManager)
         {
             InitializeComponent();
 
@@ -39,6 +34,7 @@ namespace IKYv4.Forms
             _calismaSaatleriManager = calismaSaatleriManager;
             _unvanGrubuManager = unvanGrubuManager;
             _unvanManager = unvanManager;
+            _nufusManager = nufusManager;
 
             DataGridViewCustomization();
         }
