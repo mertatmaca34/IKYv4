@@ -21,6 +21,9 @@ namespace IKYv4.Forms
         private readonly ICalismaSaatleriManager _calismaSaatleriManager;
         private readonly INufusManager _nufusManager;
         private readonly ITahsilManager _tahsilManager;
+        private readonly INakilManager _nakilManager;
+        private readonly ISertifikaManager _sertifikaManager;
+        private readonly IIletisimManager _iletisimManager;
 
         public FormMain(
             IPersonelManager personelManager,
@@ -33,7 +36,11 @@ namespace IKYv4.Forms
             IUnvanManager unvanManager,
             IPuantajManager puantajManager,
             ICalismaSaatleriManager calismaSaatleriManager,
-            INufusManager nufusManager)
+            INufusManager nufusManager,
+            INakilManager nakilManager,
+            ISertifikaManager sertifikaManager,
+            IIletisimManager iletisimManager,
+            ITahsilManager tahsilManager)
         {
             InitializeComponent();
 
@@ -48,6 +55,10 @@ namespace IKYv4.Forms
             _puantajManager = puantajManager;
             _calismaSaatleriManager = calismaSaatleriManager;
             _nufusManager = nufusManager;
+            _nakilManager = nakilManager;
+            _sertifikaManager = sertifikaManager;
+            _iletisimManager = iletisimManager;
+            _tahsilManager = tahsilManager;
         }
 
         private void FormMain_SizeChanged(object sender, EventArgs e)
@@ -63,7 +74,6 @@ namespace IKYv4.Forms
             PageChange.Change(PanelContent, this, new FormLogin(_kullaniciManager, this));
             AddAdminToSystem();
         }
-
 
         private void ButtonEmployeeListing_Click(object sender, EventArgs e)
         {
@@ -105,20 +115,10 @@ namespace IKYv4.Forms
             }
         }
 
-        private void ButtonMainPage_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ButtonLogOut_Click(object sender, EventArgs e)
         {
             PageChange.Change(PanelContent, this, new FormLogin(_kullaniciManager, this));
             LabelUserName.Text = "Adı Soyadı";
-        }
-
-        private void LabelUserName_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void ButtonPuantage_Click(object sender, EventArgs e)
