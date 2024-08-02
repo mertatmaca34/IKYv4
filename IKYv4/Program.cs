@@ -56,6 +56,15 @@ namespace IKYv4
             services.AddSingleton<INufusDal, NufusDal>();
             services.AddSingleton<INufusManager, NufusManager>();
 
+            services.AddSingleton<ISertifikaDal, SertifikaDal>();
+            services.AddSingleton<ISertifikaManager, SertifikaManager>();
+
+            services.AddSingleton<INufusDal, NufusDal>();
+            services.AddSingleton<INufusManager, NufusManager>();
+
+            services.AddSingleton<INufusDal, NufusDal>();
+            services.AddSingleton<INufusManager, NufusManager>();
+
             services.AddSingleton<ITahsilDal, TahsilDal>();
             services.AddSingleton<ITahsilManager, TahsilManager>();
 

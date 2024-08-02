@@ -57,6 +57,9 @@
     <Compile Include="Abstract\ISeflikManager.cs" />
     <Compile Include="Abstract\ITesisManager.cs" />
     <Compile Include="Concrete\CalismaSaatleriManager.cs" />
+    <Compile Include="Concrete\NakilManager.cs" />
+    <Compile Include="Concrete\IletisimManager.cs" />
+    <Compile Include="Concrete\SertifikaManager.cs" />
     <Compile Include="Concrete\TahsilManager.cs" />
     <Compile Include="Concrete\NufusManager.cs" />
     <Compile Include="Concrete\PuantajManager.cs" />
