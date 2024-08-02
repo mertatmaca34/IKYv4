@@ -37,7 +37,6 @@ namespace IKYv4.Forms
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.label48 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
@@ -50,12 +49,13 @@ namespace IKYv4.Forms
             this.TextBoxCity = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
             this.TextBoxPhoneNumber2 = new System.Windows.Forms.TextBox();
             this.TextBoxPhoneNumber = new System.Windows.Forms.TextBox();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.TextBoxMailAdress = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.label42 = new System.Windows.Forms.Label();
@@ -343,17 +343,6 @@ namespace IKYv4.Forms
             this.tableLayoutPanel12.Size = new System.Drawing.Size(1119, 504);
             this.tableLayoutPanel12.TabIndex = 3;
             // 
-            // label48
-            // 
-            this.label48.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label48.Location = new System.Drawing.Point(394, 37);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(61, 21);
-            this.label48.TabIndex = 0;
-            this.label48.Text = "ADRES";
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkRed;
@@ -490,17 +479,6 @@ namespace IKYv4.Forms
             this.label62.TabIndex = 0;
             this.label62.Text = "CEP TEL 2:";
             // 
-            // label61
-            // 
-            this.label61.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label61.Location = new System.Drawing.Point(889, 37);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(139, 21);
-            this.label61.TabIndex = 0;
-            this.label61.Text = "TELEFON/E-MAIL";
-            // 
             // TextBoxPhoneNumber2
             // 
             this.TextBoxPhoneNumber2.BackColor = System.Drawing.Color.White;
@@ -558,6 +536,28 @@ namespace IKYv4.Forms
             this.TextBoxMailAdress.Name = "TextBoxMailAdress";
             this.TextBoxMailAdress.Size = new System.Drawing.Size(263, 29);
             this.TextBoxMailAdress.TabIndex = 8;
+            // 
+            // label48
+            // 
+            this.label48.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label48.Location = new System.Drawing.Point(394, 37);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(61, 21);
+            this.label48.TabIndex = 0;
+            this.label48.Text = "ADRES";
+            // 
+            // label61
+            // 
+            this.label61.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label61.Location = new System.Drawing.Point(889, 37);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(139, 21);
+            this.label61.TabIndex = 0;
+            this.label61.Text = "TELEFON/E-MAIL";
             // 
             // tabPage5
             // 
@@ -2900,44 +2900,8 @@ namespace IKYv4.Forms
         private Label label44;
         private Label label45;
         private Panel panel4;
-        private TextBox TextBoxDivision1;
-        private TextBox TextBoxJob1;
-        private DateTimePicker DateTimePickerStartDate1;
-        private TextBox TextBoxDivision2;
-        private TextBox TextBoxJob2;
-        private DateTimePicker DateTimePickerStartDate2;
-        private TextBox TextBoxDivision3;
-        private TextBox TextBoxDivision4;
-        private TextBox TextBoxDivision5;
-        private TextBox TextBoxDivision6;
-        private TextBox TextBoxJob3;
-        private TextBox TextBoxJob4;
-        private TextBox TextBoxJob5;
-        private TextBox TextBoxJob6;
-        private DateTimePicker DateTimePickerStartDate3;
-        private DateTimePicker DateTimePickerStartDate4;
-        private DateTimePicker DateTimePickerStartDate5;
-        private DateTimePicker DateTimePickerStartDate6;
         private Label label46;
         private Label label47;
-        private DateTimePicker DateTimePickerDepartureDate1;
-        private DateTimePicker DateTimePickerDepartureDate2;
-        private DateTimePicker DateTimePickerDepartureDate3;
-        private DateTimePicker DateTimePickerDepartureDate4;
-        private DateTimePicker DateTimePickerDepartureDate5;
-        private DateTimePicker DateTimePickerDepartureDate6;
-        private TextBox TextBoxDescription1;
-        private TextBox TextBoxDescription2;
-        private TextBox TextBoxDescription3;
-        private TextBox TextBoxDescription4;
-        private TextBox TextBoxDescription5;
-        private TextBox TextBoxDescription6;
-        private TextBox TextBoxInstitution6;
-        private TextBox TextBoxInstitution5;
-        private TextBox TextBoxInstitution4;
-        private TextBox TextBoxInstitution3;
-        private TextBox TextBoxInstitution2;
-        private TextBox TextBoxInstitution1;
         private TableLayoutPanel tableLayoutPanel12;
         private Label label48;
         private Label label61;
@@ -3018,5 +2982,41 @@ namespace IKYv4.Forms
         public TextBox TextBoxSertificate4;
         public TextBox TextBoxSertificate5;
         public TextBox TextBoxSertificate6;
+        public TextBox TextBoxDivision1;
+        public TextBox TextBoxJob1;
+        public DateTimePicker DateTimePickerStartDate1;
+        public TextBox TextBoxDivision2;
+        public TextBox TextBoxJob2;
+        public DateTimePicker DateTimePickerStartDate2;
+        public TextBox TextBoxDivision3;
+        public TextBox TextBoxDivision4;
+        public TextBox TextBoxDivision5;
+        public TextBox TextBoxDivision6;
+        public TextBox TextBoxJob3;
+        public TextBox TextBoxJob4;
+        public TextBox TextBoxJob5;
+        public TextBox TextBoxJob6;
+        public DateTimePicker DateTimePickerStartDate3;
+        public DateTimePicker DateTimePickerStartDate4;
+        public DateTimePicker DateTimePickerStartDate5;
+        public DateTimePicker DateTimePickerStartDate6;
+        public DateTimePicker DateTimePickerDepartureDate1;
+        public DateTimePicker DateTimePickerDepartureDate2;
+        public DateTimePicker DateTimePickerDepartureDate3;
+        public DateTimePicker DateTimePickerDepartureDate4;
+        public DateTimePicker DateTimePickerDepartureDate5;
+        public DateTimePicker DateTimePickerDepartureDate6;
+        public TextBox TextBoxDescription1;
+        public TextBox TextBoxDescription2;
+        public TextBox TextBoxDescription3;
+        public TextBox TextBoxDescription4;
+        public TextBox TextBoxDescription5;
+        public TextBox TextBoxDescription6;
+        public TextBox TextBoxInstitution6;
+        public TextBox TextBoxInstitution5;
+        public TextBox TextBoxInstitution4;
+        public TextBox TextBoxInstitution3;
+        public TextBox TextBoxInstitution2;
+        public TextBox TextBoxInstitution1;
     }
 }

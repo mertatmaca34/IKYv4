@@ -26,8 +26,22 @@ namespace IKYv4.Forms
         IUnvanManager _unvanManager;
         INufusManager _nufusManager;
         ITahsilManager _tahsilManager;
+        ISertifikaManager _sertifikaManager;
+        IIletisimManager _iletisimManager;
+        INakilManager _nakilManager;
 
-        public FormEmployeeListing(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager, IUnvanGrubuManager unvanGrubuManager, IUnvanManager unvanManager, INufusManager nufusManager, ITahsilManager tahsilManager)
+        public FormEmployeeListing(IPersonelManager personelManager,
+                                   IMudurlukManager mudurlukManager,
+                                   ISeflikManager seflikManager,
+                                   ITesisManager tesisManager,
+                                   ICalismaSaatleriManager calismaSaatleriManager,
+                                   IUnvanGrubuManager unvanGrubuManager,
+                                   IUnvanManager unvanManager,
+                                   INufusManager nufusManager,
+                                   ITahsilManager tahsilManager,
+                                   ISertifikaManager sertifikaManager,
+                                   IIletisimManager iletisimManager,
+                                   INakilManager nakilManager)
         {
             InitializeComponent();
 
@@ -40,6 +54,9 @@ namespace IKYv4.Forms
             _unvanManager = unvanManager;
             _nufusManager = nufusManager;
             _tahsilManager = tahsilManager;
+            _sertifikaManager = sertifikaManager;
+            _iletisimManager = iletisimManager;
+            _nakilManager = nakilManager;
 
             DataGridViewCustomization();
         }
@@ -156,6 +173,54 @@ namespace IKYv4.Forms
                     formEmployeeRegistrationCard.DateTimePickerGraduation3.Value = selectedPersonelTahsil.MezuniyetTarihi3.Value;
                     formEmployeeRegistrationCard.DateTimePickerGraduation4.Value = selectedPersonelTahsil.MezuniyetTarihi4.Value;
                     formEmployeeRegistrationCard.DateTimePickerGraduation5.Value = selectedPersonelTahsil.MezuniyetTarihi5.Value;
+                }
+
+                var selectedPersonelSertifika = _sertifikaManager.GetAll(p=> p.PersonelId == selectedPersonel.Id).Data.FirstOrDefault();
+
+                if(selectedPersonelSertifika != null)
+                {
+                    formEmployeeRegistrationCard.TextBoxSertificate1.Text = selectedPersonelSertifika.SertifikaAdi1;
+                    formEmployeeRegistrationCard.TextBoxSertificate2.Text = selectedPersonelSertifika.SertifikaAdi2;
+                    formEmployeeRegistrationCard.TextBoxSertificate3.Text = selectedPersonelSertifika.SertifikaAdi3;
+                    formEmployeeRegistrationCard.TextBoxSertificate4.Text = selectedPersonelSertifika.SertifikaAdi4;
+                    formEmployeeRegistrationCard.TextBoxSertificate5.Text = selectedPersonelSertifika.SertifikaAdi5;
+                    formEmployeeRegistrationCard.TextBoxSertificate6.Text = selectedPersonelSertifika.SertifikaAdi6;
+                }
+
+                var selectedPersonelNakil = _nakilManager.GetAll(p => p.PersonelId == selectedPersonel.Id).Data.FirstOrDefault();
+
+                if(selectedPersonelNakil != null)
+                {
+                    formEmployeeRegistrationCard.TextBoxInstitution1.Text = selectedPersonelNakil.Kurum1;
+                    formEmployeeRegistrationCard.TextBoxInstitution2.Text = selectedPersonelNakil.Kurum2;
+                    formEmployeeRegistrationCard.TextBoxInstitution3.Text = selectedPersonelNakil.Kurum3;
+                    formEmployeeRegistrationCard.TextBoxInstitution4.Text = selectedPersonelNakil.Kurum4;
+                    formEmployeeRegistrationCard.TextBoxInstitution5.Text = selectedPersonelNakil.Kurum5;
+                    formEmployeeRegistrationCard.TextBoxInstitution6.Text = selectedPersonelNakil.Kurum6;
+                    formEmployeeRegistrationCard.TextBoxDivision1.Text = selectedPersonelNakil.Birim1;
+                    formEmployeeRegistrationCard.TextBoxDivision2.Text = selectedPersonelNakil.Birim2;
+                    formEmployeeRegistrationCard.TextBoxDivision3.Text = selectedPersonelNakil.Birim3;
+                    formEmployeeRegistrationCard.TextBoxDivision4.Text = selectedPersonelNakil.Birim4;
+                    formEmployeeRegistrationCard.TextBoxDivision5.Text = selectedPersonelNakil.Birim5;
+                    formEmployeeRegistrationCard.TextBoxDivision6.Text = selectedPersonelNakil.Birim6;
+                    formEmployeeRegistrationCard.TextBoxJob1.Text = selectedPersonelNakil.Gorev1;
+                    formEmployeeRegistrationCard.TextBoxJob2.Text = selectedPersonelNakil.Gorev2;
+                    formEmployeeRegistrationCard.TextBoxJob3.Text = selectedPersonelNakil.Gorev3;
+                    formEmployeeRegistrationCard.TextBoxJob4.Text = selectedPersonelNakil.Gorev4;
+                    formEmployeeRegistrationCard.TextBoxJob5.Text = selectedPersonelNakil.Gorev5;
+                    formEmployeeRegistrationCard.TextBoxJob6.Text = selectedPersonelNakil.Gorev6;
+                    formEmployeeRegistrationCard.DateTimePickerStartDate1.Value = selectedPersonelNakil.BaslangicTarihi1;
+                    formEmployeeRegistrationCard.DateTimePickerStartDate2.Value = selectedPersonelNakil.BaslangicTarihi2;
+                    formEmployeeRegistrationCard.DateTimePickerStartDate3.Value = selectedPersonelNakil.BaslangicTarihi3;
+                    formEmployeeRegistrationCard.DateTimePickerStartDate4.Value = selectedPersonelNakil.BaslangicTarihi4;
+                    formEmployeeRegistrationCard.DateTimePickerStartDate5.Value = selectedPersonelNakil.BaslangicTarihi5;
+                    formEmployeeRegistrationCard.DateTimePickerStartDate6.Value = selectedPersonelNakil.BaslangicTarihi6;
+                    formEmployeeRegistrationCard.TextBoxDescription1.Text = selectedPersonelNakil.Aciklama1;
+                    formEmployeeRegistrationCard.TextBoxDescription2.Text = selectedPersonelNakil.Aciklama2;
+                    formEmployeeRegistrationCard.TextBoxDescription3.Text = selectedPersonelNakil.Aciklama3;
+                    formEmployeeRegistrationCard.TextBoxDescription4.Text = selectedPersonelNakil.Aciklama4;
+                    formEmployeeRegistrationCard.TextBoxDescription5.Text = selectedPersonelNakil.Aciklama5;
+                    formEmployeeRegistrationCard.TextBoxDescription6.Text = selectedPersonelNakil.Aciklama6;
                 }
 
                 Bitmap bmp;
