@@ -6,7 +6,7 @@ namespace Entities.Concrete
     public class Tahsil : IEntity
     {
         public int Id { get; set; }
-        public int? PersonelId { get; set; }
+        public int PersonelId { get; set; }
         public string Seflik { get; set; }
         public string TahsilAdi1 { get; set; }
         public string TahsilAdi2 { get; set; }

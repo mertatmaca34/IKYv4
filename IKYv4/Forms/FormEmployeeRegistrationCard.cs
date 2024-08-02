@@ -1,9 +1,11 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace IKYv4.Forms
@@ -17,13 +19,16 @@ namespace IKYv4.Forms
         readonly ICalismaSaatleriManager _calismaSaatleriManager;
         readonly IUnvanGrubuManager _unvanGrubuManager;
         readonly IUnvanManager _unvanManager;
+        readonly INufusManager _nufusManager;
+        readonly ITahsilManager _tahsilManager;
 
         bool tiklandi = false;
         bool isItNew = true;
 
         private Personel _personel = new Personel();
+        private Nufus _nufus = new Nufus();
 
-        public FormEmployeeRegistrationCard(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager, IUnvanGrubuManager unvanGrubuManager, IUnvanManager unvanManager)
+        public FormEmployeeRegistrationCard(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager, IUnvanGrubuManager unvanGrubuManager, IUnvanManager unvanManager, INufusManager nufusManager, ITahsilManager tahsilManager)
         {
             InitializeComponent();
 
@@ -34,6 +39,8 @@ namespace IKYv4.Forms
             _calismaSaatleriManager = calismaSaatleriManager;
             _unvanGrubuManager = unvanGrubuManager;
             _unvanManager = unvanManager;
+            _nufusManager = nufusManager;
+            _tahsilManager = tahsilManager;
 
             var res = _mudurlukManager.GetAll();
 
@@ -89,10 +96,63 @@ namespace IKYv4.Forms
 
             var res = _personelManager.Add(_personel);
 
+            var _nufus = _nufusManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
+
+            if (_nufus == null || _nufus.PersonelId == 0)
+            {
+                _nufus = new Nufus();
+
+                _nufus.PersonelId = _personel.Id;
+            }
+            
+            _nufus.Cinsiyet = RadioButtonMan.Checked ? RadioButtonMan.Text : RadioButtonWoman.Text;
+            _nufus.DogumTarihi = DateTimePickerBirthDate.Value;
+            _nufus.DogumYeri = TextBoxBirthPlace.Text;
+            _nufus.NufusaKayitliOlduguIl = TextBoxResidance.Text;
+            _nufus.AnneAdi = TextBoxMotherName.Text;
+            _nufus.BabaAdi = TextBoxFatherName.Text;
+            _nufus.KanGrubu = ComboBoxBloodGroup.Text;
+            _nufus.Askerlik = ComboBoxMilitaryState.Text;
+            _nufus.MedeniHali = RadioButtonMaried.Checked ? RadioButtonMaried.Text : RadioButtonSingle.Text;
+            _nufus.EsAdi = TextBoxSpouseName.Text;
+            _nufus.EsCalismaDurumu = RadioButtonSpouseNotWorks.Checked ? RadioButtonSpouseNotWorks.Text : RadioButtonSpouseWorks.Text;
+            _nufus.EsMeslegi = TextBoxSpouseJob.Text;
+            _nufus.CocukSayisi = TextBoxChildrenCount.Text;
+            _nufus.EsCalistigiKurumAdi = TextBoxWhereSpouseWorks.Text;
+
+            var resNufus = _nufusManager.Add(_nufus);
+
+            var _tahsil = _tahsilManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
+
+            if (_tahsil == null || _tahsil.PersonelId == 0)
+            {
+                _tahsil = new Tahsil();
+
+                _tahsil.PersonelId = _personel.Id;
+            }
+
+            _tahsil.TahsilAdi1 = ComboBoxEducation1.Text;
+            _tahsil.TahsilAdi2 = ComboBoxEducation2.Text;
+            _tahsil.TahsilAdi3 = ComboBoxEducation3.Text;
+            _tahsil.TahsilAdi4 = ComboBoxEducation4.Text;
+            _tahsil.TahsilAdi5 = ComboBoxEducation5.Text;
+            _tahsil.OkulAdi1 = TextBoxSchool1.Text;
+            _tahsil.OkulAdi2 = TextBoxSchool2.Text;
+            _tahsil.OkulAdi3 = TextBoxSchool3.Text;
+            _tahsil.OkulAdi4 = TextBoxSchool4.Text;
+            _tahsil.OkulAdi5 = TextBoxSchool5.Text;
+            _tahsil.MezuniyetTarihi1 = DateTimePickerGraduation1.Value;
+            _tahsil.MezuniyetTarihi2 = DateTimePickerGraduation2.Value;
+            _tahsil.MezuniyetTarihi3 = DateTimePickerGraduation3.Value;
+            _tahsil.MezuniyetTarihi4 = DateTimePickerGraduation4.Value;
+            _tahsil.MezuniyetTarihi5 = DateTimePickerGraduation5.Value;
+
+            var resTahsil = _tahsilManager.Add(_tahsil);
+
             AssignDefaultShifts();
-
+            
             MessageBox.Show(res.Message);
-
+            
             this.Close();
         }
 
@@ -218,6 +278,38 @@ namespace IKYv4.Forms
             TextBoxMk.Text = res.MK.ToString();
             TextBoxPk.Text = res.PK.ToString();
             TextBoxTotalK.Text = res.TK.ToString();
+        }
+
+        private void RadioButtonMaried_CheckedChanged(object sender, EventArgs e)
+        {
+            LabelSpouseName.ForeColor = Color.Black;
+            LabelSpouseWorkState.ForeColor = Color.Black;
+            LabelSpouseJob.ForeColor = Color.Black;
+            LabelChildrenCount.ForeColor = Color.Black;
+            LabelSpouseWorkName.ForeColor = Color.Black;
+
+            TextBoxSpouseName.Enabled = true;
+            RadioButtonSpouseNotWorks.Enabled = true;
+            RadioButtonSpouseWorks.Enabled = true;
+            TextBoxSpouseJob.Enabled = true;
+            TextBoxChildrenCount.Enabled = true;
+            TextBoxWhereSpouseWorks.Enabled = true;
+        }
+
+        private void RadioButtonSingle_CheckedChanged(object sender, EventArgs e)
+        {
+            LabelSpouseName.ForeColor = SystemColors.ControlDarkDark;
+            LabelSpouseWorkState.ForeColor = SystemColors.ControlDarkDark;
+            LabelSpouseJob.ForeColor = SystemColors.ControlDarkDark;
+            LabelChildrenCount.ForeColor = SystemColors.ControlDarkDark;
+            LabelSpouseWorkName.ForeColor = SystemColors.ControlDarkDark;
+
+            TextBoxSpouseName.Enabled = false;
+            RadioButtonSpouseNotWorks.Enabled = false;
+            RadioButtonSpouseWorks.Enabled = false;
+            TextBoxSpouseJob.Enabled = false;
+            TextBoxChildrenCount.Enabled = false;
+            TextBoxWhereSpouseWorks.Enabled = false;
         }
     }
 }

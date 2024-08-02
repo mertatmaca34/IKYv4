@@ -52,6 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\ICalismaSaatleriDal.cs" />
+    <Compile Include="Abstract\IIletisimDal.cs" />
+    <Compile Include="Abstract\INakilDal.cs" />
+    <Compile Include="Abstract\ISertifikaDal.cs" />
+    <Compile Include="Abstract\ITahsilDal.cs" />
     <Compile Include="Abstract\INufusDal.cs" />
     <Compile Include="Abstract\IPuantajDal.cs" />
     <Compile Include="Abstract\IUnvanGrubuDal.cs" />
@@ -64,6 +68,10 @@
     <Compile Include="Abstract\ITesisDal.cs" />
     <Compile Include="Concrete\Context\IKYContext.cs" />
     <Compile Include="Concrete\CalismaSaatleriDal.cs" />
+    <Compile Include="Concrete\IletisimDal - Kopyala.cs" />
+    <Compile Include="Concrete\NakilDal.cs" />
+    <Compile Include="Concrete\SertifikaDal.cs" />
+    <Compile Include="Concrete\TahsilDal.cs" />
     <Compile Include="Concrete\NufusDal.cs" />
     <Compile Include="Concrete\PuantajDal.cs" />
     <Compile Include="Concrete\UnvanDal.cs" />
@@ -74,39 +82,6 @@
     <Compile Include="Concrete\PersonelDal.cs" />
     <Compile Include="Concrete\SeflikDal.cs" />
     <Compile Include="Concrete\TesisDal.cs" />
-    <Compile Include="Migrations\202406051227105_InitialCreate.cs" />
-    <Compile Include="Migrations\202406051227105_InitialCreate.Designer.cs">
-      <DependentUpon>202406051227105_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202406121051104_mert2.cs" />
-    <Compile Include="Migrations\202406121051104_mert2.Designer.cs">
-      <DependentUpon>202406121051104_mert2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202406121158250_mert3.cs" />
-    <Compile Include="Migrations\202406121158250_mert3.Designer.cs">
-      <DependentUpon>202406121158250_mert3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202406260600554_mert21.cs" />
-    <Compile Include="Migrations\202406260600554_mert21.Designer.cs">
-      <DependentUpon>202406260600554_mert21.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202406261045026_mert31.cs" />
-    <Compile Include="Migrations\202406261045026_mert31.Designer.cs">
-      <DependentUpon>202406261045026_mert31.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202407021412569_c2.cs" />
-    <Compile Include="Migrations\202407021412569_c2.Designer.cs">
-      <DependentUpon>202407021412569_c2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202407021418083_c3.cs" />
-    <Compile Include="Migrations\202407021418083_c3.Designer.cs">
-      <DependentUpon>202407021418083_c3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202407091239216_cs.cs" />
-    <Compile Include="Migrations\202407091239216_cs.Designer.cs">
-      <DependentUpon>202407091239216_cs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -122,32 +97,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202406051227105_InitialCreate.resx">
-      <DependentUpon>202406051227105_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202406121051104_mert2.resx">
-      <DependentUpon>202406121051104_mert2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202406121158250_mert3.resx">
-      <DependentUpon>202406121158250_mert3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202406260600554_mert21.resx">
-      <DependentUpon>202406260600554_mert21.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202406261045026_mert31.resx">
-      <DependentUpon>202406261045026_mert31.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202407021412569_c2.resx">
-      <DependentUpon>202407021412569_c2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202407021418083_c3.resx">
-      <DependentUpon>202407021418083_c3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202407091239216_cs.resx">
-      <DependentUpon>202407091239216_cs.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

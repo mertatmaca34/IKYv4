@@ -56,6 +56,9 @@ namespace IKYv4
             services.AddSingleton<INufusDal, NufusDal>();
             services.AddSingleton<INufusManager, NufusManager>();
 
+            services.AddSingleton<ITahsilDal, TahsilDal>();
+            services.AddSingleton<ITahsilManager, TahsilManager>();
+
             services.AddSingleton<IUnvanGrubuDal, UnvanGrubuDal>();
             services.AddSingleton<IUnvanGrubuManager, UnvanGrubuManager>();
 

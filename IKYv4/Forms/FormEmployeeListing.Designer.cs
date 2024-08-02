@@ -46,7 +46,7 @@ namespace IKYv4.Forms
             this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ButtonSearchFooter = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.ComboBoxTesisFilter = new System.Windows.Forms.ComboBox();
@@ -284,7 +284,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel1.AutoScroll = true;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.ButtonSearchFooter, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 26);
@@ -296,21 +296,22 @@ namespace IKYv4.Forms
             this.tableLayoutPanel1.Size = new System.Drawing.Size(235, 456);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // button1
+            // ButtonSearchFooter
             // 
-            this.button1.BackColor = System.Drawing.Color.Brown;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(3, 424);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(229, 29);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Ara";
-            this.button1.UseVisualStyleBackColor = false;
+            this.ButtonSearchFooter.BackColor = System.Drawing.Color.Brown;
+            this.ButtonSearchFooter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonSearchFooter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonSearchFooter.FlatAppearance.BorderSize = 0;
+            this.ButtonSearchFooter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonSearchFooter.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonSearchFooter.ForeColor = System.Drawing.Color.White;
+            this.ButtonSearchFooter.Location = new System.Drawing.Point(3, 424);
+            this.ButtonSearchFooter.Name = "ButtonSearchFooter";
+            this.ButtonSearchFooter.Size = new System.Drawing.Size(229, 29);
+            this.ButtonSearchFooter.TabIndex = 1;
+            this.ButtonSearchFooter.Text = "Ara";
+            this.ButtonSearchFooter.UseVisualStyleBackColor = false;
+            this.ButtonSearchFooter.Click += new System.EventHandler(this.ButtonSearchFooter_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -1364,7 +1365,7 @@ namespace IKYv4.Forms
         private Label label8;
         private TableLayoutPanel tableLayoutPanel10;
         private TableLayoutPanel tableLayoutPanel1;
-        private Button button1;
+        private Button ButtonSearchFooter;
         private FlowLayoutPanel flowLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel2;
         private ComboBox ComboBoxTesisFilter;

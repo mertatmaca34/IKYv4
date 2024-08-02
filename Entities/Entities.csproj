@@ -57,6 +57,7 @@
     <Compile Include="Concrete\Unvan.cs" />
     <Compile Include="Concrete\UnvanGrubu.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="DTOs\PersonelDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,8 +66,6 @@
       <Name>Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTOs\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

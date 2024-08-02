@@ -19,6 +19,8 @@ namespace IKYv4.Forms
         private readonly IUnvanManager _unvanManager;
         private readonly IPuantajManager _puantajManager;
         private readonly ICalismaSaatleriManager _calismaSaatleriManager;
+        private readonly INufusManager _nufusManager;
+        private readonly ITahsilManager _tahsilManager;
 
         public FormMain(
             IPersonelManager personelManager,
@@ -30,7 +32,8 @@ namespace IKYv4.Forms
             IUnvanGrubuManager unvanGrubuManager,
             IUnvanManager unvanManager,
             IPuantajManager puantajManager,
-            ICalismaSaatleriManager calismaSaatleriManager)
+            ICalismaSaatleriManager calismaSaatleriManager,
+            INufusManager nufusManager)
         {
             InitializeComponent();
 
@@ -44,6 +47,7 @@ namespace IKYv4.Forms
             _unvanManager = unvanManager;
             _puantajManager = puantajManager;
             _calismaSaatleriManager = calismaSaatleriManager;
+            _nufusManager = nufusManager;
         }
 
         private void FormMain_SizeChanged(object sender, EventArgs e)
@@ -65,19 +69,19 @@ namespace IKYv4.Forms
         {
             if (LabelUserName.Text != "Adı Soyadı")
             {
-                PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager));
+                PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager, _nufusManager, _tahsilManager));
             }
         }
 
         private void ButtonHelp_Click(object sender, EventArgs e)
         {
-            FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager);
+            FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager, _nufusManager, _tahsilManager);
             formEmployeeRegistrationCard.Show();
         }
 
         public void ShowEmployeeListingForm()
         {
-            PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager));
+            PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager, _nufusManager, _tahsilManager));
         }
 
         private void AddAdminToSystem()
