@@ -40,13 +40,8 @@ namespace IKYv4.Forms
             this.panel6 = new System.Windows.Forms.Panel();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.TextBoxNeighbourhood = new System.Windows.Forms.TextBox();
             this.TextBoxStreet = new System.Windows.Forms.TextBox();
-            this.TextBoxDoorNumber = new System.Windows.Forms.TextBox();
-            this.TextBoxDistrict = new System.Windows.Forms.TextBox();
-            this.TextBoxCity = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.TextBoxPhoneNumber2 = new System.Windows.Forms.TextBox();
@@ -162,9 +157,7 @@ namespace IKYv4.Forms
             this.label29 = new System.Windows.Forms.Label();
             this.TextBoxFatherName = new System.Windows.Forms.TextBox();
             this.LabelSpouseJob = new System.Windows.Forms.Label();
-            this.LabelChildrenCount = new System.Windows.Forms.Label();
             this.TextBoxSpouseJob = new System.Windows.Forms.TextBox();
-            this.TextBoxChildrenCount = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.RadioButtonMaried = new System.Windows.Forms.RadioButton();
@@ -174,8 +167,6 @@ namespace IKYv4.Forms
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.RadioButtonSpouseWorks = new System.Windows.Forms.RadioButton();
             this.RadioButtonSpouseNotWorks = new System.Windows.Forms.RadioButton();
-            this.LabelSpouseWorkName = new System.Windows.Forms.Label();
-            this.TextBoxWhereSpouseWorks = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.DateTimePickerMilitaryEnd = new System.Windows.Forms.DateTimePicker();
             this.ComboBoxMilitaryState = new System.Windows.Forms.ComboBox();
@@ -183,6 +174,10 @@ namespace IKYv4.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.TextBoxSpouseName = new System.Windows.Forms.TextBox();
             this.DateTimePickerBirthDate = new System.Windows.Forms.DateTimePicker();
+            this.LabelSpouseWorkName = new System.Windows.Forms.Label();
+            this.TextBoxWhereSpouseWorks = new System.Windows.Forms.TextBox();
+            this.TextBoxChildrenCount = new System.Windows.Forms.TextBox();
+            this.LabelChildrenCount = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.TextBoxSurname = new System.Windows.Forms.TextBox();
@@ -215,6 +210,9 @@ namespace IKYv4.Forms
             this.TextBoxUserId = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.ButtonSave = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.tabPage6.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -305,17 +303,9 @@ namespace IKYv4.Forms
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
+            this.tableLayoutPanel12.Controls.Add(this.comboBox3, 1, 4);
+            this.tableLayoutPanel12.Controls.Add(this.comboBox2, 1, 3);
             this.tableLayoutPanel12.Controls.Add(this.panel6, 0, 1);
-            this.tableLayoutPanel12.Controls.Add(this.label49, 0, 2);
-            this.tableLayoutPanel12.Controls.Add(this.label50, 0, 3);
-            this.tableLayoutPanel12.Controls.Add(this.label51, 0, 4);
-            this.tableLayoutPanel12.Controls.Add(this.label52, 0, 5);
-            this.tableLayoutPanel12.Controls.Add(this.TextBoxNeighbourhood, 1, 2);
-            this.tableLayoutPanel12.Controls.Add(this.TextBoxStreet, 1, 3);
-            this.tableLayoutPanel12.Controls.Add(this.TextBoxDoorNumber, 1, 4);
-            this.tableLayoutPanel12.Controls.Add(this.TextBoxDistrict, 1, 5);
-            this.tableLayoutPanel12.Controls.Add(this.TextBoxCity, 1, 6);
-            this.tableLayoutPanel12.Controls.Add(this.label53, 0, 6);
             this.tableLayoutPanel12.Controls.Add(this.label62, 2, 3);
             this.tableLayoutPanel12.Controls.Add(this.TextBoxPhoneNumber2, 3, 3);
             this.tableLayoutPanel12.Controls.Add(this.TextBoxPhoneNumber, 3, 2);
@@ -324,6 +314,12 @@ namespace IKYv4.Forms
             this.tableLayoutPanel12.Controls.Add(this.TextBoxMailAdress, 3, 4);
             this.tableLayoutPanel12.Controls.Add(this.label48, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.label61, 3, 0);
+            this.tableLayoutPanel12.Controls.Add(this.label53, 0, 2);
+            this.tableLayoutPanel12.Controls.Add(this.label52, 0, 3);
+            this.tableLayoutPanel12.Controls.Add(this.comboBox1, 1, 2);
+            this.tableLayoutPanel12.Controls.Add(this.TextBoxStreet, 1, 5);
+            this.tableLayoutPanel12.Controls.Add(this.label50, 0, 5);
+            this.tableLayoutPanel12.Controls.Add(this.label49, 0, 4);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
@@ -358,7 +354,7 @@ namespace IKYv4.Forms
             this.label49.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label49.Location = new System.Drawing.Point(205, 89);
+            this.label49.Location = new System.Drawing.Point(205, 177);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(84, 21);
             this.label49.TabIndex = 0;
@@ -369,45 +365,22 @@ namespace IKYv4.Forms
             this.label50.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label50.Location = new System.Drawing.Point(227, 133);
+            this.label50.Location = new System.Drawing.Point(175, 221);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(62, 21);
+            this.label50.Size = new System.Drawing.Size(114, 21);
             this.label50.TabIndex = 0;
-            this.label50.Text = "SOKAK";
-            // 
-            // label51
-            // 
-            this.label51.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label51.Location = new System.Drawing.Point(214, 177);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(75, 21);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "KAPI NO";
+            this.label50.Text = "ADRES DETAY";
             // 
             // label52
             // 
             this.label52.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label52.Location = new System.Drawing.Point(247, 221);
+            this.label52.Location = new System.Drawing.Point(247, 133);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(42, 21);
             this.label52.TabIndex = 0;
             this.label52.Text = "İLÇE";
-            // 
-            // TextBoxNeighbourhood
-            // 
-            this.TextBoxNeighbourhood.BackColor = System.Drawing.Color.White;
-            this.TextBoxNeighbourhood.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxNeighbourhood.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxNeighbourhood.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxNeighbourhood.Location = new System.Drawing.Point(295, 86);
-            this.TextBoxNeighbourhood.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
-            this.TextBoxNeighbourhood.Name = "TextBoxNeighbourhood";
-            this.TextBoxNeighbourhood.Size = new System.Drawing.Size(260, 29);
-            this.TextBoxNeighbourhood.TabIndex = 8;
             // 
             // TextBoxStreet
             // 
@@ -415,54 +388,20 @@ namespace IKYv4.Forms
             this.TextBoxStreet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TextBoxStreet.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TextBoxStreet.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxStreet.Location = new System.Drawing.Point(295, 130);
+            this.TextBoxStreet.Location = new System.Drawing.Point(295, 218);
             this.TextBoxStreet.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.TextBoxStreet.Multiline = true;
             this.TextBoxStreet.Name = "TextBoxStreet";
-            this.TextBoxStreet.Size = new System.Drawing.Size(260, 29);
+            this.tableLayoutPanel12.SetRowSpan(this.TextBoxStreet, 3);
+            this.TextBoxStreet.Size = new System.Drawing.Size(260, 121);
             this.TextBoxStreet.TabIndex = 8;
-            // 
-            // TextBoxDoorNumber
-            // 
-            this.TextBoxDoorNumber.BackColor = System.Drawing.Color.White;
-            this.TextBoxDoorNumber.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDoorNumber.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDoorNumber.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDoorNumber.Location = new System.Drawing.Point(295, 174);
-            this.TextBoxDoorNumber.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
-            this.TextBoxDoorNumber.Name = "TextBoxDoorNumber";
-            this.TextBoxDoorNumber.Size = new System.Drawing.Size(260, 29);
-            this.TextBoxDoorNumber.TabIndex = 8;
-            // 
-            // TextBoxDistrict
-            // 
-            this.TextBoxDistrict.BackColor = System.Drawing.Color.White;
-            this.TextBoxDistrict.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDistrict.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDistrict.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDistrict.Location = new System.Drawing.Point(295, 218);
-            this.TextBoxDistrict.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
-            this.TextBoxDistrict.Name = "TextBoxDistrict";
-            this.TextBoxDistrict.Size = new System.Drawing.Size(260, 29);
-            this.TextBoxDistrict.TabIndex = 8;
-            // 
-            // TextBoxCity
-            // 
-            this.TextBoxCity.BackColor = System.Drawing.Color.White;
-            this.TextBoxCity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxCity.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxCity.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxCity.Location = new System.Drawing.Point(295, 262);
-            this.TextBoxCity.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
-            this.TextBoxCity.Name = "TextBoxCity";
-            this.TextBoxCity.Size = new System.Drawing.Size(260, 29);
-            this.TextBoxCity.TabIndex = 8;
             // 
             // label53
             // 
             this.label53.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label53.Location = new System.Drawing.Point(266, 265);
+            this.label53.Location = new System.Drawing.Point(266, 89);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(23, 21);
             this.label53.TabIndex = 0;
@@ -1777,16 +1716,12 @@ namespace IKYv4.Forms
             this.tableLayoutPanel1.Controls.Add(this.label29, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.TextBoxFatherName, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.LabelSpouseJob, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.LabelChildrenCount, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.TextBoxSpouseJob, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.TextBoxChildrenCount, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.label5, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.LabelSpouseName, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.LabelSpouseWorkState, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel9, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.LabelSpouseWorkName, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.TextBoxWhereSpouseWorks, 3, 5);
             this.tableLayoutPanel1.Controls.Add(this.label10, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.DateTimePickerMilitaryEnd, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.ComboBoxMilitaryState, 1, 8);
@@ -1794,6 +1729,10 @@ namespace IKYv4.Forms
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.TextBoxSpouseName, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.DateTimePickerBirthDate, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LabelSpouseWorkName, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.TextBoxWhereSpouseWorks, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.TextBoxChildrenCount, 3, 6);
+            this.tableLayoutPanel1.Controls.Add(this.LabelChildrenCount, 2, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -2015,18 +1954,6 @@ namespace IKYv4.Forms
             this.LabelSpouseJob.TabIndex = 0;
             this.LabelSpouseJob.Text = "EŞ MESLEĞİ";
             // 
-            // LabelChildrenCount
-            // 
-            this.LabelChildrenCount.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.LabelChildrenCount.AutoSize = true;
-            this.LabelChildrenCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LabelChildrenCount.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.LabelChildrenCount.Location = new System.Drawing.Point(705, 200);
-            this.LabelChildrenCount.Name = "LabelChildrenCount";
-            this.LabelChildrenCount.Size = new System.Drawing.Size(116, 21);
-            this.LabelChildrenCount.TabIndex = 0;
-            this.LabelChildrenCount.Text = "ÇOCUK SAYISI";
-            // 
             // TextBoxSpouseJob
             // 
             this.TextBoxSpouseJob.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -2039,19 +1966,6 @@ namespace IKYv4.Forms
             this.TextBoxSpouseJob.Name = "TextBoxSpouseJob";
             this.TextBoxSpouseJob.Size = new System.Drawing.Size(150, 29);
             this.TextBoxSpouseJob.TabIndex = 1;
-            // 
-            // TextBoxChildrenCount
-            // 
-            this.TextBoxChildrenCount.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TextBoxChildrenCount.BackColor = System.Drawing.Color.White;
-            this.TextBoxChildrenCount.Enabled = false;
-            this.TextBoxChildrenCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxChildrenCount.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxChildrenCount.Location = new System.Drawing.Point(831, 196);
-            this.TextBoxChildrenCount.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.TextBoxChildrenCount.Name = "TextBoxChildrenCount";
-            this.TextBoxChildrenCount.Size = new System.Drawing.Size(150, 29);
-            this.TextBoxChildrenCount.TabIndex = 1;
             // 
             // label5
             // 
@@ -2176,31 +2090,6 @@ namespace IKYv4.Forms
             this.RadioButtonSpouseNotWorks.Text = "ÇALIŞMIYOR";
             this.RadioButtonSpouseNotWorks.UseVisualStyleBackColor = true;
             // 
-            // LabelSpouseWorkName
-            // 
-            this.LabelSpouseWorkName.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.LabelSpouseWorkName.AutoSize = true;
-            this.LabelSpouseWorkName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LabelSpouseWorkName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.LabelSpouseWorkName.Location = new System.Drawing.Point(621, 241);
-            this.LabelSpouseWorkName.Name = "LabelSpouseWorkName";
-            this.LabelSpouseWorkName.Size = new System.Drawing.Size(200, 21);
-            this.LabelSpouseWorkName.TabIndex = 0;
-            this.LabelSpouseWorkName.Text = "EŞ ÇALIŞTIĞI KURUM ADI";
-            // 
-            // TextBoxWhereSpouseWorks
-            // 
-            this.TextBoxWhereSpouseWorks.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TextBoxWhereSpouseWorks.BackColor = System.Drawing.Color.White;
-            this.TextBoxWhereSpouseWorks.Enabled = false;
-            this.TextBoxWhereSpouseWorks.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxWhereSpouseWorks.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxWhereSpouseWorks.Location = new System.Drawing.Point(831, 237);
-            this.TextBoxWhereSpouseWorks.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.TextBoxWhereSpouseWorks.Name = "TextBoxWhereSpouseWorks";
-            this.TextBoxWhereSpouseWorks.Size = new System.Drawing.Size(150, 29);
-            this.TextBoxWhereSpouseWorks.TabIndex = 1;
-            // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -2290,6 +2179,55 @@ namespace IKYv4.Forms
             this.DateTimePickerBirthDate.Name = "DateTimePickerBirthDate";
             this.DateTimePickerBirthDate.Size = new System.Drawing.Size(181, 23);
             this.DateTimePickerBirthDate.TabIndex = 6;
+            // 
+            // LabelSpouseWorkName
+            // 
+            this.LabelSpouseWorkName.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.LabelSpouseWorkName.AutoSize = true;
+            this.LabelSpouseWorkName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelSpouseWorkName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.LabelSpouseWorkName.Location = new System.Drawing.Point(621, 200);
+            this.LabelSpouseWorkName.Name = "LabelSpouseWorkName";
+            this.LabelSpouseWorkName.Size = new System.Drawing.Size(200, 21);
+            this.LabelSpouseWorkName.TabIndex = 0;
+            this.LabelSpouseWorkName.Text = "EŞ ÇALIŞTIĞI KURUM ADI";
+            // 
+            // TextBoxWhereSpouseWorks
+            // 
+            this.TextBoxWhereSpouseWorks.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TextBoxWhereSpouseWorks.BackColor = System.Drawing.Color.White;
+            this.TextBoxWhereSpouseWorks.Enabled = false;
+            this.TextBoxWhereSpouseWorks.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TextBoxWhereSpouseWorks.ForeColor = System.Drawing.Color.DarkRed;
+            this.TextBoxWhereSpouseWorks.Location = new System.Drawing.Point(831, 196);
+            this.TextBoxWhereSpouseWorks.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.TextBoxWhereSpouseWorks.Name = "TextBoxWhereSpouseWorks";
+            this.TextBoxWhereSpouseWorks.Size = new System.Drawing.Size(150, 29);
+            this.TextBoxWhereSpouseWorks.TabIndex = 1;
+            // 
+            // TextBoxChildrenCount
+            // 
+            this.TextBoxChildrenCount.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TextBoxChildrenCount.BackColor = System.Drawing.Color.White;
+            this.TextBoxChildrenCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TextBoxChildrenCount.ForeColor = System.Drawing.Color.DarkRed;
+            this.TextBoxChildrenCount.Location = new System.Drawing.Point(831, 278);
+            this.TextBoxChildrenCount.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.TextBoxChildrenCount.Name = "TextBoxChildrenCount";
+            this.TextBoxChildrenCount.Size = new System.Drawing.Size(150, 29);
+            this.TextBoxChildrenCount.TabIndex = 1;
+            // 
+            // LabelChildrenCount
+            // 
+            this.LabelChildrenCount.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.LabelChildrenCount.AutoSize = true;
+            this.LabelChildrenCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelChildrenCount.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LabelChildrenCount.Location = new System.Drawing.Point(705, 282);
+            this.LabelChildrenCount.Name = "LabelChildrenCount";
+            this.LabelChildrenCount.Size = new System.Drawing.Size(116, 21);
+            this.LabelChildrenCount.TabIndex = 0;
+            this.LabelChildrenCount.Text = "ÇOCUK SAYISI";
             // 
             // tabPage1
             // 
@@ -2786,6 +2724,39 @@ namespace IKYv4.Forms
             this.ButtonSave.UseVisualStyleBackColor = false;
             this.ButtonSave.Click += new System.EventHandler(this.ButtonSave_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(295, 86);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(260, 29);
+            this.comboBox1.TabIndex = 9;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(295, 130);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(260, 29);
+            this.comboBox2.TabIndex = 10;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(295, 174);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(260, 29);
+            this.comboBox3.TabIndex = 11;
+            // 
             // FormEmployeeRegistrationCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2902,26 +2873,16 @@ namespace IKYv4.Forms
         private Panel panel4;
         private Label label46;
         private Label label47;
-        private TableLayoutPanel tableLayoutPanel12;
         private Label label48;
         private Label label61;
         private Label label62;
         private Panel panel6;
         private Label label49;
         private Label label50;
-        private Label label51;
         private Label label52;
-        private TextBox TextBoxNeighbourhood;
-        private TextBox TextBoxStreet;
-        private TextBox TextBoxDoorNumber;
-        private TextBox TextBoxDistrict;
-        private TextBox TextBoxCity;
         private Label label53;
-        private TextBox TextBoxPhoneNumber2;
-        private TextBox TextBoxPhoneNumber;
         private Label label54;
         private Label label55;
-        private TextBox TextBoxMailAdress;
         private Button ButtonSave;
         public TextBox TextBoxSurname;
         public TextBox TextBoxSicilNo;
@@ -3018,5 +2979,13 @@ namespace IKYv4.Forms
         public TextBox TextBoxInstitution3;
         public TextBox TextBoxInstitution2;
         public TextBox TextBoxInstitution1;
+        public TableLayoutPanel tableLayoutPanel12;
+        public TextBox TextBoxStreet;
+        public TextBox TextBoxPhoneNumber2;
+        public TextBox TextBoxPhoneNumber;
+        public TextBox TextBoxMailAdress;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private ComboBox comboBox3;
     }
 }

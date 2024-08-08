@@ -31,10 +31,10 @@ namespace IKYv4.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
@@ -62,32 +62,35 @@ namespace IKYv4.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.RadioButtonMale = new System.Windows.Forms.RadioButton();
+            this.RadioButtonFemale = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TextBoxMaxAge = new System.Windows.Forms.TextBox();
+            this.TextBoxMinAge = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.RadioButtonMarried = new System.Windows.Forms.RadioButton();
+            this.RadioButtonSingle = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.RadioButtonSpouseWorking = new System.Windows.Forms.RadioButton();
+            this.RadioButtonSpouseNotWorking = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
+            this.TextBoxMaxKid = new System.Windows.Forms.TextBox();
+            this.TextBoxMinKid = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxHomeTownDistrict = new System.Windows.Forms.ComboBox();
+            this.ComboBoxHomeTownCity = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.ComboBoxDistricts = new System.Windows.Forms.ComboBox();
+            this.ComboBoxCities = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
@@ -127,6 +130,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel13.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel15.SuspendLayout();
+            this.tableLayoutPanel20.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
             this.tableLayoutPanel19.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
@@ -517,8 +521,8 @@ namespace IKYv4.Forms
             this.tableLayoutPanel8.ColumnCount = 1;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel8.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.radioButton1, 0, 1);
-            this.tableLayoutPanel8.Controls.Add(this.radioButton2, 0, 2);
+            this.tableLayoutPanel8.Controls.Add(this.RadioButtonMale, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.RadioButtonFemale, 0, 2);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 289);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
@@ -541,33 +545,33 @@ namespace IKYv4.Forms
             this.label5.TabIndex = 2;
             this.label5.Text = "Cinsiyet";
             // 
-            // radioButton1
+            // RadioButtonMale
             // 
-            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.radioButton1.Location = new System.Drawing.Point(7, 33);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(53, 19);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Erkek";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RadioButtonMale.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.RadioButtonMale.AutoSize = true;
+            this.RadioButtonMale.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.RadioButtonMale.Location = new System.Drawing.Point(7, 33);
+            this.RadioButtonMale.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.RadioButtonMale.Name = "RadioButtonMale";
+            this.RadioButtonMale.Size = new System.Drawing.Size(58, 19);
+            this.RadioButtonMale.TabIndex = 3;
+            this.RadioButtonMale.TabStop = true;
+            this.RadioButtonMale.Text = "ERKEK";
+            this.RadioButtonMale.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // RadioButtonFemale
             // 
-            this.radioButton2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.radioButton2.Location = new System.Drawing.Point(7, 60);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(55, 19);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Kadın";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.RadioButtonFemale.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.RadioButtonFemale.AutoSize = true;
+            this.RadioButtonFemale.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.RadioButtonFemale.Location = new System.Drawing.Point(7, 60);
+            this.RadioButtonFemale.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.RadioButtonFemale.Name = "RadioButtonFemale";
+            this.RadioButtonFemale.Size = new System.Drawing.Size(62, 19);
+            this.RadioButtonFemale.TabIndex = 3;
+            this.RadioButtonFemale.TabStop = true;
+            this.RadioButtonFemale.Text = "KADIN";
+            this.RadioButtonFemale.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel7
             // 
@@ -580,8 +584,8 @@ namespace IKYv4.Forms
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(211, 67);
             this.tableLayoutPanel7.TabIndex = 4;
@@ -594,57 +598,58 @@ namespace IKYv4.Forms
             this.label4.Location = new System.Drawing.Point(7, 7);
             this.label4.Margin = new System.Windows.Forms.Padding(7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 16);
+            this.label4.Size = new System.Drawing.Size(70, 17);
             this.label4.TabIndex = 2;
             this.label4.Text = "Yaş Aralığı";
             // 
             // tableLayoutPanel9
             // 
-            this.tableLayoutPanel9.ColumnCount = 3;
+            this.tableLayoutPanel9.ColumnCount = 4;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 17F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Controls.Add(this.textBox2, 2, 0);
-            this.tableLayoutPanel9.Controls.Add(this.textBox1, 0, 0);
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel9.Controls.Add(this.TextBoxMaxAge, 2, 0);
+            this.tableLayoutPanel9.Controls.Add(this.TextBoxMinAge, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.label6, 1, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 30);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 32);
             this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(211, 37);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(211, 35);
             this.tableLayoutPanel9.TabIndex = 3;
             // 
-            // textBox2
+            // TextBoxMaxAge
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(121, 7);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(7);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(83, 23);
-            this.textBox2.TabIndex = 5;
+            this.TextBoxMaxAge.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextBoxMaxAge.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.TextBoxMaxAge.Location = new System.Drawing.Point(95, 7);
+            this.TextBoxMaxAge.Margin = new System.Windows.Forms.Padding(7);
+            this.TextBoxMaxAge.Name = "TextBoxMaxAge";
+            this.TextBoxMaxAge.Size = new System.Drawing.Size(59, 23);
+            this.TextBoxMaxAge.TabIndex = 5;
             // 
-            // textBox1
+            // TextBoxMinAge
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(7, 7);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(83, 23);
-            this.textBox1.TabIndex = 4;
+            this.TextBoxMinAge.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextBoxMinAge.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.TextBoxMinAge.Location = new System.Drawing.Point(7, 7);
+            this.TextBoxMinAge.Margin = new System.Windows.Forms.Padding(7);
+            this.TextBoxMinAge.Name = "TextBoxMinAge";
+            this.TextBoxMinAge.Size = new System.Drawing.Size(59, 23);
+            this.TextBoxMinAge.TabIndex = 4;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(100, 3);
+            this.label6.Location = new System.Drawing.Point(76, 3);
             this.label6.Margin = new System.Windows.Forms.Padding(3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(11, 31);
+            this.label6.Size = new System.Drawing.Size(9, 29);
             this.label6.TabIndex = 6;
             this.label6.Text = "-";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -655,8 +660,8 @@ namespace IKYv4.Forms
             this.tableLayoutPanel13.ColumnCount = 1;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel13.Controls.Add(this.label10, 0, 0);
-            this.tableLayoutPanel13.Controls.Add(this.radioButton5, 0, 1);
-            this.tableLayoutPanel13.Controls.Add(this.radioButton6, 0, 2);
+            this.tableLayoutPanel13.Controls.Add(this.RadioButtonMarried, 0, 1);
+            this.tableLayoutPanel13.Controls.Add(this.RadioButtonSingle, 0, 2);
             this.tableLayoutPanel13.Location = new System.Drawing.Point(0, 445);
             this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
@@ -679,33 +684,33 @@ namespace IKYv4.Forms
             this.label10.TabIndex = 2;
             this.label10.Text = "Medeni Hal";
             // 
-            // radioButton5
+            // RadioButtonMarried
             // 
-            this.radioButton5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.radioButton5.Location = new System.Drawing.Point(7, 33);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(43, 19);
-            this.radioButton5.TabIndex = 3;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Evli";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.RadioButtonMarried.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.RadioButtonMarried.AutoSize = true;
+            this.RadioButtonMarried.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.RadioButtonMarried.Location = new System.Drawing.Point(7, 33);
+            this.RadioButtonMarried.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.RadioButtonMarried.Name = "RadioButtonMarried";
+            this.RadioButtonMarried.Size = new System.Drawing.Size(49, 19);
+            this.RadioButtonMarried.TabIndex = 3;
+            this.RadioButtonMarried.TabStop = true;
+            this.RadioButtonMarried.Text = "EVLİ";
+            this.RadioButtonMarried.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // RadioButtonSingle
             // 
-            this.radioButton6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.radioButton6.Location = new System.Drawing.Point(7, 59);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(54, 19);
-            this.radioButton6.TabIndex = 3;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Bekar";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.RadioButtonSingle.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.RadioButtonSingle.AutoSize = true;
+            this.RadioButtonSingle.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.RadioButtonSingle.Location = new System.Drawing.Point(7, 59);
+            this.RadioButtonSingle.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.RadioButtonSingle.Name = "RadioButtonSingle";
+            this.RadioButtonSingle.Size = new System.Drawing.Size(60, 19);
+            this.RadioButtonSingle.TabIndex = 3;
+            this.RadioButtonSingle.TabStop = true;
+            this.RadioButtonSingle.Text = "BEKAR";
+            this.RadioButtonSingle.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel14
             // 
@@ -713,14 +718,14 @@ namespace IKYv4.Forms
             this.tableLayoutPanel14.ColumnCount = 1;
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel14.Controls.Add(this.label11, 0, 0);
-            this.tableLayoutPanel14.Controls.Add(this.radioButton7, 0, 1);
-            this.tableLayoutPanel14.Controls.Add(this.radioButton8, 0, 2);
+            this.tableLayoutPanel14.Controls.Add(this.RadioButtonSpouseWorking, 0, 1);
+            this.tableLayoutPanel14.Controls.Add(this.RadioButtonSpouseNotWorking, 0, 2);
             this.tableLayoutPanel14.Location = new System.Drawing.Point(0, 530);
             this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 3;
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tableLayoutPanel14.Size = new System.Drawing.Size(211, 85);
             this.tableLayoutPanel14.TabIndex = 6;
@@ -733,63 +738,106 @@ namespace IKYv4.Forms
             this.label11.Location = new System.Drawing.Point(7, 7);
             this.label11.Margin = new System.Windows.Forms.Padding(7);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(105, 16);
+            this.label11.Size = new System.Drawing.Size(105, 17);
             this.label11.TabIndex = 2;
             this.label11.Text = "Eş Çalışıyor Mu?";
             // 
-            // radioButton7
+            // RadioButtonSpouseWorking
             // 
-            this.radioButton7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.radioButton7.Location = new System.Drawing.Point(7, 33);
-            this.radioButton7.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(47, 19);
-            this.radioButton7.TabIndex = 3;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Evet";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.RadioButtonSpouseWorking.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.RadioButtonSpouseWorking.AutoSize = true;
+            this.RadioButtonSpouseWorking.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.RadioButtonSpouseWorking.Location = new System.Drawing.Point(7, 35);
+            this.RadioButtonSpouseWorking.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.RadioButtonSpouseWorking.Name = "RadioButtonSpouseWorking";
+            this.RadioButtonSpouseWorking.Size = new System.Drawing.Size(84, 18);
+            this.RadioButtonSpouseWorking.TabIndex = 3;
+            this.RadioButtonSpouseWorking.TabStop = true;
+            this.RadioButtonSpouseWorking.Text = "ÇALIŞIYOR";
+            this.RadioButtonSpouseWorking.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // RadioButtonSpouseNotWorking
             // 
-            this.radioButton8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.radioButton8.Location = new System.Drawing.Point(7, 61);
-            this.radioButton8.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(53, 19);
-            this.radioButton8.TabIndex = 3;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Hayır";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.RadioButtonSpouseNotWorking.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.RadioButtonSpouseNotWorking.AutoSize = true;
+            this.RadioButtonSpouseNotWorking.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.RadioButtonSpouseNotWorking.Location = new System.Drawing.Point(7, 61);
+            this.RadioButtonSpouseNotWorking.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.RadioButtonSpouseNotWorking.Name = "RadioButtonSpouseNotWorking";
+            this.RadioButtonSpouseNotWorking.Size = new System.Drawing.Size(95, 19);
+            this.RadioButtonSpouseNotWorking.TabIndex = 3;
+            this.RadioButtonSpouseNotWorking.TabStop = true;
+            this.RadioButtonSpouseNotWorking.Text = "ÇALIŞMIYOR";
+            this.RadioButtonSpouseNotWorking.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel15
             // 
             this.tableLayoutPanel15.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel15.ColumnCount = 1;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel15.Controls.Add(this.textBox5, 0, 1);
+            this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel20, 0, 1);
             this.tableLayoutPanel15.Controls.Add(this.label12, 0, 0);
             this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 618);
             this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 2;
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
             this.tableLayoutPanel15.Size = new System.Drawing.Size(211, 67);
             this.tableLayoutPanel15.TabIndex = 7;
             // 
-            // textBox5
+            // tableLayoutPanel20
             // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Location = new System.Drawing.Point(7, 37);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(7);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(197, 20);
-            this.textBox5.TabIndex = 5;
+            this.tableLayoutPanel20.ColumnCount = 4;
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel20.Controls.Add(this.TextBoxMaxKid, 2, 0);
+            this.tableLayoutPanel20.Controls.Add(this.TextBoxMinKid, 0, 0);
+            this.tableLayoutPanel20.Controls.Add(this.label15, 1, 0);
+            this.tableLayoutPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel20.Location = new System.Drawing.Point(0, 32);
+            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
+            this.tableLayoutPanel20.RowCount = 1;
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(211, 35);
+            this.tableLayoutPanel20.TabIndex = 4;
+            // 
+            // TextBoxMaxKid
+            // 
+            this.TextBoxMaxKid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextBoxMaxKid.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.TextBoxMaxKid.Location = new System.Drawing.Point(95, 7);
+            this.TextBoxMaxKid.Margin = new System.Windows.Forms.Padding(7);
+            this.TextBoxMaxKid.Name = "TextBoxMaxKid";
+            this.TextBoxMaxKid.Size = new System.Drawing.Size(59, 23);
+            this.TextBoxMaxKid.TabIndex = 5;
+            // 
+            // TextBoxMinKid
+            // 
+            this.TextBoxMinKid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextBoxMinKid.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.TextBoxMinKid.Location = new System.Drawing.Point(7, 7);
+            this.TextBoxMinKid.Margin = new System.Windows.Forms.Padding(7);
+            this.TextBoxMinKid.Name = "TextBoxMinKid";
+            this.TextBoxMinKid.Size = new System.Drawing.Size(59, 23);
+            this.TextBoxMinKid.TabIndex = 4;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.label15.Location = new System.Drawing.Point(76, 3);
+            this.label15.Margin = new System.Windows.Forms.Padding(3);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(9, 29);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "-";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
@@ -799,7 +847,7 @@ namespace IKYv4.Forms
             this.label12.Location = new System.Drawing.Point(7, 7);
             this.label12.Margin = new System.Windows.Forms.Padding(7);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 16);
+            this.label12.Size = new System.Drawing.Size(82, 17);
             this.label12.TabIndex = 2;
             this.label12.Text = "Çocuk Sayısı";
             // 
@@ -808,8 +856,8 @@ namespace IKYv4.Forms
             this.tableLayoutPanel16.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel16.ColumnCount = 1;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel16.Controls.Add(this.comboBox12, 0, 2);
-            this.tableLayoutPanel16.Controls.Add(this.comboBox13, 0, 1);
+            this.tableLayoutPanel16.Controls.Add(this.ComboBoxHomeTownDistrict, 0, 2);
+            this.tableLayoutPanel16.Controls.Add(this.ComboBoxHomeTownCity, 0, 1);
             this.tableLayoutPanel16.Controls.Add(this.label13, 0, 0);
             this.tableLayoutPanel16.Location = new System.Drawing.Point(0, 688);
             this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
@@ -822,32 +870,32 @@ namespace IKYv4.Forms
             this.tableLayoutPanel16.Size = new System.Drawing.Size(211, 95);
             this.tableLayoutPanel16.TabIndex = 8;
             // 
-            // comboBox12
+            // ComboBoxHomeTownDistrict
             // 
-            this.comboBox12.BackColor = System.Drawing.Color.Gainsboro;
-            this.comboBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox12.Enabled = false;
-            this.comboBox12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.comboBox12.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(7, 67);
-            this.comboBox12.Margin = new System.Windows.Forms.Padding(7);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(197, 23);
-            this.comboBox12.TabIndex = 3;
-            this.comboBox12.Text = "İlçe";
+            this.ComboBoxHomeTownDistrict.BackColor = System.Drawing.Color.Gainsboro;
+            this.ComboBoxHomeTownDistrict.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxHomeTownDistrict.Enabled = false;
+            this.ComboBoxHomeTownDistrict.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxHomeTownDistrict.ForeColor = System.Drawing.Color.DimGray;
+            this.ComboBoxHomeTownDistrict.FormattingEnabled = true;
+            this.ComboBoxHomeTownDistrict.Location = new System.Drawing.Point(7, 67);
+            this.ComboBoxHomeTownDistrict.Margin = new System.Windows.Forms.Padding(7);
+            this.ComboBoxHomeTownDistrict.Name = "ComboBoxHomeTownDistrict";
+            this.ComboBoxHomeTownDistrict.Size = new System.Drawing.Size(197, 23);
+            this.ComboBoxHomeTownDistrict.TabIndex = 3;
+            this.ComboBoxHomeTownDistrict.Text = "İlçe";
             // 
-            // comboBox13
+            // ComboBoxHomeTownCity
             // 
-            this.comboBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox13.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(7, 37);
-            this.comboBox13.Margin = new System.Windows.Forms.Padding(7);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(197, 23);
-            this.comboBox13.TabIndex = 2;
+            this.ComboBoxHomeTownCity.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxHomeTownCity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxHomeTownCity.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxHomeTownCity.FormattingEnabled = true;
+            this.ComboBoxHomeTownCity.Location = new System.Drawing.Point(7, 37);
+            this.ComboBoxHomeTownCity.Margin = new System.Windows.Forms.Padding(7);
+            this.ComboBoxHomeTownCity.Name = "ComboBoxHomeTownCity";
+            this.ComboBoxHomeTownCity.Size = new System.Drawing.Size(197, 23);
+            this.ComboBoxHomeTownCity.TabIndex = 2;
             // 
             // label13
             // 
@@ -866,8 +914,8 @@ namespace IKYv4.Forms
             this.tableLayoutPanel19.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel19.ColumnCount = 1;
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel19.Controls.Add(this.comboBox17, 0, 2);
-            this.tableLayoutPanel19.Controls.Add(this.comboBox18, 0, 1);
+            this.tableLayoutPanel19.Controls.Add(this.ComboBoxDistricts, 0, 2);
+            this.tableLayoutPanel19.Controls.Add(this.ComboBoxCities, 0, 1);
             this.tableLayoutPanel19.Controls.Add(this.label16, 0, 0);
             this.tableLayoutPanel19.Location = new System.Drawing.Point(0, 786);
             this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
@@ -880,32 +928,31 @@ namespace IKYv4.Forms
             this.tableLayoutPanel19.Size = new System.Drawing.Size(211, 95);
             this.tableLayoutPanel19.TabIndex = 9;
             // 
-            // comboBox17
+            // ComboBoxDistricts
             // 
-            this.comboBox17.BackColor = System.Drawing.Color.Gainsboro;
-            this.comboBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox17.Enabled = false;
-            this.comboBox17.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.comboBox17.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Location = new System.Drawing.Point(7, 67);
-            this.comboBox17.Margin = new System.Windows.Forms.Padding(7);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(197, 23);
-            this.comboBox17.TabIndex = 3;
-            this.comboBox17.Text = "İlçe";
+            this.ComboBoxDistricts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxDistricts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxDistricts.Enabled = false;
+            this.ComboBoxDistricts.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxDistricts.FormattingEnabled = true;
+            this.ComboBoxDistricts.Location = new System.Drawing.Point(7, 67);
+            this.ComboBoxDistricts.Margin = new System.Windows.Forms.Padding(7);
+            this.ComboBoxDistricts.Name = "ComboBoxDistricts";
+            this.ComboBoxDistricts.Size = new System.Drawing.Size(197, 23);
+            this.ComboBoxDistricts.TabIndex = 3;
             // 
-            // comboBox18
+            // ComboBoxCities
             // 
-            this.comboBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox18.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Location = new System.Drawing.Point(7, 37);
-            this.comboBox18.Margin = new System.Windows.Forms.Padding(7);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(197, 23);
-            this.comboBox18.TabIndex = 2;
+            this.ComboBoxCities.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxCities.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCities.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxCities.FormattingEnabled = true;
+            this.ComboBoxCities.Location = new System.Drawing.Point(7, 37);
+            this.ComboBoxCities.Margin = new System.Windows.Forms.Padding(7);
+            this.ComboBoxCities.Name = "ComboBoxCities";
+            this.ComboBoxCities.Size = new System.Drawing.Size(197, 23);
+            this.ComboBoxCities.TabIndex = 2;
+            this.ComboBoxCities.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCities_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -953,9 +1000,9 @@ namespace IKYv4.Forms
             this.label9.Location = new System.Drawing.Point(7, 7);
             this.label9.Margin = new System.Windows.Forms.Padding(7);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(39, 16);
+            this.label9.Size = new System.Drawing.Size(41, 16);
             this.label9.TabIndex = 2;
-            this.label9.Text = "Birim";
+            this.label9.Text = "Tahsil";
             // 
             // checkBox5
             // 
@@ -1209,34 +1256,34 @@ namespace IKYv4.Forms
             // 
             this.DataGridViewEmployees.AllowUserToAddRows = false;
             this.DataGridViewEmployees.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataGridViewEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
+            this.DataGridViewEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
             this.DataGridViewEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridViewEmployees.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewEmployees.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewEmployees.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridViewEmployees.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.DataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridViewEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EditRow,
             this.EditShifts});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewEmployees.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewEmployees.DefaultCellStyle = dataGridViewCellStyle19;
             this.DataGridViewEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridViewEmployees.EnableHeadersVisualStyles = false;
             this.DataGridViewEmployees.GridColor = System.Drawing.Color.WhiteSmoke;
@@ -1247,11 +1294,11 @@ namespace IKYv4.Forms
             this.DataGridViewEmployees.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridViewEmployees.RowHeadersVisible = false;
             this.DataGridViewEmployees.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.DataGridViewEmployees.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGridViewEmployees.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.DataGridViewEmployees.RowTemplate.DividerHeight = 10;
             this.DataGridViewEmployees.RowTemplate.Height = 50;
             this.DataGridViewEmployees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -1339,6 +1386,8 @@ namespace IKYv4.Forms
             this.tableLayoutPanel14.PerformLayout();
             this.tableLayoutPanel15.ResumeLayout(false);
             this.tableLayoutPanel15.PerformLayout();
+            this.tableLayoutPanel20.ResumeLayout(false);
+            this.tableLayoutPanel20.PerformLayout();
             this.tableLayoutPanel16.ResumeLayout(false);
             this.tableLayoutPanel16.PerformLayout();
             this.tableLayoutPanel19.ResumeLayout(false);
@@ -1381,32 +1430,31 @@ namespace IKYv4.Forms
         private Label label3;
         private TableLayoutPanel tableLayoutPanel8;
         private Label label5;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private RadioButton RadioButtonMale;
+        private RadioButton RadioButtonFemale;
         private TableLayoutPanel tableLayoutPanel7;
         private Label label4;
         private TableLayoutPanel tableLayoutPanel9;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox TextBoxMaxAge;
+        private TextBox TextBoxMinAge;
         private Label label6;
         private TableLayoutPanel tableLayoutPanel13;
         private Label label10;
-        private RadioButton radioButton5;
-        private RadioButton radioButton6;
+        private RadioButton RadioButtonMarried;
+        private RadioButton RadioButtonSingle;
         private TableLayoutPanel tableLayoutPanel14;
         private Label label11;
-        private RadioButton radioButton7;
-        private RadioButton radioButton8;
+        private RadioButton RadioButtonSpouseWorking;
+        private RadioButton RadioButtonSpouseNotWorking;
         private TableLayoutPanel tableLayoutPanel15;
-        private TextBox textBox5;
         private Label label12;
         private TableLayoutPanel tableLayoutPanel16;
-        private ComboBox comboBox12;
-        private ComboBox comboBox13;
+        private ComboBox ComboBoxHomeTownDistrict;
+        private ComboBox ComboBoxHomeTownCity;
         private Label label13;
         private TableLayoutPanel tableLayoutPanel19;
-        private ComboBox comboBox17;
-        private ComboBox comboBox18;
+        private ComboBox ComboBoxDistricts;
+        private ComboBox ComboBoxCities;
         private Label label16;
         private TableLayoutPanel tableLayoutPanel12;
         private Label label9;
@@ -1431,5 +1479,9 @@ namespace IKYv4.Forms
         private DataGridViewImageColumn EditShifts;
         private DataGridViewImageColumn dataGridViewImageColumn1;
         private DataGridViewImageColumn dataGridViewImageColumn2;
+        private TableLayoutPanel tableLayoutPanel20;
+        private TextBox TextBoxMaxKid;
+        private TextBox TextBoxMinKid;
+        private Label label15;
     }
 }

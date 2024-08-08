@@ -54,6 +54,9 @@
     <Compile Include="Concrete\Sertifika.cs" />
     <Compile Include="Concrete\Tahsil.cs" />
     <Compile Include="Concrete\Tesis.cs" />
+    <Compile Include="Concrete\TurkeyModel\City.cs" />
+    <Compile Include="Concrete\TurkeyModel\District.cs" />
+    <Compile Include="Concrete\TurkeyModel\Neighbourhood.cs" />
     <Compile Include="Concrete\Unvan.cs" />
     <Compile Include="Concrete\UnvanGrubu.cs" />
     <Compile Include="Constants.cs" />

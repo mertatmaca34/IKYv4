@@ -7,7 +7,6 @@ namespace Entities.Concrete
     {
         public int Id { get; set; }
         public int PersonelId { get; set; }
-        public string Seflik { get; set; }
         public string TahsilAdi1 { get; set; }
         public string TahsilAdi2 { get; set; }
         public string TahsilAdi3 { get; set; }

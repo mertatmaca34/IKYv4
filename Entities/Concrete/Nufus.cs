@@ -8,7 +8,6 @@ namespace Entities.Concrete
         public int Id { get; set; }
         public int PersonelId { get; set; }
         public string Cinsiyet { get; set; }
-        public string Seflik { get; set; }
         public string AnneAdi { get; set; }
         public string BabaAdi { get; set; }
         public DateTime? DogumTarihi { get; set; }
@@ -19,7 +18,7 @@ namespace Entities.Concrete
         public string MedeniHali { get; set; }
         public string EsAdi { get; set; }
         public string EsMeslegi { get; set; }
-        public string CocukSayisi { get; set; }
+        public int? CocukSayisi { get; set; }
         public string EsCalismaDurumu { get; set; }
         public string EsCalistigiKurumAdi { get; set; }
         public string CocukAdi1 { get; set; }

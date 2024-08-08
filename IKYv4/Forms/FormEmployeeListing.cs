@@ -1,7 +1,6 @@
 ﻿using Business.Abstract;
-using Business.Concrete;
 using Entities.Concrete;
-using Entities.DTOs;
+using Entities.Concrete.TurkeyModel;
 using LinqKit;
 using System;
 using System.Collections.Generic;
@@ -9,6 +8,8 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
+using System.Text.Json;
 using System.Windows.Forms;
 
 namespace IKYv4.Forms
@@ -16,6 +17,10 @@ namespace IKYv4.Forms
     public partial class FormEmployeeListing : Form
     {
         public Personel ChoosedPersonel { get; set; }
+
+        List<City> _cities = new List<City>();
+        List<District> _districts = new List<District>();
+        List<Neighbourhood> _neighbourhoods = new List<Neighbourhood>();
 
         IPersonelManager _personelManager;
         IMudurlukManager _mudurlukManager;
@@ -63,7 +68,7 @@ namespace IKYv4.Forms
 
         private void ButtonNewEmployee_Click(object sender, EventArgs e)
         {
-            FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager, _nufusManager, _tahsilManager);
+            FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager, _nufusManager, _tahsilManager, _nakilManager, _sertifikaManager, _iletisimManager);
 
             formEmployeeRegistrationCard.ShowDialog();
 
@@ -112,12 +117,13 @@ namespace IKYv4.Forms
 
                 var selectedPersonel = _personelManager.GetAll(p => p.Id == selectedPersonelId).Data.FirstOrDefault();
 
-                FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager, _nufusManager, _tahsilManager);
+                FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager, _nufusManager, _tahsilManager, _nakilManager, _sertifikaManager, _iletisimManager);
 
                 formEmployeeRegistrationCard.ComboBoxConducting.Enabled = true;
                 formEmployeeRegistrationCard.ComboBoxDirectorate.Enabled = true;
                 formEmployeeRegistrationCard.ComboBoxDutyStation.Enabled = true;
 
+                formEmployeeRegistrationCard._personel.Id = selectedPersonelId;
                 formEmployeeRegistrationCard.TextBoxName.Text = selectedPersonel.Adi;
                 formEmployeeRegistrationCard.TextBoxSurname.Text = selectedPersonel.Soyadi;
                 formEmployeeRegistrationCard.TextBoxUserId.Text = selectedPersonel.TCKimlikNo;
@@ -150,13 +156,13 @@ namespace IKYv4.Forms
                     formEmployeeRegistrationCard.RadioButtonSpouseWorks.Checked = selectedPersonelNufus.EsCalismaDurumu == "ÇALIŞIYOR";
                     formEmployeeRegistrationCard.RadioButtonSpouseNotWorks.Checked = selectedPersonelNufus.EsCalismaDurumu == "ÇALIŞMIYOR";
                     formEmployeeRegistrationCard.TextBoxSpouseJob.Text = selectedPersonelNufus.EsMeslegi;
-                    formEmployeeRegistrationCard.TextBoxChildrenCount.Text = selectedPersonelNufus.CocukSayisi;
+                    formEmployeeRegistrationCard.TextBoxChildrenCount.Text = selectedPersonelNufus.CocukSayisi.ToString();
                     formEmployeeRegistrationCard.TextBoxWhereSpouseWorks.Text = selectedPersonelNufus.EsCalistigiKurumAdi;
                 }
 
                 var selectedPersonelTahsil = _tahsilManager.GetAll(x => x.PersonelId == selectedPersonel.Id).Data.FirstOrDefault();
 
-                if(selectedPersonelTahsil != null)
+                if (selectedPersonelTahsil != null)
                 {
                     formEmployeeRegistrationCard.ComboBoxEducation1.SelectedItem = selectedPersonelTahsil.TahsilAdi1;
                     formEmployeeRegistrationCard.ComboBoxEducation2.SelectedItem = selectedPersonelTahsil.TahsilAdi2;
@@ -175,9 +181,9 @@ namespace IKYv4.Forms
                     formEmployeeRegistrationCard.DateTimePickerGraduation5.Value = selectedPersonelTahsil.MezuniyetTarihi5.Value;
                 }
 
-                var selectedPersonelSertifika = _sertifikaManager.GetAll(p=> p.PersonelId == selectedPersonel.Id).Data.FirstOrDefault();
+                var selectedPersonelSertifika = _sertifikaManager.GetAll(p => p.PersonelId == selectedPersonel.Id).Data.FirstOrDefault();
 
-                if(selectedPersonelSertifika != null)
+                if (selectedPersonelSertifika != null)
                 {
                     formEmployeeRegistrationCard.TextBoxSertificate1.Text = selectedPersonelSertifika.SertifikaAdi1;
                     formEmployeeRegistrationCard.TextBoxSertificate2.Text = selectedPersonelSertifika.SertifikaAdi2;
@@ -189,7 +195,7 @@ namespace IKYv4.Forms
 
                 var selectedPersonelNakil = _nakilManager.GetAll(p => p.PersonelId == selectedPersonel.Id).Data.FirstOrDefault();
 
-                if(selectedPersonelNakil != null)
+                if (selectedPersonelNakil != null)
                 {
                     formEmployeeRegistrationCard.TextBoxInstitution1.Text = selectedPersonelNakil.Kurum1;
                     formEmployeeRegistrationCard.TextBoxInstitution2.Text = selectedPersonelNakil.Kurum2;
@@ -221,6 +227,20 @@ namespace IKYv4.Forms
                     formEmployeeRegistrationCard.TextBoxDescription4.Text = selectedPersonelNakil.Aciklama4;
                     formEmployeeRegistrationCard.TextBoxDescription5.Text = selectedPersonelNakil.Aciklama5;
                     formEmployeeRegistrationCard.TextBoxDescription6.Text = selectedPersonelNakil.Aciklama6;
+                }
+
+                var selectedPersonelIletisim = _iletisimManager.GetAll(P => P.PersonelId == selectedPersonel.Id).Data.FirstOrDefault();
+
+                if (selectedPersonelIletisim != null)
+                {
+                    formEmployeeRegistrationCard.TextBoxNeighbourhood.Text = selectedPersonelIletisim.Mahalle;
+                    formEmployeeRegistrationCard.TextBoxStreet.Text = selectedPersonelIletisim.Sokak;
+                    formEmployeeRegistrationCard.TextBoxDoorNumber.Text = selectedPersonelIletisim.KapiNo1;
+                    formEmployeeRegistrationCard.TextBoxDistrict.Text = selectedPersonelIletisim.Ilce;
+                    formEmployeeRegistrationCard.TextBoxCity.Text = selectedPersonelIletisim.Il;
+                    formEmployeeRegistrationCard.TextBoxPhoneNumber.Text = selectedPersonelIletisim.CepTelNo1;
+                    formEmployeeRegistrationCard.TextBoxPhoneNumber2.Text = selectedPersonelIletisim.CepTelNo2;
+                    formEmployeeRegistrationCard.TextBoxMailAdress.Text = selectedPersonelIletisim.EMailAdresi;
                 }
 
                 Bitmap bmp;
@@ -312,6 +332,22 @@ namespace IKYv4.Forms
             ComboBoxKanGrubu.Text = ComboBoxKanGrubu.SelectedIndex < 0 ? "KAN GRUBU"
                 : ComboBoxKanGrubu.Text = ComboBoxKanGrubu.SelectedText;
             #endregion
+
+
+            ComboBoxCities.Items.Insert(0, "İL");
+            ComboBoxCities.SelectedIndex = 0;
+
+            ComboBoxCities.Text = ComboBoxCities.SelectedIndex < 0 ? "İL"
+                : ComboBoxCities.Text = ComboBoxCities.SelectedText;
+
+
+            ComboBoxDistricts.Items.Insert(0, "İLÇE");
+            ComboBoxDistricts.SelectedIndex = 0;
+
+            ComboBoxDistricts.Text = ComboBoxDistricts.SelectedIndex < 0 ? "İLÇE"
+                : ComboBoxDistricts.Text = ComboBoxDistricts.SelectedText;
+
+            AssignCities();
         }
 
         private void ComboBoxMudurlukFilter_SelectedIndexChanged(object sender, EventArgs e)
@@ -418,24 +454,99 @@ namespace IKYv4.Forms
             Search();
         }
 
+        private void AssignCities()
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            string resourceName = assembly.GetManifestResourceNames().Single(str => str.EndsWith("il.json"));
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                string jsonContent = reader.ReadToEnd();
+                _cities = JsonSerializer.Deserialize<List<City>>(jsonContent, options);
+            }
+
+            foreach (var item in _cities)
+            {
+                if (item.sehir_title != null)
+                {
+                    ComboBoxCities.Items.Add(item.sehir_title);
+                }
+            }
+        }
+
+        private void AssignDistricts(string sehir_key)
+        {
+            ComboBoxDistricts.Items.Clear();
+
+            ComboBoxDistricts.Items.Insert(0, "İLÇE");
+            ComboBoxDistricts.SelectedIndex = 0;
+
+            ComboBoxDistricts.Text = ComboBoxDistricts.SelectedIndex < 0 ? "İLÇE"
+                : ComboBoxDistricts.Text = ComboBoxDistricts.SelectedText;
+
+            var assembly = Assembly.GetExecutingAssembly();
+            string resourceName = assembly.GetManifestResourceNames().Single(str => str.EndsWith("ilce.json"));
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                string jsonContent = reader.ReadToEnd();
+                _districts = JsonSerializer.Deserialize<List<District>>(jsonContent, options);
+            }
+
+            foreach (var item in _districts)
+            {
+                if (item.ilce_sehirkey == sehir_key)
+                {
+                    ComboBoxDistricts.Items.Add(item.ilce_title);
+                }
+            }
+        }
+
+        private void ComboBoxCities_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedCity = ComboBoxCities.SelectedItem.ToString();
+            var res = _cities.FirstOrDefault(x => x.sehir_title == selectedCity);
+
+            if (res != null)
+            {
+                ComboBoxDistricts.Enabled = true;
+
+                AssignDistricts(res.sehir_key);
+            }
+
+            ComboBoxDistricts.Enabled = ComboBoxCities.Text == "İL" ? false : true;
+        }
+
         private void Search()
         {
             var personeller = _personelManager.GetAll().Data.ToList();
             var nufuslar = _nufusManager.GetAll().Data.ToList();
 
-            var personelDTOs = from Personel in personeller
-                               join Nufus in nufuslar
-                               on Personel.Id equals Nufus.PersonelId
-                               select new PersonelDTO
-                               {
-                                   PersonelId = Personel.Id,
-                               };
+            Expression<Func<Personel, bool>> filterPersonel = null;
+            Expression<Func<Nufus, bool>> filterNufus = null;
 
-            Expression<Func<Personel, bool>> filterText = null;
             Expression<Func<Personel, bool>> filterBirim = null;
             Expression<Func<Personel, bool>> filterUnvan = null;
             Expression<Func<Nufus, bool>> filterNufusKanGrubu = null;
-            Expression<Func<Personel, bool>> filterKanGrubu = null;
+            Expression<Func<Nufus, bool>> filterCinsiyet = null;
+            Expression<Func<Nufus, bool>> filterYas = null;
+            Expression<Func<Nufus, bool>> filterMedeniHal = null;
+            Expression<Func<Nufus, bool>> filterEsCalismaDurumu = null;
+            Expression<Func<Nufus, bool>> filterCocukSayisi = null;
+
+            #region Birim Filtresi
 
             if (ComboBoxTesisFilter.Text != "TESİS")
             {
@@ -450,6 +561,10 @@ namespace IKYv4.Forms
                 filterBirim = x => x.Mudurluk == ComboBoxMudurlukFilter.Text;
             }
 
+            #endregion
+
+            #region Pozisyon Filtresi
+
             if (ComboBoxPozisyon.Text != "POZİSYON")
             {
                 filterUnvan = x => x.Pozisyonu == ComboBoxPozisyon.Text;
@@ -459,22 +574,111 @@ namespace IKYv4.Forms
                 filterUnvan = x => x.Unvani == ComboBoxUnvanGrubu.Text;
             }
 
+            #endregion
+
+            filterPersonel = filterBirim != null && filterUnvan != null ? PredicateBuilder.And(filterBirim, filterUnvan)
+                : filterBirim != null && filterUnvan == null ? filterBirim
+                : filterUnvan != null && filterBirim == null ? filterUnvan
+                : null;
+
+            var res = _personelManager.GetAll(filterPersonel).Data.ToList();
+
+            #region Kan Grubu Filtresi
+
             if (ComboBoxKanGrubu.Text != "KAN GRUBU")
             {
                 filterNufusKanGrubu = x => x.KanGrubu == ComboBoxKanGrubu.Text;
-
-                var resNufus = _nufusManager.GetAll(filterNufusKanGrubu).Data;
-
-                var nufusPersonelIds = new HashSet<int>(resNufus.Select(n => n.PersonelId));
-
-                var resPersonel = _personelManager.GetAll().Data.Where(p => nufusPersonelIds.Contains(p.Id));
             }
 
-            filterText = filterBirim != null && filterUnvan != null ? PredicateBuilder.And(filterBirim, filterUnvan)
-                : filterBirim != null && filterUnvan == null ? filterBirim
-                : filterUnvan != null && filterBirim == null ? filterUnvan : null;
+            #endregion
 
-            var res = _personelManager.GetAll(filterText).Data.ToList();
+            #region Cinsiyet Filtresi
+
+            if (RadioButtonMale.Checked || RadioButtonFemale.Checked)
+            {
+                var cinsiyet = RadioButtonMale.Checked ? RadioButtonMale.Text : RadioButtonFemale.Text;
+
+                filterCinsiyet = x => x.Cinsiyet == cinsiyet;
+            }
+
+            #endregion
+
+            filterNufus = filterNufusKanGrubu != null && filterCinsiyet != null ? PredicateBuilder.And(filterNufusKanGrubu, filterCinsiyet)
+                : filterNufusKanGrubu != null && filterCinsiyet == null ? filterNufusKanGrubu
+                : filterCinsiyet != null && filterNufusKanGrubu == null ? filterCinsiyet
+                : null;
+
+            #region Yaş Filtresi
+
+            if (int.TryParse(TextBoxMinAge.Text, out var minAge))
+            {
+                if (int.TryParse(TextBoxMaxAge.Text, out var maxAge))
+                {
+                    var minAgeDt = DateTime.Now.AddYears(-minAge);
+
+                    var maxAgeDt = DateTime.Now.AddYears(-maxAge);
+
+                    filterYas = x => x.DogumTarihi > maxAgeDt && x.DogumTarihi < minAgeDt;
+                }
+            }
+
+            filterNufus = filterYas != null && filterNufus != null ? PredicateBuilder.And(filterNufus, filterYas)
+                : filterYas != null && filterNufus == null ? filterYas
+                : filterNufus != null && filterYas == null ? filterNufus
+                : null;
+
+            #endregion
+
+            #region Medeni Hal Filtresi
+
+            if (RadioButtonMarried.Checked || RadioButtonSingle.Checked)
+            {
+                string medeniHal = RadioButtonMarried.Checked ? RadioButtonMarried.Text : RadioButtonSingle.Text;
+
+                filterMedeniHal = x => x.MedeniHali == medeniHal;
+            }
+
+            filterNufus = filterMedeniHal != null && filterNufus != null ? PredicateBuilder.And(filterNufus, filterMedeniHal)
+                : filterMedeniHal != null && filterNufus == null ? filterMedeniHal
+                : filterNufus != null && filterMedeniHal == null ? filterNufus
+                : null;
+
+            #endregion
+
+            #region Eş Çalışma Durumu Filtresi
+
+            if (RadioButtonSpouseWorking.Checked || RadioButtonSpouseNotWorking.Checked)
+            {
+                string esCalismaDurumu = RadioButtonSpouseWorking.Checked ? RadioButtonSpouseWorking.Text : RadioButtonSpouseNotWorking.Text;
+
+                filterEsCalismaDurumu = x => x.EsCalismaDurumu == esCalismaDurumu;
+            }
+
+            filterNufus = filterEsCalismaDurumu != null && filterNufus != null ? PredicateBuilder.And(filterNufus, filterEsCalismaDurumu)
+                : filterEsCalismaDurumu != null && filterNufus == null ? filterEsCalismaDurumu
+                : filterNufus != null && filterEsCalismaDurumu == null ? filterNufus
+                : null;
+
+            #endregion
+
+            if (int.TryParse(TextBoxMinKid.Text, out int minKid))
+            {
+                if (int.TryParse(TextBoxMaxKid.Text, out int maxKid))
+                {
+                    filterCocukSayisi = x => x.CocukSayisi >= minKid && x.CocukSayisi <= maxKid;
+                }
+            }
+
+            filterNufus = filterCocukSayisi != null && filterNufus != null ? PredicateBuilder.And(filterNufus, filterCocukSayisi)
+                : filterCocukSayisi != null && filterNufus == null ? filterCocukSayisi
+                : filterNufus != null && filterCocukSayisi == null ? filterNufus
+                : null;
+
+            var resNufus = _nufusManager.GetAll(filterNufus).Data;
+
+            var nufusPersonelIds = new HashSet<int>(resNufus.Select(n => n.PersonelId));
+
+            res = res.Where(p => nufusPersonelIds.Contains(p.Id)).ToList();
 
             DataGridViewEmployees.DataSource = res;
             DataGridViewEmployees.Refresh();

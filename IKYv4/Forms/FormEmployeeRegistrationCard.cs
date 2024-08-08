@@ -21,14 +21,28 @@ namespace IKYv4.Forms
         readonly IUnvanManager _unvanManager;
         readonly INufusManager _nufusManager;
         readonly ITahsilManager _tahsilManager;
+        readonly INakilManager _nakilManager;
+        readonly ISertifikaManager _sertifikaManager;
+        readonly IIletisimManager _iletisimManager;
 
         bool tiklandi = false;
         bool isItNew = true;
 
-        private Personel _personel = new Personel();
+        public Personel _personel = new Personel();
         private Nufus _nufus = new Nufus();
 
-        public FormEmployeeRegistrationCard(IPersonelManager personelManager, IMudurlukManager mudurlukManager, ISeflikManager seflikManager, ITesisManager tesisManager, ICalismaSaatleriManager calismaSaatleriManager, IUnvanGrubuManager unvanGrubuManager, IUnvanManager unvanManager, INufusManager nufusManager, ITahsilManager tahsilManager)
+        public FormEmployeeRegistrationCard(IPersonelManager personelManager,
+                                            IMudurlukManager mudurlukManager,
+                                            ISeflikManager seflikManager,
+                                            ITesisManager tesisManager,
+                                            ICalismaSaatleriManager calismaSaatleriManager,
+                                            IUnvanGrubuManager unvanGrubuManager,
+                                            IUnvanManager unvanManager,
+                                            INufusManager nufusManager,
+                                            ITahsilManager tahsilManager,
+                                            INakilManager nakilManager,
+                                            ISertifikaManager sertifikaManager,
+                                            IIletisimManager iletisimManager)
         {
             InitializeComponent();
 
@@ -41,6 +55,9 @@ namespace IKYv4.Forms
             _unvanManager = unvanManager;
             _nufusManager = nufusManager;
             _tahsilManager = tahsilManager;
+            _nakilManager = nakilManager;
+            _sertifikaManager = sertifikaManager;
+            _iletisimManager = iletisimManager;
 
             var res = _mudurlukManager.GetAll();
 
@@ -65,7 +82,9 @@ namespace IKYv4.Forms
 
         private void ButtonSave_Click(object sender, EventArgs e)
         {
-            var resPersonsel = _personelManager.GetAll(p => p.TCKimlikNo == TextBoxUserId.Text);
+            #region Genel Sayfası Atamaları
+
+            var resPersonsel = _personelManager.GetAll(p => p.Id == _personel.Id);
 
             if (resPersonsel.Data.Count > 0)
             {
@@ -96,6 +115,10 @@ namespace IKYv4.Forms
 
             var res = _personelManager.Add(_personel);
 
+            #endregion
+
+            #region Nufus Sayfası Atamaları
+
             var _nufus = _nufusManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
 
             if (_nufus == null || _nufus.PersonelId == 0)
@@ -117,10 +140,17 @@ namespace IKYv4.Forms
             _nufus.EsAdi = TextBoxSpouseName.Text;
             _nufus.EsCalismaDurumu = RadioButtonSpouseNotWorks.Checked ? RadioButtonSpouseNotWorks.Text : RadioButtonSpouseWorks.Text;
             _nufus.EsMeslegi = TextBoxSpouseJob.Text;
-            _nufus.CocukSayisi = TextBoxChildrenCount.Text;
+            if(int.TryParse(TextBoxChildrenCount.Text, out var childrenCount))
+            {
+                _nufus.CocukSayisi = childrenCount;
+            }
             _nufus.EsCalistigiKurumAdi = TextBoxWhereSpouseWorks.Text;
 
             var resNufus = _nufusManager.Add(_nufus);
+
+            #endregion
+
+            #region Tahsil Sayfası Atamaları
 
             var _tahsil = _tahsilManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
 
@@ -149,14 +179,114 @@ namespace IKYv4.Forms
 
             var resTahsil = _tahsilManager.Add(_tahsil);
 
-            AssignDefaultShifts();
+            #endregion
+
+            #region Nakil Sayfası Atamaları
+
+            var _nakil = _nakilManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
+
+            if(_nakil == null || _nakil.PersonelId == 0)
+            {
+                _nakil = new Nakil();
+
+                _nakil.PersonelId = _personel.Id;
+            }
+
+            _nakil.Kurum1 = TextBoxInstitution1.Text;
+            _nakil.Kurum2 = TextBoxInstitution2.Text;
+            _nakil.Kurum3 = TextBoxInstitution3.Text;
+            _nakil.Kurum4 = TextBoxInstitution4.Text;
+            _nakil.Kurum5 = TextBoxInstitution5.Text;
+            _nakil.Kurum6 = TextBoxInstitution6.Text;
+            _nakil.Birim1 = TextBoxDivision1.Text;
+            _nakil.Birim2 = TextBoxDivision2.Text;
+            _nakil.Birim3 = TextBoxDivision3.Text;
+            _nakil.Birim4 = TextBoxDivision4.Text;
+            _nakil.Birim5 = TextBoxDivision5.Text;
+            _nakil.Birim6 = TextBoxDivision6.Text;
+            _nakil.Gorev1 = TextBoxJob1.Text;
+            _nakil.Gorev2 = TextBoxJob2.Text;
+            _nakil.Gorev3 = TextBoxJob3.Text;
+            _nakil.Gorev4 = TextBoxJob4.Text;
+            _nakil.Gorev5 = TextBoxJob5.Text;
+            _nakil.Gorev6 = TextBoxJob6.Text;
+            _nakil.BaslangicTarihi1 = DateTimePickerStartDate1.Value;
+            _nakil.BaslangicTarihi2 = DateTimePickerStartDate2.Value;
+            _nakil.BaslangicTarihi3 = DateTimePickerStartDate3.Value;
+            _nakil.BaslangicTarihi4 = DateTimePickerStartDate4.Value;
+            _nakil.BaslangicTarihi5 = DateTimePickerStartDate5.Value;
+            _nakil.BaslangicTarihi6 = DateTimePickerStartDate6.Value;
+            _nakil.AyrilisTarihi1 = DateTimePickerDepartureDate1.Value;
+            _nakil.AyrilisTarihi2 = DateTimePickerDepartureDate2.Value;
+            _nakil.AyrilisTarihi3 = DateTimePickerDepartureDate3.Value;
+            _nakil.AyrilisTarihi4 = DateTimePickerDepartureDate4.Value;
+            _nakil.AyrilisTarihi5 = DateTimePickerDepartureDate5.Value;
+            _nakil.AyrilisTarihi6 = DateTimePickerDepartureDate6.Value;
+            _nakil.Aciklama1 = TextBoxDescription1.Text;
+            _nakil.Aciklama2 = TextBoxDescription2.Text;
+            _nakil.Aciklama3 = TextBoxDescription3.Text;
+            _nakil.Aciklama4 = TextBoxDescription4.Text;
+            _nakil.Aciklama5 = TextBoxDescription5.Text;
+            _nakil.Aciklama6 = TextBoxDescription6.Text;
+
+            var resNakil = _nakilManager.Add(_nakil);
+
+            #endregion
+
+            #region Sertifika Sayfası Atamaları
+
+            var _sertifika = _sertifikaManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
+
+            if (_sertifika == null || _sertifika.PersonelId == 0)
+            {
+                _sertifika = new Sertifika();
+
+                _sertifika.PersonelId = _personel.Id;
+            }
+
+            _sertifika.SertifikaAdi1 = TextBoxSertificate1.Text;
+            _sertifika.SertifikaAdi2 = TextBoxSertificate2.Text;
+            _sertifika.SertifikaAdi3 = TextBoxSertificate3.Text;
+            _sertifika.SertifikaAdi4 = TextBoxSertificate4.Text;
+            _sertifika.SertifikaAdi5 = TextBoxSertificate5.Text;
+            _sertifika.SertifikaAdi6 = TextBoxSertificate6.Text;
+
+            var resSertifika = _sertifikaManager.Add(_sertifika);
+
+            #endregion
+
+            #region İletişim Sayfası Atamaları
+
+            var _iletisim = _iletisimManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
+
+            if (_iletisim == null || _iletisim.PersonelId == 0)
+            {
+                _iletisim = new Iletisim();
+
+                _iletisim.PersonelId = _personel.Id;
+            }
+
+            _iletisim.Mahalle = TextBoxNeighbourhood.Text;
+            _iletisim.Sokak = TextBoxStreet.Text;
+            _iletisim.KapiNo1 = TextBoxDoorNumber.Text;
+            _iletisim.Ilce = TextBoxDistrict.Text;
+            _iletisim.Il = TextBoxCity.Text;
+            _iletisim.CepTelNo1 = TextBoxPhoneNumber.Text;
+            _iletisim.CepTelNo2 = TextBoxPhoneNumber2.Text;
+            _iletisim.EMailAdresi = TextBoxMailAdress.Text;
+
+            var resIletisim = _iletisimManager.Add(_iletisim);
+
+            #endregion
+
+            AssignDefaultWorkingHours();
             
             MessageBox.Show(res.Message);
             
             this.Close();
         }
 
-        private void AssignDefaultShifts()
+        private void AssignDefaultWorkingHours()
         {
             if (isItNew)
             {
@@ -285,14 +415,12 @@ namespace IKYv4.Forms
             LabelSpouseName.ForeColor = Color.Black;
             LabelSpouseWorkState.ForeColor = Color.Black;
             LabelSpouseJob.ForeColor = Color.Black;
-            LabelChildrenCount.ForeColor = Color.Black;
             LabelSpouseWorkName.ForeColor = Color.Black;
 
             TextBoxSpouseName.Enabled = true;
             RadioButtonSpouseNotWorks.Enabled = true;
             RadioButtonSpouseWorks.Enabled = true;
             TextBoxSpouseJob.Enabled = true;
-            TextBoxChildrenCount.Enabled = true;
             TextBoxWhereSpouseWorks.Enabled = true;
         }
 
@@ -301,14 +429,12 @@ namespace IKYv4.Forms
             LabelSpouseName.ForeColor = SystemColors.ControlDarkDark;
             LabelSpouseWorkState.ForeColor = SystemColors.ControlDarkDark;
             LabelSpouseJob.ForeColor = SystemColors.ControlDarkDark;
-            LabelChildrenCount.ForeColor = SystemColors.ControlDarkDark;
             LabelSpouseWorkName.ForeColor = SystemColors.ControlDarkDark;
 
             TextBoxSpouseName.Enabled = false;
             RadioButtonSpouseNotWorks.Enabled = false;
             RadioButtonSpouseWorks.Enabled = false;
             TextBoxSpouseJob.Enabled = false;
-            TextBoxChildrenCount.Enabled = false;
             TextBoxWhereSpouseWorks.Enabled = false;
         }
     }
