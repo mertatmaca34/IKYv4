@@ -77,6 +77,9 @@ namespace IKYv4
             services.AddSingleton<ICalismaSaatleriDal, CalismaSaatleriDal>();
             services.AddSingleton<ICalismaSaatleriManager, CalismaSaatleriManager>();
 
+            services.AddSingleton<ICocukDal, CocukDal>();
+            services.AddSingleton<ICocukManager, CocukManager>();
+
             services.AddScoped<IKYContext>();
             services.AddTransient<FormMain>();
 

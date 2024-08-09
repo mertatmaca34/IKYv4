@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.Concrete;
 using Entities.Concrete;
 using Entities.Concrete.TurkeyModel;
 using LinqKit;
@@ -36,6 +37,7 @@ namespace IKYv4.Forms
         ISertifikaManager _sertifikaManager;
         IIletisimManager _iletisimManager;
         INakilManager _nakilManager;
+        ICocukManager _cocukManager;
 
         public FormEmployeeListing(IPersonelManager personelManager,
                                    IMudurlukManager mudurlukManager,
@@ -48,10 +50,12 @@ namespace IKYv4.Forms
                                    ITahsilManager tahsilManager,
                                    ISertifikaManager sertifikaManager,
                                    IIletisimManager iletisimManager,
-                                   INakilManager nakilManager)
+                                   INakilManager nakilManager,
+                                   ICocukManager cocukManager)
         {
             InitializeComponent();
 
+            _cocukManager = cocukManager;
             _personelManager = personelManager;
             _mudurlukManager = mudurlukManager;
             _seflikManager = seflikManager;
@@ -70,7 +74,7 @@ namespace IKYv4.Forms
 
         private void ButtonNewEmployee_Click(object sender, EventArgs e)
         {
-            FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager, _nufusManager, _tahsilManager, _nakilManager, _sertifikaManager, _iletisimManager);
+            FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager, _nufusManager, _tahsilManager, _nakilManager, _sertifikaManager, _iletisimManager, _cocukManager);
 
             formEmployeeRegistrationCard.ShowDialog();
 
@@ -119,7 +123,7 @@ namespace IKYv4.Forms
 
                 var selectedPersonel = _personelManager.GetAll(p => p.Id == selectedPersonelId).Data.FirstOrDefault();
 
-                FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager, _nufusManager, _tahsilManager, _nakilManager, _sertifikaManager, _iletisimManager);
+                FormEmployeeRegistrationCard formEmployeeRegistrationCard = new FormEmployeeRegistrationCard(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager, _nufusManager, _tahsilManager, _nakilManager, _sertifikaManager, _iletisimManager, _cocukManager);
 
                 formEmployeeRegistrationCard.ComboBoxConducting.Enabled = true;
                 formEmployeeRegistrationCard.ComboBoxDirectorate.Enabled = true;
@@ -242,6 +246,11 @@ namespace IKYv4.Forms
                     formEmployeeRegistrationCard.TextBoxPhoneNumber2.Text = selectedPersonelIletisim.CepTelNo2;
                     formEmployeeRegistrationCard.TextBoxMailAdress.Text = selectedPersonelIletisim.EMailAdresi;
                 }
+
+                var selectedPersonelCocuklar = _cocukManager.GetAll(p => p.PersonelId == selectedPersonel.Id).Data;
+
+                formEmployeeRegistrationCard.DataGridViewChild.DataSource = selectedPersonelCocuklar;
+                formEmployeeRegistrationCard.Update();
 
                 Bitmap bmp;
 

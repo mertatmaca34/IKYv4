@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.Concrete.TurkeyModel;
 using Entities.DTOs;
@@ -28,6 +29,7 @@ namespace IKYv4.Forms
         readonly INakilManager _nakilManager;
         readonly ISertifikaManager _sertifikaManager;
         readonly IIletisimManager _iletisimManager;
+        readonly ICocukManager _cocukManager;
 
         bool tiklandi = false;
         bool isItNew = true;
@@ -50,10 +52,12 @@ namespace IKYv4.Forms
                                             ITahsilManager tahsilManager,
                                             INakilManager nakilManager,
                                             ISertifikaManager sertifikaManager,
-                                            IIletisimManager iletisimManager)
+                                            IIletisimManager iletisimManager,
+                                            ICocukManager cocukManager)
         {
             InitializeComponent();
 
+            _cocukManager = cocukManager;
             _personelManager = personelManager;
             _mudurlukManager = mudurlukManager;
             _seflikManager = seflikManager;
@@ -110,6 +114,15 @@ namespace IKYv4.Forms
 
         private void ButtonSave_Click(object sender, EventArgs e)
         {
+            IResult res = UpdateData();
+
+            MessageBox.Show(res.Message);
+
+            this.Close();
+        }
+
+        private IResult UpdateData()
+        {
             #region Genel Sayfası Atamaları
 
             var resPersonsel = _personelManager.GetAll(p => p.Id == _personel.Id);
@@ -155,7 +168,7 @@ namespace IKYv4.Forms
 
                 _nufus.PersonelId = _personel.Id;
             }
-            
+
             _nufus.Cinsiyet = RadioButtonMan.Checked ? RadioButtonMan.Text : RadioButtonWoman.Text;
             _nufus.DogumTarihi = DateTimePickerBirthDate.Value;
             _nufus.DogumYeri = TextBoxBirthPlace.Text;
@@ -209,7 +222,7 @@ namespace IKYv4.Forms
 
             var _nakil = _nakilManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
 
-            if(_nakil == null || _nakil.PersonelId == 0)
+            if (_nakil == null || _nakil.PersonelId == 0)
             {
                 _nakil = new Nakil();
 
@@ -303,10 +316,7 @@ namespace IKYv4.Forms
             #endregion
 
             AssignDefaultWorkingHours();
-            
-            MessageBox.Show(res.Message);
-            
-            this.Close();
+            return res;
         }
 
         private void AssignDefaultWorkingHours()
@@ -338,6 +348,9 @@ namespace IKYv4.Forms
         
         private void FormEmployeeRegistrationCard_Load(object sender, EventArgs e)
         {
+
+            DataGridViewChild.Columns[1].Visible = false;
+            DataGridViewChild.Columns[2].Visible = false;
             /*var res = _unvanGrubuManager.GetAll().Data;
 
             if(string.IsNullOrEmpty(ComboBoxTitle.Text))
@@ -583,6 +596,49 @@ namespace IKYv4.Forms
             }
 
             ComboBoxContactNeighbourhood.Enabled = ComboBoxContactDistrict.Text == "İLÇE" ? false : true;
+        }
+
+        private void ButtonNewChild_Click(object sender, EventArgs e)
+        {
+            UpdateData();
+
+            FormNewChild formNewChild = new FormNewChild(_cocukManager, _personel.Id);
+            formNewChild.ShowDialog();
+
+            var resCocukData = _cocukManager.GetAll().Data;
+
+            DataGridViewChild.DataSource = resCocukData;
+            DataGridViewChild.Refresh();
+        }
+
+        private void silToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(DataGridViewChild.SelectedRows.Count > 0)
+            {
+                if(int.TryParse(DataGridViewChild.SelectedRows[0].Cells[1].Value.ToString(), out var cocukId))
+                {
+                    var resCocuk = _cocukManager.GetAll(c => c.Id == cocukId).Data.FirstOrDefault();
+                    var res = _cocukManager.Delete(resCocuk);
+
+                    MessageBox.Show(res.Message);
+
+
+                    var updatedChildData = _cocukManager.GetAll().Data;
+                    DataGridViewChild.DataSource = updatedChildData;
+                    DataGridViewChild.Refresh();
+                }
+            }
+        }
+
+        private void ButtonNewTahsil_Click(object sender, EventArgs e)
+        {
+            FormNewTahsil formNewTahsil = new FormNewTahsil(_tahsilManager, _personel.Id);
+            formNewTahsil.Show();
+
+            var resTahsil = _tahsilManager.GetAll();
+            DataGridViewTahsil.DataSource = resTahsil;
+
+            DataGridViewTahsil.Refresh();
         }
     }
 }

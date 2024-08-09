@@ -224,12 +224,16 @@ namespace IKYv4.Forms
             // ButtonLogin
             // 
             this.ButtonLogin.BackColor = System.Drawing.Color.DarkRed;
+            this.ButtonLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonLogin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonLogin.FlatAppearance.BorderSize = 0;
+            this.ButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonLogin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ButtonLogin.ForeColor = System.Drawing.Color.White;
-            this.ButtonLogin.Location = new System.Drawing.Point(108, 295);
+            this.ButtonLogin.Location = new System.Drawing.Point(108, 297);
+            this.ButtonLogin.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ButtonLogin.Name = "ButtonLogin";
-            this.ButtonLogin.Size = new System.Drawing.Size(202, 40);
+            this.ButtonLogin.Size = new System.Drawing.Size(202, 36);
             this.ButtonLogin.TabIndex = 4;
             this.ButtonLogin.Text = "Giriş Yap";
             this.ButtonLogin.UseVisualStyleBackColor = false;
