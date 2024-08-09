@@ -2,14 +2,12 @@
 using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.Concrete.TurkeyModel;
-using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Text.Json;
 using System.Windows.Forms;
 
@@ -187,80 +185,6 @@ namespace IKYv4.Forms
 
             #endregion
 
-            #region Nakil Sayfası Atamaları
-
-            var _nakil = _nakilManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
-
-            if (_nakil == null || _nakil.PersonelId == 0)
-            {
-                _nakil = new Nakil();
-
-                _nakil.PersonelId = _personel.Id;
-            }
-
-            _nakil.Kurum1 = TextBoxInstitution1.Text;
-            _nakil.Kurum2 = TextBoxInstitution2.Text;
-            _nakil.Kurum3 = TextBoxInstitution3.Text;
-            _nakil.Kurum4 = TextBoxInstitution4.Text;
-            _nakil.Kurum5 = TextBoxInstitution5.Text;
-            _nakil.Kurum6 = TextBoxInstitution6.Text;
-            _nakil.Birim1 = TextBoxDivision1.Text;
-            _nakil.Birim2 = TextBoxDivision2.Text;
-            _nakil.Birim3 = TextBoxDivision3.Text;
-            _nakil.Birim4 = TextBoxDivision4.Text;
-            _nakil.Birim5 = TextBoxDivision5.Text;
-            _nakil.Birim6 = TextBoxDivision6.Text;
-            _nakil.Gorev1 = TextBoxJob1.Text;
-            _nakil.Gorev2 = TextBoxJob2.Text;
-            _nakil.Gorev3 = TextBoxJob3.Text;
-            _nakil.Gorev4 = TextBoxJob4.Text;
-            _nakil.Gorev5 = TextBoxJob5.Text;
-            _nakil.Gorev6 = TextBoxJob6.Text;
-            _nakil.BaslangicTarihi1 = DateTimePickerStartDate1.Value;
-            _nakil.BaslangicTarihi2 = DateTimePickerStartDate2.Value;
-            _nakil.BaslangicTarihi3 = DateTimePickerStartDate3.Value;
-            _nakil.BaslangicTarihi4 = DateTimePickerStartDate4.Value;
-            _nakil.BaslangicTarihi5 = DateTimePickerStartDate5.Value;
-            _nakil.BaslangicTarihi6 = DateTimePickerStartDate6.Value;
-            _nakil.AyrilisTarihi1 = DateTimePickerDepartureDate1.Value;
-            _nakil.AyrilisTarihi2 = DateTimePickerDepartureDate2.Value;
-            _nakil.AyrilisTarihi3 = DateTimePickerDepartureDate3.Value;
-            _nakil.AyrilisTarihi4 = DateTimePickerDepartureDate4.Value;
-            _nakil.AyrilisTarihi5 = DateTimePickerDepartureDate5.Value;
-            _nakil.AyrilisTarihi6 = DateTimePickerDepartureDate6.Value;
-            _nakil.Aciklama1 = TextBoxDescription1.Text;
-            _nakil.Aciklama2 = TextBoxDescription2.Text;
-            _nakil.Aciklama3 = TextBoxDescription3.Text;
-            _nakil.Aciklama4 = TextBoxDescription4.Text;
-            _nakil.Aciklama5 = TextBoxDescription5.Text;
-            _nakil.Aciklama6 = TextBoxDescription6.Text;
-
-            var resNakil = _nakilManager.Add(_nakil);
-
-            #endregion
-
-            #region Sertifika Sayfası Atamaları
-
-            var _sertifika = _sertifikaManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
-
-            if (_sertifika == null || _sertifika.PersonelId == 0)
-            {
-                _sertifika = new Sertifika();
-
-                _sertifika.PersonelId = _personel.Id;
-            }
-
-            _sertifika.SertifikaAdi1 = TextBoxSertificate1.Text;
-            _sertifika.SertifikaAdi2 = TextBoxSertificate2.Text;
-            _sertifika.SertifikaAdi3 = TextBoxSertificate3.Text;
-            _sertifika.SertifikaAdi4 = TextBoxSertificate4.Text;
-            _sertifika.SertifikaAdi5 = TextBoxSertificate5.Text;
-            _sertifika.SertifikaAdi6 = TextBoxSertificate6.Text;
-
-            var resSertifika = _sertifikaManager.Add(_sertifika);
-
-            #endregion
-
             #region İletişim Sayfası Atamaları
 
             var _iletisim = _iletisimManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
@@ -314,20 +238,21 @@ namespace IKYv4.Forms
                 _calismaSaatleriManager.Add(calismaSaatleri);
             }
         }
-        
+
         private void FormEmployeeRegistrationCard_Load(object sender, EventArgs e)
         {
-            if(DataGridViewChild.DataSource != null)
+            if (DataGridViewChild.DataSource != null)
             {
                 DataGridViewChild.Columns[1].Visible = false;
                 DataGridViewChild.Columns[2].Visible = false;
             }
 
-            if(DataGridViewTahsil.DataSource != null)
+            if (DataGridViewTahsil.DataSource != null)
             {
                 DataGridViewTahsil.Columns[1].Visible = false;
                 DataGridViewTahsil.Columns[2].Visible = false;
             }
+
             /*var res = _unvanGrubuManager.GetAll().Data;
 
             if(string.IsNullOrEmpty(ComboBoxTitle.Text))
@@ -416,7 +341,7 @@ namespace IKYv4.Forms
                 ComboBoxPosition.Items.Add(unvan.UnvanAdi);
             }
 
-            var res = _unvanGrubuManager.GetAll(x=> x.UnvanGrubuAdi == ComboBoxTitle.Text).Data.FirstOrDefault();
+            var res = _unvanGrubuManager.GetAll(x => x.UnvanGrubuAdi == ComboBoxTitle.Text).Data.FirstOrDefault();
 
             TextBoxMk.Text = res.MK.ToString();
             TextBoxPk.Text = res.PK.ToString();
@@ -590,9 +515,9 @@ namespace IKYv4.Forms
 
         private void silToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(DataGridViewChild.SelectedRows.Count > 0)
+            if (DataGridViewChild.SelectedRows.Count > 0)
             {
-                if(int.TryParse(DataGridViewChild.SelectedRows[0].Cells[1].Value.ToString(), out var cocukId))
+                if (int.TryParse(DataGridViewChild.SelectedRows[0].Cells[1].Value.ToString(), out var cocukId))
                 {
                     var resCocuk = _cocukManager.GetAll(c => c.Id == cocukId).Data.FirstOrDefault();
                     var res = _cocukManager.Delete(resCocuk);
@@ -610,7 +535,7 @@ namespace IKYv4.Forms
         private void ButtonNewTahsil_Click(object sender, EventArgs e)
         {
             FormNewTahsil formNewTahsil = new FormNewTahsil(_tahsilManager, _personel.Id);
-            formNewTahsil.Show();
+            formNewTahsil.ShowDialog();
 
             var resTahsil = _tahsilManager.GetAll();
             DataGridViewTahsil.DataSource = resTahsil;
@@ -620,7 +545,24 @@ namespace IKYv4.Forms
 
         private void ButtonSertifikaEkle_Click(object sender, EventArgs e)
         {
+            FormNewSertifika formNewSertifika = new FormNewSertifika(_sertifikaManager, _personel.Id);
+            formNewSertifika.ShowDialog();
 
+            var resSertifika = _sertifikaManager.GetAll();
+            DataGridViewSertifikalar.DataSource = resSertifika;
+
+            DataGridViewSertifikalar.Refresh();
+        }
+
+        private void ButtonNakilEkle_Click(object sender, EventArgs e)
+        {
+            FormNewNakil formNewNakil = new FormNewNakil();
+            formNewNakil.ShowDialog();
+
+            var resNakil = _nakilManager.GetAll();
+            DataGridViewNakiller.DataSource = resNakil;
+
+            DataGridViewNakiller.Refresh();
         }
     }
 }

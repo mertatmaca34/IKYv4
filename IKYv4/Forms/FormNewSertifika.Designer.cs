@@ -129,6 +129,7 @@
             this.ClientSize = new System.Drawing.Size(558, 275);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormNewSertifika";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormNewSertifika";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
