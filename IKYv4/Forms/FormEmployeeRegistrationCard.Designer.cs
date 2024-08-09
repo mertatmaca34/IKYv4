@@ -32,14 +32,22 @@ namespace IKYv4.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label28 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label27 = new System.Windows.Forms.Label();
@@ -64,66 +72,7 @@ namespace IKYv4.Forms
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.TextBoxDivision1 = new System.Windows.Forms.TextBox();
-            this.TextBoxJob1 = new System.Windows.Forms.TextBox();
-            this.DateTimePickerStartDate1 = new System.Windows.Forms.DateTimePicker();
-            this.TextBoxDivision2 = new System.Windows.Forms.TextBox();
-            this.TextBoxJob2 = new System.Windows.Forms.TextBox();
-            this.DateTimePickerStartDate2 = new System.Windows.Forms.DateTimePicker();
-            this.TextBoxDivision3 = new System.Windows.Forms.TextBox();
-            this.TextBoxDivision4 = new System.Windows.Forms.TextBox();
-            this.TextBoxDivision5 = new System.Windows.Forms.TextBox();
-            this.TextBoxDivision6 = new System.Windows.Forms.TextBox();
-            this.TextBoxJob3 = new System.Windows.Forms.TextBox();
-            this.TextBoxJob4 = new System.Windows.Forms.TextBox();
-            this.TextBoxJob5 = new System.Windows.Forms.TextBox();
-            this.TextBoxJob6 = new System.Windows.Forms.TextBox();
-            this.DateTimePickerStartDate3 = new System.Windows.Forms.DateTimePicker();
-            this.DateTimePickerStartDate4 = new System.Windows.Forms.DateTimePicker();
-            this.DateTimePickerStartDate5 = new System.Windows.Forms.DateTimePicker();
-            this.DateTimePickerStartDate6 = new System.Windows.Forms.DateTimePicker();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.DateTimePickerDepartureDate1 = new System.Windows.Forms.DateTimePicker();
-            this.DateTimePickerDepartureDate2 = new System.Windows.Forms.DateTimePicker();
-            this.DateTimePickerDepartureDate3 = new System.Windows.Forms.DateTimePicker();
-            this.DateTimePickerDepartureDate4 = new System.Windows.Forms.DateTimePicker();
-            this.DateTimePickerDepartureDate5 = new System.Windows.Forms.DateTimePicker();
-            this.DateTimePickerDepartureDate6 = new System.Windows.Forms.DateTimePicker();
-            this.TextBoxDescription1 = new System.Windows.Forms.TextBox();
-            this.TextBoxDescription2 = new System.Windows.Forms.TextBox();
-            this.TextBoxDescription3 = new System.Windows.Forms.TextBox();
-            this.TextBoxDescription4 = new System.Windows.Forms.TextBox();
-            this.TextBoxDescription5 = new System.Windows.Forms.TextBox();
-            this.TextBoxDescription6 = new System.Windows.Forms.TextBox();
-            this.TextBoxInstitution6 = new System.Windows.Forms.TextBox();
-            this.TextBoxInstitution5 = new System.Windows.Forms.TextBox();
-            this.TextBoxInstitution4 = new System.Windows.Forms.TextBox();
-            this.TextBoxInstitution3 = new System.Windows.Forms.TextBox();
-            this.TextBoxInstitution2 = new System.Windows.Forms.TextBox();
-            this.TextBoxInstitution1 = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.TextBoxSertificate1 = new System.Windows.Forms.TextBox();
-            this.TextBoxSertificate2 = new System.Windows.Forms.TextBox();
-            this.TextBoxSertificate3 = new System.Windows.Forms.TextBox();
-            this.TextBoxSertificate4 = new System.Windows.Forms.TextBox();
-            this.TextBoxSertificate5 = new System.Windows.Forms.TextBox();
-            this.TextBoxSertificate6 = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -207,12 +156,20 @@ namespace IKYv4.Forms
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.PictureBoxEmployeePicture = new System.Windows.Forms.PictureBox();
             this.EditRow = new System.Windows.Forms.DataGridViewImageColumn();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ButtonSertifikaEkle = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ButtonNakilEkle = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabPage6.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.tableLayoutPanel11.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.tableLayoutPanel10.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -230,6 +187,10 @@ namespace IKYv4.Forms
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTahsil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployeePicture)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tableLayoutPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // label28
@@ -539,7 +500,7 @@ namespace IKYv4.Forms
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.tableLayoutPanel11);
+            this.tabPage5.Controls.Add(this.tableLayoutPanel9);
             this.tabPage5.Location = new System.Drawing.Point(4, 24);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -548,588 +509,9 @@ namespace IKYv4.Forms
             this.tabPage5.Text = "NAKİL";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel11
-            // 
-            this.tableLayoutPanel11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel11.ColumnCount = 6;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.80787F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.55764F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.20873F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.8444F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel11.Controls.Add(this.label42, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.label43, 1, 0);
-            this.tableLayoutPanel11.Controls.Add(this.label44, 2, 0);
-            this.tableLayoutPanel11.Controls.Add(this.label45, 3, 0);
-            this.tableLayoutPanel11.Controls.Add(this.panel4, 0, 1);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxDivision1, 1, 2);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxJob1, 2, 2);
-            this.tableLayoutPanel11.Controls.Add(this.DateTimePickerStartDate1, 3, 2);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxDivision2, 1, 3);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxJob2, 2, 3);
-            this.tableLayoutPanel11.Controls.Add(this.DateTimePickerStartDate2, 3, 3);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxDivision3, 1, 4);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxDivision4, 1, 5);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxDivision5, 1, 6);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxDivision6, 1, 7);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxJob3, 2, 4);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxJob4, 2, 5);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxJob5, 2, 6);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxJob6, 2, 7);
-            this.tableLayoutPanel11.Controls.Add(this.DateTimePickerStartDate3, 3, 4);
-            this.tableLayoutPanel11.Controls.Add(this.DateTimePickerStartDate4, 3, 5);
-            this.tableLayoutPanel11.Controls.Add(this.DateTimePickerStartDate5, 3, 6);
-            this.tableLayoutPanel11.Controls.Add(this.DateTimePickerStartDate6, 3, 7);
-            this.tableLayoutPanel11.Controls.Add(this.label46, 4, 0);
-            this.tableLayoutPanel11.Controls.Add(this.label47, 5, 0);
-            this.tableLayoutPanel11.Controls.Add(this.DateTimePickerDepartureDate1, 4, 2);
-            this.tableLayoutPanel11.Controls.Add(this.DateTimePickerDepartureDate2, 4, 3);
-            this.tableLayoutPanel11.Controls.Add(this.DateTimePickerDepartureDate3, 4, 4);
-            this.tableLayoutPanel11.Controls.Add(this.DateTimePickerDepartureDate4, 4, 5);
-            this.tableLayoutPanel11.Controls.Add(this.DateTimePickerDepartureDate5, 4, 6);
-            this.tableLayoutPanel11.Controls.Add(this.DateTimePickerDepartureDate6, 4, 7);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxDescription1, 5, 2);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxDescription2, 5, 3);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxDescription3, 5, 4);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxDescription4, 5, 5);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxDescription5, 5, 6);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxDescription6, 5, 7);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxInstitution6, 0, 7);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxInstitution5, 0, 6);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxInstitution4, 0, 5);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxInstitution3, 0, 4);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxInstitution2, 0, 3);
-            this.tableLayoutPanel11.Controls.Add(this.TextBoxInstitution1, 0, 2);
-            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.Padding = new System.Windows.Forms.Padding(26);
-            this.tableLayoutPanel11.RowCount = 9;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 3F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(1119, 504);
-            this.tableLayoutPanel11.TabIndex = 4;
-            // 
-            // label42
-            // 
-            this.label42.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label42.Location = new System.Drawing.Point(70, 37);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(69, 21);
-            this.label42.TabIndex = 0;
-            this.label42.Text = "KURUM";
-            // 
-            // label43
-            // 
-            this.label43.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label43.Location = new System.Drawing.Point(239, 37);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(55, 21);
-            this.label43.TabIndex = 0;
-            this.label43.Text = "BİRİM";
-            // 
-            // label44
-            // 
-            this.label44.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label44.Location = new System.Drawing.Point(426, 37);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(63, 21);
-            this.label44.TabIndex = 0;
-            this.label44.Text = "GÖREV";
-            // 
-            // label45
-            // 
-            this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label45.Location = new System.Drawing.Point(580, 37);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(140, 21);
-            this.label45.TabIndex = 0;
-            this.label45.Text = "BAŞLAMA TARİHİ";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.DarkRed;
-            this.tableLayoutPanel11.SetColumnSpan(this.panel4, 6);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(26, 69);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1067, 3);
-            this.panel4.TabIndex = 7;
-            // 
-            // TextBoxDivision1
-            // 
-            this.TextBoxDivision1.BackColor = System.Drawing.Color.White;
-            this.TextBoxDivision1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDivision1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDivision1.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDivision1.Location = new System.Drawing.Point(187, 78);
-            this.TextBoxDivision1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxDivision1.Name = "TextBoxDivision1";
-            this.TextBoxDivision1.Size = new System.Drawing.Size(160, 29);
-            this.TextBoxDivision1.TabIndex = 1;
-            // 
-            // TextBoxJob1
-            // 
-            this.TextBoxJob1.BackColor = System.Drawing.Color.White;
-            this.TextBoxJob1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxJob1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxJob1.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxJob1.Location = new System.Drawing.Point(353, 78);
-            this.TextBoxJob1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxJob1.Name = "TextBoxJob1";
-            this.TextBoxJob1.Size = new System.Drawing.Size(210, 29);
-            this.TextBoxJob1.TabIndex = 1;
-            // 
-            // DateTimePickerStartDate1
-            // 
-            this.DateTimePickerStartDate1.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerStartDate1.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerStartDate1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateTimePickerStartDate1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerStartDate1.Location = new System.Drawing.Point(569, 78);
-            this.DateTimePickerStartDate1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.DateTimePickerStartDate1.Name = "DateTimePickerStartDate1";
-            this.DateTimePickerStartDate1.Size = new System.Drawing.Size(163, 29);
-            this.DateTimePickerStartDate1.TabIndex = 6;
-            // 
-            // TextBoxDivision2
-            // 
-            this.TextBoxDivision2.BackColor = System.Drawing.Color.White;
-            this.TextBoxDivision2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDivision2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDivision2.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDivision2.Location = new System.Drawing.Point(187, 117);
-            this.TextBoxDivision2.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxDivision2.Name = "TextBoxDivision2";
-            this.TextBoxDivision2.Size = new System.Drawing.Size(160, 29);
-            this.TextBoxDivision2.TabIndex = 1;
-            // 
-            // TextBoxJob2
-            // 
-            this.TextBoxJob2.BackColor = System.Drawing.Color.White;
-            this.TextBoxJob2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxJob2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxJob2.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxJob2.Location = new System.Drawing.Point(353, 117);
-            this.TextBoxJob2.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxJob2.Name = "TextBoxJob2";
-            this.TextBoxJob2.Size = new System.Drawing.Size(210, 29);
-            this.TextBoxJob2.TabIndex = 1;
-            // 
-            // DateTimePickerStartDate2
-            // 
-            this.DateTimePickerStartDate2.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerStartDate2.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerStartDate2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateTimePickerStartDate2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerStartDate2.Location = new System.Drawing.Point(569, 117);
-            this.DateTimePickerStartDate2.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.DateTimePickerStartDate2.Name = "DateTimePickerStartDate2";
-            this.DateTimePickerStartDate2.Size = new System.Drawing.Size(163, 29);
-            this.DateTimePickerStartDate2.TabIndex = 6;
-            // 
-            // TextBoxDivision3
-            // 
-            this.TextBoxDivision3.BackColor = System.Drawing.Color.White;
-            this.TextBoxDivision3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDivision3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDivision3.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDivision3.Location = new System.Drawing.Point(187, 156);
-            this.TextBoxDivision3.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxDivision3.Name = "TextBoxDivision3";
-            this.TextBoxDivision3.Size = new System.Drawing.Size(160, 29);
-            this.TextBoxDivision3.TabIndex = 1;
-            // 
-            // TextBoxDivision4
-            // 
-            this.TextBoxDivision4.BackColor = System.Drawing.Color.White;
-            this.TextBoxDivision4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDivision4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDivision4.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDivision4.Location = new System.Drawing.Point(187, 195);
-            this.TextBoxDivision4.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxDivision4.Name = "TextBoxDivision4";
-            this.TextBoxDivision4.Size = new System.Drawing.Size(160, 29);
-            this.TextBoxDivision4.TabIndex = 1;
-            // 
-            // TextBoxDivision5
-            // 
-            this.TextBoxDivision5.BackColor = System.Drawing.Color.White;
-            this.TextBoxDivision5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDivision5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDivision5.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDivision5.Location = new System.Drawing.Point(187, 234);
-            this.TextBoxDivision5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxDivision5.Name = "TextBoxDivision5";
-            this.TextBoxDivision5.Size = new System.Drawing.Size(160, 29);
-            this.TextBoxDivision5.TabIndex = 1;
-            // 
-            // TextBoxDivision6
-            // 
-            this.TextBoxDivision6.BackColor = System.Drawing.Color.White;
-            this.TextBoxDivision6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDivision6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDivision6.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDivision6.Location = new System.Drawing.Point(187, 273);
-            this.TextBoxDivision6.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxDivision6.Name = "TextBoxDivision6";
-            this.TextBoxDivision6.Size = new System.Drawing.Size(160, 29);
-            this.TextBoxDivision6.TabIndex = 1;
-            // 
-            // TextBoxJob3
-            // 
-            this.TextBoxJob3.BackColor = System.Drawing.Color.White;
-            this.TextBoxJob3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxJob3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxJob3.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxJob3.Location = new System.Drawing.Point(353, 156);
-            this.TextBoxJob3.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxJob3.Name = "TextBoxJob3";
-            this.TextBoxJob3.Size = new System.Drawing.Size(210, 29);
-            this.TextBoxJob3.TabIndex = 1;
-            // 
-            // TextBoxJob4
-            // 
-            this.TextBoxJob4.BackColor = System.Drawing.Color.White;
-            this.TextBoxJob4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxJob4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxJob4.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxJob4.Location = new System.Drawing.Point(353, 195);
-            this.TextBoxJob4.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxJob4.Name = "TextBoxJob4";
-            this.TextBoxJob4.Size = new System.Drawing.Size(210, 29);
-            this.TextBoxJob4.TabIndex = 1;
-            // 
-            // TextBoxJob5
-            // 
-            this.TextBoxJob5.BackColor = System.Drawing.Color.White;
-            this.TextBoxJob5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxJob5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxJob5.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxJob5.Location = new System.Drawing.Point(353, 234);
-            this.TextBoxJob5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxJob5.Name = "TextBoxJob5";
-            this.TextBoxJob5.Size = new System.Drawing.Size(210, 29);
-            this.TextBoxJob5.TabIndex = 1;
-            // 
-            // TextBoxJob6
-            // 
-            this.TextBoxJob6.BackColor = System.Drawing.Color.White;
-            this.TextBoxJob6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxJob6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxJob6.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxJob6.Location = new System.Drawing.Point(353, 273);
-            this.TextBoxJob6.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxJob6.Name = "TextBoxJob6";
-            this.TextBoxJob6.Size = new System.Drawing.Size(210, 29);
-            this.TextBoxJob6.TabIndex = 1;
-            // 
-            // DateTimePickerStartDate3
-            // 
-            this.DateTimePickerStartDate3.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerStartDate3.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerStartDate3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateTimePickerStartDate3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerStartDate3.Location = new System.Drawing.Point(569, 156);
-            this.DateTimePickerStartDate3.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.DateTimePickerStartDate3.Name = "DateTimePickerStartDate3";
-            this.DateTimePickerStartDate3.Size = new System.Drawing.Size(163, 29);
-            this.DateTimePickerStartDate3.TabIndex = 6;
-            // 
-            // DateTimePickerStartDate4
-            // 
-            this.DateTimePickerStartDate4.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerStartDate4.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerStartDate4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateTimePickerStartDate4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerStartDate4.Location = new System.Drawing.Point(569, 195);
-            this.DateTimePickerStartDate4.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.DateTimePickerStartDate4.Name = "DateTimePickerStartDate4";
-            this.DateTimePickerStartDate4.Size = new System.Drawing.Size(163, 29);
-            this.DateTimePickerStartDate4.TabIndex = 6;
-            // 
-            // DateTimePickerStartDate5
-            // 
-            this.DateTimePickerStartDate5.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerStartDate5.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerStartDate5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateTimePickerStartDate5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerStartDate5.Location = new System.Drawing.Point(569, 234);
-            this.DateTimePickerStartDate5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.DateTimePickerStartDate5.Name = "DateTimePickerStartDate5";
-            this.DateTimePickerStartDate5.Size = new System.Drawing.Size(163, 29);
-            this.DateTimePickerStartDate5.TabIndex = 6;
-            // 
-            // DateTimePickerStartDate6
-            // 
-            this.DateTimePickerStartDate6.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerStartDate6.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerStartDate6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateTimePickerStartDate6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerStartDate6.Location = new System.Drawing.Point(569, 273);
-            this.DateTimePickerStartDate6.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.DateTimePickerStartDate6.Name = "DateTimePickerStartDate6";
-            this.DateTimePickerStartDate6.Size = new System.Drawing.Size(163, 29);
-            this.DateTimePickerStartDate6.TabIndex = 6;
-            // 
-            // label46
-            // 
-            this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label46.Location = new System.Drawing.Point(763, 37);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(122, 21);
-            this.label46.TabIndex = 0;
-            this.label46.Text = "AYRILIŞ TARİHİ";
-            // 
-            // label47
-            // 
-            this.label47.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label47.Location = new System.Drawing.Point(957, 37);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(91, 21);
-            this.label47.TabIndex = 0;
-            this.label47.Text = "AÇIKLAMA";
-            // 
-            // DateTimePickerDepartureDate1
-            // 
-            this.DateTimePickerDepartureDate1.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerDepartureDate1.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerDepartureDate1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateTimePickerDepartureDate1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerDepartureDate1.Location = new System.Drawing.Point(738, 78);
-            this.DateTimePickerDepartureDate1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.DateTimePickerDepartureDate1.Name = "DateTimePickerDepartureDate1";
-            this.DateTimePickerDepartureDate1.Size = new System.Drawing.Size(172, 29);
-            this.DateTimePickerDepartureDate1.TabIndex = 6;
-            // 
-            // DateTimePickerDepartureDate2
-            // 
-            this.DateTimePickerDepartureDate2.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerDepartureDate2.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerDepartureDate2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateTimePickerDepartureDate2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerDepartureDate2.Location = new System.Drawing.Point(738, 117);
-            this.DateTimePickerDepartureDate2.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.DateTimePickerDepartureDate2.Name = "DateTimePickerDepartureDate2";
-            this.DateTimePickerDepartureDate2.Size = new System.Drawing.Size(172, 29);
-            this.DateTimePickerDepartureDate2.TabIndex = 6;
-            // 
-            // DateTimePickerDepartureDate3
-            // 
-            this.DateTimePickerDepartureDate3.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerDepartureDate3.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerDepartureDate3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateTimePickerDepartureDate3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerDepartureDate3.Location = new System.Drawing.Point(738, 156);
-            this.DateTimePickerDepartureDate3.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.DateTimePickerDepartureDate3.Name = "DateTimePickerDepartureDate3";
-            this.DateTimePickerDepartureDate3.Size = new System.Drawing.Size(172, 29);
-            this.DateTimePickerDepartureDate3.TabIndex = 6;
-            // 
-            // DateTimePickerDepartureDate4
-            // 
-            this.DateTimePickerDepartureDate4.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerDepartureDate4.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerDepartureDate4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateTimePickerDepartureDate4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerDepartureDate4.Location = new System.Drawing.Point(738, 195);
-            this.DateTimePickerDepartureDate4.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.DateTimePickerDepartureDate4.Name = "DateTimePickerDepartureDate4";
-            this.DateTimePickerDepartureDate4.Size = new System.Drawing.Size(172, 29);
-            this.DateTimePickerDepartureDate4.TabIndex = 6;
-            // 
-            // DateTimePickerDepartureDate5
-            // 
-            this.DateTimePickerDepartureDate5.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerDepartureDate5.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerDepartureDate5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateTimePickerDepartureDate5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerDepartureDate5.Location = new System.Drawing.Point(738, 234);
-            this.DateTimePickerDepartureDate5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.DateTimePickerDepartureDate5.Name = "DateTimePickerDepartureDate5";
-            this.DateTimePickerDepartureDate5.Size = new System.Drawing.Size(172, 29);
-            this.DateTimePickerDepartureDate5.TabIndex = 6;
-            // 
-            // DateTimePickerDepartureDate6
-            // 
-            this.DateTimePickerDepartureDate6.CalendarForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerDepartureDate6.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
-            this.DateTimePickerDepartureDate6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateTimePickerDepartureDate6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerDepartureDate6.Location = new System.Drawing.Point(738, 273);
-            this.DateTimePickerDepartureDate6.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.DateTimePickerDepartureDate6.Name = "DateTimePickerDepartureDate6";
-            this.DateTimePickerDepartureDate6.Size = new System.Drawing.Size(172, 29);
-            this.DateTimePickerDepartureDate6.TabIndex = 6;
-            // 
-            // TextBoxDescription1
-            // 
-            this.TextBoxDescription1.BackColor = System.Drawing.Color.White;
-            this.TextBoxDescription1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDescription1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDescription1.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDescription1.Location = new System.Drawing.Point(916, 78);
-            this.TextBoxDescription1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxDescription1.Name = "TextBoxDescription1";
-            this.TextBoxDescription1.Size = new System.Drawing.Size(174, 29);
-            this.TextBoxDescription1.TabIndex = 1;
-            // 
-            // TextBoxDescription2
-            // 
-            this.TextBoxDescription2.BackColor = System.Drawing.Color.White;
-            this.TextBoxDescription2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDescription2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDescription2.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDescription2.Location = new System.Drawing.Point(916, 117);
-            this.TextBoxDescription2.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxDescription2.Name = "TextBoxDescription2";
-            this.TextBoxDescription2.Size = new System.Drawing.Size(174, 29);
-            this.TextBoxDescription2.TabIndex = 1;
-            // 
-            // TextBoxDescription3
-            // 
-            this.TextBoxDescription3.BackColor = System.Drawing.Color.White;
-            this.TextBoxDescription3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDescription3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDescription3.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDescription3.Location = new System.Drawing.Point(916, 156);
-            this.TextBoxDescription3.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxDescription3.Name = "TextBoxDescription3";
-            this.TextBoxDescription3.Size = new System.Drawing.Size(174, 29);
-            this.TextBoxDescription3.TabIndex = 1;
-            // 
-            // TextBoxDescription4
-            // 
-            this.TextBoxDescription4.BackColor = System.Drawing.Color.White;
-            this.TextBoxDescription4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDescription4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDescription4.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDescription4.Location = new System.Drawing.Point(916, 195);
-            this.TextBoxDescription4.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxDescription4.Name = "TextBoxDescription4";
-            this.TextBoxDescription4.Size = new System.Drawing.Size(174, 29);
-            this.TextBoxDescription4.TabIndex = 1;
-            // 
-            // TextBoxDescription5
-            // 
-            this.TextBoxDescription5.BackColor = System.Drawing.Color.White;
-            this.TextBoxDescription5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDescription5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDescription5.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDescription5.Location = new System.Drawing.Point(916, 234);
-            this.TextBoxDescription5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxDescription5.Name = "TextBoxDescription5";
-            this.TextBoxDescription5.Size = new System.Drawing.Size(174, 29);
-            this.TextBoxDescription5.TabIndex = 1;
-            // 
-            // TextBoxDescription6
-            // 
-            this.TextBoxDescription6.BackColor = System.Drawing.Color.White;
-            this.TextBoxDescription6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxDescription6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxDescription6.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxDescription6.Location = new System.Drawing.Point(916, 273);
-            this.TextBoxDescription6.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxDescription6.Name = "TextBoxDescription6";
-            this.TextBoxDescription6.Size = new System.Drawing.Size(174, 29);
-            this.TextBoxDescription6.TabIndex = 1;
-            // 
-            // TextBoxInstitution6
-            // 
-            this.TextBoxInstitution6.BackColor = System.Drawing.Color.White;
-            this.TextBoxInstitution6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxInstitution6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxInstitution6.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxInstitution6.Location = new System.Drawing.Point(29, 273);
-            this.TextBoxInstitution6.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxInstitution6.Name = "TextBoxInstitution6";
-            this.TextBoxInstitution6.Size = new System.Drawing.Size(152, 29);
-            this.TextBoxInstitution6.TabIndex = 1;
-            // 
-            // TextBoxInstitution5
-            // 
-            this.TextBoxInstitution5.BackColor = System.Drawing.Color.White;
-            this.TextBoxInstitution5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxInstitution5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxInstitution5.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxInstitution5.Location = new System.Drawing.Point(29, 234);
-            this.TextBoxInstitution5.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxInstitution5.Name = "TextBoxInstitution5";
-            this.TextBoxInstitution5.Size = new System.Drawing.Size(152, 29);
-            this.TextBoxInstitution5.TabIndex = 1;
-            // 
-            // TextBoxInstitution4
-            // 
-            this.TextBoxInstitution4.BackColor = System.Drawing.Color.White;
-            this.TextBoxInstitution4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxInstitution4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxInstitution4.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxInstitution4.Location = new System.Drawing.Point(29, 195);
-            this.TextBoxInstitution4.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxInstitution4.Name = "TextBoxInstitution4";
-            this.TextBoxInstitution4.Size = new System.Drawing.Size(152, 29);
-            this.TextBoxInstitution4.TabIndex = 1;
-            // 
-            // TextBoxInstitution3
-            // 
-            this.TextBoxInstitution3.BackColor = System.Drawing.Color.White;
-            this.TextBoxInstitution3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxInstitution3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxInstitution3.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxInstitution3.Location = new System.Drawing.Point(29, 156);
-            this.TextBoxInstitution3.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxInstitution3.Name = "TextBoxInstitution3";
-            this.TextBoxInstitution3.Size = new System.Drawing.Size(152, 29);
-            this.TextBoxInstitution3.TabIndex = 1;
-            // 
-            // TextBoxInstitution2
-            // 
-            this.TextBoxInstitution2.BackColor = System.Drawing.Color.White;
-            this.TextBoxInstitution2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxInstitution2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxInstitution2.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxInstitution2.Location = new System.Drawing.Point(29, 117);
-            this.TextBoxInstitution2.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxInstitution2.Name = "TextBoxInstitution2";
-            this.TextBoxInstitution2.Size = new System.Drawing.Size(152, 29);
-            this.TextBoxInstitution2.TabIndex = 1;
-            // 
-            // TextBoxInstitution1
-            // 
-            this.TextBoxInstitution1.BackColor = System.Drawing.Color.White;
-            this.TextBoxInstitution1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxInstitution1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxInstitution1.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxInstitution1.Location = new System.Drawing.Point(29, 78);
-            this.TextBoxInstitution1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
-            this.TextBoxInstitution1.Name = "TextBoxInstitution1";
-            this.TextBoxInstitution1.Size = new System.Drawing.Size(152, 29);
-            this.TextBoxInstitution1.TabIndex = 1;
-            // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.tableLayoutPanel10);
+            this.tabPage4.Controls.Add(this.tableLayoutPanel3);
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -1137,184 +519,6 @@ namespace IKYv4.Forms
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "SERTİFİKA";
             this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel10
-            // 
-            this.tableLayoutPanel10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel10.ColumnCount = 2;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Controls.Add(this.label35, 1, 0);
-            this.tableLayoutPanel10.Controls.Add(this.panel3, 1, 1);
-            this.tableLayoutPanel10.Controls.Add(this.TextBoxSertificate1, 1, 2);
-            this.tableLayoutPanel10.Controls.Add(this.TextBoxSertificate2, 1, 3);
-            this.tableLayoutPanel10.Controls.Add(this.TextBoxSertificate3, 1, 4);
-            this.tableLayoutPanel10.Controls.Add(this.TextBoxSertificate4, 1, 5);
-            this.tableLayoutPanel10.Controls.Add(this.TextBoxSertificate5, 1, 6);
-            this.tableLayoutPanel10.Controls.Add(this.TextBoxSertificate6, 1, 7);
-            this.tableLayoutPanel10.Controls.Add(this.label36, 0, 2);
-            this.tableLayoutPanel10.Controls.Add(this.label37, 0, 3);
-            this.tableLayoutPanel10.Controls.Add(this.label38, 0, 4);
-            this.tableLayoutPanel10.Controls.Add(this.label39, 0, 5);
-            this.tableLayoutPanel10.Controls.Add(this.label40, 0, 6);
-            this.tableLayoutPanel10.Controls.Add(this.label41, 0, 7);
-            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.Padding = new System.Windows.Forms.Padding(26);
-            this.tableLayoutPanel10.RowCount = 9;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 3F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(1119, 504);
-            this.tableLayoutPanel10.TabIndex = 4;
-            // 
-            // label35
-            // 
-            this.label35.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label35.Location = new System.Drawing.Point(529, 37);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(86, 21);
-            this.label35.TabIndex = 0;
-            this.label35.Text = "SERTİFİKA";
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.BackColor = System.Drawing.Color.DarkRed;
-            this.panel3.Location = new System.Drawing.Point(54, 69);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1036, 3);
-            this.panel3.TabIndex = 7;
-            // 
-            // TextBoxSertificate1
-            // 
-            this.TextBoxSertificate1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBoxSertificate1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TextBoxSertificate1.Location = new System.Drawing.Point(54, 77);
-            this.TextBoxSertificate1.Name = "TextBoxSertificate1";
-            this.TextBoxSertificate1.Size = new System.Drawing.Size(1036, 29);
-            this.TextBoxSertificate1.TabIndex = 8;
-            // 
-            // TextBoxSertificate2
-            // 
-            this.TextBoxSertificate2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBoxSertificate2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TextBoxSertificate2.Location = new System.Drawing.Point(54, 116);
-            this.TextBoxSertificate2.Name = "TextBoxSertificate2";
-            this.TextBoxSertificate2.Size = new System.Drawing.Size(1036, 29);
-            this.TextBoxSertificate2.TabIndex = 8;
-            // 
-            // TextBoxSertificate3
-            // 
-            this.TextBoxSertificate3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBoxSertificate3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TextBoxSertificate3.Location = new System.Drawing.Point(54, 155);
-            this.TextBoxSertificate3.Name = "TextBoxSertificate3";
-            this.TextBoxSertificate3.Size = new System.Drawing.Size(1036, 29);
-            this.TextBoxSertificate3.TabIndex = 8;
-            // 
-            // TextBoxSertificate4
-            // 
-            this.TextBoxSertificate4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBoxSertificate4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TextBoxSertificate4.Location = new System.Drawing.Point(54, 194);
-            this.TextBoxSertificate4.Name = "TextBoxSertificate4";
-            this.TextBoxSertificate4.Size = new System.Drawing.Size(1036, 29);
-            this.TextBoxSertificate4.TabIndex = 8;
-            // 
-            // TextBoxSertificate5
-            // 
-            this.TextBoxSertificate5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBoxSertificate5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TextBoxSertificate5.Location = new System.Drawing.Point(54, 233);
-            this.TextBoxSertificate5.Name = "TextBoxSertificate5";
-            this.TextBoxSertificate5.Size = new System.Drawing.Size(1036, 29);
-            this.TextBoxSertificate5.TabIndex = 8;
-            // 
-            // TextBoxSertificate6
-            // 
-            this.TextBoxSertificate6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBoxSertificate6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TextBoxSertificate6.Location = new System.Drawing.Point(54, 272);
-            this.TextBoxSertificate6.Name = "TextBoxSertificate6";
-            this.TextBoxSertificate6.Size = new System.Drawing.Size(1036, 29);
-            this.TextBoxSertificate6.TabIndex = 8;
-            // 
-            // label36
-            // 
-            this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label36.Location = new System.Drawing.Point(29, 72);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(19, 39);
-            this.label36.TabIndex = 9;
-            this.label36.Text = "1.";
-            // 
-            // label37
-            // 
-            this.label37.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label37.Location = new System.Drawing.Point(29, 111);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(19, 39);
-            this.label37.TabIndex = 9;
-            this.label37.Text = "2.";
-            // 
-            // label38
-            // 
-            this.label38.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label38.Location = new System.Drawing.Point(29, 150);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(19, 39);
-            this.label38.TabIndex = 9;
-            this.label38.Text = "3.";
-            // 
-            // label39
-            // 
-            this.label39.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label39.Location = new System.Drawing.Point(29, 189);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(19, 39);
-            this.label39.TabIndex = 9;
-            this.label39.Text = "4.";
-            // 
-            // label40
-            // 
-            this.label40.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label40.Location = new System.Drawing.Point(29, 228);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(19, 39);
-            this.label40.TabIndex = 9;
-            this.label40.Text = "5.";
-            // 
-            // label41
-            // 
-            this.label41.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label41.Location = new System.Drawing.Point(29, 267);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(19, 39);
-            this.label41.TabIndex = 9;
-            this.label41.Text = "6.";
             // 
             // tabPage8
             // 
@@ -2167,35 +1371,35 @@ namespace IKYv4.Forms
             this.DataGridViewChild.AllowUserToDeleteRows = false;
             this.DataGridViewChild.AllowUserToResizeColumns = false;
             this.DataGridViewChild.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.DataGridViewChild.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            this.DataGridViewChild.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.DataGridViewChild.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridViewChild.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewChild.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewChild.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridViewChild.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewChild.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewChild.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.DataGridViewChild.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridViewChild.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EditRow});
             this.tableLayoutPanel13.SetColumnSpan(this.DataGridViewChild, 4);
             this.DataGridViewChild.ContextMenuStrip = this.contextMenuStrip1;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewChild.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewChild.DefaultCellStyle = dataGridViewCellStyle23;
             this.DataGridViewChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridViewChild.EnableHeadersVisualStyles = false;
             this.DataGridViewChild.GridColor = System.Drawing.Color.WhiteSmoke;
@@ -2207,11 +1411,11 @@ namespace IKYv4.Forms
             this.DataGridViewChild.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridViewChild.RowHeadersVisible = false;
             this.DataGridViewChild.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            this.DataGridViewChild.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGridViewChild.RowsDefaultCellStyle = dataGridViewCellStyle24;
             this.tableLayoutPanel13.SetRowSpan(this.DataGridViewChild, 6);
             this.DataGridViewChild.RowTemplate.DividerHeight = 10;
             this.DataGridViewChild.RowTemplate.Height = 50;
@@ -2496,35 +1700,34 @@ namespace IKYv4.Forms
             this.DataGridViewTahsil.AllowUserToDeleteRows = false;
             this.DataGridViewTahsil.AllowUserToResizeColumns = false;
             this.DataGridViewTahsil.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataGridViewTahsil.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.DataGridViewTahsil.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.DataGridViewTahsil.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridViewTahsil.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewTahsil.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewTahsil.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridViewTahsil.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewTahsil.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewTahsil.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.DataGridViewTahsil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridViewTahsil.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn1});
             this.tableLayoutPanel2.SetColumnSpan(this.DataGridViewTahsil, 4);
-            this.DataGridViewTahsil.ContextMenuStrip = this.contextMenuStrip1;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewTahsil.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewTahsil.DefaultCellStyle = dataGridViewCellStyle15;
             this.DataGridViewTahsil.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridViewTahsil.EnableHeadersVisualStyles = false;
             this.DataGridViewTahsil.GridColor = System.Drawing.Color.WhiteSmoke;
@@ -2536,11 +1739,11 @@ namespace IKYv4.Forms
             this.DataGridViewTahsil.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridViewTahsil.RowHeadersVisible = false;
             this.DataGridViewTahsil.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.DataGridViewTahsil.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGridViewTahsil.RowsDefaultCellStyle = dataGridViewCellStyle16;
             this.tableLayoutPanel2.SetRowSpan(this.DataGridViewTahsil, 10);
             this.DataGridViewTahsil.RowTemplate.DividerHeight = 10;
             this.DataGridViewTahsil.RowTemplate.Height = 50;
@@ -2624,6 +1827,261 @@ namespace IKYv4.Forms
             this.EditRow.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.EditRow.ToolTipText = "Düzenle";
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tableLayoutPanel3.ColumnCount = 4;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
+            this.tableLayoutPanel3.Controls.Add(this.dataGridView1, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.ButtonSertifikaEkle, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label6, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(26);
+            this.tableLayoutPanel3.RowCount = 11;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1119, 504);
+            this.tableLayoutPanel3.TabIndex = 5;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn3});
+            this.tableLayoutPanel3.SetColumnSpan(this.dataGridView1, 4);
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle19;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridView1.Location = new System.Drawing.Point(26, 67);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            this.tableLayoutPanel3.SetRowSpan(this.dataGridView1, 10);
+            this.dataGridView1.RowTemplate.DividerHeight = 10;
+            this.dataGridView1.RowTemplate.Height = 50;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(1067, 411);
+            this.dataGridView1.TabIndex = 4;
+            // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.Description = "Düzenle";
+            this.dataGridViewImageColumn3.FillWeight = 35F;
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.Image = global::IKYv4.Properties.Resources.edit_row_24px;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.ReadOnly = true;
+            this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn3.ToolTipText = "Düzenle";
+            // 
+            // ButtonSertifikaEkle
+            // 
+            this.ButtonSertifikaEkle.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.ButtonSertifikaEkle.BackColor = System.Drawing.Color.DarkRed;
+            this.ButtonSertifikaEkle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonSertifikaEkle.FlatAppearance.BorderSize = 0;
+            this.ButtonSertifikaEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonSertifikaEkle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonSertifikaEkle.ForeColor = System.Drawing.Color.White;
+            this.ButtonSertifikaEkle.Location = new System.Drawing.Point(892, 29);
+            this.ButtonSertifikaEkle.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.ButtonSertifikaEkle.Name = "ButtonSertifikaEkle";
+            this.ButtonSertifikaEkle.Size = new System.Drawing.Size(201, 32);
+            this.ButtonSertifikaEkle.TabIndex = 6;
+            this.ButtonSertifikaEkle.Text = "Sertifika Ekle";
+            this.ButtonSertifikaEkle.UseVisualStyleBackColor = false;
+            this.ButtonSertifikaEkle.Click += new System.EventHandler(this.ButtonSertifikaEkle_Click);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(29, 36);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(115, 21);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "SERTİFİKALAR";
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tableLayoutPanel9.ColumnCount = 4;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
+            this.tableLayoutPanel9.Controls.Add(this.dataGridView2, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.ButtonNakilEkle, 3, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label7, 0, 0);
+            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.Padding = new System.Windows.Forms.Padding(26);
+            this.tableLayoutPanel9.RowCount = 11;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(1119, 504);
+            this.tableLayoutPanel9.TabIndex = 6;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToResizeColumns = false;
+            this.dataGridView2.AllowUserToResizeRows = false;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle26.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn4});
+            this.tableLayoutPanel9.SetColumnSpan(this.dataGridView2, 4);
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle27;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.EnableHeadersVisualStyles = false;
+            this.dataGridView2.GridColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridView2.Location = new System.Drawing.Point(26, 67);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView2.MultiSelect = false;
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle28;
+            this.tableLayoutPanel9.SetRowSpan(this.dataGridView2, 10);
+            this.dataGridView2.RowTemplate.DividerHeight = 10;
+            this.dataGridView2.RowTemplate.Height = 50;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView2.Size = new System.Drawing.Size(1067, 411);
+            this.dataGridView2.TabIndex = 4;
+            // 
+            // dataGridViewImageColumn4
+            // 
+            this.dataGridViewImageColumn4.Description = "Düzenle";
+            this.dataGridViewImageColumn4.FillWeight = 35F;
+            this.dataGridViewImageColumn4.HeaderText = "";
+            this.dataGridViewImageColumn4.Image = global::IKYv4.Properties.Resources.edit_row_24px;
+            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.ReadOnly = true;
+            this.dataGridViewImageColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn4.ToolTipText = "Düzenle";
+            // 
+            // ButtonNakilEkle
+            // 
+            this.ButtonNakilEkle.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.ButtonNakilEkle.BackColor = System.Drawing.Color.DarkRed;
+            this.ButtonNakilEkle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonNakilEkle.FlatAppearance.BorderSize = 0;
+            this.ButtonNakilEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonNakilEkle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonNakilEkle.ForeColor = System.Drawing.Color.White;
+            this.ButtonNakilEkle.Location = new System.Drawing.Point(892, 29);
+            this.ButtonNakilEkle.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.ButtonNakilEkle.Name = "ButtonNakilEkle";
+            this.ButtonNakilEkle.Size = new System.Drawing.Size(201, 32);
+            this.ButtonNakilEkle.TabIndex = 6;
+            this.ButtonNakilEkle.Text = "Nakil Ekle";
+            this.ButtonNakilEkle.UseVisualStyleBackColor = false;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(29, 36);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(84, 21);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "NAKİLLER";
+            // 
             // FormEmployeeRegistrationCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2642,11 +2100,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
             this.tabPage5.ResumeLayout(false);
-            this.tableLayoutPanel11.ResumeLayout(false);
-            this.tableLayoutPanel11.PerformLayout();
             this.tabPage4.ResumeLayout(false);
-            this.tableLayoutPanel10.ResumeLayout(false);
-            this.tableLayoutPanel10.PerformLayout();
             this.tabPage8.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -2672,6 +2126,12 @@ namespace IKYv4.Forms
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTahsil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployeePicture)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2704,23 +2164,6 @@ namespace IKYv4.Forms
         private Label label15;
         private Label label11;
         private TabControl tabControl1;
-        private TableLayoutPanel tableLayoutPanel10;
-        private Label label35;
-        private Panel panel3;
-        private Label label36;
-        private Label label37;
-        private Label label38;
-        private Label label39;
-        private Label label40;
-        private Label label41;
-        private TableLayoutPanel tableLayoutPanel11;
-        private Label label42;
-        private Label label43;
-        private Label label44;
-        private Label label45;
-        private Panel panel4;
-        private Label label46;
-        private Label label47;
         private Label label48;
         private Label label61;
         private Label label62;
@@ -2746,48 +2189,6 @@ namespace IKYv4.Forms
         public PictureBox PictureBoxEmployeePicture;
         public TextBox TextBoxName;
         public TextBox TextBoxUserId;
-        public TextBox TextBoxSertificate1;
-        public TextBox TextBoxSertificate2;
-        public TextBox TextBoxSertificate3;
-        public TextBox TextBoxSertificate4;
-        public TextBox TextBoxSertificate5;
-        public TextBox TextBoxSertificate6;
-        public TextBox TextBoxDivision1;
-        public TextBox TextBoxJob1;
-        public DateTimePicker DateTimePickerStartDate1;
-        public TextBox TextBoxDivision2;
-        public TextBox TextBoxJob2;
-        public DateTimePicker DateTimePickerStartDate2;
-        public TextBox TextBoxDivision3;
-        public TextBox TextBoxDivision4;
-        public TextBox TextBoxDivision5;
-        public TextBox TextBoxDivision6;
-        public TextBox TextBoxJob3;
-        public TextBox TextBoxJob4;
-        public TextBox TextBoxJob5;
-        public TextBox TextBoxJob6;
-        public DateTimePicker DateTimePickerStartDate3;
-        public DateTimePicker DateTimePickerStartDate4;
-        public DateTimePicker DateTimePickerStartDate5;
-        public DateTimePicker DateTimePickerStartDate6;
-        public DateTimePicker DateTimePickerDepartureDate1;
-        public DateTimePicker DateTimePickerDepartureDate2;
-        public DateTimePicker DateTimePickerDepartureDate3;
-        public DateTimePicker DateTimePickerDepartureDate4;
-        public DateTimePicker DateTimePickerDepartureDate5;
-        public DateTimePicker DateTimePickerDepartureDate6;
-        public TextBox TextBoxDescription1;
-        public TextBox TextBoxDescription2;
-        public TextBox TextBoxDescription3;
-        public TextBox TextBoxDescription4;
-        public TextBox TextBoxDescription5;
-        public TextBox TextBoxDescription6;
-        public TextBox TextBoxInstitution6;
-        public TextBox TextBoxInstitution5;
-        public TextBox TextBoxInstitution4;
-        public TextBox TextBoxInstitution3;
-        public TextBox TextBoxInstitution2;
-        public TextBox TextBoxInstitution1;
         public TableLayoutPanel tableLayoutPanel12;
         public TextBox TextBoxContactAddressDetail;
         public TextBox TextBoxPhoneNumber2;
@@ -2845,5 +2246,15 @@ namespace IKYv4.Forms
         private Button ButtonNewTahsil;
         private Label label14;
         private DataGridViewImageColumn dataGridViewImageColumn2;
+        private TableLayoutPanel tableLayoutPanel9;
+        public DataGridView dataGridView2;
+        private DataGridViewImageColumn dataGridViewImageColumn4;
+        private Button ButtonNakilEkle;
+        private Label label7;
+        private TableLayoutPanel tableLayoutPanel3;
+        public DataGridView dataGridView1;
+        private DataGridViewImageColumn dataGridViewImageColumn3;
+        private Button ButtonSertifikaEkle;
+        private Label label6;
     }
 }

@@ -38,8 +38,8 @@
             this.DateTimePickerChildBirthDate = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.RadioButtonMan = new System.Windows.Forms.RadioButton();
             this.RadioButtonWoman = new System.Windows.Forms.RadioButton();
+            this.RadioButtonMan = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.ButtonSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
@@ -187,18 +187,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(218, 40);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
-            // RadioButtonMan
-            // 
-            this.RadioButtonMan.AutoSize = true;
-            this.RadioButtonMan.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.RadioButtonMan.Location = new System.Drawing.Point(3, 3);
-            this.RadioButtonMan.Name = "RadioButtonMan";
-            this.RadioButtonMan.Size = new System.Drawing.Size(95, 34);
-            this.RadioButtonMan.TabIndex = 5;
-            this.RadioButtonMan.TabStop = true;
-            this.RadioButtonMan.Text = "ERKEK";
-            this.RadioButtonMan.UseVisualStyleBackColor = true;
-            // 
             // RadioButtonWoman
             // 
             this.RadioButtonWoman.AutoSize = true;
@@ -210,6 +198,18 @@
             this.RadioButtonWoman.TabStop = true;
             this.RadioButtonWoman.Text = "KADIN";
             this.RadioButtonWoman.UseVisualStyleBackColor = true;
+            // 
+            // RadioButtonMan
+            // 
+            this.RadioButtonMan.AutoSize = true;
+            this.RadioButtonMan.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.RadioButtonMan.Location = new System.Drawing.Point(3, 3);
+            this.RadioButtonMan.Name = "RadioButtonMan";
+            this.RadioButtonMan.Size = new System.Drawing.Size(95, 34);
+            this.RadioButtonMan.TabIndex = 5;
+            this.RadioButtonMan.TabStop = true;
+            this.RadioButtonMan.Text = "ERKEK";
+            this.RadioButtonMan.UseVisualStyleBackColor = true;
             // 
             // label5
             // 

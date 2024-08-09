@@ -165,25 +165,14 @@ namespace IKYv4.Forms
                     formEmployeeRegistrationCard.TextBoxWhereSpouseWorks.Text = selectedPersonelNufus.EsCalistigiKurumAdi;
                 }
 
-                var selectedPersonelTahsil = _tahsilManager.GetAll(x => x.PersonelId == selectedPersonel.Id).Data.FirstOrDefault();
+                var selectedPersonelTahsil = _tahsilManager.GetAll(x => x.PersonelId == selectedPersonel.Id).Data;
+
+                formEmployeeRegistrationCard.DataGridViewTahsil.DataSource = selectedPersonelTahsil;
+                formEmployeeRegistrationCard.DataGridViewTahsil.Update();
 
                 if (selectedPersonelTahsil != null)
                 {
-                    formEmployeeRegistrationCard.ComboBoxEducation1.SelectedItem = selectedPersonelTahsil.TahsilAdi1;
-                    formEmployeeRegistrationCard.ComboBoxEducation2.SelectedItem = selectedPersonelTahsil.TahsilAdi2;
-                    formEmployeeRegistrationCard.ComboBoxEducation3.SelectedItem = selectedPersonelTahsil.TahsilAdi3;
-                    formEmployeeRegistrationCard.ComboBoxEducation4.SelectedItem = selectedPersonelTahsil.TahsilAdi4;
-                    formEmployeeRegistrationCard.ComboBoxEducation5.SelectedItem = selectedPersonelTahsil.TahsilAdi5;
-                    formEmployeeRegistrationCard.TextBoxSchool1.Text = selectedPersonelTahsil.OkulAdi1;
-                    formEmployeeRegistrationCard.TextBoxSchool2.Text = selectedPersonelTahsil.OkulAdi2;
-                    formEmployeeRegistrationCard.TextBoxSchool3.Text = selectedPersonelTahsil.OkulAdi3;
-                    formEmployeeRegistrationCard.TextBoxSchool4.Text = selectedPersonelTahsil.OkulAdi4;
-                    formEmployeeRegistrationCard.TextBoxSchool5.Text = selectedPersonelTahsil.OkulAdi5;
-                    formEmployeeRegistrationCard.DateTimePickerGraduation1.Value = selectedPersonelTahsil.MezuniyetTarihi1.Value;
-                    formEmployeeRegistrationCard.DateTimePickerGraduation2.Value = selectedPersonelTahsil.MezuniyetTarihi2.Value;
-                    formEmployeeRegistrationCard.DateTimePickerGraduation3.Value = selectedPersonelTahsil.MezuniyetTarihi3.Value;
-                    formEmployeeRegistrationCard.DateTimePickerGraduation4.Value = selectedPersonelTahsil.MezuniyetTarihi4.Value;
-                    formEmployeeRegistrationCard.DateTimePickerGraduation5.Value = selectedPersonelTahsil.MezuniyetTarihi5.Value;
+                    
                 }
 
                 var selectedPersonelSertifika = _sertifikaManager.GetAll(p => p.PersonelId == selectedPersonel.Id).Data.FirstOrDefault();
@@ -250,7 +239,7 @@ namespace IKYv4.Forms
                 var selectedPersonelCocuklar = _cocukManager.GetAll(p => p.PersonelId == selectedPersonel.Id).Data;
 
                 formEmployeeRegistrationCard.DataGridViewChild.DataSource = selectedPersonelCocuklar;
-                formEmployeeRegistrationCard.Update();
+                formEmployeeRegistrationCard.DataGridViewChild.Update();
 
                 Bitmap bmp;
 

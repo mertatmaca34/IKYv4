@@ -187,37 +187,6 @@ namespace IKYv4.Forms
 
             #endregion
 
-            #region Tahsil Sayfası Atamaları
-
-            var _tahsil = _tahsilManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
-
-            if (_tahsil == null || _tahsil.PersonelId == 0)
-            {
-                _tahsil = new Tahsil();
-
-                _tahsil.PersonelId = _personel.Id;
-            }
-
-            _tahsil.TahsilAdi1 = ComboBoxEducation1.Text;
-            _tahsil.TahsilAdi2 = ComboBoxEducation2.Text;
-            _tahsil.TahsilAdi3 = ComboBoxEducation3.Text;
-            _tahsil.TahsilAdi4 = ComboBoxEducation4.Text;
-            _tahsil.TahsilAdi5 = ComboBoxEducation5.Text;
-            _tahsil.OkulAdi1 = TextBoxSchool1.Text;
-            _tahsil.OkulAdi2 = TextBoxSchool2.Text;
-            _tahsil.OkulAdi3 = TextBoxSchool3.Text;
-            _tahsil.OkulAdi4 = TextBoxSchool4.Text;
-            _tahsil.OkulAdi5 = TextBoxSchool5.Text;
-            _tahsil.MezuniyetTarihi1 = DateTimePickerGraduation1.Value;
-            _tahsil.MezuniyetTarihi2 = DateTimePickerGraduation2.Value;
-            _tahsil.MezuniyetTarihi3 = DateTimePickerGraduation3.Value;
-            _tahsil.MezuniyetTarihi4 = DateTimePickerGraduation4.Value;
-            _tahsil.MezuniyetTarihi5 = DateTimePickerGraduation5.Value;
-
-            var resTahsil = _tahsilManager.Add(_tahsil);
-
-            #endregion
-
             #region Nakil Sayfası Atamaları
 
             var _nakil = _nakilManager.GetAll(p => p.PersonelId == _personel.Id).Data.FirstOrDefault();
@@ -348,9 +317,17 @@ namespace IKYv4.Forms
         
         private void FormEmployeeRegistrationCard_Load(object sender, EventArgs e)
         {
+            if(DataGridViewChild.DataSource != null)
+            {
+                DataGridViewChild.Columns[1].Visible = false;
+                DataGridViewChild.Columns[2].Visible = false;
+            }
 
-            DataGridViewChild.Columns[1].Visible = false;
-            DataGridViewChild.Columns[2].Visible = false;
+            if(DataGridViewTahsil.DataSource != null)
+            {
+                DataGridViewTahsil.Columns[1].Visible = false;
+                DataGridViewTahsil.Columns[2].Visible = false;
+            }
             /*var res = _unvanGrubuManager.GetAll().Data;
 
             if(string.IsNullOrEmpty(ComboBoxTitle.Text))
@@ -639,6 +616,11 @@ namespace IKYv4.Forms
             DataGridViewTahsil.DataSource = resTahsil;
 
             DataGridViewTahsil.Refresh();
+        }
+
+        private void ButtonSertifikaEkle_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
