@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICocukManager.cs" />
     <Compile Include="Abstract\IKullaniciManager.cs" />
     <Compile Include="Abstract\ICalismaSaatleriManager.cs" />
     <Compile Include="Abstract\IIletisimManager.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="Concrete\CalismaSaatleriManager.cs" />
     <Compile Include="Concrete\NakilManager.cs" />
     <Compile Include="Concrete\IletisimManager.cs" />
+    <Compile Include="Concrete\CocukManager.cs" />
     <Compile Include="Concrete\SertifikaManager.cs" />
     <Compile Include="Concrete\TahsilManager.cs" />
     <Compile Include="Concrete\NufusManager.cs" />

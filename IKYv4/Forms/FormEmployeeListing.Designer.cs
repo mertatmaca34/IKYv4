@@ -31,10 +31,10 @@ namespace IKYv4.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
@@ -85,7 +85,6 @@ namespace IKYv4.Forms
             this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.ComboBoxHomeTownDistrict = new System.Windows.Forms.ComboBox();
             this.ComboBoxHomeTownCity = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
@@ -856,34 +855,17 @@ namespace IKYv4.Forms
             this.tableLayoutPanel16.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel16.ColumnCount = 1;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel16.Controls.Add(this.ComboBoxHomeTownDistrict, 0, 2);
             this.tableLayoutPanel16.Controls.Add(this.ComboBoxHomeTownCity, 0, 1);
             this.tableLayoutPanel16.Controls.Add(this.label13, 0, 0);
             this.tableLayoutPanel16.Location = new System.Drawing.Point(0, 688);
             this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
-            this.tableLayoutPanel16.RowCount = 3;
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel16.RowCount = 2;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(211, 95);
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(211, 69);
             this.tableLayoutPanel16.TabIndex = 8;
-            // 
-            // ComboBoxHomeTownDistrict
-            // 
-            this.ComboBoxHomeTownDistrict.BackColor = System.Drawing.Color.Gainsboro;
-            this.ComboBoxHomeTownDistrict.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxHomeTownDistrict.Enabled = false;
-            this.ComboBoxHomeTownDistrict.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.ComboBoxHomeTownDistrict.ForeColor = System.Drawing.Color.DimGray;
-            this.ComboBoxHomeTownDistrict.FormattingEnabled = true;
-            this.ComboBoxHomeTownDistrict.Location = new System.Drawing.Point(7, 67);
-            this.ComboBoxHomeTownDistrict.Margin = new System.Windows.Forms.Padding(7);
-            this.ComboBoxHomeTownDistrict.Name = "ComboBoxHomeTownDistrict";
-            this.ComboBoxHomeTownDistrict.Size = new System.Drawing.Size(197, 23);
-            this.ComboBoxHomeTownDistrict.TabIndex = 3;
-            this.ComboBoxHomeTownDistrict.Text = "İlçe";
             // 
             // ComboBoxHomeTownCity
             // 
@@ -917,7 +899,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel19.Controls.Add(this.ComboBoxDistricts, 0, 2);
             this.tableLayoutPanel19.Controls.Add(this.ComboBoxCities, 0, 1);
             this.tableLayoutPanel19.Controls.Add(this.label16, 0, 0);
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(0, 786);
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(0, 760);
             this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 3;
@@ -978,7 +960,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel12.Controls.Add(this.checkBox8, 0, 3);
             this.tableLayoutPanel12.Controls.Add(this.checkBox10, 0, 5);
             this.tableLayoutPanel12.Controls.Add(this.checkBox12, 0, 6);
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(0, 884);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(0, 858);
             this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 7;
@@ -1256,34 +1238,34 @@ namespace IKYv4.Forms
             // 
             this.DataGridViewEmployees.AllowUserToAddRows = false;
             this.DataGridViewEmployees.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
-            this.DataGridViewEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DataGridViewEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGridViewEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridViewEmployees.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewEmployees.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewEmployees.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridViewEmployees.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridViewEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EditRow,
             this.EditShifts});
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewEmployees.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewEmployees.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridViewEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridViewEmployees.EnableHeadersVisualStyles = false;
             this.DataGridViewEmployees.GridColor = System.Drawing.Color.WhiteSmoke;
@@ -1294,11 +1276,11 @@ namespace IKYv4.Forms
             this.DataGridViewEmployees.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridViewEmployees.RowHeadersVisible = false;
             this.DataGridViewEmployees.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
-            this.DataGridViewEmployees.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGridViewEmployees.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridViewEmployees.RowTemplate.DividerHeight = 10;
             this.DataGridViewEmployees.RowTemplate.Height = 50;
             this.DataGridViewEmployees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -1449,7 +1431,6 @@ namespace IKYv4.Forms
         private TableLayoutPanel tableLayoutPanel15;
         private Label label12;
         private TableLayoutPanel tableLayoutPanel16;
-        private ComboBox ComboBoxHomeTownDistrict;
         private ComboBox ComboBoxHomeTownCity;
         private Label label13;
         private TableLayoutPanel tableLayoutPanel19;

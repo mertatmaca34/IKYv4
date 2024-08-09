@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Abstract\ICalismaSaatleriDal.cs" />
     <Compile Include="Abstract\IIletisimDal.cs" />
+    <Compile Include="Abstract\ICocukDal.cs" />
     <Compile Include="Abstract\INakilDal.cs" />
     <Compile Include="Abstract\ISertifikaDal.cs" />
     <Compile Include="Abstract\ITahsilDal.cs" />
@@ -68,7 +69,8 @@
     <Compile Include="Abstract\ITesisDal.cs" />
     <Compile Include="Concrete\Context\IKYContext.cs" />
     <Compile Include="Concrete\CalismaSaatleriDal.cs" />
-    <Compile Include="Concrete\IletisimDal - Kopyala.cs" />
+    <Compile Include="Concrete\CocukDal.cs" />
+    <Compile Include="Concrete\IletisimDal.cs" />
     <Compile Include="Concrete\NakilDal.cs" />
     <Compile Include="Concrete\SertifikaDal.cs" />
     <Compile Include="Concrete\TahsilDal.cs" />

@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Concrete\CalismaSaatleri.cs" />
+    <Compile Include="Concrete\Cocuk.cs" />
     <Compile Include="Concrete\Iletisim.cs" />
     <Compile Include="Concrete\Izin.cs" />
     <Compile Include="Concrete\Kullanici.cs" />

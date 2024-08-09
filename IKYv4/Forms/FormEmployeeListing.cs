@@ -22,6 +22,8 @@ namespace IKYv4.Forms
         List<District> _districts = new List<District>();
         List<Neighbourhood> _neighbourhoods = new List<Neighbourhood>();
 
+        List<City> _homeTownCities = new List<City>();
+
         IPersonelManager _personelManager;
         IMudurlukManager _mudurlukManager;
         ISeflikManager _seflikManager;
@@ -151,12 +153,11 @@ namespace IKYv4.Forms
                     formEmployeeRegistrationCard.TextBoxResidance.Text = selectedPersonelNufus.NufusaKayitliOlduguIl;
                     formEmployeeRegistrationCard.ComboBoxMilitaryState.Text = selectedPersonelNufus.Askerlik;
                     formEmployeeRegistrationCard.RadioButtonSingle.Checked = selectedPersonelNufus.MedeniHali == "BEKAR";
-                    formEmployeeRegistrationCard.RadioButtonMaried.Checked = selectedPersonelNufus.MedeniHali == "EVLİ";
+                    formEmployeeRegistrationCard.RadioButtonSingle.Checked = selectedPersonelNufus.MedeniHali == "EVLİ";
                     formEmployeeRegistrationCard.TextBoxSpouseName.Text = selectedPersonelNufus.EsAdi;
                     formEmployeeRegistrationCard.RadioButtonSpouseWorks.Checked = selectedPersonelNufus.EsCalismaDurumu == "ÇALIŞIYOR";
                     formEmployeeRegistrationCard.RadioButtonSpouseNotWorks.Checked = selectedPersonelNufus.EsCalismaDurumu == "ÇALIŞMIYOR";
                     formEmployeeRegistrationCard.TextBoxSpouseJob.Text = selectedPersonelNufus.EsMeslegi;
-                    formEmployeeRegistrationCard.TextBoxChildrenCount.Text = selectedPersonelNufus.CocukSayisi.ToString();
                     formEmployeeRegistrationCard.TextBoxWhereSpouseWorks.Text = selectedPersonelNufus.EsCalistigiKurumAdi;
                 }
 
@@ -233,11 +234,10 @@ namespace IKYv4.Forms
 
                 if (selectedPersonelIletisim != null)
                 {
-                    formEmployeeRegistrationCard.TextBoxNeighbourhood.Text = selectedPersonelIletisim.Mahalle;
-                    formEmployeeRegistrationCard.TextBoxStreet.Text = selectedPersonelIletisim.Sokak;
-                    formEmployeeRegistrationCard.TextBoxDoorNumber.Text = selectedPersonelIletisim.KapiNo1;
-                    formEmployeeRegistrationCard.TextBoxDistrict.Text = selectedPersonelIletisim.Ilce;
-                    formEmployeeRegistrationCard.TextBoxCity.Text = selectedPersonelIletisim.Il;
+                    formEmployeeRegistrationCard.ComboBoxContactCity.Text = selectedPersonelIletisim.Il;
+                    formEmployeeRegistrationCard.ComboBoxContactDistrict.Text = selectedPersonelIletisim.Ilce;
+                    formEmployeeRegistrationCard.ComboBoxContactNeighbourhood.Text = selectedPersonelIletisim.Mahalle;
+                    formEmployeeRegistrationCard.TextBoxContactAddressDetail.Text = selectedPersonelIletisim.AdresDetay;
                     formEmployeeRegistrationCard.TextBoxPhoneNumber.Text = selectedPersonelIletisim.CepTelNo1;
                     formEmployeeRegistrationCard.TextBoxPhoneNumber2.Text = selectedPersonelIletisim.CepTelNo2;
                     formEmployeeRegistrationCard.TextBoxMailAdress.Text = selectedPersonelIletisim.EMailAdresi;
@@ -333,6 +333,7 @@ namespace IKYv4.Forms
                 : ComboBoxKanGrubu.Text = ComboBoxKanGrubu.SelectedText;
             #endregion
 
+            #region İkamergah ComboBox Atamaları
 
             ComboBoxCities.Items.Insert(0, "İL");
             ComboBoxCities.SelectedIndex = 0;
@@ -340,14 +341,26 @@ namespace IKYv4.Forms
             ComboBoxCities.Text = ComboBoxCities.SelectedIndex < 0 ? "İL"
                 : ComboBoxCities.Text = ComboBoxCities.SelectedText;
 
-
             ComboBoxDistricts.Items.Insert(0, "İLÇE");
             ComboBoxDistricts.SelectedIndex = 0;
 
             ComboBoxDistricts.Text = ComboBoxDistricts.SelectedIndex < 0 ? "İLÇE"
                 : ComboBoxDistricts.Text = ComboBoxDistricts.SelectedText;
 
+            #endregion
+
+            #region Memleket ComboBox Atamaları
+
+            ComboBoxHomeTownCity.Items.Insert(0, "İL");
+            ComboBoxHomeTownCity.SelectedIndex = 0;
+
+            ComboBoxHomeTownCity.Text = ComboBoxHomeTownCity.SelectedIndex < 0 ? "İL"
+                : ComboBoxHomeTownCity.Text = ComboBoxHomeTownCity.SelectedText;
+
+            #endregion
+
             AssignCities();
+            AssignHomeTownCities();
         }
 
         private void ComboBoxMudurlukFilter_SelectedIndexChanged(object sender, EventArgs e)
@@ -454,6 +467,32 @@ namespace IKYv4.Forms
             Search();
         }
 
+        private void AssignHomeTownCities()
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            string resourceName = assembly.GetManifestResourceNames().Single(str => str.EndsWith("il.json"));
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                string jsonContent = reader.ReadToEnd();
+                _homeTownCities = JsonSerializer.Deserialize<List<City>>(jsonContent, options);
+            }
+
+            foreach (var item in _homeTownCities)
+            {
+                if (item.sehir_title != null)
+                {
+                    ComboBoxHomeTownCity.Items.Add(item.sehir_title);
+                }
+            }
+        }
+
         private void AssignCities()
         {
             var assembly = Assembly.GetExecutingAssembly();
@@ -545,6 +584,8 @@ namespace IKYv4.Forms
             Expression<Func<Nufus, bool>> filterMedeniHal = null;
             Expression<Func<Nufus, bool>> filterEsCalismaDurumu = null;
             Expression<Func<Nufus, bool>> filterCocukSayisi = null;
+            Expression<Func<Nufus, bool>> filterMemleket = null;
+            Expression<Func<Iletisim, bool>> filterIkametgah = null;
 
             #region Birim Filtresi
 
@@ -661,6 +702,8 @@ namespace IKYv4.Forms
 
             #endregion
 
+            #region Çocuk Sayısı Filtre
+
             if (int.TryParse(TextBoxMinKid.Text, out int minKid))
             {
                 if (int.TryParse(TextBoxMaxKid.Text, out int maxKid))
@@ -674,11 +717,45 @@ namespace IKYv4.Forms
                 : filterNufus != null && filterCocukSayisi == null ? filterNufus
                 : null;
 
+            #endregion
+
+            #region İkametgah Filtresi
+
+            if (ComboBoxCities.Text != "İL")
+            {
+                filterIkametgah = x => x.Il == ComboBoxCities.Text;
+
+                if (ComboBoxDistricts.Text != "İLÇE")
+                {
+                    filterIkametgah = x => x.Ilce == ComboBoxDistricts.Text;
+                }
+            }
+
+            #endregion
+
+            #region Memleket Filtresi
+
+            if (ComboBoxHomeTownCity.Text != "İL")
+            {
+                filterMemleket = x=> x.NufusaKayitliOlduguIl == ComboBoxHomeTownCity.Text;
+            }
+
+            filterNufus = filterMemleket != null && filterNufus != null ? PredicateBuilder.And(filterNufus, filterMemleket)
+                : filterMemleket != null && filterNufus == null ? filterMemleket
+                : filterNufus != null && filterMemleket == null ? filterNufus
+                : null;
+
+            #endregion
+
             var resNufus = _nufusManager.GetAll(filterNufus).Data;
+            var resIletisim = _iletisimManager.GetAll(filterIkametgah).Data;
 
             var nufusPersonelIds = new HashSet<int>(resNufus.Select(n => n.PersonelId));
 
+            var iletisimPersonelIds = new HashSet<int>(resIletisim.Select(i => i.PersonelId));
+
             res = res.Where(p => nufusPersonelIds.Contains(p.Id)).ToList();
+            res = res.Where(p => iletisimPersonelIds.Contains(p.Id)).ToList();
 
             DataGridViewEmployees.DataSource = res;
             DataGridViewEmployees.Refresh();

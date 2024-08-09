@@ -1,11 +1,15 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
+using Entities.Concrete.TurkeyModel;
 using Entities.DTOs;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Text.Json;
 using System.Windows.Forms;
 
 namespace IKYv4.Forms
@@ -30,6 +34,10 @@ namespace IKYv4.Forms
 
         public Personel _personel = new Personel();
         private Nufus _nufus = new Nufus();
+
+        private List<City> _cities = new List<City>();
+        private List<District> _districts = new List<District>();
+        private List<Neighbourhood> _neighbourhoods = new List<Neighbourhood>();
 
         public FormEmployeeRegistrationCard(IPersonelManager personelManager,
                                             IMudurlukManager mudurlukManager,
@@ -78,6 +86,26 @@ namespace IKYv4.Forms
                     ComboBoxTitle.Items.Add(unvanGrubu.UnvanGrubuAdi);
                 }
             }
+
+            ComboBoxContactCity.Items.Insert(0, "İL");
+            ComboBoxContactCity.SelectedIndex = 0;
+
+            ComboBoxContactCity.Text = ComboBoxContactCity.SelectedIndex < 0 ? "İL"
+                : ComboBoxContactCity.Text = ComboBoxContactCity.SelectedText;
+
+            ComboBoxContactDistrict.Items.Insert(0, "İLÇE");
+            ComboBoxContactDistrict.SelectedIndex = 0;
+
+            ComboBoxContactDistrict.Text = ComboBoxContactDistrict.SelectedIndex < 0 ? "İLÇE"
+                : ComboBoxContactDistrict.Text = ComboBoxContactDistrict.SelectedText;
+
+            ComboBoxContactNeighbourhood.Items.Insert(0, "MAHALLE");
+            ComboBoxContactNeighbourhood.SelectedIndex = 0;
+
+            ComboBoxContactNeighbourhood.Text = ComboBoxContactNeighbourhood.SelectedIndex < 0 ? "MAHALLE"
+                : ComboBoxContactNeighbourhood.Text = ComboBoxContactNeighbourhood.SelectedText;
+
+            AssignCities();
         }
 
         private void ButtonSave_Click(object sender, EventArgs e)
@@ -136,14 +164,10 @@ namespace IKYv4.Forms
             _nufus.BabaAdi = TextBoxFatherName.Text;
             _nufus.KanGrubu = ComboBoxBloodGroup.Text;
             _nufus.Askerlik = ComboBoxMilitaryState.Text;
-            _nufus.MedeniHali = RadioButtonMaried.Checked ? RadioButtonMaried.Text : RadioButtonSingle.Text;
+            _nufus.MedeniHali = RadioButtonSingle.Checked ? RadioButtonSingle.Text : RadioButtonSingle.Text;
             _nufus.EsAdi = TextBoxSpouseName.Text;
             _nufus.EsCalismaDurumu = RadioButtonSpouseNotWorks.Checked ? RadioButtonSpouseNotWorks.Text : RadioButtonSpouseWorks.Text;
             _nufus.EsMeslegi = TextBoxSpouseJob.Text;
-            if(int.TryParse(TextBoxChildrenCount.Text, out var childrenCount))
-            {
-                _nufus.CocukSayisi = childrenCount;
-            }
             _nufus.EsCalistigiKurumAdi = TextBoxWhereSpouseWorks.Text;
 
             var resNufus = _nufusManager.Add(_nufus);
@@ -266,11 +290,10 @@ namespace IKYv4.Forms
                 _iletisim.PersonelId = _personel.Id;
             }
 
-            _iletisim.Mahalle = TextBoxNeighbourhood.Text;
-            _iletisim.Sokak = TextBoxStreet.Text;
-            _iletisim.KapiNo1 = TextBoxDoorNumber.Text;
-            _iletisim.Ilce = TextBoxDistrict.Text;
-            _iletisim.Il = TextBoxCity.Text;
+            _iletisim.Il = ComboBoxContactCity.Text;
+            _iletisim.Ilce = ComboBoxContactDistrict.Text;
+            _iletisim.Mahalle = ComboBoxContactNeighbourhood.Text;
+            _iletisim.AdresDetay = TextBoxContactAddressDetail.Text;
             _iletisim.CepTelNo1 = TextBoxPhoneNumber.Text;
             _iletisim.CepTelNo2 = TextBoxPhoneNumber2.Text;
             _iletisim.EMailAdresi = TextBoxMailAdress.Text;
@@ -436,6 +459,130 @@ namespace IKYv4.Forms
             RadioButtonSpouseWorks.Enabled = false;
             TextBoxSpouseJob.Enabled = false;
             TextBoxWhereSpouseWorks.Enabled = false;
+        }
+
+        private void AssignCities()
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            string resourceName = assembly.GetManifestResourceNames().Single(str => str.EndsWith("il.json"));
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                string jsonContent = reader.ReadToEnd();
+                _cities = JsonSerializer.Deserialize<List<City>>(jsonContent, options);
+            }
+
+            foreach (var item in _cities)
+            {
+                if (item.sehir_title != null)
+                {
+                    ComboBoxContactCity.Items.Add(item.sehir_title);
+                }
+            }
+        }
+
+        private void AssignDistricts(string sehir_key)
+        {
+            ComboBoxContactDistrict.Items.Clear();
+
+            ComboBoxContactDistrict.Items.Insert(0, "İLÇE");
+            ComboBoxContactDistrict.SelectedIndex = 0;
+
+            ComboBoxContactDistrict.Text = ComboBoxContactDistrict.SelectedIndex < 0 ? "İLÇE"
+                : ComboBoxContactDistrict.Text = ComboBoxContactDistrict.SelectedText;
+
+            var assembly = Assembly.GetExecutingAssembly();
+            string resourceName = assembly.GetManifestResourceNames().Single(str => str.EndsWith("ilce.json"));
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                string jsonContent = reader.ReadToEnd();
+                _districts = JsonSerializer.Deserialize<List<District>>(jsonContent, options);
+            }
+
+            foreach (var item in _districts)
+            {
+                if (item.ilce_sehirkey == sehir_key)
+                {
+                    ComboBoxContactDistrict.Items.Add(item.ilce_title);
+                }
+            }
+        }
+
+        private void AssignNeighbourhoods(string ilce_key)
+        {
+            ComboBoxContactNeighbourhood.Items.Clear();
+
+            ComboBoxContactNeighbourhood.Items.Insert(0, "MAHALLE");
+            ComboBoxContactNeighbourhood.SelectedIndex = 0;
+
+            ComboBoxContactNeighbourhood.Text = ComboBoxContactNeighbourhood.SelectedIndex < 0 ? "MAHALLE"
+                : ComboBoxContactNeighbourhood.Text = ComboBoxContactNeighbourhood.SelectedText;
+
+            var assembly = Assembly.GetExecutingAssembly();
+            string resourceName = assembly.GetManifestResourceNames().Single(str => str.EndsWith("mahalle.json"));
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                string jsonContent = reader.ReadToEnd();
+                _neighbourhoods = JsonSerializer.Deserialize<List<Neighbourhood>>(jsonContent, options);
+            }
+
+            foreach (var item in _neighbourhoods)
+            {
+                if (item.mahalle_ilcekey == ilce_key)
+                {
+                    ComboBoxContactNeighbourhood.Items.Add(item.mahalle_title);
+                }
+            }
+        }
+
+        private void ComboBoxContactCity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedCity = ComboBoxContactCity.SelectedItem.ToString();
+            var res = _cities.FirstOrDefault(x => x.sehir_title == selectedCity);
+
+            if (res != null)
+            {
+                ComboBoxContactDistrict.Enabled = true;
+
+                AssignDistricts(res.sehir_key);
+            }
+
+            ComboBoxContactDistrict.Enabled = ComboBoxContactCity.Text == "İL" ? false : true;
+        }
+
+        private void ComboBoxContactDistrict_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedDistrict = ComboBoxContactDistrict.SelectedItem.ToString();
+            var res = _districts.FirstOrDefault(x => x.ilce_title == selectedDistrict);
+
+            if (res != null)
+            {
+                ComboBoxContactDistrict.Enabled = true;
+
+                AssignNeighbourhoods(res.ilce_key);
+            }
+
+            ComboBoxContactNeighbourhood.Enabled = ComboBoxContactDistrict.Text == "İLÇE" ? false : true;
         }
     }
 }
