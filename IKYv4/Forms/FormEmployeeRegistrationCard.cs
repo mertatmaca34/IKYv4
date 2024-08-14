@@ -209,6 +209,7 @@ namespace IKYv4.Forms
             #endregion
 
             AssignDefaultWorkingHours();
+
             return res;
         }
 
@@ -243,25 +244,26 @@ namespace IKYv4.Forms
         {
             if (DataGridViewChild.DataSource != null)
             {
-                DataGridViewChild.Columns[1].Visible = false;
-                DataGridViewChild.Columns[2].Visible = false;
+                DataGridViewChild.Columns[3].Visible = false;
             }
 
             if (DataGridViewTahsil.DataSource != null)
             {
-                DataGridViewTahsil.Columns[1].Visible = false;
                 DataGridViewTahsil.Columns[2].Visible = false;
+                DataGridViewTahsil.Columns[3].Visible = false;
             }
 
-            /*var res = _unvanGrubuManager.GetAll().Data;
-
-            if(string.IsNullOrEmpty(ComboBoxTitle.Text))
+            if (DataGridViewNakiller.DataSource != null)
             {
-                foreach (var unvanGrubu in res)
-                {
-                    ComboBoxTitle.Items.Add(unvanGrubu.UnvanGrubuAdi);
-                }
-            }*/
+                DataGridViewNakiller.Columns[2].Visible = false;
+                DataGridViewNakiller.Columns[3].Visible = false;
+            }
+
+            if (DataGridViewSertifikalar.DataSource != null)
+            {
+                DataGridViewSertifikalar.Columns[2].Visible = false;
+                DataGridViewSertifikalar.Columns[3].Visible = false;
+            }
         }
 
         private void ComboBoxDirectorate_SelectedIndexChanged(object sender, EventArgs e)
@@ -507,7 +509,7 @@ namespace IKYv4.Forms
             FormNewChild formNewChild = new FormNewChild(_cocukManager, _personel.Id);
             formNewChild.ShowDialog();
 
-            var resCocukData = _cocukManager.GetAll().Data;
+            var resCocukData = _cocukManager.GetAll(x=> x.PersonelId == _personel.Id).Data;
 
             DataGridViewChild.DataSource = resCocukData;
             DataGridViewChild.Refresh();
@@ -524,8 +526,7 @@ namespace IKYv4.Forms
 
                     MessageBox.Show(res.Message);
 
-
-                    var updatedChildData = _cocukManager.GetAll().Data;
+                    var updatedChildData = _cocukManager.GetAll(x => x.PersonelId == _personel.Id).Data;
                     DataGridViewChild.DataSource = updatedChildData;
                     DataGridViewChild.Refresh();
                 }
@@ -537,7 +538,7 @@ namespace IKYv4.Forms
             FormNewTahsil formNewTahsil = new FormNewTahsil(_tahsilManager, _personel.Id);
             formNewTahsil.ShowDialog();
 
-            var resTahsil = _tahsilManager.GetAll();
+            var resTahsil = _tahsilManager.GetAll(x => x.PersonelId == _personel.Id).Data;
             DataGridViewTahsil.DataSource = resTahsil;
 
             DataGridViewTahsil.Refresh();
@@ -548,7 +549,7 @@ namespace IKYv4.Forms
             FormNewSertifika formNewSertifika = new FormNewSertifika(_sertifikaManager, _personel.Id);
             formNewSertifika.ShowDialog();
 
-            var resSertifika = _sertifikaManager.GetAll();
+            var resSertifika = _sertifikaManager.GetAll(x => x.PersonelId == _personel.Id).Data;
             DataGridViewSertifikalar.DataSource = resSertifika;
 
             DataGridViewSertifikalar.Refresh();
@@ -556,13 +557,29 @@ namespace IKYv4.Forms
 
         private void ButtonNakilEkle_Click(object sender, EventArgs e)
         {
-            FormNewNakil formNewNakil = new FormNewNakil();
+            FormNewNakil formNewNakil = new FormNewNakil(_nakilManager, _personel.Id);
             formNewNakil.ShowDialog();
 
-            var resNakil = _nakilManager.GetAll();
+            var resNakil = _nakilManager.GetAll(x => x.PersonelId == _personel.Id).Data;
             DataGridViewNakiller.DataSource = resNakil;
 
             DataGridViewNakiller.Refresh();
+        }
+
+        private void DataGridViewChild_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0 && e.RowIndex >= 0)
+            {
+                var row = DataGridViewChild.Rows[e.RowIndex];
+
+                int selectedCocukId = Convert.ToInt16(row.Cells[2].Value);
+                int selectedPersonelId = Convert.ToInt16(row.Cells[3].Value);
+
+                var selectedChild = _cocukManager.GetAll(c => c.Id == selectedCocukId).Data.FirstOrDefault();
+
+                FormNewChild formNewChild = new FormNewChild(_cocukManager, selectedChild);
+                formNewChild.ShowDialog();
+            }
         }
     }
 }

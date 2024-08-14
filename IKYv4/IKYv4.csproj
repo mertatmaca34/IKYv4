@@ -217,6 +217,9 @@
     <EmbeddedResource Include="Forms\FormNewChild.resx">
       <DependentUpon>FormNewChild.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormNewNakil.resx">
+      <DependentUpon>FormNewNakil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormNewSertifika.resx">
       <DependentUpon>FormNewSertifika.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,6 +292,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\clock_24px.png" />
+    <None Include="Resources\delete_bin_24px.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

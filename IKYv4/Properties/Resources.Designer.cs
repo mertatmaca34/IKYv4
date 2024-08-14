@@ -73,6 +73,16 @@ namespace IKYv4.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap delete_bin_24px {
+            get {
+                object obj = ResourceManager.GetObject("delete_bin_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap edit_row_24px {
             get {
                 object obj = ResourceManager.GetObject("edit_row_24px", resourceCulture);

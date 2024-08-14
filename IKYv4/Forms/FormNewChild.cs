@@ -16,6 +16,7 @@ namespace IKYv4.Forms
     {
         ICocukManager _cocukManager;
         public int _personelId;
+        public Cocuk _cocuk;
 
         public FormNewChild(ICocukManager cocukManager, int personelId)
         {
@@ -25,22 +26,60 @@ namespace IKYv4.Forms
             InitializeComponent();
         }
 
+        public FormNewChild(ICocukManager cocukManager, Cocuk cocuk)
+        {
+            _cocukManager = cocukManager;
+            _personelId = cocuk.PersonelId;
+            _cocuk = cocuk;
+
+            InitializeComponent();
+
+            TextBoxChildName.Text = cocuk.CocukAdi;
+            DateTimePickerChildBirthDate.Value = cocuk.DogumTarihi;
+            RadioButtonMan.Checked = cocuk.CocukCinsiyeti == "ERKEK";
+            RadioButtonWoman.Checked = cocuk.CocukCinsiyeti == "KADIN";
+            TextBoxAboutChild.Text = cocuk.Hakkinda;
+
+        }
+
         private void ButtonSave_Click(object sender, EventArgs e)
         {
-            Cocuk cocuk = new Cocuk
+            if(_cocuk != null)
             {
-                PersonelId = _personelId,
-                CocukAdi = TextBoxChildName.Text,
-                CocukCinsiyeti = RadioButtonMan.Checked ? RadioButtonMan.Text : RadioButtonWoman.Text,
-                DogumTarihi = DateTimePickerChildBirthDate.Value,
-                Hakkinda = TextBoxAboutChild.Text,
-            };
+                Cocuk updatedCocuk = new Cocuk
+                {
+                    Id = _cocuk.Id,
+                    PersonelId = _personelId,
+                    CocukAdi = TextBoxChildName.Text,
+                    CocukCinsiyeti = RadioButtonMan.Checked ? RadioButtonMan.Text : RadioButtonWoman.Text,
+                    DogumTarihi = DateTimePickerChildBirthDate.Value,
+                    Hakkinda = TextBoxAboutChild.Text,
+                };
 
-            var res = _cocukManager.Add(cocuk);
+                var resUpdatedCocuk = _cocukManager.Add(updatedCocuk);
 
-            MessageBox.Show(res.Message);
+                MessageBox.Show(resUpdatedCocuk.Message);
 
-            this.Close();
+                this.Close();
+            }
+
+            else
+            {
+                Cocuk cocuk = new Cocuk
+                {
+                    PersonelId = _personelId,
+                    CocukAdi = TextBoxChildName.Text,
+                    CocukCinsiyeti = RadioButtonMan.Checked ? RadioButtonMan.Text : RadioButtonWoman.Text,
+                    DogumTarihi = DateTimePickerChildBirthDate.Value,
+                    Hakkinda = TextBoxAboutChild.Text,
+                };
+
+                var res = _cocukManager.Add(cocuk);
+
+                MessageBox.Show(res.Message);
+
+                this.Close();
+            }
         }
     }
 }
