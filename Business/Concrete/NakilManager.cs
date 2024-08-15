@@ -28,13 +28,13 @@ namespace Business.Concrete
             {
                 this.Update(nakil);
 
-                return new SuccessResult(Messages.CalismaSaatleriUpdated);
+                return new SuccessResult(Messages.NakilUpdated);
             }
             else if (result != null)
             {
                 _nakilDal.Add(nakil);
 
-                return new SuccessResult(Messages.NufusAdded);
+                return new SuccessResult(Messages.NakilAdded);
             }
 
             return new ErrorResult(Messages.IncompleteInfo);
@@ -48,7 +48,7 @@ namespace Business.Concrete
             {
                 _nakilDal.Delete(nakil);
 
-                return new SuccessResult(Messages.CalismaSaatleriDeleted);
+                return new SuccessResult(Messages.NakilDeleted);
             }
 
             return new ErrorDataResult<Nakil>(Messages.InvalidDelete);
@@ -73,7 +73,7 @@ namespace Business.Concrete
 
                     _nakilDal.Update(nakil);
 
-                    return new SuccessResult(Messages.CalismaSaatleriUpdated);
+                    return new SuccessResult(Messages.NakilUpdated);
                 }
             }
 

@@ -31,10 +31,10 @@ namespace IKYv4.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
@@ -93,12 +93,12 @@ namespace IKYv4.Forms
             this.label16 = new System.Windows.Forms.Label();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.CheckBoxLise = new System.Windows.Forms.CheckBox();
+            this.CheckBoxYuksekLisans = new System.Windows.Forms.CheckBox();
+            this.CheckBoxLisans = new System.Windows.Forms.CheckBox();
+            this.CheckBoxOnLisans = new System.Windows.Forms.CheckBox();
+            this.CheckBoxOrtaokul = new System.Windows.Forms.CheckBox();
+            this.CheckBoxIlkokul = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.ButtonNewEmployee = new System.Windows.Forms.Button();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
@@ -954,12 +954,12 @@ namespace IKYv4.Forms
             this.tableLayoutPanel12.ColumnCount = 1;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel12.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel12.Controls.Add(this.checkBox5, 0, 4);
-            this.tableLayoutPanel12.Controls.Add(this.checkBox6, 0, 1);
-            this.tableLayoutPanel12.Controls.Add(this.checkBox7, 0, 2);
-            this.tableLayoutPanel12.Controls.Add(this.checkBox8, 0, 3);
-            this.tableLayoutPanel12.Controls.Add(this.checkBox10, 0, 5);
-            this.tableLayoutPanel12.Controls.Add(this.checkBox12, 0, 6);
+            this.tableLayoutPanel12.Controls.Add(this.CheckBoxLise, 0, 4);
+            this.tableLayoutPanel12.Controls.Add(this.CheckBoxYuksekLisans, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(this.CheckBoxLisans, 0, 2);
+            this.tableLayoutPanel12.Controls.Add(this.CheckBoxOnLisans, 0, 3);
+            this.tableLayoutPanel12.Controls.Add(this.CheckBoxOrtaokul, 0, 5);
+            this.tableLayoutPanel12.Controls.Add(this.CheckBoxIlkokul, 0, 6);
             this.tableLayoutPanel12.Location = new System.Drawing.Point(0, 858);
             this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
@@ -986,83 +986,83 @@ namespace IKYv4.Forms
             this.label9.TabIndex = 2;
             this.label9.Text = "Tahsil";
             // 
-            // checkBox5
+            // CheckBoxLise
             // 
-            this.checkBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.checkBox5.Location = new System.Drawing.Point(7, 111);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(46, 19);
-            this.checkBox5.TabIndex = 3;
-            this.checkBox5.Text = "Lise";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.CheckBoxLise.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.CheckBoxLise.AutoSize = true;
+            this.CheckBoxLise.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.CheckBoxLise.Location = new System.Drawing.Point(7, 111);
+            this.CheckBoxLise.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.CheckBoxLise.Name = "CheckBoxLise";
+            this.CheckBoxLise.Size = new System.Drawing.Size(46, 19);
+            this.CheckBoxLise.TabIndex = 3;
+            this.CheckBoxLise.Text = "Lise";
+            this.CheckBoxLise.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // CheckBoxYuksekLisans
             // 
-            this.checkBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.checkBox6.Location = new System.Drawing.Point(7, 33);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(97, 19);
-            this.checkBox6.TabIndex = 3;
-            this.checkBox6.Text = "Yüksek Lisans";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.CheckBoxYuksekLisans.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.CheckBoxYuksekLisans.AutoSize = true;
+            this.CheckBoxYuksekLisans.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.CheckBoxYuksekLisans.Location = new System.Drawing.Point(7, 33);
+            this.CheckBoxYuksekLisans.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.CheckBoxYuksekLisans.Name = "CheckBoxYuksekLisans";
+            this.CheckBoxYuksekLisans.Size = new System.Drawing.Size(85, 19);
+            this.CheckBoxYuksekLisans.TabIndex = 3;
+            this.CheckBoxYuksekLisans.Text = "Lisans Üstü";
+            this.CheckBoxYuksekLisans.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // CheckBoxLisans
             // 
-            this.checkBox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.checkBox7.Location = new System.Drawing.Point(7, 59);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(58, 19);
-            this.checkBox7.TabIndex = 3;
-            this.checkBox7.Text = "Lisans";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.CheckBoxLisans.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.CheckBoxLisans.AutoSize = true;
+            this.CheckBoxLisans.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.CheckBoxLisans.Location = new System.Drawing.Point(7, 59);
+            this.CheckBoxLisans.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.CheckBoxLisans.Name = "CheckBoxLisans";
+            this.CheckBoxLisans.Size = new System.Drawing.Size(58, 19);
+            this.CheckBoxLisans.TabIndex = 3;
+            this.CheckBoxLisans.Text = "Lisans";
+            this.CheckBoxLisans.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // CheckBoxOnLisans
             // 
-            this.checkBox8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.checkBox8.Location = new System.Drawing.Point(7, 85);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(77, 19);
-            this.checkBox8.TabIndex = 3;
-            this.checkBox8.Text = "Ön Lisans";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.CheckBoxOnLisans.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.CheckBoxOnLisans.AutoSize = true;
+            this.CheckBoxOnLisans.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.CheckBoxOnLisans.Location = new System.Drawing.Point(7, 85);
+            this.CheckBoxOnLisans.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.CheckBoxOnLisans.Name = "CheckBoxOnLisans";
+            this.CheckBoxOnLisans.Size = new System.Drawing.Size(77, 19);
+            this.CheckBoxOnLisans.TabIndex = 3;
+            this.CheckBoxOnLisans.Text = "Ön Lisans";
+            this.CheckBoxOnLisans.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // CheckBoxOrtaokul
             // 
-            this.checkBox10.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.checkBox10.Location = new System.Drawing.Point(7, 137);
-            this.checkBox10.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(72, 19);
-            this.checkBox10.TabIndex = 3;
-            this.checkBox10.Text = "Ortaokul";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.CheckBoxOrtaokul.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.CheckBoxOrtaokul.AutoSize = true;
+            this.CheckBoxOrtaokul.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.CheckBoxOrtaokul.Location = new System.Drawing.Point(7, 137);
+            this.CheckBoxOrtaokul.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.CheckBoxOrtaokul.Name = "CheckBoxOrtaokul";
+            this.CheckBoxOrtaokul.Size = new System.Drawing.Size(72, 19);
+            this.CheckBoxOrtaokul.TabIndex = 3;
+            this.CheckBoxOrtaokul.Text = "Ortaokul";
+            this.CheckBoxOrtaokul.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // CheckBoxIlkokul
             // 
-            this.checkBox12.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.checkBox12.Location = new System.Drawing.Point(7, 164);
-            this.checkBox12.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(62, 19);
-            this.checkBox12.TabIndex = 3;
-            this.checkBox12.Text = "İlkokul";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.CheckBoxIlkokul.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.CheckBoxIlkokul.AutoSize = true;
+            this.CheckBoxIlkokul.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.CheckBoxIlkokul.Location = new System.Drawing.Point(7, 164);
+            this.CheckBoxIlkokul.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.CheckBoxIlkokul.Name = "CheckBoxIlkokul";
+            this.CheckBoxIlkokul.Size = new System.Drawing.Size(62, 19);
+            this.CheckBoxIlkokul.TabIndex = 3;
+            this.CheckBoxIlkokul.Text = "İlkokul";
+            this.CheckBoxIlkokul.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel17
             // 
@@ -1238,34 +1238,34 @@ namespace IKYv4.Forms
             // 
             this.DataGridViewEmployees.AllowUserToAddRows = false;
             this.DataGridViewEmployees.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataGridViewEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.DataGridViewEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridViewEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridViewEmployees.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewEmployees.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridViewEmployees.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridViewEmployees.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridViewEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EditRow,
             this.EditShifts});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewEmployees.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewEmployees.DefaultCellStyle = dataGridViewCellStyle7;
             this.DataGridViewEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridViewEmployees.EnableHeadersVisualStyles = false;
             this.DataGridViewEmployees.GridColor = System.Drawing.Color.WhiteSmoke;
@@ -1276,11 +1276,11 @@ namespace IKYv4.Forms
             this.DataGridViewEmployees.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridViewEmployees.RowHeadersVisible = false;
             this.DataGridViewEmployees.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.DataGridViewEmployees.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGridViewEmployees.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.DataGridViewEmployees.RowTemplate.DividerHeight = 10;
             this.DataGridViewEmployees.RowTemplate.Height = 50;
             this.DataGridViewEmployees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -1439,12 +1439,12 @@ namespace IKYv4.Forms
         private Label label16;
         private TableLayoutPanel tableLayoutPanel12;
         private Label label9;
-        private CheckBox checkBox5;
-        private CheckBox checkBox6;
-        private CheckBox checkBox7;
-        private CheckBox checkBox8;
-        private CheckBox checkBox10;
-        private CheckBox checkBox12;
+        private CheckBox CheckBoxLise;
+        private CheckBox CheckBoxYuksekLisans;
+        private CheckBox CheckBoxLisans;
+        private CheckBox CheckBoxOnLisans;
+        private CheckBox CheckBoxOrtaokul;
+        private CheckBox CheckBoxIlkokul;
         private TableLayoutPanel tableLayoutPanel17;
         private DataGridView DataGridViewEmployees;
         private TableLayoutPanel tableLayoutPanel18;

@@ -163,6 +163,7 @@
             // ComboBoxTahsilTuru
             // 
             this.ComboBoxTahsilTuru.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxTahsilTuru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxTahsilTuru.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.ComboBoxTahsilTuru.FormattingEnabled = true;
             this.ComboBoxTahsilTuru.Items.AddRange(new object[] {

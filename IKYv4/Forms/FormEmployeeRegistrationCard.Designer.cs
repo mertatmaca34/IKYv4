@@ -986,19 +986,19 @@ namespace IKYv4.Forms
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label30, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.TextBoxBirthPlace, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label31, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.TextBoxResidance, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.TextBoxMotherName, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.ComboBoxBloodGroup, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label29, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.TextBoxFatherName, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.DateTimePickerBirthDate, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label9, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.ComboBoxMilitaryState, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label10, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.DateTimePickerMilitaryEnd, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label31, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.TextBoxResidance, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.TextBoxMotherName, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label29, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.TextBoxFatherName, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.ComboBoxBloodGroup, 1, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -1087,11 +1087,11 @@ namespace IKYv4.Forms
             this.label30.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label30.Location = new System.Drawing.Point(179, 118);
+            this.label30.Location = new System.Drawing.Point(162, 118);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(110, 21);
+            this.label30.Size = new System.Drawing.Size(127, 21);
             this.label30.TabIndex = 0;
-            this.label30.Text = "DOĞUM YERİ";
+            this.label30.Text = "DOĞUM YERİ İL";
             // 
             // TextBoxBirthPlace
             // 

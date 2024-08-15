@@ -551,6 +551,13 @@ namespace IKYv4.Forms
             Expression<Func<Nufus, bool>> filterCocukSayisi = null;
             Expression<Func<Nufus, bool>> filterMemleket = null;
             Expression<Func<Iletisim, bool>> filterIkametgah = null;
+            Expression<Func<Tahsil, bool>> filterTahsilLisansUstu = null;
+            Expression<Func<Tahsil, bool>> filterTahsilLisans = null;
+            Expression<Func<Tahsil, bool>> filterTahsilOnLisans = null;
+            Expression<Func<Tahsil, bool>> filterTahsilLise = null;
+            Expression<Func<Tahsil, bool>> filterTahsilOrtaokul = null;
+            Expression<Func<Tahsil, bool>> filterTahsilIlokul = null;
+            Expression<Func<Tahsil, bool>> filterTahsil = null;
 
             #region Birim Filtresi
 
@@ -668,12 +675,16 @@ namespace IKYv4.Forms
             #endregion
 
             #region Çocuk Sayısı Filtre
-/*
+
             if (int.TryParse(TextBoxMinKid.Text, out int minKid))
             {
                 if (int.TryParse(TextBoxMaxKid.Text, out int maxKid))
                 {
-                    filterCocukSayisi = x => x.CocukSayisi >= minKid && x.CocukSayisi <= maxKid;
+                    var _cocuklar = _cocukManager.GetAll().Data;
+
+                    var existPersoneller = _cocuklar.GroupBy(c => c.PersonelId).Where(c => c.Count() >= minKid && c.Count() <= maxKid).Select(g => g.Key).ToList();
+
+                    res = res.Where(p => existPersoneller.Contains(p.Id)).ToList();
                 }
             }
 
@@ -681,7 +692,66 @@ namespace IKYv4.Forms
                 : filterCocukSayisi != null && filterNufus == null ? filterCocukSayisi
                 : filterNufus != null && filterCocukSayisi == null ? filterNufus
                 : null;
-            */
+
+            #endregion
+
+            #region Tahsil Filtresi
+
+            if (CheckBoxYuksekLisans.Checked || CheckBoxLisans.Checked || CheckBoxOnLisans.Checked || CheckBoxLise.Checked || CheckBoxOrtaokul.Checked || CheckBoxIlkokul.Checked)
+            {
+                bool yuksekLisans = CheckBoxYuksekLisans.Checked;
+                bool lisans = CheckBoxLisans.Checked;
+                bool onLisans = CheckBoxOnLisans.Checked;
+                bool lise = CheckBoxLise.Checked;
+                bool ortaOkul = CheckBoxOrtaokul.Checked;
+                bool ilkOkul = CheckBoxIlkokul.Checked;
+                
+                if (yuksekLisans == true)
+                {
+                    filterTahsilLisansUstu = t => t.TahsilTuru == "YÜKSEK LİSANS" || t.TahsilTuru == "DOKTORA";
+                }
+                else if (lisans == true)
+                {
+                    filterTahsilLisans = t => t.TahsilTuru == CheckBoxYuksekLisans.Text;
+                }
+                else if (onLisans == true)
+                {
+                    filterTahsilOnLisans = t => t.TahsilTuru == CheckBoxOnLisans.Text;
+                }
+                else if (lise == true)
+                {
+                    filterTahsilLise = t => t.TahsilTuru == CheckBoxLise.Text;
+                }
+                else if (ortaOkul == true)
+                {
+                    filterTahsilOrtaokul = t => t.TahsilTuru == CheckBoxOrtaokul.Text;
+                }
+                else if (ilkOkul == true)
+                {
+                    filterTahsilIlokul = t => t.TahsilTuru == CheckBoxIlkokul.Text;
+                }
+
+                filterTahsil = filterTahsilLisansUstu != null && filterTahsilLisans != null ? PredicateBuilder.And(filterTahsilLisansUstu, filterTahsilLisans)
+                    : filterTahsilLisansUstu != null && filterTahsilLisans == null ? filterTahsilLisansUstu
+                    : filterTahsilLisans != null && filterTahsilLisansUstu == null ? filterTahsilLisans
+                    : null;
+
+                filterTahsil = filterTahsilLise != null && filterTahsil != null ? PredicateBuilder.And(filterTahsilLise, filterTahsil)
+                    : filterTahsilLise != null && filterTahsil == null ? filterTahsilLise
+                    : filterTahsilLise == null && filterTahsil != null ? filterTahsil
+                    : null;
+
+                filterTahsil = filterTahsilOrtaokul != null && filterTahsil != null ? PredicateBuilder.And(filterTahsilOrtaokul, filterTahsil)
+                    : filterTahsilOrtaokul != null && filterTahsil == null ? filterTahsilOrtaokul
+                    : filterTahsilOrtaokul == null && filterTahsil != null ? filterTahsil
+                    : null;
+
+                filterTahsil = filterTahsilIlokul != null && filterTahsil != null ? PredicateBuilder.And(filterTahsilIlokul, filterTahsil)
+                    : filterTahsilIlokul != null && filterTahsil == null ? filterTahsilIlokul
+                    : filterTahsilIlokul == null && filterTahsil != null ? filterTahsil
+                    : null;
+            }
+
             #endregion
 
             #region İkametgah Filtresi
@@ -712,15 +782,17 @@ namespace IKYv4.Forms
 
             #endregion
 
+            var resTahsil = _tahsilManager.GetAll(filterTahsil).Data;
             var resNufus = _nufusManager.GetAll(filterNufus).Data;
             var resIletisim = _iletisimManager.GetAll(filterIkametgah).Data;
 
             var nufusPersonelIds = new HashSet<int>(resNufus.Select(n => n.PersonelId));
-
+            var tahsilPersonelIds = new HashSet<int>(resTahsil.Select(t => t.PersonelId));
             var iletisimPersonelIds = new HashSet<int>(resIletisim.Select(i => i.PersonelId));
 
             res = res.Where(p => nufusPersonelIds.Contains(p.Id)).ToList();
             res = res.Where(p => iletisimPersonelIds.Contains(p.Id)).ToList();
+            res = res.Where(p => tahsilPersonelIds.Contains(p.Id)).ToList();
 
             DataGridViewEmployees.DataSource = res;
             DataGridViewEmployees.Refresh();
