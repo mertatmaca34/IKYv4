@@ -602,6 +602,7 @@ namespace IKYv4.Forms
             this.DataGridViewNakiller.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGridViewNakiller.Size = new System.Drawing.Size(1067, 411);
             this.DataGridViewNakiller.TabIndex = 4;
+            this.DataGridViewNakiller.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewNakiller_CellContentClick);
             // 
             // dataGridViewImageColumn4
             // 

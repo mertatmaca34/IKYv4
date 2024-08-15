@@ -692,5 +692,47 @@ namespace IKYv4.Forms
                 }
             }
         }
+
+        private void DataGridViewNakiller_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0 && e.RowIndex >= 0)
+            {
+                var row = DataGridViewNakiller.Rows[e.RowIndex];
+
+                int selectedNakilId = Convert.ToInt16(row.Cells[2].Value);
+                int selectedPersonelId = Convert.ToInt16(row.Cells[3].Value);
+
+                var selectedNakil = _nakilManager.GetAll(c => c.Id == selectedNakilId).Data.FirstOrDefault();
+
+                FormNewNakil formNewNakil = new FormNewNakil(_nakilManager, selectedNakil);
+
+                formNewNakil.ShowDialog();
+            }
+
+            else if (e.ColumnIndex == 1 && e.RowIndex >= 0)
+            {
+                var res = MessageBox.Show(Messages.DeleteNakil, Messages.Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (res == DialogResult.Yes)
+                {
+                    var nakilId = Convert.ToInt16(DataGridViewNakiller.SelectedCells[2].Value);
+
+                    var isNakilExist = _nakilManager.GetAll(t => t.Id == nakilId).Data.FirstOrDefault();
+
+                    if (isNakilExist != null)
+                    {
+                        var resNakilDelete = _nakilManager.Delete(isNakilExist);
+
+                        MessageBox.Show(resNakilDelete.Message, Messages.Info, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        var updatedNakilList = _nakilManager.GetAll(t => t.PersonelId == _personel.Id).Data.ToList();
+
+                        DataGridViewNakiller.DataSource = updatedNakilList;
+
+                        DataGridViewNakiller.Refresh();
+                    }
+                }
+            }
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace Business.Concrete
             {
                 _sertifikaDal.Add(sertifika);
 
-                return new SuccessResult(Messages.NufusAdded);
+                return new SuccessResult(Messages.SertifikaAdded);
             }
 
             return new ErrorResult(Messages.IncompleteInfo);

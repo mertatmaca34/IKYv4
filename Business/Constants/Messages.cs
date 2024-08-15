@@ -58,6 +58,11 @@ namespace Business.Constants
         public static readonly string TahsilDeleted = "Tahsil bilgileri başarıyla silindi";
         public static readonly string DeleteTahsil = "Seçili tahsil bilgilerini silmek istediğinize emin misiniz?";
 
+        public static readonly string NakilAdded   = "Nakil bilgileri başarıyla oluşturuldu";
+        public static readonly string NakilUpdated = "Nakil bilgileri başarıyla güncellendi";
+        public static readonly string NakilDeleted = "Nakil bilgileri başarıyla silindi";
+        public static readonly string DeleteNakil = "Seçili nakil bilgilerini silmek istediğinize emin misiniz?";
+
         public static readonly string SertifikaAdded   = "Sertifika bilgileri başarıyla oluşturuldu";
         public static readonly string SertifikaUpdated = "Sertifika bilgileri başarıyla güncellendi";
         public static readonly string SertifikaDeleted = "Sertifika bilgileri başarıyla silindi";
