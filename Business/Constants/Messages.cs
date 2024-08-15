@@ -8,9 +8,18 @@ namespace Business.Constants
 {
     public static class Messages
     {
+
+        //Captions
+        public static string Warning = "Uyarı";
+        public static string Info = "Bilgi";
+        public static string Error = "Hata";
+        public static string Succes = "Başarılı";
+
         public static readonly string PersonelAdded = "Personel bilgileri başarıyla oluşturuldu";
         public static readonly string PersonelUpdated = "Personel bilgileri başarıyla güncellendi";
         public static readonly string PersonelDeleted = "Personel bilgileri başarıyla silindi";
+        
+        public static readonly string DeleteCocuk = "Seçili çocuk bilgilerini silmek istediğinize emin misiniz?";
 
         public static readonly string CalismaSaatleriAdded = "Personel bilgileri başarıyla oluşturuldu";
         public static readonly string CalismaSaatleriUpdated = "Personel bilgileri başarıyla güncellendi";
@@ -47,6 +56,12 @@ namespace Business.Constants
         public static readonly string TahsilAdded   = "Tahsil bilgileri başarıyla oluşturuldu";
         public static readonly string TahsilUpdated = "Tahsil bilgileri başarıyla güncellendi";
         public static readonly string TahsilDeleted = "Tahsil bilgileri başarıyla silindi";
+        public static readonly string DeleteTahsil = "Seçili tahsil bilgilerini silmek istediğinize emin misiniz?";
+
+        public static readonly string SertifikaAdded   = "Sertifika bilgileri başarıyla oluşturuldu";
+        public static readonly string SertifikaUpdated = "Sertifika bilgileri başarıyla güncellendi";
+        public static readonly string SertifikaDeleted = "Sertifika bilgileri başarıyla silindi";
+        public static readonly string DeleteSertifika = "Seçili sertifika bilgilerini silmek istediğinize emin misiniz?";
 
         public static readonly string UnvanAdded = "Unvan bilgileri başarıyla oluşturuldu";
         public static readonly string UnvanUpdated = "Unvan bilgileri başarıyla güncellendi";

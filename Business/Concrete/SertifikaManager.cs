@@ -28,7 +28,7 @@ namespace Business.Concrete
             {
                 this.Update(sertifika);
 
-                return new SuccessResult(Messages.CalismaSaatleriUpdated);
+                return new SuccessResult(Messages.SertifikaUpdated);
             }
             else if (result != null)
             {
@@ -48,7 +48,7 @@ namespace Business.Concrete
             {
                 _sertifikaDal.Delete(sertifika);
 
-                return new SuccessResult(Messages.CalismaSaatleriDeleted);
+                return new SuccessResult(Messages.SertifikaDeleted);
             }
 
             return new ErrorDataResult<Sertifika>(Messages.InvalidDelete);
@@ -73,7 +73,7 @@ namespace Business.Concrete
 
                     _sertifikaDal.Update(sertifika);
 
-                    return new SuccessResult(Messages.CalismaSaatleriUpdated);
+                    return new SuccessResult(Messages.SertifikaUpdated);
                 }
             }
 

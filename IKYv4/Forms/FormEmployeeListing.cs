@@ -668,7 +668,7 @@ namespace IKYv4.Forms
             #endregion
 
             #region Çocuk Sayısı Filtre
-
+/*
             if (int.TryParse(TextBoxMinKid.Text, out int minKid))
             {
                 if (int.TryParse(TextBoxMaxKid.Text, out int maxKid))
@@ -681,7 +681,7 @@ namespace IKYv4.Forms
                 : filterCocukSayisi != null && filterNufus == null ? filterCocukSayisi
                 : filterNufus != null && filterCocukSayisi == null ? filterNufus
                 : null;
-
+            */
             #endregion
 
             #region İkametgah Filtresi

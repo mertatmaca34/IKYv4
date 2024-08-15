@@ -16,24 +16,49 @@ namespace IKYv4.Forms
     {
         private readonly ITahsilManager _tahsilManager;
         public int _personelId;
+        Tahsil _tahsil;
 
         public FormNewTahsil(ITahsilManager tahsilManager, int personelId)
         {
             _tahsilManager = tahsilManager;
             _personelId = personelId;
+
             InitializeComponent();
+        }
+
+        public FormNewTahsil(ITahsilManager tahsilManager, Tahsil tahsil)
+        {
+            _tahsilManager = tahsilManager;
+            _tahsil = tahsil;
+
+            InitializeComponent();
+
+            ComboBoxTahsilTuru.Text = tahsil.TahsilTuru;
+            TextBoxSchoolName.Text = tahsil.OkulAdi;
+            TextBoxDepartmentName.Text = tahsil.BolumAdi;
+            DateTimePickerGraduationTime.Value = tahsil.MezuniyetTarihi;
         }
 
         private void ButtonSave_Click(object sender, EventArgs e)
         {
-            Tahsil tahsil = new Tahsil()
-            {
-                PersonelId = _personelId,
-                TahsilTuru = ComboBoxTahsilTuru.Text,
-                OkulAdi = TextBoxSchoolName.Text,
-                BolumAdi = TextBoxDepartmentName.Text,
-                MezuniyetTarihi = DateTimePickerGraduationTime.Value
-            };
+            Tahsil tahsil = _tahsil != null
+                ? new Tahsil
+                {
+                    Id = _tahsil.Id,
+                    PersonelId = _tahsil.PersonelId,
+                    TahsilTuru = ComboBoxTahsilTuru.Text,
+                    OkulAdi = TextBoxSchoolName.Text,
+                    BolumAdi = TextBoxDepartmentName.Text,
+                    MezuniyetTarihi = DateTimePickerGraduationTime.Value
+                }
+                : new Tahsil()
+                {
+                    PersonelId = _personelId,
+                    TahsilTuru = ComboBoxTahsilTuru.Text,
+                    OkulAdi = TextBoxSchoolName.Text,
+                    BolumAdi = TextBoxDepartmentName.Text,
+                    MezuniyetTarihi = DateTimePickerGraduationTime.Value
+                };
 
             var res = _tahsilManager.Add(tahsil);
 

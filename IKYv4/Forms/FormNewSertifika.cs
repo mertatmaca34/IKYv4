@@ -9,6 +9,7 @@ namespace IKYv4.Forms
     {
         ISertifikaManager _sertifikaManager;
         public int _personelId;
+        readonly Sertifika _sertifika;
 
         public FormNewSertifika(ISertifikaManager sertifikaManager, int personelId)
         {
@@ -17,14 +18,30 @@ namespace IKYv4.Forms
 
             InitializeComponent();
         }
+        public FormNewSertifika(ISertifikaManager sertifikaManager, Sertifika sertifika)
+        {
+            _sertifikaManager = sertifikaManager;
+            _sertifika = sertifika;
+
+            InitializeComponent();
+
+            TextBoxSertifika.Text = sertifika.SertifikaAdi;
+        }
 
         private void ButtonSave_Click(object sender, EventArgs e)
         {
-            Sertifika sertifika = new Sertifika
-            {
-                PersonelId = _personelId,
-                SertifikaAdi = TextBoxSertifika.Text
-            };
+            Sertifika sertifika = _sertifika != null
+                ? new Sertifika()
+                {
+                    Id = _sertifika.Id,
+                    PersonelId = _sertifika.PersonelId,
+                    SertifikaAdi = TextBoxSertifika.Text
+                }
+                : new Sertifika()
+                {
+                    PersonelId = _personelId,
+                    SertifikaAdi = TextBoxSertifika.Text
+                };
 
             var res = _sertifikaManager.Add(sertifika);
 

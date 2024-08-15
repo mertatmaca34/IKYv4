@@ -39,7 +39,6 @@ namespace IKYv4.Forms
             RadioButtonMan.Checked = cocuk.CocukCinsiyeti == "ERKEK";
             RadioButtonWoman.Checked = cocuk.CocukCinsiyeti == "KADIN";
             TextBoxAboutChild.Text = cocuk.Hakkinda;
-
         }
 
         private void ButtonSave_Click(object sender, EventArgs e)

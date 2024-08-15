@@ -74,16 +74,22 @@ namespace IKYv4.Forms
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.DataGridViewNakiller = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteRowNakil = new System.Windows.Forms.DataGridViewImageColumn();
             this.ButtonNakilEkle = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.DataGridViewSertifikalar = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteRowSertifika = new System.Windows.Forms.DataGridViewImageColumn();
             this.ButtonSertifikaEkle = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.DataGridViewTahsil = new System.Windows.Forms.DataGridView();
+            this.EditRowTahsil = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteRowTahsil = new System.Windows.Forms.DataGridViewImageColumn();
             this.ButtonNewTahsil = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -131,6 +137,7 @@ namespace IKYv4.Forms
             this.ComboBoxDutyStation = new System.Windows.Forms.ComboBox();
             this.ComboBoxTitle = new System.Windows.Forms.ComboBox();
             this.ComboBoxPosition = new System.Windows.Forms.ComboBox();
+            this.PictureBoxEmployeePicture = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -141,6 +148,8 @@ namespace IKYv4.Forms
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.DataGridViewChild = new System.Windows.Forms.DataGridView();
+            this.EditRow = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteRow = new System.Windows.Forms.DataGridViewImageColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label58 = new System.Windows.Forms.Label();
@@ -162,15 +171,6 @@ namespace IKYv4.Forms
             this.ButtonSave = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.PictureBoxEmployeePicture = new System.Windows.Forms.PictureBox();
-            this.EditRow = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DeleteRow = new System.Windows.Forms.DataGridViewImageColumn();
-            this.EditRowTahsil = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DeleteRowTahsil = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DeleteRowSertifika = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DeleteRowNakil = new System.Windows.Forms.DataGridViewImageColumn();
             this.tabPage6.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -188,6 +188,7 @@ namespace IKYv4.Forms
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployeePicture)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
@@ -195,7 +196,6 @@ namespace IKYv4.Forms
             this.contextMenuStrip1.SuspendLayout();
             this.tableLayoutPanel15.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployeePicture)).BeginInit();
             this.SuspendLayout();
             // 
             // label28
@@ -603,6 +603,29 @@ namespace IKYv4.Forms
             this.DataGridViewNakiller.Size = new System.Drawing.Size(1067, 411);
             this.DataGridViewNakiller.TabIndex = 4;
             // 
+            // dataGridViewImageColumn4
+            // 
+            this.dataGridViewImageColumn4.Description = "Düzenle";
+            this.dataGridViewImageColumn4.FillWeight = 1F;
+            this.dataGridViewImageColumn4.HeaderText = "";
+            this.dataGridViewImageColumn4.Image = global::IKYv4.Properties.Resources.edit_row_24px;
+            this.dataGridViewImageColumn4.MinimumWidth = 60;
+            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.ReadOnly = true;
+            this.dataGridViewImageColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn4.ToolTipText = "Düzenle";
+            // 
+            // DeleteRowNakil
+            // 
+            this.DeleteRowNakil.Description = "Sil";
+            this.DeleteRowNakil.FillWeight = 1F;
+            this.DeleteRowNakil.HeaderText = "";
+            this.DeleteRowNakil.Image = global::IKYv4.Properties.Resources.delete_bin_24px;
+            this.DeleteRowNakil.MinimumWidth = 60;
+            this.DeleteRowNakil.Name = "DeleteRowNakil";
+            this.DeleteRowNakil.ReadOnly = true;
+            this.DeleteRowNakil.ToolTipText = "Sil";
+            // 
             // ButtonNakilEkle
             // 
             this.ButtonNakilEkle.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -731,6 +754,30 @@ namespace IKYv4.Forms
             this.DataGridViewSertifikalar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGridViewSertifikalar.Size = new System.Drawing.Size(1067, 411);
             this.DataGridViewSertifikalar.TabIndex = 4;
+            this.DataGridViewSertifikalar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewSertifikalar_CellContentClick);
+            // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.Description = "Düzenle";
+            this.dataGridViewImageColumn3.FillWeight = 1F;
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.Image = global::IKYv4.Properties.Resources.edit_row_24px;
+            this.dataGridViewImageColumn3.MinimumWidth = 60;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.ReadOnly = true;
+            this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn3.ToolTipText = "Düzenle";
+            // 
+            // DeleteRowSertifika
+            // 
+            this.DeleteRowSertifika.Description = "Sil";
+            this.DeleteRowSertifika.FillWeight = 1F;
+            this.DeleteRowSertifika.HeaderText = "";
+            this.DeleteRowSertifika.Image = global::IKYv4.Properties.Resources.delete_bin_24px;
+            this.DeleteRowSertifika.MinimumWidth = 60;
+            this.DeleteRowSertifika.Name = "DeleteRowSertifika";
+            this.DeleteRowSertifika.ReadOnly = true;
+            this.DeleteRowSertifika.ToolTipText = "Sil";
             // 
             // ButtonSertifikaEkle
             // 
@@ -860,6 +907,30 @@ namespace IKYv4.Forms
             this.DataGridViewTahsil.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGridViewTahsil.Size = new System.Drawing.Size(1067, 411);
             this.DataGridViewTahsil.TabIndex = 4;
+            this.DataGridViewTahsil.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewTahsil_CellContentClick);
+            // 
+            // EditRowTahsil
+            // 
+            this.EditRowTahsil.Description = "Düzenle";
+            this.EditRowTahsil.FillWeight = 1F;
+            this.EditRowTahsil.HeaderText = "";
+            this.EditRowTahsil.Image = global::IKYv4.Properties.Resources.edit_row_24px;
+            this.EditRowTahsil.MinimumWidth = 60;
+            this.EditRowTahsil.Name = "EditRowTahsil";
+            this.EditRowTahsil.ReadOnly = true;
+            this.EditRowTahsil.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.EditRowTahsil.ToolTipText = "Düzenle";
+            // 
+            // DeleteRowTahsil
+            // 
+            this.DeleteRowTahsil.Description = "Sil";
+            this.DeleteRowTahsil.FillWeight = 1F;
+            this.DeleteRowTahsil.HeaderText = "";
+            this.DeleteRowTahsil.Image = global::IKYv4.Properties.Resources.delete_bin_24px;
+            this.DeleteRowTahsil.MinimumWidth = 60;
+            this.DeleteRowTahsil.Name = "DeleteRowTahsil";
+            this.DeleteRowTahsil.ReadOnly = true;
+            this.DeleteRowTahsil.ToolTipText = "Sil";
             // 
             // ButtonNewTahsil
             // 
@@ -1585,6 +1656,20 @@ namespace IKYv4.Forms
             this.ComboBoxPosition.Size = new System.Drawing.Size(569, 29);
             this.ComboBoxPosition.TabIndex = 9;
             // 
+            // PictureBoxEmployeePicture
+            // 
+            this.PictureBoxEmployeePicture.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PictureBoxEmployeePicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.PictureBoxEmployeePicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PictureBoxEmployeePicture.Location = new System.Drawing.Point(842, 88);
+            this.PictureBoxEmployeePicture.Name = "PictureBoxEmployeePicture";
+            this.tableLayoutPanel5.SetRowSpan(this.PictureBoxEmployeePicture, 6);
+            this.PictureBoxEmployeePicture.Size = new System.Drawing.Size(227, 203);
+            this.PictureBoxEmployeePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBoxEmployeePicture.TabIndex = 5;
+            this.PictureBoxEmployeePicture.TabStop = false;
+            this.PictureBoxEmployeePicture.Click += new System.EventHandler(this.PictureBoxEmployeePicture_Click);
+            // 
             // label16
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -1783,6 +1868,29 @@ namespace IKYv4.Forms
             this.DataGridViewChild.Size = new System.Drawing.Size(1067, 247);
             this.DataGridViewChild.TabIndex = 4;
             this.DataGridViewChild.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewChild_CellContentClick);
+            // 
+            // EditRow
+            // 
+            this.EditRow.Description = "Düzenle";
+            this.EditRow.FillWeight = 1F;
+            this.EditRow.HeaderText = "";
+            this.EditRow.Image = global::IKYv4.Properties.Resources.edit_row_24px;
+            this.EditRow.MinimumWidth = 60;
+            this.EditRow.Name = "EditRow";
+            this.EditRow.ReadOnly = true;
+            this.EditRow.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.EditRow.ToolTipText = "Düzenle";
+            // 
+            // DeleteRow
+            // 
+            this.DeleteRow.Description = "Sil";
+            this.DeleteRow.FillWeight = 1F;
+            this.DeleteRow.HeaderText = "";
+            this.DeleteRow.Image = global::IKYv4.Properties.Resources.delete_bin_24px;
+            this.DeleteRow.MinimumWidth = 60;
+            this.DeleteRow.Name = "DeleteRow";
+            this.DeleteRow.ReadOnly = true;
+            this.DeleteRow.ToolTipText = "Sil";
             // 
             // contextMenuStrip1
             // 
@@ -2046,112 +2154,6 @@ namespace IKYv4.Forms
             this.dataGridViewImageColumn5.ToolTipText = "Düzenle";
             this.dataGridViewImageColumn5.Width = 1067;
             // 
-            // PictureBoxEmployeePicture
-            // 
-            this.PictureBoxEmployeePicture.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PictureBoxEmployeePicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.PictureBoxEmployeePicture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBoxEmployeePicture.Location = new System.Drawing.Point(842, 88);
-            this.PictureBoxEmployeePicture.Name = "PictureBoxEmployeePicture";
-            this.tableLayoutPanel5.SetRowSpan(this.PictureBoxEmployeePicture, 6);
-            this.PictureBoxEmployeePicture.Size = new System.Drawing.Size(227, 203);
-            this.PictureBoxEmployeePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBoxEmployeePicture.TabIndex = 5;
-            this.PictureBoxEmployeePicture.TabStop = false;
-            this.PictureBoxEmployeePicture.Click += new System.EventHandler(this.PictureBoxEmployeePicture_Click);
-            // 
-            // EditRow
-            // 
-            this.EditRow.Description = "Düzenle";
-            this.EditRow.FillWeight = 1F;
-            this.EditRow.HeaderText = "";
-            this.EditRow.Image = global::IKYv4.Properties.Resources.edit_row_24px;
-            this.EditRow.MinimumWidth = 60;
-            this.EditRow.Name = "EditRow";
-            this.EditRow.ReadOnly = true;
-            this.EditRow.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.EditRow.ToolTipText = "Düzenle";
-            // 
-            // DeleteRow
-            // 
-            this.DeleteRow.Description = "Sil";
-            this.DeleteRow.FillWeight = 1F;
-            this.DeleteRow.HeaderText = "";
-            this.DeleteRow.Image = global::IKYv4.Properties.Resources.delete_bin_24px;
-            this.DeleteRow.MinimumWidth = 60;
-            this.DeleteRow.Name = "DeleteRow";
-            this.DeleteRow.ReadOnly = true;
-            this.DeleteRow.ToolTipText = "Sil";
-            // 
-            // EditRowTahsil
-            // 
-            this.EditRowTahsil.Description = "Düzenle";
-            this.EditRowTahsil.FillWeight = 1F;
-            this.EditRowTahsil.HeaderText = "";
-            this.EditRowTahsil.Image = global::IKYv4.Properties.Resources.edit_row_24px;
-            this.EditRowTahsil.MinimumWidth = 60;
-            this.EditRowTahsil.Name = "EditRowTahsil";
-            this.EditRowTahsil.ReadOnly = true;
-            this.EditRowTahsil.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.EditRowTahsil.ToolTipText = "Düzenle";
-            // 
-            // DeleteRowTahsil
-            // 
-            this.DeleteRowTahsil.Description = "Sil";
-            this.DeleteRowTahsil.FillWeight = 1F;
-            this.DeleteRowTahsil.HeaderText = "";
-            this.DeleteRowTahsil.Image = global::IKYv4.Properties.Resources.delete_bin_24px;
-            this.DeleteRowTahsil.MinimumWidth = 60;
-            this.DeleteRowTahsil.Name = "DeleteRowTahsil";
-            this.DeleteRowTahsil.ReadOnly = true;
-            this.DeleteRowTahsil.ToolTipText = "Sil";
-            // 
-            // dataGridViewImageColumn3
-            // 
-            this.dataGridViewImageColumn3.Description = "Düzenle";
-            this.dataGridViewImageColumn3.FillWeight = 1F;
-            this.dataGridViewImageColumn3.HeaderText = "";
-            this.dataGridViewImageColumn3.Image = global::IKYv4.Properties.Resources.edit_row_24px;
-            this.dataGridViewImageColumn3.MinimumWidth = 60;
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            this.dataGridViewImageColumn3.ReadOnly = true;
-            this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn3.ToolTipText = "Düzenle";
-            // 
-            // DeleteRowSertifika
-            // 
-            this.DeleteRowSertifika.Description = "Sil";
-            this.DeleteRowSertifika.FillWeight = 1F;
-            this.DeleteRowSertifika.HeaderText = "";
-            this.DeleteRowSertifika.Image = global::IKYv4.Properties.Resources.delete_bin_24px;
-            this.DeleteRowSertifika.MinimumWidth = 60;
-            this.DeleteRowSertifika.Name = "DeleteRowSertifika";
-            this.DeleteRowSertifika.ReadOnly = true;
-            this.DeleteRowSertifika.ToolTipText = "Sil";
-            // 
-            // dataGridViewImageColumn4
-            // 
-            this.dataGridViewImageColumn4.Description = "Düzenle";
-            this.dataGridViewImageColumn4.FillWeight = 1F;
-            this.dataGridViewImageColumn4.HeaderText = "";
-            this.dataGridViewImageColumn4.Image = global::IKYv4.Properties.Resources.edit_row_24px;
-            this.dataGridViewImageColumn4.MinimumWidth = 60;
-            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
-            this.dataGridViewImageColumn4.ReadOnly = true;
-            this.dataGridViewImageColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn4.ToolTipText = "Düzenle";
-            // 
-            // DeleteRowNakil
-            // 
-            this.DeleteRowNakil.Description = "Sil";
-            this.DeleteRowNakil.FillWeight = 1F;
-            this.DeleteRowNakil.HeaderText = "";
-            this.DeleteRowNakil.Image = global::IKYv4.Properties.Resources.delete_bin_24px;
-            this.DeleteRowNakil.MinimumWidth = 60;
-            this.DeleteRowNakil.Name = "DeleteRowNakil";
-            this.DeleteRowNakil.ReadOnly = true;
-            this.DeleteRowNakil.ToolTipText = "Sil";
-            // 
             // FormEmployeeRegistrationCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2191,6 +2193,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployeePicture)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel13.ResumeLayout(false);
@@ -2201,7 +2204,6 @@ namespace IKYv4.Forms
             this.tableLayoutPanel15.PerformLayout();
             this.tableLayoutPanel16.ResumeLayout(false);
             this.tableLayoutPanel16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmployeePicture)).EndInit();
             this.ResumeLayout(false);
 
         }

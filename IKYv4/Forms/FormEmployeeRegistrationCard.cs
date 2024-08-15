@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.Constants;
 using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.Concrete.TurkeyModel;
@@ -244,6 +245,7 @@ namespace IKYv4.Forms
         {
             if (DataGridViewChild.DataSource != null)
             {
+                DataGridViewChild.Columns[2].Visible = false;
                 DataGridViewChild.Columns[3].Visible = false;
             }
 
@@ -579,6 +581,115 @@ namespace IKYv4.Forms
 
                 FormNewChild formNewChild = new FormNewChild(_cocukManager, selectedChild);
                 formNewChild.ShowDialog();
+            }
+
+            else if (e.ColumnIndex == 1 && e.RowIndex >= 0)
+            {
+                var res = MessageBox.Show(Messages.DeleteCocuk, Messages.Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (res == DialogResult.Yes)
+                {
+                    var cocukId = Convert.ToInt16(DataGridViewChild.SelectedCells[2].Value);
+
+                    var isCocukExist = _cocukManager.GetAll(c=> c.Id == cocukId).Data.FirstOrDefault();
+
+                    if (isCocukExist != null)
+                    {
+                        var resCocukDelete = _cocukManager.Delete(isCocukExist);
+
+                        MessageBox.Show(resCocukDelete.Message, Messages.Info, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        var updatedCocukList = _cocukManager.GetAll(c=> c.PersonelId == _personel.Id).Data.ToList();
+
+                        DataGridViewChild.DataSource = updatedCocukList;
+
+                        DataGridViewChild.Refresh();
+                    }
+                }
+            }
+        }
+
+        private void DataGridViewTahsil_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0 && e.RowIndex >= 0)
+            {
+                var row = DataGridViewTahsil.Rows[e.RowIndex];
+
+                int selectedTahsilId = Convert.ToInt16(row.Cells[2].Value);
+                int selectedPersonelId = Convert.ToInt16(row.Cells[3].Value);
+
+                var selectedTahsil = _tahsilManager.GetAll(c => c.Id == selectedTahsilId).Data.FirstOrDefault();
+
+                FormNewTahsil formNewTahsil = new FormNewTahsil(_tahsilManager, selectedTahsil);
+
+                formNewTahsil.ShowDialog();
+            }
+
+            else if (e.ColumnIndex == 1 && e.RowIndex >= 0)
+            {
+                var res = MessageBox.Show(Messages.DeleteTahsil, Messages.Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (res == DialogResult.Yes)
+                {
+                    var tahsilId = Convert.ToInt16(DataGridViewTahsil.SelectedCells[2].Value);
+
+                    var isTahsilExist = _tahsilManager.GetAll(t => t.Id == tahsilId).Data.FirstOrDefault();
+
+                    if (isTahsilExist != null)
+                    {
+                        var resTahsilDelete = _tahsilManager.Delete(isTahsilExist);
+
+                        MessageBox.Show(resTahsilDelete.Message, Messages.Info, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        var updatedTahsilList = _tahsilManager.GetAll(t => t.PersonelId == _personel.Id).Data.ToList();
+
+                        DataGridViewTahsil.DataSource = updatedTahsilList;
+
+                        DataGridViewTahsil.Refresh();
+                    }
+                }
+            }
+        }
+
+        private void DataGridViewSertifikalar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0 && e.RowIndex >= 0)
+            {
+                var row = DataGridViewSertifikalar.Rows[e.RowIndex];
+
+                int selectedSertifikaId = Convert.ToInt16(row.Cells[2].Value);
+                int selectedPersonelId = Convert.ToInt16(row.Cells[3].Value);
+
+                var selectedSertifika = _sertifikaManager.GetAll(c => c.Id == selectedSertifikaId).Data.FirstOrDefault();
+
+                FormNewSertifika formNewSertifika = new FormNewSertifika(_sertifikaManager, selectedSertifika);
+
+                formNewSertifika.ShowDialog();
+            }
+
+            else if (e.ColumnIndex == 1 && e.RowIndex >= 0)
+            {
+                var res = MessageBox.Show(Messages.DeleteSertifika, Messages.Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (res == DialogResult.Yes)
+                {
+                    var sertifikaId = Convert.ToInt16(DataGridViewSertifikalar.SelectedCells[2].Value);
+
+                    var isSertifikaExist = _sertifikaManager.GetAll(t => t.Id == sertifikaId).Data.FirstOrDefault();
+
+                    if (isSertifikaExist != null)
+                    {
+                        var resSertifikaDelete = _sertifikaManager.Delete(isSertifikaExist);
+
+                        MessageBox.Show(resSertifikaDelete.Message, Messages.Info, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        var updatedSertifikaList = _sertifikaManager.GetAll(t => t.PersonelId == _personel.Id).Data.ToList();
+
+                        DataGridViewSertifikalar.DataSource = updatedSertifikaList;
+
+                        DataGridViewSertifikalar.Refresh();
+                    }
+                }
             }
         }
     }
