@@ -17,6 +17,8 @@ namespace Entities.Concrete
         public string GorevYeri { get; set; }
         public string Unvani { get; set; }
         public string Pozisyonu { get; set; }
+        public string Kadrosu { get; set; }
+        public string EytDurumu { get; set; }
         public string MK { get; set; }
         public string PK { get; set; }
         public string ToplamKatsayi { get; set; }

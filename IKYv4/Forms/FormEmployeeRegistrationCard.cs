@@ -148,6 +148,8 @@ namespace IKYv4.Forms
             _personel.GorevYeri = ComboBoxDutyStation.Text;
             _personel.Unvani = ComboBoxTitle.Text;
             _personel.Pozisyonu = ComboBoxPosition.Text;
+            _personel.Kadrosu = ComboBoxStaff.Text;
+            _personel.EytDurumu = ComboBoxEytDurumu.Text;
             _personel.MK = TextBoxMk.Text;
             _personel.PK = TextBoxPk.Text;
             _personel.ToplamKatsayi = TextBoxTotalK.Text;
@@ -511,7 +513,7 @@ namespace IKYv4.Forms
             FormNewChild formNewChild = new FormNewChild(_cocukManager, _personel.Id);
             formNewChild.ShowDialog();
 
-            var resCocukData = _cocukManager.GetAll(x=> x.PersonelId == _personel.Id).Data;
+            var resCocukData = _cocukManager.GetAll(x => x.PersonelId == _personel.Id).Data;
 
             DataGridViewChild.DataSource = resCocukData;
             DataGridViewChild.Refresh();
@@ -591,7 +593,7 @@ namespace IKYv4.Forms
                 {
                     var cocukId = Convert.ToInt16(DataGridViewChild.SelectedCells[2].Value);
 
-                    var isCocukExist = _cocukManager.GetAll(c=> c.Id == cocukId).Data.FirstOrDefault();
+                    var isCocukExist = _cocukManager.GetAll(c => c.Id == cocukId).Data.FirstOrDefault();
 
                     if (isCocukExist != null)
                     {
@@ -599,7 +601,7 @@ namespace IKYv4.Forms
 
                         MessageBox.Show(resCocukDelete.Message, Messages.Info, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        var updatedCocukList = _cocukManager.GetAll(c=> c.PersonelId == _personel.Id).Data.ToList();
+                        var updatedCocukList = _cocukManager.GetAll(c => c.PersonelId == _personel.Id).Data.ToList();
 
                         DataGridViewChild.DataSource = updatedCocukList;
 

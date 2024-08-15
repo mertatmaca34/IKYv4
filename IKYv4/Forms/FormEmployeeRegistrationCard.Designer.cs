@@ -101,19 +101,19 @@ namespace IKYv4.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.TextBoxBirthPlace = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.TextBoxResidance = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TextBoxMotherName = new System.Windows.Forms.TextBox();
-            this.ComboBoxBloodGroup = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.TextBoxFatherName = new System.Windows.Forms.TextBox();
             this.DateTimePickerBirthDate = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.ComboBoxMilitaryState = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.DateTimePickerMilitaryEnd = new System.Windows.Forms.DateTimePicker();
+            this.label31 = new System.Windows.Forms.Label();
+            this.TextBoxResidance = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TextBoxMotherName = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.TextBoxFatherName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ComboBoxBloodGroup = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.TextBoxSurname = new System.Windows.Forms.TextBox();
@@ -171,6 +171,10 @@ namespace IKYv4.Forms
             this.ButtonSave = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.ComboBoxStaff = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.ComboBoxEytDurumu = new System.Windows.Forms.ComboBox();
             this.tabPage6.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -1105,109 +1109,6 @@ namespace IKYv4.Forms
             this.TextBoxBirthPlace.Size = new System.Drawing.Size(150, 29);
             this.TextBoxBirthPlace.TabIndex = 1;
             // 
-            // label31
-            // 
-            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label31.Location = new System.Drawing.Point(65, 159);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(224, 21);
-            this.label31.TabIndex = 0;
-            this.label31.Text = "NÜFUSA KAYITLI OLDUĞU İL";
-            // 
-            // TextBoxResidance
-            // 
-            this.TextBoxResidance.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TextBoxResidance.BackColor = System.Drawing.Color.White;
-            this.TextBoxResidance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxResidance.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxResidance.Location = new System.Drawing.Point(299, 155);
-            this.TextBoxResidance.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.TextBoxResidance.Name = "TextBoxResidance";
-            this.TextBoxResidance.Size = new System.Drawing.Size(150, 29);
-            this.TextBoxResidance.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(201, 200);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 21);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "ANNE ADI";
-            // 
-            // TextBoxMotherName
-            // 
-            this.TextBoxMotherName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TextBoxMotherName.BackColor = System.Drawing.Color.White;
-            this.TextBoxMotherName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxMotherName.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxMotherName.Location = new System.Drawing.Point(299, 196);
-            this.TextBoxMotherName.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.TextBoxMotherName.Name = "TextBoxMotherName";
-            this.TextBoxMotherName.Size = new System.Drawing.Size(150, 29);
-            this.TextBoxMotherName.TabIndex = 1;
-            // 
-            // ComboBoxBloodGroup
-            // 
-            this.ComboBoxBloodGroup.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.ComboBoxBloodGroup.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ComboBoxBloodGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxBloodGroup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.ComboBoxBloodGroup.ForeColor = System.Drawing.Color.DarkRed;
-            this.ComboBoxBloodGroup.FormattingEnabled = true;
-            this.ComboBoxBloodGroup.Items.AddRange(new object[] {
-            "A Rh (+)",
-            "A Rh (-)",
-            "B Rh (+)",
-            "B Rh (-)",
-            "AB Rh (+)",
-            "AB Rh (-)",
-            "0 Rh (+)",
-            "0 Rh (-)"});
-            this.ComboBoxBloodGroup.Location = new System.Drawing.Point(299, 278);
-            this.ComboBoxBloodGroup.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.ComboBoxBloodGroup.Name = "ComboBoxBloodGroup";
-            this.ComboBoxBloodGroup.Size = new System.Drawing.Size(150, 29);
-            this.ComboBoxBloodGroup.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(186, 282);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 21);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "KAN GRUBU";
-            // 
-            // label29
-            // 
-            this.label29.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label29.Location = new System.Drawing.Point(205, 241);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(84, 21);
-            this.label29.TabIndex = 0;
-            this.label29.Text = "BABA ADI";
-            // 
-            // TextBoxFatherName
-            // 
-            this.TextBoxFatherName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TextBoxFatherName.BackColor = System.Drawing.Color.White;
-            this.TextBoxFatherName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TextBoxFatherName.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxFatherName.Location = new System.Drawing.Point(299, 237);
-            this.TextBoxFatherName.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.TextBoxFatherName.Name = "TextBoxFatherName";
-            this.TextBoxFatherName.Size = new System.Drawing.Size(150, 29);
-            this.TextBoxFatherName.TabIndex = 1;
-            // 
             // DateTimePickerBirthDate
             // 
             this.DateTimePickerBirthDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -1275,6 +1176,109 @@ namespace IKYv4.Forms
             this.DateTimePickerMilitaryEnd.TabIndex = 6;
             this.DateTimePickerMilitaryEnd.Visible = false;
             // 
+            // label31
+            // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label31.Location = new System.Drawing.Point(65, 159);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(224, 21);
+            this.label31.TabIndex = 0;
+            this.label31.Text = "NÜFUSA KAYITLI OLDUĞU İL";
+            // 
+            // TextBoxResidance
+            // 
+            this.TextBoxResidance.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TextBoxResidance.BackColor = System.Drawing.Color.White;
+            this.TextBoxResidance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TextBoxResidance.ForeColor = System.Drawing.Color.DarkRed;
+            this.TextBoxResidance.Location = new System.Drawing.Point(299, 155);
+            this.TextBoxResidance.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.TextBoxResidance.Name = "TextBoxResidance";
+            this.TextBoxResidance.Size = new System.Drawing.Size(150, 29);
+            this.TextBoxResidance.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(201, 200);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 21);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "ANNE ADI";
+            // 
+            // TextBoxMotherName
+            // 
+            this.TextBoxMotherName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TextBoxMotherName.BackColor = System.Drawing.Color.White;
+            this.TextBoxMotherName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TextBoxMotherName.ForeColor = System.Drawing.Color.DarkRed;
+            this.TextBoxMotherName.Location = new System.Drawing.Point(299, 196);
+            this.TextBoxMotherName.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.TextBoxMotherName.Name = "TextBoxMotherName";
+            this.TextBoxMotherName.Size = new System.Drawing.Size(150, 29);
+            this.TextBoxMotherName.TabIndex = 1;
+            // 
+            // label29
+            // 
+            this.label29.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label29.Location = new System.Drawing.Point(205, 241);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(84, 21);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "BABA ADI";
+            // 
+            // TextBoxFatherName
+            // 
+            this.TextBoxFatherName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TextBoxFatherName.BackColor = System.Drawing.Color.White;
+            this.TextBoxFatherName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TextBoxFatherName.ForeColor = System.Drawing.Color.DarkRed;
+            this.TextBoxFatherName.Location = new System.Drawing.Point(299, 237);
+            this.TextBoxFatherName.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.TextBoxFatherName.Name = "TextBoxFatherName";
+            this.TextBoxFatherName.Size = new System.Drawing.Size(150, 29);
+            this.TextBoxFatherName.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(186, 282);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(103, 21);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "KAN GRUBU";
+            // 
+            // ComboBoxBloodGroup
+            // 
+            this.ComboBoxBloodGroup.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ComboBoxBloodGroup.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxBloodGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxBloodGroup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxBloodGroup.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxBloodGroup.FormattingEnabled = true;
+            this.ComboBoxBloodGroup.Items.AddRange(new object[] {
+            "A Rh (+)",
+            "A Rh (-)",
+            "B Rh (+)",
+            "B Rh (-)",
+            "AB Rh (+)",
+            "AB Rh (-)",
+            "0 Rh (+)",
+            "0 Rh (-)"});
+            this.ComboBoxBloodGroup.Location = new System.Drawing.Point(299, 278);
+            this.ComboBoxBloodGroup.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.ComboBoxBloodGroup.Name = "ComboBoxBloodGroup";
+            this.ComboBoxBloodGroup.Size = new System.Drawing.Size(150, 29);
+            this.ComboBoxBloodGroup.TabIndex = 4;
+            // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
@@ -1290,9 +1294,9 @@ namespace IKYv4.Forms
             // 
             this.tableLayoutPanel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.08159F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.6167F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.32279F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.95595F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.7732F));
             this.tableLayoutPanel5.Controls.Add(this.TextBoxSurname, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.TextBoxSicilNo, 1, 3);
             this.tableLayoutPanel5.Controls.Add(this.label18, 0, 4);
@@ -1301,7 +1305,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel5.Controls.Add(this.label21, 0, 7);
             this.tableLayoutPanel5.Controls.Add(this.label22, 0, 8);
             this.tableLayoutPanel5.Controls.Add(this.label23, 0, 9);
-            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 10);
+            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 12);
             this.tableLayoutPanel5.Controls.Add(this.ComboBoxDirectorate, 1, 5);
             this.tableLayoutPanel5.Controls.Add(this.DateTimePickerStartDate, 1, 4);
             this.tableLayoutPanel5.Controls.Add(this.ComboBoxConducting, 1, 6);
@@ -1315,69 +1319,28 @@ namespace IKYv4.Forms
             this.tableLayoutPanel5.Controls.Add(this.label11, 0, 2);
             this.tableLayoutPanel5.Controls.Add(this.TextBoxName, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.TextBoxUserId, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.label8, 0, 10);
+            this.tableLayoutPanel5.Controls.Add(this.ComboBoxStaff, 1, 10);
+            this.tableLayoutPanel5.Controls.Add(this.label12, 0, 11);
+            this.tableLayoutPanel5.Controls.Add(this.ComboBoxEytDurumu, 1, 11);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.Padding = new System.Windows.Forms.Padding(26);
-            this.tableLayoutPanel5.RowCount = 11;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
+            this.tableLayoutPanel5.RowCount = 13;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692307F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(1119, 504);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
@@ -1388,7 +1351,7 @@ namespace IKYv4.Forms
             this.TextBoxSurname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TextBoxSurname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TextBoxSurname.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxSurname.Location = new System.Drawing.Point(388, 73);
+            this.TextBoxSurname.Location = new System.Drawing.Point(388, 63);
             this.TextBoxSurname.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.TextBoxSurname.Name = "TextBoxSurname";
             this.TextBoxSurname.Size = new System.Drawing.Size(181, 29);
@@ -1400,7 +1363,7 @@ namespace IKYv4.Forms
             this.TextBoxSicilNo.BackColor = System.Drawing.Color.White;
             this.TextBoxSicilNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TextBoxSicilNo.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxSicilNo.Location = new System.Drawing.Point(388, 155);
+            this.TextBoxSicilNo.Location = new System.Drawing.Point(388, 131);
             this.TextBoxSicilNo.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.TextBoxSicilNo.Name = "TextBoxSicilNo";
             this.TextBoxSicilNo.Size = new System.Drawing.Size(181, 29);
@@ -1411,7 +1374,7 @@ namespace IKYv4.Forms
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label18.Location = new System.Drawing.Point(246, 200);
+            this.label18.Location = new System.Drawing.Point(246, 168);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(132, 21);
             this.label18.TabIndex = 0;
@@ -1422,7 +1385,7 @@ namespace IKYv4.Forms
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label19.Location = new System.Drawing.Point(277, 241);
+            this.label19.Location = new System.Drawing.Point(277, 202);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(101, 21);
             this.label19.TabIndex = 0;
@@ -1433,7 +1396,7 @@ namespace IKYv4.Forms
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label20.Location = new System.Drawing.Point(319, 282);
+            this.label20.Location = new System.Drawing.Point(319, 236);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(59, 21);
             this.label20.TabIndex = 0;
@@ -1444,7 +1407,7 @@ namespace IKYv4.Forms
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label21.Location = new System.Drawing.Point(277, 323);
+            this.label21.Location = new System.Drawing.Point(277, 270);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(101, 21);
             this.label21.TabIndex = 0;
@@ -1455,7 +1418,7 @@ namespace IKYv4.Forms
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label22.Location = new System.Drawing.Point(304, 364);
+            this.label22.Location = new System.Drawing.Point(304, 304);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(74, 21);
             this.label22.TabIndex = 0;
@@ -1466,7 +1429,7 @@ namespace IKYv4.Forms
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label23.Location = new System.Drawing.Point(275, 405);
+            this.label23.Location = new System.Drawing.Point(275, 338);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(103, 21);
             this.label23.TabIndex = 0;
@@ -1491,12 +1454,12 @@ namespace IKYv4.Forms
             this.tableLayoutPanel6.Controls.Add(this.TextBoxPk, 4, 0);
             this.tableLayoutPanel6.Controls.Add(this.TextBoxTotalK, 6, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(28, 438);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(28, 436);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1063, 38);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1063, 40);
             this.tableLayoutPanel6.TabIndex = 10;
             // 
             // label24
@@ -1504,7 +1467,7 @@ namespace IKYv4.Forms
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label24.Location = new System.Drawing.Point(316, 8);
+            this.label24.Location = new System.Drawing.Point(316, 9);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(35, 21);
             this.label24.TabIndex = 0;
@@ -1515,7 +1478,7 @@ namespace IKYv4.Forms
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label25.Location = new System.Drawing.Point(488, 8);
+            this.label25.Location = new System.Drawing.Point(488, 9);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(30, 21);
             this.label25.TabIndex = 0;
@@ -1526,7 +1489,7 @@ namespace IKYv4.Forms
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label26.Location = new System.Drawing.Point(628, 8);
+            this.label26.Location = new System.Drawing.Point(628, 9);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(141, 21);
             this.label26.TabIndex = 0;
@@ -1537,7 +1500,7 @@ namespace IKYv4.Forms
             this.TextBoxMk.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TextBoxMk.Enabled = false;
             this.TextBoxMk.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TextBoxMk.Location = new System.Drawing.Point(361, 4);
+            this.TextBoxMk.Location = new System.Drawing.Point(361, 5);
             this.TextBoxMk.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.TextBoxMk.Mask = "0,00";
             this.TextBoxMk.Name = "TextBoxMk";
@@ -1549,7 +1512,7 @@ namespace IKYv4.Forms
             this.TextBoxPk.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TextBoxPk.Enabled = false;
             this.TextBoxPk.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TextBoxPk.Location = new System.Drawing.Point(528, 4);
+            this.TextBoxPk.Location = new System.Drawing.Point(528, 5);
             this.TextBoxPk.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.TextBoxPk.Mask = "0,00";
             this.TextBoxPk.Name = "TextBoxPk";
@@ -1561,7 +1524,7 @@ namespace IKYv4.Forms
             this.TextBoxTotalK.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TextBoxTotalK.Enabled = false;
             this.TextBoxTotalK.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TextBoxTotalK.Location = new System.Drawing.Point(779, 4);
+            this.TextBoxTotalK.Location = new System.Drawing.Point(779, 5);
             this.TextBoxTotalK.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.TextBoxTotalK.Mask = "0,00";
             this.TextBoxTotalK.Name = "TextBoxTotalK";
@@ -1576,7 +1539,7 @@ namespace IKYv4.Forms
             this.ComboBoxDirectorate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.ComboBoxDirectorate.ForeColor = System.Drawing.Color.DarkRed;
             this.ComboBoxDirectorate.FormattingEnabled = true;
-            this.ComboBoxDirectorate.Location = new System.Drawing.Point(388, 237);
+            this.ComboBoxDirectorate.Location = new System.Drawing.Point(388, 199);
             this.ComboBoxDirectorate.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.ComboBoxDirectorate.Name = "ComboBoxDirectorate";
             this.ComboBoxDirectorate.Size = new System.Drawing.Size(357, 29);
@@ -1589,7 +1552,7 @@ namespace IKYv4.Forms
             this.DateTimePickerStartDate.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.DateTimePickerStartDate.CalendarTitleForeColor = System.Drawing.Color.DarkRed;
             this.DateTimePickerStartDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.DateTimePickerStartDate.Location = new System.Drawing.Point(388, 196);
+            this.DateTimePickerStartDate.Location = new System.Drawing.Point(388, 167);
             this.DateTimePickerStartDate.Margin = new System.Windows.Forms.Padding(7, 5, 5, 5);
             this.DateTimePickerStartDate.Name = "DateTimePickerStartDate";
             this.DateTimePickerStartDate.Size = new System.Drawing.Size(181, 29);
@@ -1604,7 +1567,7 @@ namespace IKYv4.Forms
             this.ComboBoxConducting.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.ComboBoxConducting.ForeColor = System.Drawing.Color.DarkRed;
             this.ComboBoxConducting.FormattingEnabled = true;
-            this.ComboBoxConducting.Location = new System.Drawing.Point(388, 278);
+            this.ComboBoxConducting.Location = new System.Drawing.Point(388, 233);
             this.ComboBoxConducting.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.ComboBoxConducting.Name = "ComboBoxConducting";
             this.ComboBoxConducting.Size = new System.Drawing.Size(357, 29);
@@ -1620,7 +1583,7 @@ namespace IKYv4.Forms
             this.ComboBoxDutyStation.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.ComboBoxDutyStation.ForeColor = System.Drawing.Color.DarkRed;
             this.ComboBoxDutyStation.FormattingEnabled = true;
-            this.ComboBoxDutyStation.Location = new System.Drawing.Point(388, 319);
+            this.ComboBoxDutyStation.Location = new System.Drawing.Point(388, 267);
             this.ComboBoxDutyStation.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.ComboBoxDutyStation.Name = "ComboBoxDutyStation";
             this.ComboBoxDutyStation.Size = new System.Drawing.Size(357, 29);
@@ -1635,7 +1598,7 @@ namespace IKYv4.Forms
             this.ComboBoxTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.ComboBoxTitle.ForeColor = System.Drawing.Color.DarkRed;
             this.ComboBoxTitle.FormattingEnabled = true;
-            this.ComboBoxTitle.Location = new System.Drawing.Point(388, 360);
+            this.ComboBoxTitle.Location = new System.Drawing.Point(388, 301);
             this.ComboBoxTitle.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.ComboBoxTitle.Name = "ComboBoxTitle";
             this.ComboBoxTitle.Size = new System.Drawing.Size(569, 29);
@@ -1651,7 +1614,7 @@ namespace IKYv4.Forms
             this.ComboBoxPosition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.ComboBoxPosition.ForeColor = System.Drawing.Color.DarkRed;
             this.ComboBoxPosition.FormattingEnabled = true;
-            this.ComboBoxPosition.Location = new System.Drawing.Point(388, 401);
+            this.ComboBoxPosition.Location = new System.Drawing.Point(388, 335);
             this.ComboBoxPosition.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.ComboBoxPosition.Name = "ComboBoxPosition";
             this.ComboBoxPosition.Size = new System.Drawing.Size(569, 29);
@@ -1662,10 +1625,10 @@ namespace IKYv4.Forms
             this.PictureBoxEmployeePicture.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PictureBoxEmployeePicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.PictureBoxEmployeePicture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBoxEmployeePicture.Location = new System.Drawing.Point(842, 88);
+            this.PictureBoxEmployeePicture.Location = new System.Drawing.Point(841, 63);
             this.PictureBoxEmployeePicture.Name = "PictureBoxEmployeePicture";
             this.tableLayoutPanel5.SetRowSpan(this.PictureBoxEmployeePicture, 6);
-            this.PictureBoxEmployeePicture.Size = new System.Drawing.Size(227, 203);
+            this.PictureBoxEmployeePicture.Size = new System.Drawing.Size(227, 198);
             this.PictureBoxEmployeePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBoxEmployeePicture.TabIndex = 5;
             this.PictureBoxEmployeePicture.TabStop = false;
@@ -1676,7 +1639,7 @@ namespace IKYv4.Forms
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(340, 36);
+            this.label16.Location = new System.Drawing.Point(340, 32);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(38, 21);
             this.label16.TabIndex = 0;
@@ -1687,7 +1650,7 @@ namespace IKYv4.Forms
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label17.Location = new System.Drawing.Point(310, 77);
+            this.label17.Location = new System.Drawing.Point(310, 66);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(68, 21);
             this.label17.TabIndex = 0;
@@ -1698,7 +1661,7 @@ namespace IKYv4.Forms
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(302, 159);
+            this.label15.Location = new System.Drawing.Point(302, 134);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(76, 21);
             this.label15.TabIndex = 0;
@@ -1709,7 +1672,7 @@ namespace IKYv4.Forms
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(256, 118);
+            this.label11.Location = new System.Drawing.Point(256, 100);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(122, 21);
             this.label11.TabIndex = 0;
@@ -1722,7 +1685,7 @@ namespace IKYv4.Forms
             this.TextBoxName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TextBoxName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TextBoxName.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxName.Location = new System.Drawing.Point(388, 32);
+            this.TextBoxName.Location = new System.Drawing.Point(388, 29);
             this.TextBoxName.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.TextBoxName.Name = "TextBoxName";
             this.TextBoxName.Size = new System.Drawing.Size(181, 29);
@@ -1735,7 +1698,7 @@ namespace IKYv4.Forms
             this.TextBoxUserId.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TextBoxUserId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TextBoxUserId.ForeColor = System.Drawing.Color.DarkRed;
-            this.TextBoxUserId.Location = new System.Drawing.Point(388, 114);
+            this.TextBoxUserId.Location = new System.Drawing.Point(388, 97);
             this.TextBoxUserId.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.TextBoxUserId.MaxLength = 11;
             this.TextBoxUserId.Name = "TextBoxUserId";
@@ -2155,6 +2118,61 @@ namespace IKYv4.Forms
             this.dataGridViewImageColumn5.ToolTipText = "Düzenle";
             this.dataGridViewImageColumn5.Width = 1067;
             // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(292, 372);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(86, 21);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "KADROSU";
+            // 
+            // ComboBoxStaff
+            // 
+            this.ComboBoxStaff.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ComboBoxStaff.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tableLayoutPanel5.SetColumnSpan(this.ComboBoxStaff, 2);
+            this.ComboBoxStaff.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxStaff.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxStaff.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxStaff.FormattingEnabled = true;
+            this.ComboBoxStaff.Location = new System.Drawing.Point(388, 369);
+            this.ComboBoxStaff.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.ComboBoxStaff.Name = "ComboBoxStaff";
+            this.ComboBoxStaff.Size = new System.Drawing.Size(569, 29);
+            this.ComboBoxStaff.TabIndex = 9;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(263, 406);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(115, 21);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "EYT DURUMU";
+            // 
+            // ComboBoxEytDurumu
+            // 
+            this.ComboBoxEytDurumu.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ComboBoxEytDurumu.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ComboBoxEytDurumu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxEytDurumu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxEytDurumu.ForeColor = System.Drawing.Color.DarkRed;
+            this.ComboBoxEytDurumu.FormattingEnabled = true;
+            this.ComboBoxEytDurumu.Items.AddRange(new object[] {
+            "YOK",
+            "HAK SAHİBİ",
+            "EMEKLİ"});
+            this.ComboBoxEytDurumu.Location = new System.Drawing.Point(388, 403);
+            this.ComboBoxEytDurumu.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.ComboBoxEytDurumu.Name = "ComboBoxEytDurumu";
+            this.ComboBoxEytDurumu.Size = new System.Drawing.Size(181, 29);
+            this.ComboBoxEytDurumu.TabIndex = 9;
+            // 
             // FormEmployeeRegistrationCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2334,5 +2352,9 @@ namespace IKYv4.Forms
         private DataGridViewImageColumn DeleteRowTahsil;
         private DataGridViewImageColumn EditRow;
         private DataGridViewImageColumn DeleteRow;
+        private Label label8;
+        public ComboBox ComboBoxStaff;
+        private Label label12;
+        public ComboBox ComboBoxEytDurumu;
     }
 }

@@ -23,6 +23,7 @@ namespace IKYv4.Forms
         List<Neighbourhood> _neighbourhoods = new List<Neighbourhood>();
 
         List<City> _homeTownCities = new List<City>();
+        List<Personel> _personeller;
 
         IPersonelManager _personelManager;
         IMudurlukManager _mudurlukManager;
@@ -67,6 +68,8 @@ namespace IKYv4.Forms
             _sertifikaManager = sertifikaManager;
             _iletisimManager = iletisimManager;
             _nakilManager = nakilManager;
+
+            _personeller = _personelManager.GetAll().Data.ToList();
 
             DataGridViewCustomization();
         }
@@ -139,6 +142,8 @@ namespace IKYv4.Forms
                 formEmployeeRegistrationCard.ComboBoxDutyStation.Text = selectedPersonel.GorevYeri;
                 formEmployeeRegistrationCard.ComboBoxTitle.SelectedItem = selectedPersonel.Unvani;
                 formEmployeeRegistrationCard.ComboBoxPosition.SelectedItem = selectedPersonel.Pozisyonu;
+                formEmployeeRegistrationCard.ComboBoxStaff.SelectedItem = selectedPersonel.Kadrosu;
+                formEmployeeRegistrationCard.ComboBoxEytDurumu.SelectedItem = selectedPersonel.EytDurumu;
                 formEmployeeRegistrationCard.TextBoxMk.Text = selectedPersonel.MK.ToString();
                 formEmployeeRegistrationCard.TextBoxPk.Text = selectedPersonel.PK.ToString();
                 formEmployeeRegistrationCard.TextBoxTotalK.Text = selectedPersonel.ToplamKatsayi.ToString();
@@ -321,6 +326,16 @@ namespace IKYv4.Forms
 
             ComboBoxHomeTownCity.Text = ComboBoxHomeTownCity.SelectedIndex < 0 ? "İL"
                 : ComboBoxHomeTownCity.Text = ComboBoxHomeTownCity.SelectedText;
+
+            #endregion
+
+            #region EYT ComboBox Atamaları
+
+            ComboBoxEyt.Items.Insert(0, "SEÇİN");
+            ComboBoxEyt.SelectedIndex = 0;
+
+            ComboBoxEyt.Text = ComboBoxEyt.SelectedIndex < 0 ? "SEÇİN"
+                : ComboBoxEyt.Text = ComboBoxEyt.SelectedText;
 
             #endregion
 
@@ -535,7 +550,7 @@ namespace IKYv4.Forms
 
         private void Search()
         {
-            var personeller = _personelManager.GetAll().Data.ToList();
+            _personeller = _personelManager.GetAll().Data.ToList();
             var nufuslar = _nufusManager.GetAll().Data.ToList();
 
             Expression<Func<Personel, bool>> filterPersonel = null;
@@ -543,6 +558,9 @@ namespace IKYv4.Forms
 
             Expression<Func<Personel, bool>> filterBirim = null;
             Expression<Func<Personel, bool>> filterUnvan = null;
+            Expression<Func<Personel, bool>> filterEyt = null;
+            Expression<Func<Personel, bool>> filterEskiCalisan = null;
+            Expression<Func<Personel, bool>> filterCalismaYilAraligi = null;
             Expression<Func<Nufus, bool>> filterNufusKanGrubu = null;
             Expression<Func<Nufus, bool>> filterCinsiyet = null;
             Expression<Func<Nufus, bool>> filterYas = null;
@@ -587,14 +605,83 @@ namespace IKYv4.Forms
                 filterUnvan = x => x.Unvani == ComboBoxUnvanGrubu.Text;
             }
 
-            #endregion
-
             filterPersonel = filterBirim != null && filterUnvan != null ? PredicateBuilder.And(filterBirim, filterUnvan)
                 : filterBirim != null && filterUnvan == null ? filterBirim
                 : filterUnvan != null && filterBirim == null ? filterUnvan
                 : null;
 
-            var res = _personelManager.GetAll(filterPersonel).Data.ToList();
+            _personeller = _personelManager.GetAll(filterPersonel).Data.ToList();
+
+            #endregion
+
+            #region Eski Çalışan Filtresi
+
+            if (CheckBoxEskiCalisan.Checked)
+            {
+                filterEskiCalisan = x => x.CalisiyorMu == false;
+
+                filterPersonel = filterEskiCalisan != null && filterPersonel != null ? PredicateBuilder.And(filterEskiCalisan, filterPersonel)
+                : filterEskiCalisan != null && filterPersonel == null ? filterEskiCalisan
+                : filterPersonel != null && filterEskiCalisan == null ? filterPersonel
+                : null;
+
+                _personeller = _personelManager.GetAll(filterPersonel).Data.ToList();
+            }
+
+            #endregion
+
+            #region Eyt Filtresi
+
+            if (ComboBoxEyt.Text != "SEÇİN")
+            {
+                if (ComboBoxEyt.Text == "YOK")
+                {
+                    filterEyt = x => x.EytDurumu == ComboBoxEyt.Text;
+                }
+                else if (ComboBoxEyt.Text == "HAK SAHİBİ")
+                {
+                    filterEyt = x => x.EytDurumu == ComboBoxEyt.Text;
+                }
+                else if (ComboBoxEyt.Text == "EMEKLİ")
+                {
+                    filterEyt = x => x.EytDurumu == ComboBoxEyt.Text;
+                }
+            }
+
+            filterPersonel = filterPersonel != null && filterEyt != null ? PredicateBuilder.And(filterPersonel, filterEyt)
+                : filterPersonel != null && filterEyt == null ? filterPersonel
+                : filterPersonel == null && filterEyt != null ? filterEyt
+                : null;
+
+            _personeller = _personelManager.GetAll(filterPersonel).Data.ToList();
+
+            #endregion
+
+            #region Çalışma Yılı Aralığı
+
+            if (!string.IsNullOrEmpty(TextBoxMinExpYear.Text) && !string.IsNullOrEmpty(TextBoxMaxExpYear.Text))
+            {
+                if (int.TryParse(TextBoxMinExpYear.Text, out int minYear))
+                {
+                    DateTime newDate = DateTime.Now.AddYears(-minYear);
+
+                    if (int.TryParse(TextBoxMaxExpYear.Text, out int maxYear))
+                    {
+                        DateTime oldDate = DateTime.Now.AddYears(-maxYear);
+
+                        filterCalismaYilAraligi = x => x.IseGirisTarihi > oldDate && x.IseGirisTarihi < newDate;
+
+                        filterPersonel = filterPersonel != null && filterCalismaYilAraligi != null ? PredicateBuilder.And(filterPersonel, filterCalismaYilAraligi)
+                            : filterPersonel != null && filterCalismaYilAraligi == null ? filterPersonel
+                            : filterPersonel == null && filterCalismaYilAraligi != null ? filterCalismaYilAraligi
+                            : null;
+
+                        _personeller = _personelManager.GetAll(filterPersonel).Data.ToList();
+                    }
+                }
+            }
+
+            #endregion
 
             #region Kan Grubu Filtresi
 
@@ -684,7 +771,7 @@ namespace IKYv4.Forms
 
                     var existPersoneller = _cocuklar.GroupBy(c => c.PersonelId).Where(c => c.Count() >= minKid && c.Count() <= maxKid).Select(g => g.Key).ToList();
 
-                    res = res.Where(p => existPersoneller.Contains(p.Id)).ToList();
+                    _personeller = _personeller.Where(p => existPersoneller.Contains(p.Id)).ToList();
                 }
             }
 
@@ -705,7 +792,7 @@ namespace IKYv4.Forms
                 bool lise = CheckBoxLise.Checked;
                 bool ortaOkul = CheckBoxOrtaokul.Checked;
                 bool ilkOkul = CheckBoxIlkokul.Checked;
-                
+
                 if (yuksekLisans == true)
                 {
                     filterTahsilLisansUstu = t => t.TahsilTuru == "YÜKSEK LİSANS" || t.TahsilTuru == "DOKTORA";
@@ -790,11 +877,67 @@ namespace IKYv4.Forms
             var tahsilPersonelIds = new HashSet<int>(resTahsil.Select(t => t.PersonelId));
             var iletisimPersonelIds = new HashSet<int>(resIletisim.Select(i => i.PersonelId));
 
-            res = res.Where(p => nufusPersonelIds.Contains(p.Id)).ToList();
-            res = res.Where(p => iletisimPersonelIds.Contains(p.Id)).ToList();
-            res = res.Where(p => tahsilPersonelIds.Contains(p.Id)).ToList();
+            _personeller = _personeller.Where(p => nufusPersonelIds.Contains(p.Id)).ToList();
+            _personeller = _personeller.Where(p => iletisimPersonelIds.Contains(p.Id)).ToList();
 
-            DataGridViewEmployees.DataSource = res;
+            if (resTahsil.Count != 0)
+            {
+                _personeller = _personeller.Where(p => tahsilPersonelIds.Contains(p.Id)).ToList();
+            }
+
+            DataGridViewEmployees.DataSource = _personeller;
+            DataGridViewEmployees.Refresh();
+        }
+
+        private void ComboBoxSort_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ComboBoxSort.Text == "İsme Göre A-Z ↓")
+            {
+                _personeller = _personeller.OrderBy(p => p.Adi).ToList();
+            }
+            else if (ComboBoxSort.Text == "İsme Göre Z-A ↓")
+            {
+                _personeller = _personeller.OrderByDescending(p => p.Adi).ToList();
+            }
+            else if (ComboBoxSort.Text == "Girişe Göre Yeni ↓")
+            {
+                _personeller = _personeller.OrderBy(p => p.IseGirisTarihi).ToList();
+            }
+            else if (ComboBoxSort.Text == "Girişe Göre Eski ↓")
+            {
+                _personeller = _personeller.OrderByDescending(p => p.IseGirisTarihi).ToList();
+            }
+            else if (ComboBoxSort.Text == "Birime Göre A-Z ↓")
+            {
+                _personeller = _personeller.OrderByDescending(p => p.Seflik).ToList();
+            }
+            else if (ComboBoxSort.Text == "Birime Göre Z-A ↓")
+            {
+                _personeller = _personeller.OrderByDescending(p => p.Seflik).ToList();
+            }
+
+            DataGridViewEmployees.DataSource = _personeller;
+            DataGridViewEmployees.Refresh();
+        }
+
+        private void TextBoxSmartFilter_TextChanged(object sender, EventArgs e)
+        {
+            var filteredPersonels = _personeller.Where(entity =>
+            {
+                foreach (PropertyInfo property in entity.GetType().GetProperties())
+                {
+                    var value = property.GetValue(entity);
+
+                    if (value != null && value.ToString().IndexOf(TextBoxSmartFilter.Text, StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        return true;
+                    }
+                }
+
+                return false;
+            }).ToList();
+
+            DataGridViewEmployees.DataSource = filteredPersonels.ToList();
             DataGridViewEmployees.Refresh();
         }
     }
