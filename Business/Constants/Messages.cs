@@ -18,6 +18,10 @@ namespace Business.Constants
         public static readonly string PersonelAdded = "Personel bilgileri başarıyla oluşturuldu";
         public static readonly string PersonelUpdated = "Personel bilgileri başarıyla güncellendi";
         public static readonly string PersonelDeleted = "Personel bilgileri başarıyla silindi";
+
+        public static readonly string KadroDurumlariAdded   = "Kadro Durumları bilgileri başarıyla oluşturuldu";
+        public static readonly string KadroDurumlariUpdated = "Kadro Durumları bilgileri başarıyla güncellendi";
+        public static readonly string KadroDurumlariDeleted = "Kadro Durumları bilgileri başarıyla silindi";
         
         public static readonly string DeleteCocuk = "Seçili çocuk bilgilerini silmek istediğinize emin misiniz?";
 

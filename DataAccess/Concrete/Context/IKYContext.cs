@@ -24,6 +24,7 @@ namespace DataAccess.Concrete.Context
         public DbSet<Puantaj> Puantajlar { get; set; }
         public DbSet<CalismaSaatleri> CalismaSaatleri { get; set; }
         public DbSet<Cocuk> Cocuklar { get; set; }
+        public DbSet<KadroDurumlari> KadroDurumlari { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -45,6 +46,7 @@ namespace DataAccess.Concrete.Context
             modelBuilder.Entity<Puantaj>().ToTable("Puantajlar");
             modelBuilder.Entity<CalismaSaatleri>().ToTable("CalismaSaatleri");
             modelBuilder.Entity<Cocuk>().ToTable("Cocuklar");
+            modelBuilder.Entity<KadroDurumlari>().ToTable("KadroDurumlari");
         }
     }
 }
