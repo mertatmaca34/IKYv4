@@ -45,6 +45,7 @@
     <Compile Include="Concrete\Cocuk.cs" />
     <Compile Include="Concrete\Iletisim.cs" />
     <Compile Include="Concrete\Izin.cs" />
+    <Compile Include="Concrete\KadroDurumlari.cs" />
     <Compile Include="Concrete\Kullanici.cs" />
     <Compile Include="Concrete\Mudurluk.cs" />
     <Compile Include="Concrete\Nakil.cs" />

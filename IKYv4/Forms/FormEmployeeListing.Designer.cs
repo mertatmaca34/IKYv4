@@ -118,10 +118,12 @@ namespace IKYv4.Forms
             this.TextBoxSmartFilter = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.DataGridViewEmployees = new System.Windows.Forms.DataGridView();
-            this.EditRow = new System.Windows.Forms.DataGridViewImageColumn();
-            this.EditShifts = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ButtonExportToExcel = new System.Windows.Forms.Button();
+            this.ButtonEditColumns = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.EditRow = new System.Windows.Forms.DataGridViewImageColumn();
+            this.EditShifts = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
@@ -1288,16 +1290,17 @@ namespace IKYv4.Forms
             // tableLayoutPanel18
             // 
             this.tableLayoutPanel18.BackColor = System.Drawing.Color.DarkRed;
-            this.tableLayoutPanel18.ColumnCount = 4;
+            this.tableLayoutPanel18.ColumnCount = 5;
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 173F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 204F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel18.Controls.Add(this.ButtonEditColumns, 2, 0);
             this.tableLayoutPanel18.Controls.Add(this.ComboBoxSort, 1, 0);
-            this.tableLayoutPanel18.Controls.Add(this.TextBoxSmartFilter, 3, 0);
+            this.tableLayoutPanel18.Controls.Add(this.TextBoxSmartFilter, 4, 0);
             this.tableLayoutPanel18.Controls.Add(this.label14, 0, 0);
+            this.tableLayoutPanel18.Controls.Add(this.ButtonExportToExcel, 3, 0);
             this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel18.Location = new System.Drawing.Point(0, 35);
             this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(0);
@@ -1407,6 +1410,57 @@ namespace IKYv4.Forms
             this.DataGridViewEmployees.TabIndex = 1;
             this.DataGridViewEmployees.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewEmployees_CellContentClick);
             // 
+            // ButtonExportToExcel
+            // 
+            this.ButtonExportToExcel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.ButtonExportToExcel.Location = new System.Drawing.Point(629, 3);
+            this.ButtonExportToExcel.Name = "ButtonExportToExcel";
+            this.ButtonExportToExcel.Size = new System.Drawing.Size(98, 29);
+            this.ButtonExportToExcel.TabIndex = 6;
+            this.ButtonExportToExcel.Text = "Excele Aktar";
+            this.ButtonExportToExcel.UseVisualStyleBackColor = true;
+            this.ButtonExportToExcel.Click += new System.EventHandler(this.ButtonExportToExcel_Click);
+            // 
+            // ButtonEditColumns
+            // 
+            this.ButtonEditColumns.BackColor = System.Drawing.Color.Brown;
+            this.ButtonEditColumns.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonEditColumns.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonEditColumns.FlatAppearance.BorderSize = 0;
+            this.ButtonEditColumns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonEditColumns.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonEditColumns.ForeColor = System.Drawing.Color.White;
+            this.ButtonEditColumns.Location = new System.Drawing.Point(247, 3);
+            this.ButtonEditColumns.Name = "ButtonEditColumns";
+            this.ButtonEditColumns.Size = new System.Drawing.Size(180, 29);
+            this.ButtonEditColumns.TabIndex = 7;
+            this.ButtonEditColumns.Text = "Sütunları Düzenle";
+            this.ButtonEditColumns.UseVisualStyleBackColor = false;
+            this.ButtonEditColumns.Click += new System.EventHandler(this.ButtonEditColumns_Click);
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.Description = "Düzenle";
+            this.dataGridViewImageColumn1.FillWeight = 30F;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::IKYv4.Properties.Resources.edit_row_24px;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn1.ToolTipText = "Düzenle";
+            this.dataGridViewImageColumn1.Width = 492;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.Description = "Mesai Saatlerini Düzenle";
+            this.dataGridViewImageColumn2.FillWeight = 30F;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::IKYv4.Properties.Resources.clock_24px;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
+            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewImageColumn2.Width = 491;
+            // 
             // EditRow
             // 
             this.EditRow.Description = "Düzenle";
@@ -1427,27 +1481,6 @@ namespace IKYv4.Forms
             this.EditShifts.Name = "EditShifts";
             this.EditShifts.ReadOnly = true;
             this.EditShifts.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.Description = "Düzenle";
-            this.dataGridViewImageColumn1.FillWeight = 30F;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::IKYv4.Properties.Resources.edit_row_24px;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn1.ToolTipText = "Düzenle";
-            this.dataGridViewImageColumn1.Width = 492;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.Description = "Mesai Saatlerini Düzenle";
-            this.dataGridViewImageColumn2.FillWeight = 30F;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::IKYv4.Properties.Resources.clock_24px;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewImageColumn2.Width = 491;
             // 
             // FormEmployeeListing
             // 
@@ -1599,5 +1632,7 @@ namespace IKYv4.Forms
         private TableLayoutPanel tableLayoutPanel24;
         private Label label7;
         private CheckBox CheckBoxEskiCalisan;
+        private Button ButtonExportToExcel;
+        private Button ButtonEditColumns;
     }
 }

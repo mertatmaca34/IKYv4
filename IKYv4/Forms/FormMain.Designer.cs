@@ -31,11 +31,13 @@ namespace IKYv4.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.ButtonEmployeeShift = new System.Windows.Forms.Button();
             this.ButtonHelp = new System.Windows.Forms.Button();
             this.ButtonPuantage = new System.Windows.Forms.Button();
             this.ButtonEmployeVacation = new System.Windows.Forms.Button();
@@ -48,12 +50,18 @@ namespace IKYv4.Forms
             this.LabelHeader = new System.Windows.Forms.Label();
             this.LabelSubHeader = new System.Windows.Forms.Label();
             this.PanelContent = new System.Windows.Forms.Panel();
-            this.ButtonEmployeeShift = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.eYTsiYaklaşanlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dasdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asdaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.asdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -138,6 +146,23 @@ namespace IKYv4.Forms
             this.tableLayoutPanel5.Size = new System.Drawing.Size(1264, 35);
             this.tableLayoutPanel5.TabIndex = 6;
             // 
+            // ButtonEmployeeShift
+            // 
+            this.ButtonEmployeeShift.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonEmployeeShift.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonEmployeeShift.FlatAppearance.BorderSize = 0;
+            this.ButtonEmployeeShift.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonEmployeeShift.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonEmployeeShift.ForeColor = System.Drawing.Color.White;
+            this.ButtonEmployeeShift.Location = new System.Drawing.Point(632, 0);
+            this.ButtonEmployeeShift.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonEmployeeShift.Name = "ButtonEmployeeShift";
+            this.ButtonEmployeeShift.Size = new System.Drawing.Size(158, 35);
+            this.ButtonEmployeeShift.TabIndex = 10;
+            this.ButtonEmployeeShift.Text = "PERSONEL MESAİ";
+            this.ButtonEmployeeShift.UseVisualStyleBackColor = true;
+            this.ButtonEmployeeShift.Click += new System.EventHandler(this.ButtonEmployeeShift_Click);
+            // 
             // ButtonHelp
             // 
             this.ButtonHelp.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -190,6 +215,7 @@ namespace IKYv4.Forms
             // 
             // ButtonEmployeeListing
             // 
+            this.ButtonEmployeeListing.ContextMenuStrip = this.contextMenuStrip1;
             this.ButtonEmployeeListing.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonEmployeeListing.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ButtonEmployeeListing.FlatAppearance.BorderSize = 0;
@@ -220,6 +246,7 @@ namespace IKYv4.Forms
             this.ButtonMainPage.TabIndex = 3;
             this.ButtonMainPage.Text = "ANASAYFA";
             this.ButtonMainPage.UseVisualStyleBackColor = true;
+            this.ButtonMainPage.Click += new System.EventHandler(this.ButtonMainPage_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -311,22 +338,49 @@ namespace IKYv4.Forms
             this.PanelContent.Size = new System.Drawing.Size(1264, 569);
             this.PanelContent.TabIndex = 3;
             // 
-            // ButtonEmployeeShift
+            // contextMenuStrip1
             // 
-            this.ButtonEmployeeShift.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonEmployeeShift.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonEmployeeShift.FlatAppearance.BorderSize = 0;
-            this.ButtonEmployeeShift.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonEmployeeShift.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonEmployeeShift.ForeColor = System.Drawing.Color.White;
-            this.ButtonEmployeeShift.Location = new System.Drawing.Point(632, 0);
-            this.ButtonEmployeeShift.Margin = new System.Windows.Forms.Padding(0);
-            this.ButtonEmployeeShift.Name = "ButtonEmployeeShift";
-            this.ButtonEmployeeShift.Size = new System.Drawing.Size(158, 35);
-            this.ButtonEmployeeShift.TabIndex = 10;
-            this.ButtonEmployeeShift.Text = "PERSONEL MESAİ";
-            this.ButtonEmployeeShift.UseVisualStyleBackColor = true;
-            this.ButtonEmployeeShift.Click += new System.EventHandler(this.ButtonEmployeeShift_Click);
+            this.contextMenuStrip1.BackColor = System.Drawing.Color.DarkRed;
+            this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eYTsiYaklaşanlarToolStripMenuItem,
+            this.dasdToolStripMenuItem,
+            this.asdaToolStripMenuItem,
+            this.asdaToolStripMenuItem1,
+            this.asdToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(182, 114);
+            // 
+            // eYTsiYaklaşanlarToolStripMenuItem
+            // 
+            this.eYTsiYaklaşanlarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.eYTsiYaklaşanlarToolStripMenuItem.Name = "eYTsiYaklaşanlarToolStripMenuItem";
+            this.eYTsiYaklaşanlarToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.eYTsiYaklaşanlarToolStripMenuItem.Text = "EYTsi Yaklaşanlar";
+            // 
+            // dasdToolStripMenuItem
+            // 
+            this.dasdToolStripMenuItem.Name = "dasdToolStripMenuItem";
+            this.dasdToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.dasdToolStripMenuItem.Text = "dasd";
+            // 
+            // asdaToolStripMenuItem
+            // 
+            this.asdaToolStripMenuItem.Name = "asdaToolStripMenuItem";
+            this.asdaToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.asdaToolStripMenuItem.Text = "asda";
+            // 
+            // asdaToolStripMenuItem1
+            // 
+            this.asdaToolStripMenuItem1.Name = "asdaToolStripMenuItem1";
+            this.asdaToolStripMenuItem1.Size = new System.Drawing.Size(181, 22);
+            this.asdaToolStripMenuItem1.Text = "asda";
+            // 
+            // asdToolStripMenuItem
+            // 
+            this.asdToolStripMenuItem.Name = "asdToolStripMenuItem";
+            this.asdToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.asdToolStripMenuItem.Text = "asd";
             // 
             // FormMain
             // 
@@ -348,6 +402,7 @@ namespace IKYv4.Forms
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -372,5 +427,11 @@ namespace IKYv4.Forms
         private Button ButtonHelp;
         public Label LabelUserName;
         private Button ButtonEmployeeShift;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem eYTsiYaklaşanlarToolStripMenuItem;
+        private ToolStripMenuItem dasdToolStripMenuItem;
+        private ToolStripMenuItem asdaToolStripMenuItem;
+        private ToolStripMenuItem asdaToolStripMenuItem1;
+        private ToolStripMenuItem asdToolStripMenuItem;
     }
 }

@@ -63,6 +63,16 @@ namespace IKYv4.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap _3_0 {
+            get {
+                object obj = ResourceManager.GetObject("3-0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap clock_24px {
             get {
                 object obj = ResourceManager.GetObject("clock_24px", resourceCulture);
@@ -96,6 +106,16 @@ namespace IKYv4.Properties {
         internal static System.Drawing.Bitmap eye_21px {
             get {
                 object obj = ResourceManager.GetObject("eye_21px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap marker_16px {
+            get {
+                object obj = ResourceManager.GetObject("marker_16px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -80,10 +80,10 @@ namespace IKYv4.Forms
 
         private void ButtonEmployeeListing_Click(object sender, EventArgs e)
         {
-            if (LabelUserName.Text != "Adı Soyadı")
+            /*if (LabelUserName.Text != "Adı Soyadı")
             {
                 PageChange.Change(PanelContent, this, new FormEmployeeListing(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _calismaSaatleriManager, _unvanGrubuManager, _unvanManager, _nufusManager, _tahsilManager, _sertifikaManager, _iletisimManager, _nakilManager, _cocukManager));
-            }
+            }*/
         }
 
         private void ButtonHelp_Click(object sender, EventArgs e)
@@ -144,6 +144,11 @@ namespace IKYv4.Forms
         private void ButtonEmployeeShift_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ButtonMainPage_Click(object sender, EventArgs e)
+        {
+            PageChange.Change(this.PanelContent, this, new FormHomePage());
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
 using Entities.Concrete.TurkeyModel;
+using IKYv4.Utilities;
 using LinqKit;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,7 @@ namespace IKYv4.Forms
 
         List<City> _homeTownCities = new List<City>();
         List<Personel> _personeller;
+        List<Nufus> _nufuslar;
 
         IPersonelManager _personelManager;
         IMudurlukManager _mudurlukManager;
@@ -70,6 +72,7 @@ namespace IKYv4.Forms
             _nakilManager = nakilManager;
 
             _personeller = _personelManager.GetAll().Data.ToList();
+            _nufuslar = _nufusManager.GetAll().Data.ToList();
 
             DataGridViewCustomization();
         }
@@ -551,7 +554,7 @@ namespace IKYv4.Forms
         private void Search()
         {
             _personeller = _personelManager.GetAll().Data.ToList();
-            var nufuslar = _nufusManager.GetAll().Data.ToList();
+            _nufuslar = _nufusManager.GetAll().Data.ToList();
 
             Expression<Func<Personel, bool>> filterPersonel = null;
             Expression<Func<Nufus, bool>> filterNufus = null;
@@ -939,6 +942,37 @@ namespace IKYv4.Forms
 
             DataGridViewEmployees.DataSource = filteredPersonels.ToList();
             DataGridViewEmployees.Refresh();
+        }
+
+        private void ButtonExportToExcel_Click(object sender, EventArgs e)
+        {
+            DataGridView _dataGridViewEmployees = new DataGridView();
+            _dataGridViewEmployees = DataGridViewEmployees;
+
+            _dataGridViewEmployees.Columns.RemoveAt(0);
+            _dataGridViewEmployees.Columns.RemoveAt(0);
+            _dataGridViewEmployees.Columns.RemoveAt(0);
+            _dataGridViewEmployees.Columns.RemoveAt(0);
+
+            Export.ToExcel(_dataGridViewEmployees);
+        }
+
+        private void ButtonEditColumns_Click(object sender, EventArgs e)
+        {
+            FormSelectColumns formSelectColumns = new FormSelectColumns();
+            formSelectColumns.ShowDialog();
+
+            //var result = from Personel in _personeller
+            //             join Nufus in _nufuslar
+            //             on Personel.Id equals Nufus.PersonelId
+            //             select new
+            //             {
+            //                 Personel.Id,
+            //                 Personel.Adi,
+            //                 Nufus.KanGrubu
+            //             };
+
+            //MessageBox.Show(result.Where(x=> x.Adi == "MERT").FirstOrDefault().KanGrubu);
         }
     }
 }
