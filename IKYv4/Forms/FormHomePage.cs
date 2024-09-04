@@ -1,4 +1,5 @@
-﻿using GMap.NET;
+﻿using Entities.Concrete;
+using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using IKYv4.Properties;
@@ -27,7 +28,6 @@ namespace IKYv4.Forms
             GmapControlStations.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
             GmapControlStations.Position = new GMap.NET.PointLatLng(41.0122, 28.976);
             GmapControlStations.Zoom = 10;
-
 
             #region İstasyon Marker'ları
 
@@ -59,7 +59,7 @@ namespace IKYv4.Forms
         {
             if(item.Position == new PointLatLng(41.0084, 29.2851))
             {
-                PageChange.Change(PanelContent, this, new FormStationSummary());
+                PageChange.Change(PanelContent, this, new FormStationSummary(new List<KadroDurumlari>()));
             }
         }
     }

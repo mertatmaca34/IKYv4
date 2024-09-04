@@ -212,11 +212,23 @@
     <Compile Include="Forms\FormSelectColumns.Designer.cs">
       <DependentUpon>FormSelectColumns.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormStationOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormStationOverview.Designer.cs">
+      <DependentUpon>FormStationOverview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormStationSummary.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormStationSummary.Designer.cs">
       <DependentUpon>FormStationSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormStaffs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormStaffs.Designer.cs">
+      <DependentUpon>FormStaffs.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -270,8 +282,14 @@
     <EmbeddedResource Include="Forms\FormSelectColumns.resx">
       <DependentUpon>FormSelectColumns.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormStationOverview.resx">
+      <DependentUpon>FormStationOverview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormStationSummary.resx">
       <DependentUpon>FormStationSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormStaffs.resx">
+      <DependentUpon>FormStaffs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

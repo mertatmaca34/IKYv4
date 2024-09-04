@@ -31,10 +31,10 @@ namespace IKYv4.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
@@ -114,16 +114,16 @@ namespace IKYv4.Forms
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.ButtonNewEmployee = new System.Windows.Forms.Button();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
+            this.ButtonEditColumns = new System.Windows.Forms.Button();
             this.ComboBoxSort = new System.Windows.Forms.ComboBox();
             this.TextBoxSmartFilter = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.DataGridViewEmployees = new System.Windows.Forms.DataGridView();
             this.ButtonExportToExcel = new System.Windows.Forms.Button();
-            this.ButtonEditColumns = new System.Windows.Forms.Button();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DataGridViewEmployees = new System.Windows.Forms.DataGridView();
             this.EditRow = new System.Windows.Forms.DataGridViewImageColumn();
             this.EditShifts = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
@@ -1310,6 +1310,23 @@ namespace IKYv4.Forms
             this.tableLayoutPanel18.Size = new System.Drawing.Size(934, 35);
             this.tableLayoutPanel18.TabIndex = 0;
             // 
+            // ButtonEditColumns
+            // 
+            this.ButtonEditColumns.BackColor = System.Drawing.Color.Brown;
+            this.ButtonEditColumns.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonEditColumns.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonEditColumns.FlatAppearance.BorderSize = 0;
+            this.ButtonEditColumns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonEditColumns.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonEditColumns.ForeColor = System.Drawing.Color.White;
+            this.ButtonEditColumns.Location = new System.Drawing.Point(247, 3);
+            this.ButtonEditColumns.Name = "ButtonEditColumns";
+            this.ButtonEditColumns.Size = new System.Drawing.Size(180, 29);
+            this.ButtonEditColumns.TabIndex = 7;
+            this.ButtonEditColumns.Text = "Sütunları Düzenle";
+            this.ButtonEditColumns.UseVisualStyleBackColor = false;
+            this.ButtonEditColumns.Click += new System.EventHandler(this.ButtonEditColumns_Click);
+            // 
             // ComboBoxSort
             // 
             this.ComboBoxSort.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1354,62 +1371,6 @@ namespace IKYv4.Forms
             this.label14.TabIndex = 2;
             this.label14.Text = "Sırala:";
             // 
-            // DataGridViewEmployees
-            // 
-            this.DataGridViewEmployees.AllowUserToAddRows = false;
-            this.DataGridViewEmployees.AllowUserToDeleteRows = false;
-            this.DataGridViewEmployees.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataGridViewEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridViewEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DataGridViewEmployees.BackgroundColor = System.Drawing.Color.White;
-            this.DataGridViewEmployees.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DataGridViewEmployees.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DataGridViewEmployees.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridViewEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.EditRow,
-            this.EditShifts});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewEmployees.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DataGridViewEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DataGridViewEmployees.EnableHeadersVisualStyles = false;
-            this.DataGridViewEmployees.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.DataGridViewEmployees.Location = new System.Drawing.Point(0, 78);
-            this.DataGridViewEmployees.Margin = new System.Windows.Forms.Padding(0);
-            this.DataGridViewEmployees.MultiSelect = false;
-            this.DataGridViewEmployees.Name = "DataGridViewEmployees";
-            this.DataGridViewEmployees.ReadOnly = true;
-            this.DataGridViewEmployees.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DataGridViewEmployees.RowHeadersVisible = false;
-            this.DataGridViewEmployees.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.DataGridViewEmployees.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.DataGridViewEmployees.RowTemplate.DividerHeight = 10;
-            this.DataGridViewEmployees.RowTemplate.Height = 50;
-            this.DataGridViewEmployees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridViewEmployees.Size = new System.Drawing.Size(934, 404);
-            this.DataGridViewEmployees.TabIndex = 1;
-            this.DataGridViewEmployees.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewEmployees_CellContentClick);
-            // 
             // ButtonExportToExcel
             // 
             this.ButtonExportToExcel.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -1421,22 +1382,82 @@ namespace IKYv4.Forms
             this.ButtonExportToExcel.UseVisualStyleBackColor = true;
             this.ButtonExportToExcel.Click += new System.EventHandler(this.ButtonExportToExcel_Click);
             // 
-            // ButtonEditColumns
+            // DataGridViewEmployees
             // 
-            this.ButtonEditColumns.BackColor = System.Drawing.Color.Brown;
-            this.ButtonEditColumns.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonEditColumns.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonEditColumns.FlatAppearance.BorderSize = 0;
-            this.ButtonEditColumns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonEditColumns.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonEditColumns.ForeColor = System.Drawing.Color.White;
-            this.ButtonEditColumns.Location = new System.Drawing.Point(247, 3);
-            this.ButtonEditColumns.Name = "ButtonEditColumns";
-            this.ButtonEditColumns.Size = new System.Drawing.Size(180, 29);
-            this.ButtonEditColumns.TabIndex = 7;
-            this.ButtonEditColumns.Text = "Sütunları Düzenle";
-            this.ButtonEditColumns.UseVisualStyleBackColor = false;
-            this.ButtonEditColumns.Click += new System.EventHandler(this.ButtonEditColumns_Click);
+            this.DataGridViewEmployees.AllowUserToAddRows = false;
+            this.DataGridViewEmployees.AllowUserToDeleteRows = false;
+            this.DataGridViewEmployees.AllowUserToResizeRows = false;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.DataGridViewEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.DataGridViewEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridViewEmployees.BackgroundColor = System.Drawing.Color.White;
+            this.DataGridViewEmployees.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridViewEmployees.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DataGridViewEmployees.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.DataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.EditRow,
+            this.EditShifts});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewEmployees.DefaultCellStyle = dataGridViewCellStyle11;
+            this.DataGridViewEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataGridViewEmployees.EnableHeadersVisualStyles = false;
+            this.DataGridViewEmployees.GridColor = System.Drawing.Color.WhiteSmoke;
+            this.DataGridViewEmployees.Location = new System.Drawing.Point(0, 78);
+            this.DataGridViewEmployees.Margin = new System.Windows.Forms.Padding(0);
+            this.DataGridViewEmployees.MultiSelect = false;
+            this.DataGridViewEmployees.Name = "DataGridViewEmployees";
+            this.DataGridViewEmployees.ReadOnly = true;
+            this.DataGridViewEmployees.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridViewEmployees.RowHeadersVisible = false;
+            this.DataGridViewEmployees.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGridViewEmployees.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            this.DataGridViewEmployees.RowTemplate.DividerHeight = 10;
+            this.DataGridViewEmployees.RowTemplate.Height = 50;
+            this.DataGridViewEmployees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataGridViewEmployees.Size = new System.Drawing.Size(934, 404);
+            this.DataGridViewEmployees.TabIndex = 1;
+            this.DataGridViewEmployees.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewEmployees_CellContentClick);
+            // 
+            // EditRow
+            // 
+            this.EditRow.Description = "Düzenle";
+            this.EditRow.FillWeight = 35F;
+            this.EditRow.HeaderText = "";
+            this.EditRow.Image = global::IKYv4.Properties.Resources.edit_row_24px;
+            this.EditRow.Name = "EditRow";
+            this.EditRow.ReadOnly = true;
+            this.EditRow.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.EditRow.ToolTipText = "Düzenle";
+            // 
+            // EditShifts
+            // 
+            this.EditShifts.Description = "Mesai Saatlerini Düzenle";
+            this.EditShifts.FillWeight = 35F;
+            this.EditShifts.HeaderText = "";
+            this.EditShifts.Image = global::IKYv4.Properties.Resources.clock_24px;
+            this.EditShifts.Name = "EditShifts";
+            this.EditShifts.ReadOnly = true;
+            this.EditShifts.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // dataGridViewImageColumn1
             // 
@@ -1460,27 +1481,6 @@ namespace IKYv4.Forms
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewImageColumn2.Width = 491;
-            // 
-            // EditRow
-            // 
-            this.EditRow.Description = "Düzenle";
-            this.EditRow.FillWeight = 35F;
-            this.EditRow.HeaderText = "";
-            this.EditRow.Image = global::IKYv4.Properties.Resources.edit_row_24px;
-            this.EditRow.Name = "EditRow";
-            this.EditRow.ReadOnly = true;
-            this.EditRow.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.EditRow.ToolTipText = "Düzenle";
-            // 
-            // EditShifts
-            // 
-            this.EditShifts.Description = "Mesai Saatlerini Düzenle";
-            this.EditShifts.FillWeight = 35F;
-            this.EditShifts.HeaderText = "";
-            this.EditShifts.Image = global::IKYv4.Properties.Resources.clock_24px;
-            this.EditShifts.Name = "EditShifts";
-            this.EditShifts.ReadOnly = true;
-            this.EditShifts.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // FormEmployeeListing
             // 

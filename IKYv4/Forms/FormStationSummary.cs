@@ -1,20 +1,24 @@
-﻿using System;
+﻿using Entities.Concrete;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IKYv4.Forms
 {
     public partial class FormStationSummary : Form
     {
-        public FormStationSummary()
+        readonly List<KadroDurumlari> _kadroDurumlari;
+
+        public FormStationSummary(List<KadroDurumlari> kadroDurumlari)
         {
             InitializeComponent();
+
+            _kadroDurumlari = kadroDurumlari;
+        }
+
+        private void FormStationSummary_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
