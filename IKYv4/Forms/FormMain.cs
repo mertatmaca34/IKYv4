@@ -153,7 +153,7 @@ namespace IKYv4.Forms
 
         private void ButtonStaffs_Click(object sender, EventArgs e)
         {
-            PageChange.Change(this.PanelContent, this, new FormStaffs(_seflikManager));
+            PageChange.Change(this.PanelContent, this, new FormStaffs(_mudurlukManager, _seflikManager));
         }
     }
 }

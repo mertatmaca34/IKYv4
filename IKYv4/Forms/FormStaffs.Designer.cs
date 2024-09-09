@@ -32,7 +32,6 @@
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.ComboBoxTesisFilter = new System.Windows.Forms.ComboBox();
             this.ComboBoxSeflikFilter = new System.Windows.Forms.ComboBox();
             this.ComboBoxMudurlukFilter = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -56,21 +55,21 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.TextBoxDeneyimliMuhendis = new System.Windows.Forms.TextBox();
+            this.TextBoxMuhendis = new System.Windows.Forms.TextBox();
+            this.TextBoxScadaSorumlusu = new System.Windows.Forms.TextBox();
+            this.TextBoxLaboratuvarAnalizcisi = new System.Windows.Forms.TextBox();
+            this.TextBoxFormen = new System.Windows.Forms.TextBox();
+            this.TextBoxCamurVardiyaAmiri = new System.Windows.Forms.TextBox();
+            this.TextBoxBolgeScadaSistemBakim = new System.Windows.Forms.TextBox();
+            this.TextBoxBakimOperatoru = new System.Windows.Forms.TextBox();
+            this.TextBoxNumuneAlmaAnalizGorevlisi = new System.Windows.Forms.TextBox();
+            this.TextBoxInsanKaynaklari = new System.Windows.Forms.TextBox();
+            this.TextBoxTerfiMerkezOperatorleri = new System.Windows.Forms.TextBox();
+            this.TextBoxSofor = new System.Windows.Forms.TextBox();
+            this.TextBoxGenelHizmetliPersoenl = new System.Windows.Forms.TextBox();
+            this.TextBoxKoyMahallePersoneli = new System.Windows.Forms.TextBox();
+            this.TextBoxKoyMahalleOperatoru = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -85,7 +84,7 @@
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
-            this.ButtonNewEmployee = new System.Windows.Forms.Button();
+            this.ButtonSaveStaff = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel19.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -99,8 +98,8 @@
             this.tableLayoutPanel2.ColumnCount = 4;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 235F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 600F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 334F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel19, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel18, 2, 32);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 2, 6);
@@ -119,21 +118,21 @@
             this.tableLayoutPanel2.Controls.Add(this.label16, 2, 29);
             this.tableLayoutPanel2.Controls.Add(this.label17, 2, 31);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 3, 3);
-            this.tableLayoutPanel2.Controls.Add(this.textBox2, 3, 5);
-            this.tableLayoutPanel2.Controls.Add(this.textBox3, 3, 7);
-            this.tableLayoutPanel2.Controls.Add(this.textBox4, 3, 9);
-            this.tableLayoutPanel2.Controls.Add(this.textBox5, 3, 11);
-            this.tableLayoutPanel2.Controls.Add(this.textBox6, 3, 13);
-            this.tableLayoutPanel2.Controls.Add(this.textBox7, 3, 15);
-            this.tableLayoutPanel2.Controls.Add(this.textBox8, 3, 19);
-            this.tableLayoutPanel2.Controls.Add(this.textBox9, 3, 17);
-            this.tableLayoutPanel2.Controls.Add(this.textBox10, 3, 21);
-            this.tableLayoutPanel2.Controls.Add(this.textBox11, 3, 23);
-            this.tableLayoutPanel2.Controls.Add(this.textBox12, 3, 25);
-            this.tableLayoutPanel2.Controls.Add(this.textBox13, 3, 27);
-            this.tableLayoutPanel2.Controls.Add(this.textBox14, 3, 29);
-            this.tableLayoutPanel2.Controls.Add(this.textBox15, 3, 31);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxDeneyimliMuhendis, 3, 3);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxMuhendis, 3, 5);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxScadaSorumlusu, 3, 7);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxLaboratuvarAnalizcisi, 3, 9);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxFormen, 3, 11);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxCamurVardiyaAmiri, 3, 13);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxBolgeScadaSistemBakim, 3, 15);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxBakimOperatoru, 3, 19);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxNumuneAlmaAnalizGorevlisi, 3, 17);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxInsanKaynaklari, 3, 21);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxTerfiMerkezOperatorleri, 3, 23);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxSofor, 3, 25);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxGenelHizmetliPersoenl, 3, 27);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxKoyMahallePersoneli, 3, 29);
+            this.tableLayoutPanel2.Controls.Add(this.TextBoxKoyMahalleOperatoru, 3, 31);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 2, 4);
             this.tableLayoutPanel2.Controls.Add(this.label1, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 2, 8);
@@ -148,7 +147,7 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel15, 2, 26);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel16, 2, 28);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel17, 2, 30);
-            this.tableLayoutPanel2.Controls.Add(this.ButtonNewEmployee, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.ButtonSaveStaff, 3, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(43, 26);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(10);
@@ -222,33 +221,18 @@
             this.tableLayoutPanel20.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel20.ColumnCount = 1;
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel20.Controls.Add(this.ComboBoxTesisFilter, 0, 3);
             this.tableLayoutPanel20.Controls.Add(this.ComboBoxSeflikFilter, 0, 2);
             this.tableLayoutPanel20.Controls.Add(this.ComboBoxMudurlukFilter, 0, 1);
             this.tableLayoutPanel20.Controls.Add(this.label18, 0, 0);
             this.tableLayoutPanel20.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
-            this.tableLayoutPanel20.RowCount = 4;
+            this.tableLayoutPanel20.RowCount = 3;
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(229, 123);
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(229, 101);
             this.tableLayoutPanel20.TabIndex = 1;
-            // 
-            // ComboBoxTesisFilter
-            // 
-            this.ComboBoxTesisFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxTesisFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxTesisFilter.Enabled = false;
-            this.ComboBoxTesisFilter.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.ComboBoxTesisFilter.FormattingEnabled = true;
-            this.ComboBoxTesisFilter.Location = new System.Drawing.Point(7, 97);
-            this.ComboBoxTesisFilter.Margin = new System.Windows.Forms.Padding(7);
-            this.ComboBoxTesisFilter.Name = "ComboBoxTesisFilter";
-            this.ComboBoxTesisFilter.Size = new System.Drawing.Size(215, 23);
-            this.ComboBoxTesisFilter.TabIndex = 4;
             // 
             // ComboBoxSeflikFilter
             // 
@@ -262,6 +246,7 @@
             this.ComboBoxSeflikFilter.Name = "ComboBoxSeflikFilter";
             this.ComboBoxSeflikFilter.Size = new System.Drawing.Size(215, 23);
             this.ComboBoxSeflikFilter.TabIndex = 3;
+            this.ComboBoxSeflikFilter.SelectedIndexChanged += new System.EventHandler(this.ComboBoxSeflikFilter_SelectedIndexChanged);
             // 
             // ComboBoxMudurlukFilter
             // 
@@ -274,6 +259,7 @@
             this.ComboBoxMudurlukFilter.Name = "ComboBoxMudurlukFilter";
             this.ComboBoxMudurlukFilter.Size = new System.Drawing.Size(215, 23);
             this.ComboBoxMudurlukFilter.TabIndex = 2;
+            this.ComboBoxMudurlukFilter.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMudurlukFilter_SelectedIndexChanged);
             // 
             // label18
             // 
@@ -322,7 +308,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(286, 130);
+            this.label4.Location = new System.Drawing.Point(378, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(515, 16);
             this.label4.TabIndex = 0;
@@ -334,7 +320,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(389, 175);
+            this.label5.Location = new System.Drawing.Point(481, 175);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(309, 16);
             this.label5.TabIndex = 0;
@@ -346,7 +332,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(429, 220);
+            this.label6.Location = new System.Drawing.Point(521, 220);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(230, 16);
             this.label6.TabIndex = 0;
@@ -358,7 +344,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(413, 265);
+            this.label7.Location = new System.Drawing.Point(505, 265);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(261, 16);
             this.label7.TabIndex = 0;
@@ -370,7 +356,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(376, 310);
+            this.label8.Location = new System.Drawing.Point(468, 310);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(336, 16);
             this.label8.TabIndex = 0;
@@ -382,9 +368,9 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(259, 347);
+            this.label9.Location = new System.Drawing.Point(256, 347);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(570, 32);
+            this.label9.Size = new System.Drawing.Size(759, 32);
             this.label9.TabIndex = 0;
             this.label9.Text = "BÖLGE SCADA ve SİSTEM BAKIM / KALİBRASYON OPERATÖRLERİ / TEKNİK RAPORLAMA SORUMLU" +
     "SU/BAKIM ONARIM USTALARI/ÇAMUR/KOJEN İŞL./BAKIM OPERATÖRLERİ";
@@ -395,7 +381,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(382, 400);
+            this.label10.Location = new System.Drawing.Point(474, 400);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(324, 16);
             this.label10.TabIndex = 0;
@@ -407,7 +393,7 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(269, 445);
+            this.label11.Location = new System.Drawing.Point(361, 445);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(549, 16);
             this.label11.TabIndex = 0;
@@ -419,7 +405,7 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(429, 490);
+            this.label12.Location = new System.Drawing.Point(521, 490);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(230, 16);
             this.label12.TabIndex = 0;
@@ -431,7 +417,7 @@
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(436, 535);
+            this.label13.Location = new System.Drawing.Point(528, 535);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(215, 16);
             this.label13.TabIndex = 0;
@@ -443,7 +429,7 @@
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(439, 580);
+            this.label14.Location = new System.Drawing.Point(531, 580);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(209, 16);
             this.label14.TabIndex = 0;
@@ -455,7 +441,7 @@
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(401, 625);
+            this.label15.Location = new System.Drawing.Point(493, 625);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(285, 16);
             this.label15.TabIndex = 0;
@@ -467,7 +453,7 @@
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(361, 670);
+            this.label16.Location = new System.Drawing.Point(453, 670);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(366, 16);
             this.label16.TabIndex = 0;
@@ -479,7 +465,7 @@
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label17.Location = new System.Drawing.Point(371, 715);
+            this.label17.Location = new System.Drawing.Point(463, 715);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(345, 16);
             this.label17.TabIndex = 0;
@@ -491,25 +477,26 @@
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.DarkRed;
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel3, 2);
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.05264F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 99.99999F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 2F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.63816F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel3.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label2, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label46, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(244, 43);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(923, 33);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(934, 33);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(763, 0);
+            this.panel1.Location = new System.Drawing.Point(782, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2, 33);
@@ -521,7 +508,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(811, 6);
+            this.label2.Location = new System.Drawing.Point(826, 6);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 20);
             this.label2.TabIndex = 0;
@@ -533,146 +520,146 @@
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(317, 6);
+            this.label46.Location = new System.Drawing.Point(326, 6);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(129, 20);
             this.label46.TabIndex = 0;
             this.label46.Text = "ÜNVAN GRUBU";
             // 
-            // textBox1
+            // TextBoxDeneyimliMuhendis
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(965, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(92, 22);
-            this.textBox1.TabIndex = 4;
+            this.TextBoxDeneyimliMuhendis.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxDeneyimliMuhendis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TextBoxDeneyimliMuhendis.Location = new System.Drawing.Point(1057, 82);
+            this.TextBoxDeneyimliMuhendis.Name = "TextBoxDeneyimliMuhendis";
+            this.TextBoxDeneyimliMuhendis.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxDeneyimliMuhendis.TabIndex = 4;
             // 
-            // textBox2
+            // TextBoxMuhendis
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(965, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(92, 22);
-            this.textBox2.TabIndex = 4;
+            this.TextBoxMuhendis.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxMuhendis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxMuhendis.Location = new System.Drawing.Point(1057, 127);
+            this.TextBoxMuhendis.Name = "TextBoxMuhendis";
+            this.TextBoxMuhendis.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxMuhendis.TabIndex = 4;
             // 
-            // textBox3
+            // TextBoxScadaSorumlusu
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(965, 172);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(92, 22);
-            this.textBox3.TabIndex = 4;
+            this.TextBoxScadaSorumlusu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxScadaSorumlusu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxScadaSorumlusu.Location = new System.Drawing.Point(1057, 172);
+            this.TextBoxScadaSorumlusu.Name = "TextBoxScadaSorumlusu";
+            this.TextBoxScadaSorumlusu.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxScadaSorumlusu.TabIndex = 4;
             // 
-            // textBox4
+            // TextBoxLaboratuvarAnalizcisi
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(965, 217);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(92, 22);
-            this.textBox4.TabIndex = 4;
+            this.TextBoxLaboratuvarAnalizcisi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxLaboratuvarAnalizcisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxLaboratuvarAnalizcisi.Location = new System.Drawing.Point(1057, 217);
+            this.TextBoxLaboratuvarAnalizcisi.Name = "TextBoxLaboratuvarAnalizcisi";
+            this.TextBoxLaboratuvarAnalizcisi.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxLaboratuvarAnalizcisi.TabIndex = 4;
             // 
-            // textBox5
+            // TextBoxFormen
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox5.Location = new System.Drawing.Point(965, 262);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(92, 22);
-            this.textBox5.TabIndex = 4;
+            this.TextBoxFormen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxFormen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxFormen.Location = new System.Drawing.Point(1057, 262);
+            this.TextBoxFormen.Name = "TextBoxFormen";
+            this.TextBoxFormen.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxFormen.TabIndex = 4;
             // 
-            // textBox6
+            // TextBoxCamurVardiyaAmiri
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox6.Location = new System.Drawing.Point(965, 307);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(92, 22);
-            this.textBox6.TabIndex = 4;
+            this.TextBoxCamurVardiyaAmiri.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxCamurVardiyaAmiri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxCamurVardiyaAmiri.Location = new System.Drawing.Point(1057, 307);
+            this.TextBoxCamurVardiyaAmiri.Name = "TextBoxCamurVardiyaAmiri";
+            this.TextBoxCamurVardiyaAmiri.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxCamurVardiyaAmiri.TabIndex = 4;
             // 
-            // textBox7
+            // TextBoxBolgeScadaSistemBakim
             // 
-            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox7.Location = new System.Drawing.Point(965, 352);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(92, 22);
-            this.textBox7.TabIndex = 4;
+            this.TextBoxBolgeScadaSistemBakim.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxBolgeScadaSistemBakim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxBolgeScadaSistemBakim.Location = new System.Drawing.Point(1057, 352);
+            this.TextBoxBolgeScadaSistemBakim.Name = "TextBoxBolgeScadaSistemBakim";
+            this.TextBoxBolgeScadaSistemBakim.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxBolgeScadaSistemBakim.TabIndex = 4;
             // 
-            // textBox8
+            // TextBoxBakimOperatoru
             // 
-            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox8.Location = new System.Drawing.Point(965, 442);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(92, 22);
-            this.textBox8.TabIndex = 4;
+            this.TextBoxBakimOperatoru.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxBakimOperatoru.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxBakimOperatoru.Location = new System.Drawing.Point(1057, 442);
+            this.TextBoxBakimOperatoru.Name = "TextBoxBakimOperatoru";
+            this.TextBoxBakimOperatoru.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxBakimOperatoru.TabIndex = 4;
             // 
-            // textBox9
+            // TextBoxNumuneAlmaAnalizGorevlisi
             // 
-            this.textBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox9.Location = new System.Drawing.Point(965, 397);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(92, 22);
-            this.textBox9.TabIndex = 4;
+            this.TextBoxNumuneAlmaAnalizGorevlisi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxNumuneAlmaAnalizGorevlisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxNumuneAlmaAnalizGorevlisi.Location = new System.Drawing.Point(1057, 397);
+            this.TextBoxNumuneAlmaAnalizGorevlisi.Name = "TextBoxNumuneAlmaAnalizGorevlisi";
+            this.TextBoxNumuneAlmaAnalizGorevlisi.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxNumuneAlmaAnalizGorevlisi.TabIndex = 4;
             // 
-            // textBox10
+            // TextBoxInsanKaynaklari
             // 
-            this.textBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox10.Location = new System.Drawing.Point(965, 487);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(92, 22);
-            this.textBox10.TabIndex = 4;
+            this.TextBoxInsanKaynaklari.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxInsanKaynaklari.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxInsanKaynaklari.Location = new System.Drawing.Point(1057, 487);
+            this.TextBoxInsanKaynaklari.Name = "TextBoxInsanKaynaklari";
+            this.TextBoxInsanKaynaklari.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxInsanKaynaklari.TabIndex = 4;
             // 
-            // textBox11
+            // TextBoxTerfiMerkezOperatorleri
             // 
-            this.textBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox11.Location = new System.Drawing.Point(965, 532);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(92, 22);
-            this.textBox11.TabIndex = 4;
+            this.TextBoxTerfiMerkezOperatorleri.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxTerfiMerkezOperatorleri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxTerfiMerkezOperatorleri.Location = new System.Drawing.Point(1057, 532);
+            this.TextBoxTerfiMerkezOperatorleri.Name = "TextBoxTerfiMerkezOperatorleri";
+            this.TextBoxTerfiMerkezOperatorleri.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxTerfiMerkezOperatorleri.TabIndex = 4;
             // 
-            // textBox12
+            // TextBoxSofor
             // 
-            this.textBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox12.Location = new System.Drawing.Point(965, 577);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(92, 22);
-            this.textBox12.TabIndex = 4;
+            this.TextBoxSofor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxSofor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxSofor.Location = new System.Drawing.Point(1057, 577);
+            this.TextBoxSofor.Name = "TextBoxSofor";
+            this.TextBoxSofor.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxSofor.TabIndex = 4;
             // 
-            // textBox13
+            // TextBoxGenelHizmetliPersoenl
             // 
-            this.textBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox13.Location = new System.Drawing.Point(965, 622);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(92, 22);
-            this.textBox13.TabIndex = 4;
+            this.TextBoxGenelHizmetliPersoenl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxGenelHizmetliPersoenl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxGenelHizmetliPersoenl.Location = new System.Drawing.Point(1057, 622);
+            this.TextBoxGenelHizmetliPersoenl.Name = "TextBoxGenelHizmetliPersoenl";
+            this.TextBoxGenelHizmetliPersoenl.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxGenelHizmetliPersoenl.TabIndex = 4;
             // 
-            // textBox14
+            // TextBoxKoyMahallePersoneli
             // 
-            this.textBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox14.Location = new System.Drawing.Point(965, 667);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(92, 22);
-            this.textBox14.TabIndex = 4;
+            this.TextBoxKoyMahallePersoneli.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxKoyMahallePersoneli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxKoyMahallePersoneli.Location = new System.Drawing.Point(1057, 667);
+            this.TextBoxKoyMahallePersoneli.Name = "TextBoxKoyMahallePersoneli";
+            this.TextBoxKoyMahallePersoneli.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxKoyMahallePersoneli.TabIndex = 4;
             // 
-            // textBox15
+            // TextBoxKoyMahalleOperatoru
             // 
-            this.textBox15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.textBox15.Location = new System.Drawing.Point(965, 712);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(92, 22);
-            this.textBox15.TabIndex = 4;
+            this.TextBoxKoyMahalleOperatoru.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBoxKoyMahalleOperatoru.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TextBoxKoyMahalleOperatoru.Location = new System.Drawing.Point(1057, 712);
+            this.TextBoxKoyMahalleOperatoru.Name = "TextBoxKoyMahalleOperatoru";
+            this.TextBoxKoyMahalleOperatoru.Size = new System.Drawing.Size(92, 22);
+            this.TextBoxKoyMahalleOperatoru.TabIndex = 4;
             // 
             // tableLayoutPanel4
             // 
@@ -694,7 +681,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(386, 85);
+            this.label1.Location = new System.Drawing.Point(478, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(315, 16);
             this.label1.TabIndex = 0;
@@ -880,21 +867,23 @@
             this.tableLayoutPanel17.Size = new System.Drawing.Size(934, 10);
             this.tableLayoutPanel17.TabIndex = 6;
             // 
-            // ButtonNewEmployee
+            // ButtonSaveStaff
             // 
-            this.ButtonNewEmployee.BackColor = System.Drawing.Color.DarkRed;
-            this.ButtonNewEmployee.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonNewEmployee.FlatAppearance.BorderSize = 0;
-            this.ButtonNewEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonNewEmployee.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonNewEmployee.ForeColor = System.Drawing.Color.White;
-            this.ButtonNewEmployee.Location = new System.Drawing.Point(844, 0);
-            this.ButtonNewEmployee.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.ButtonNewEmployee.Name = "ButtonNewEmployee";
-            this.ButtonNewEmployee.Size = new System.Drawing.Size(162, 32);
-            this.ButtonNewEmployee.TabIndex = 10;
-            this.ButtonNewEmployee.Text = "Yeni Personel";
-            this.ButtonNewEmployee.UseVisualStyleBackColor = false;
+            this.ButtonSaveStaff.BackColor = System.Drawing.Color.DarkRed;
+            this.ButtonSaveStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonSaveStaff.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonSaveStaff.FlatAppearance.BorderSize = 0;
+            this.ButtonSaveStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonSaveStaff.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonSaveStaff.ForeColor = System.Drawing.Color.White;
+            this.ButtonSaveStaff.Location = new System.Drawing.Point(1028, 0);
+            this.ButtonSaveStaff.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.ButtonSaveStaff.Name = "ButtonSaveStaff";
+            this.ButtonSaveStaff.Size = new System.Drawing.Size(150, 32);
+            this.ButtonSaveStaff.TabIndex = 10;
+            this.ButtonSaveStaff.Text = "KAYDET";
+            this.ButtonSaveStaff.UseVisualStyleBackColor = false;
+            this.ButtonSaveStaff.Click += new System.EventHandler(this.ButtonSaveStaff_Click);
             // 
             // FormStaffs
             // 
@@ -942,21 +931,21 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox TextBoxDeneyimliMuhendis;
+        private System.Windows.Forms.TextBox TextBoxMuhendis;
+        private System.Windows.Forms.TextBox TextBoxScadaSorumlusu;
+        private System.Windows.Forms.TextBox TextBoxLaboratuvarAnalizcisi;
+        private System.Windows.Forms.TextBox TextBoxFormen;
+        private System.Windows.Forms.TextBox TextBoxCamurVardiyaAmiri;
+        private System.Windows.Forms.TextBox TextBoxBolgeScadaSistemBakim;
+        private System.Windows.Forms.TextBox TextBoxBakimOperatoru;
+        private System.Windows.Forms.TextBox TextBoxNumuneAlmaAnalizGorevlisi;
+        private System.Windows.Forms.TextBox TextBoxInsanKaynaklari;
+        private System.Windows.Forms.TextBox TextBoxTerfiMerkezOperatorleri;
+        private System.Windows.Forms.TextBox TextBoxSofor;
+        private System.Windows.Forms.TextBox TextBoxGenelHizmetliPersoenl;
+        private System.Windows.Forms.TextBox TextBoxKoyMahallePersoneli;
+        private System.Windows.Forms.TextBox TextBoxKoyMahalleOperatoru;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
@@ -975,10 +964,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
-        private System.Windows.Forms.ComboBox ComboBoxTesisFilter;
         private System.Windows.Forms.ComboBox ComboBoxSeflikFilter;
         private System.Windows.Forms.ComboBox ComboBoxMudurlukFilter;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button ButtonNewEmployee;
+        private System.Windows.Forms.Button ButtonSaveStaff;
     }
 }
