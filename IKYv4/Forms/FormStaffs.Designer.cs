@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.TableLayoutPanelKadrolar = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
@@ -85,110 +85,110 @@
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.ButtonSaveStaff = new System.Windows.Forms.Button();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.TableLayoutPanelKadrolar.SuspendLayout();
             this.tableLayoutPanel19.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel20.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel2
+            // TableLayoutPanelKadrolar
             // 
-            this.tableLayoutPanel2.AutoScroll = true;
-            this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 235F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel19, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel18, 2, 32);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 2, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label4, 2, 5);
-            this.tableLayoutPanel2.Controls.Add(this.label5, 2, 7);
-            this.tableLayoutPanel2.Controls.Add(this.label6, 2, 9);
-            this.tableLayoutPanel2.Controls.Add(this.label7, 2, 11);
-            this.tableLayoutPanel2.Controls.Add(this.label8, 2, 13);
-            this.tableLayoutPanel2.Controls.Add(this.label9, 2, 15);
-            this.tableLayoutPanel2.Controls.Add(this.label10, 2, 17);
-            this.tableLayoutPanel2.Controls.Add(this.label11, 2, 19);
-            this.tableLayoutPanel2.Controls.Add(this.label12, 2, 21);
-            this.tableLayoutPanel2.Controls.Add(this.label13, 2, 23);
-            this.tableLayoutPanel2.Controls.Add(this.label14, 2, 25);
-            this.tableLayoutPanel2.Controls.Add(this.label15, 2, 27);
-            this.tableLayoutPanel2.Controls.Add(this.label16, 2, 29);
-            this.tableLayoutPanel2.Controls.Add(this.label17, 2, 31);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxDeneyimliMuhendis, 3, 3);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxMuhendis, 3, 5);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxScadaSorumlusu, 3, 7);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxLaboratuvarAnalizcisi, 3, 9);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxFormen, 3, 11);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxCamurVardiyaAmiri, 3, 13);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxBolgeScadaSistemBakim, 3, 15);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxBakimOperatoru, 3, 19);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxNumuneAlmaAnalizGorevlisi, 3, 17);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxInsanKaynaklari, 3, 21);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxTerfiMerkezOperatorleri, 3, 23);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxSofor, 3, 25);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxGenelHizmetliPersoenl, 3, 27);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxKoyMahallePersoneli, 3, 29);
-            this.tableLayoutPanel2.Controls.Add(this.TextBoxKoyMahalleOperatoru, 3, 31);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 2, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 2, 3);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 2, 8);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel7, 2, 10);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel8, 2, 12);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel9, 2, 14);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel10, 2, 16);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel11, 2, 18);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel12, 2, 20);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel13, 2, 22);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel14, 2, 24);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel15, 2, 26);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel16, 2, 28);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel17, 2, 30);
-            this.tableLayoutPanel2.Controls.Add(this.ButtonSaveStaff, 3, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(43, 26);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(10);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 34;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1178, 482);
-            this.tableLayoutPanel2.TabIndex = 1;
+            this.TableLayoutPanelKadrolar.AutoScroll = true;
+            this.TableLayoutPanelKadrolar.ColumnCount = 4;
+            this.TableLayoutPanelKadrolar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 235F));
+            this.TableLayoutPanelKadrolar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.TableLayoutPanelKadrolar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.TableLayoutPanelKadrolar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel19, 0, 0);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel18, 2, 32);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel5, 2, 6);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label4, 2, 5);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label5, 2, 7);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label6, 2, 9);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label7, 2, 11);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label8, 2, 13);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label9, 2, 15);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label10, 2, 17);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label11, 2, 19);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label12, 2, 21);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label13, 2, 23);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label14, 2, 25);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label15, 2, 27);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label16, 2, 29);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label17, 2, 31);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel3, 2, 2);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxDeneyimliMuhendis, 3, 3);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxMuhendis, 3, 5);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxScadaSorumlusu, 3, 7);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxLaboratuvarAnalizcisi, 3, 9);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxFormen, 3, 11);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxCamurVardiyaAmiri, 3, 13);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxBolgeScadaSistemBakim, 3, 15);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxBakimOperatoru, 3, 19);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxNumuneAlmaAnalizGorevlisi, 3, 17);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxInsanKaynaklari, 3, 21);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxTerfiMerkezOperatorleri, 3, 23);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxSofor, 3, 25);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxGenelHizmetliPersoenl, 3, 27);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxKoyMahallePersoneli, 3, 29);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.TextBoxKoyMahalleOperatoru, 3, 31);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel4, 2, 4);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.label1, 2, 3);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel6, 2, 8);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel7, 2, 10);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel8, 2, 12);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel9, 2, 14);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel10, 2, 16);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel11, 2, 18);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel12, 2, 20);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel13, 2, 22);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel14, 2, 24);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel15, 2, 26);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel16, 2, 28);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.tableLayoutPanel17, 2, 30);
+            this.TableLayoutPanelKadrolar.Controls.Add(this.ButtonSaveStaff, 3, 0);
+            this.TableLayoutPanelKadrolar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TableLayoutPanelKadrolar.Location = new System.Drawing.Point(43, 26);
+            this.TableLayoutPanelKadrolar.Margin = new System.Windows.Forms.Padding(10);
+            this.TableLayoutPanelKadrolar.Name = "TableLayoutPanelKadrolar";
+            this.TableLayoutPanelKadrolar.RowCount = 34;
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TableLayoutPanelKadrolar.Size = new System.Drawing.Size(1178, 482);
+            this.TableLayoutPanelKadrolar.TabIndex = 1;
             // 
             // tableLayoutPanel19
             // 
@@ -200,7 +200,7 @@
             this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(0, 26, 0, 0);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 1;
-            this.tableLayoutPanel2.SetRowSpan(this.tableLayoutPanel19, 34);
+            this.TableLayoutPanelKadrolar.SetRowSpan(this.tableLayoutPanel19, 34);
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 745F));
             this.tableLayoutPanel19.Size = new System.Drawing.Size(235, 745);
@@ -277,7 +277,7 @@
             // 
             this.tableLayoutPanel18.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel18.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel18, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel18, 2);
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel18.Location = new System.Drawing.Point(244, 741);
@@ -292,7 +292,7 @@
             // 
             this.tableLayoutPanel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel5.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel5, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel5, 2);
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(244, 156);
@@ -476,7 +476,7 @@
             // 
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.DarkRed;
             this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel3, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel3, 2);
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 99.99999F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 2F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
@@ -533,7 +533,8 @@
             this.TextBoxDeneyimliMuhendis.Location = new System.Drawing.Point(1057, 82);
             this.TextBoxDeneyimliMuhendis.Name = "TextBoxDeneyimliMuhendis";
             this.TextBoxDeneyimliMuhendis.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxDeneyimliMuhendis.TabIndex = 4;
+            this.TextBoxDeneyimliMuhendis.TabIndex = 0;
+            this.TextBoxDeneyimliMuhendis.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxMuhendis
             // 
@@ -542,7 +543,8 @@
             this.TextBoxMuhendis.Location = new System.Drawing.Point(1057, 127);
             this.TextBoxMuhendis.Name = "TextBoxMuhendis";
             this.TextBoxMuhendis.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxMuhendis.TabIndex = 4;
+            this.TextBoxMuhendis.TabIndex = 1;
+            this.TextBoxMuhendis.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxScadaSorumlusu
             // 
@@ -551,7 +553,8 @@
             this.TextBoxScadaSorumlusu.Location = new System.Drawing.Point(1057, 172);
             this.TextBoxScadaSorumlusu.Name = "TextBoxScadaSorumlusu";
             this.TextBoxScadaSorumlusu.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxScadaSorumlusu.TabIndex = 4;
+            this.TextBoxScadaSorumlusu.TabIndex = 2;
+            this.TextBoxScadaSorumlusu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxLaboratuvarAnalizcisi
             // 
@@ -560,7 +563,8 @@
             this.TextBoxLaboratuvarAnalizcisi.Location = new System.Drawing.Point(1057, 217);
             this.TextBoxLaboratuvarAnalizcisi.Name = "TextBoxLaboratuvarAnalizcisi";
             this.TextBoxLaboratuvarAnalizcisi.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxLaboratuvarAnalizcisi.TabIndex = 4;
+            this.TextBoxLaboratuvarAnalizcisi.TabIndex = 3;
+            this.TextBoxLaboratuvarAnalizcisi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxFormen
             // 
@@ -570,6 +574,7 @@
             this.TextBoxFormen.Name = "TextBoxFormen";
             this.TextBoxFormen.Size = new System.Drawing.Size(92, 22);
             this.TextBoxFormen.TabIndex = 4;
+            this.TextBoxFormen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxCamurVardiyaAmiri
             // 
@@ -578,7 +583,8 @@
             this.TextBoxCamurVardiyaAmiri.Location = new System.Drawing.Point(1057, 307);
             this.TextBoxCamurVardiyaAmiri.Name = "TextBoxCamurVardiyaAmiri";
             this.TextBoxCamurVardiyaAmiri.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxCamurVardiyaAmiri.TabIndex = 4;
+            this.TextBoxCamurVardiyaAmiri.TabIndex = 5;
+            this.TextBoxCamurVardiyaAmiri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxBolgeScadaSistemBakim
             // 
@@ -587,7 +593,8 @@
             this.TextBoxBolgeScadaSistemBakim.Location = new System.Drawing.Point(1057, 352);
             this.TextBoxBolgeScadaSistemBakim.Name = "TextBoxBolgeScadaSistemBakim";
             this.TextBoxBolgeScadaSistemBakim.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxBolgeScadaSistemBakim.TabIndex = 4;
+            this.TextBoxBolgeScadaSistemBakim.TabIndex = 6;
+            this.TextBoxBolgeScadaSistemBakim.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxBakimOperatoru
             // 
@@ -596,7 +603,8 @@
             this.TextBoxBakimOperatoru.Location = new System.Drawing.Point(1057, 442);
             this.TextBoxBakimOperatoru.Name = "TextBoxBakimOperatoru";
             this.TextBoxBakimOperatoru.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxBakimOperatoru.TabIndex = 4;
+            this.TextBoxBakimOperatoru.TabIndex = 8;
+            this.TextBoxBakimOperatoru.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxNumuneAlmaAnalizGorevlisi
             // 
@@ -605,7 +613,8 @@
             this.TextBoxNumuneAlmaAnalizGorevlisi.Location = new System.Drawing.Point(1057, 397);
             this.TextBoxNumuneAlmaAnalizGorevlisi.Name = "TextBoxNumuneAlmaAnalizGorevlisi";
             this.TextBoxNumuneAlmaAnalizGorevlisi.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxNumuneAlmaAnalizGorevlisi.TabIndex = 4;
+            this.TextBoxNumuneAlmaAnalizGorevlisi.TabIndex = 7;
+            this.TextBoxNumuneAlmaAnalizGorevlisi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxInsanKaynaklari
             // 
@@ -614,7 +623,8 @@
             this.TextBoxInsanKaynaklari.Location = new System.Drawing.Point(1057, 487);
             this.TextBoxInsanKaynaklari.Name = "TextBoxInsanKaynaklari";
             this.TextBoxInsanKaynaklari.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxInsanKaynaklari.TabIndex = 4;
+            this.TextBoxInsanKaynaklari.TabIndex = 9;
+            this.TextBoxInsanKaynaklari.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxTerfiMerkezOperatorleri
             // 
@@ -623,7 +633,8 @@
             this.TextBoxTerfiMerkezOperatorleri.Location = new System.Drawing.Point(1057, 532);
             this.TextBoxTerfiMerkezOperatorleri.Name = "TextBoxTerfiMerkezOperatorleri";
             this.TextBoxTerfiMerkezOperatorleri.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxTerfiMerkezOperatorleri.TabIndex = 4;
+            this.TextBoxTerfiMerkezOperatorleri.TabIndex = 10;
+            this.TextBoxTerfiMerkezOperatorleri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxSofor
             // 
@@ -632,7 +643,8 @@
             this.TextBoxSofor.Location = new System.Drawing.Point(1057, 577);
             this.TextBoxSofor.Name = "TextBoxSofor";
             this.TextBoxSofor.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxSofor.TabIndex = 4;
+            this.TextBoxSofor.TabIndex = 11;
+            this.TextBoxSofor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxGenelHizmetliPersoenl
             // 
@@ -641,7 +653,8 @@
             this.TextBoxGenelHizmetliPersoenl.Location = new System.Drawing.Point(1057, 622);
             this.TextBoxGenelHizmetliPersoenl.Name = "TextBoxGenelHizmetliPersoenl";
             this.TextBoxGenelHizmetliPersoenl.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxGenelHizmetliPersoenl.TabIndex = 4;
+            this.TextBoxGenelHizmetliPersoenl.TabIndex = 12;
+            this.TextBoxGenelHizmetliPersoenl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxKoyMahallePersoneli
             // 
@@ -650,7 +663,8 @@
             this.TextBoxKoyMahallePersoneli.Location = new System.Drawing.Point(1057, 667);
             this.TextBoxKoyMahallePersoneli.Name = "TextBoxKoyMahallePersoneli";
             this.TextBoxKoyMahallePersoneli.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxKoyMahallePersoneli.TabIndex = 4;
+            this.TextBoxKoyMahallePersoneli.TabIndex = 13;
+            this.TextBoxKoyMahallePersoneli.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxKoyMahalleOperatoru
             // 
@@ -659,13 +673,14 @@
             this.TextBoxKoyMahalleOperatoru.Location = new System.Drawing.Point(1057, 712);
             this.TextBoxKoyMahalleOperatoru.Name = "TextBoxKoyMahalleOperatoru";
             this.TextBoxKoyMahalleOperatoru.Size = new System.Drawing.Size(92, 22);
-            this.TextBoxKoyMahalleOperatoru.TabIndex = 4;
+            this.TextBoxKoyMahalleOperatoru.TabIndex = 14;
+            this.TextBoxKoyMahalleOperatoru.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel4, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel4, 2);
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(244, 111);
@@ -691,7 +706,7 @@
             // 
             this.tableLayoutPanel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel6, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel6, 2);
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(244, 201);
@@ -706,7 +721,7 @@
             // 
             this.tableLayoutPanel7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel7.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel7, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel7, 2);
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(244, 246);
@@ -721,7 +736,7 @@
             // 
             this.tableLayoutPanel8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel8.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel8, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel8, 2);
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(244, 291);
@@ -736,7 +751,7 @@
             // 
             this.tableLayoutPanel9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel9.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel9, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel9, 2);
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(244, 336);
@@ -751,7 +766,7 @@
             // 
             this.tableLayoutPanel10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel10.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel10, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel10, 2);
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(244, 381);
@@ -766,7 +781,7 @@
             // 
             this.tableLayoutPanel11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel11.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel11, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel11, 2);
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(244, 426);
@@ -781,7 +796,7 @@
             // 
             this.tableLayoutPanel12.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel12.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel12, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel12, 2);
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(244, 471);
@@ -796,7 +811,7 @@
             // 
             this.tableLayoutPanel13.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel13.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel13, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel13, 2);
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel13.Location = new System.Drawing.Point(244, 516);
@@ -811,7 +826,7 @@
             // 
             this.tableLayoutPanel14.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel14.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel14, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel14, 2);
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(244, 561);
@@ -826,7 +841,7 @@
             // 
             this.tableLayoutPanel15.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel15.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel15, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel15, 2);
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel15.Location = new System.Drawing.Point(244, 606);
@@ -841,7 +856,7 @@
             // 
             this.tableLayoutPanel16.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel16.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel16, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel16, 2);
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel16.Location = new System.Drawing.Point(244, 651);
@@ -856,7 +871,7 @@
             // 
             this.tableLayoutPanel17.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel17.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel17, 2);
+            this.TableLayoutPanelKadrolar.SetColumnSpan(this.tableLayoutPanel17, 2);
             this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel17.Location = new System.Drawing.Point(244, 696);
@@ -891,14 +906,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1264, 551);
-            this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.TableLayoutPanelKadrolar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormStaffs";
             this.Padding = new System.Windows.Forms.Padding(43, 26, 43, 43);
             this.Text = "FrormStaffs";
             this.Load += new System.EventHandler(this.FrormStaffs_Load);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
+            this.TableLayoutPanelKadrolar.ResumeLayout(false);
+            this.TableLayoutPanelKadrolar.PerformLayout();
             this.tableLayoutPanel19.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel20.ResumeLayout(false);
@@ -911,7 +926,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel TableLayoutPanelKadrolar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;

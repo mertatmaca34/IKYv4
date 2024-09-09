@@ -25,6 +25,7 @@ namespace IKYv4.Forms
         private readonly ISertifikaManager _sertifikaManager;
         private readonly IIletisimManager _iletisimManager;
         private readonly ICocukManager _cocukManager;
+        private readonly IKadroDurumlariManager _kadroDurumlariManager;
 
         public FormMain(
             IPersonelManager personelManager,
@@ -42,7 +43,8 @@ namespace IKYv4.Forms
             ISertifikaManager sertifikaManager,
             IIletisimManager iletisimManager,
             ITahsilManager tahsilManager,
-            ICocukManager cocukManager)
+            ICocukManager cocukManager,
+            IKadroDurumlariManager kadroDurumlariManager)
         {
             InitializeComponent();
 
@@ -62,6 +64,7 @@ namespace IKYv4.Forms
             _sertifikaManager = sertifikaManager;
             _iletisimManager = iletisimManager;
             _tahsilManager = tahsilManager;
+            _kadroDurumlariManager = kadroDurumlariManager;
         }
 
         private void FormMain_SizeChanged(object sender, EventArgs e)
@@ -153,7 +156,7 @@ namespace IKYv4.Forms
 
         private void ButtonStaffs_Click(object sender, EventArgs e)
         {
-            PageChange.Change(this.PanelContent, this, new FormStaffs(_mudurlukManager, _seflikManager));
+            PageChange.Change(this.PanelContent, this, new FormStaffs(_mudurlukManager, _seflikManager, _kadroDurumlariManager));
         }
     }
 }

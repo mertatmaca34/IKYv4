@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\BusinessRules.cs" />
+    <Compile Include="Constants\Captions.cs" />
     <Compile Include="DataAccess\EntityFramework\BaseRepository.cs" />
     <Compile Include="DataAccess\EntityFramework\IBaseRepository.cs" />
     <Compile Include="Entities\IEntity.cs" />

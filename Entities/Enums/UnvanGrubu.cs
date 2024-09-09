@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entities.Enums
 {
-    public enum UnvanGrubu
+    public enum UnvanGruplari
     {
         DeneyimliMuhendis = 1,
         Muhendis = 2,
