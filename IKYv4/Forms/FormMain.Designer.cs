@@ -35,26 +35,26 @@ namespace IKYv4.Forms
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.ButtonStaffs = new System.Windows.Forms.Button();
+            this.ButtonEmployeeShift = new System.Windows.Forms.Button();
+            this.ButtonHelp = new System.Windows.Forms.Button();
+            this.ButtonPuantage = new System.Windows.Forms.Button();
+            this.ButtonEmployeVacation = new System.Windows.Forms.Button();
+            this.ButtonEmployeeListing = new System.Windows.Forms.Button();
+            this.ButtonMainPage = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.LabelUserName = new System.Windows.Forms.Label();
+            this.ButtonLogOut = new System.Windows.Forms.Button();
             this.LabelHeader = new System.Windows.Forms.Label();
             this.LabelSubHeader = new System.Windows.Forms.Label();
             this.PanelContent = new System.Windows.Forms.Panel();
-            this.ButtonLogOut = new System.Windows.Forms.Button();
-            this.ButtonMainPage = new System.Windows.Forms.Button();
-            this.ButtonEmployeeListing = new System.Windows.Forms.Button();
-            this.ButtonEmployeVacation = new System.Windows.Forms.Button();
-            this.ButtonPuantage = new System.Windows.Forms.Button();
-            this.ButtonHelp = new System.Windows.Forms.Button();
-            this.ButtonEmployeeShift = new System.Windows.Forms.Button();
-            this.ButtonStaffs = new System.Windows.Forms.Button();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -112,6 +112,153 @@ namespace IKYv4.Forms
             this.panel1.Size = new System.Drawing.Size(1264, 4);
             this.panel1.TabIndex = 3;
             // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.BackColor = System.Drawing.Color.DarkRed;
+            this.tableLayoutPanel5.ColumnCount = 9;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.696203F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.696203F));
+            this.tableLayoutPanel5.Controls.Add(this.ButtonStaffs, 3, 0);
+            this.tableLayoutPanel5.Controls.Add(this.ButtonEmployeeShift, 5, 0);
+            this.tableLayoutPanel5.Controls.Add(this.ButtonHelp, 7, 0);
+            this.tableLayoutPanel5.Controls.Add(this.ButtonPuantage, 6, 0);
+            this.tableLayoutPanel5.Controls.Add(this.ButtonEmployeVacation, 4, 0);
+            this.tableLayoutPanel5.Controls.Add(this.ButtonEmployeeListing, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.ButtonMainPage, 1, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 4);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1264, 35);
+            this.tableLayoutPanel5.TabIndex = 6;
+            // 
+            // ButtonStaffs
+            // 
+            this.ButtonStaffs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonStaffs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonStaffs.FlatAppearance.BorderSize = 0;
+            this.ButtonStaffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonStaffs.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonStaffs.ForeColor = System.Drawing.Color.White;
+            this.ButtonStaffs.Location = new System.Drawing.Point(391, 0);
+            this.ButtonStaffs.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonStaffs.Name = "ButtonStaffs";
+            this.ButtonStaffs.Size = new System.Drawing.Size(160, 35);
+            this.ButtonStaffs.TabIndex = 11;
+            this.ButtonStaffs.Text = "KADROLAR";
+            this.ButtonStaffs.UseVisualStyleBackColor = true;
+            this.ButtonStaffs.Click += new System.EventHandler(this.ButtonStaffs_Click);
+            // 
+            // ButtonEmployeeShift
+            // 
+            this.ButtonEmployeeShift.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonEmployeeShift.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonEmployeeShift.FlatAppearance.BorderSize = 0;
+            this.ButtonEmployeeShift.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonEmployeeShift.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonEmployeeShift.ForeColor = System.Drawing.Color.White;
+            this.ButtonEmployeeShift.Location = new System.Drawing.Point(711, 0);
+            this.ButtonEmployeeShift.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonEmployeeShift.Name = "ButtonEmployeeShift";
+            this.ButtonEmployeeShift.Size = new System.Drawing.Size(160, 35);
+            this.ButtonEmployeeShift.TabIndex = 10;
+            this.ButtonEmployeeShift.Text = "PERSONEL MESAİ";
+            this.ButtonEmployeeShift.UseVisualStyleBackColor = true;
+            this.ButtonEmployeeShift.Click += new System.EventHandler(this.ButtonEmployeeShift_Click);
+            // 
+            // ButtonHelp
+            // 
+            this.ButtonHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonHelp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonHelp.FlatAppearance.BorderSize = 0;
+            this.ButtonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonHelp.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonHelp.ForeColor = System.Drawing.Color.White;
+            this.ButtonHelp.Location = new System.Drawing.Point(1031, 0);
+            this.ButtonHelp.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonHelp.Name = "ButtonHelp";
+            this.ButtonHelp.Size = new System.Drawing.Size(160, 35);
+            this.ButtonHelp.TabIndex = 9;
+            this.ButtonHelp.Text = "İLETİŞİM";
+            this.ButtonHelp.UseVisualStyleBackColor = true;
+            // 
+            // ButtonPuantage
+            // 
+            this.ButtonPuantage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonPuantage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonPuantage.FlatAppearance.BorderSize = 0;
+            this.ButtonPuantage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonPuantage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonPuantage.ForeColor = System.Drawing.Color.White;
+            this.ButtonPuantage.Location = new System.Drawing.Point(871, 0);
+            this.ButtonPuantage.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonPuantage.Name = "ButtonPuantage";
+            this.ButtonPuantage.Size = new System.Drawing.Size(160, 35);
+            this.ButtonPuantage.TabIndex = 8;
+            this.ButtonPuantage.Text = "PUANTAJ";
+            this.ButtonPuantage.UseVisualStyleBackColor = true;
+            this.ButtonPuantage.Click += new System.EventHandler(this.ButtonPuantage_Click);
+            // 
+            // ButtonEmployeVacation
+            // 
+            this.ButtonEmployeVacation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonEmployeVacation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonEmployeVacation.FlatAppearance.BorderSize = 0;
+            this.ButtonEmployeVacation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonEmployeVacation.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonEmployeVacation.ForeColor = System.Drawing.Color.White;
+            this.ButtonEmployeVacation.Location = new System.Drawing.Point(551, 0);
+            this.ButtonEmployeVacation.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonEmployeVacation.Name = "ButtonEmployeVacation";
+            this.ButtonEmployeVacation.Size = new System.Drawing.Size(160, 35);
+            this.ButtonEmployeVacation.TabIndex = 7;
+            this.ButtonEmployeVacation.Text = "PERSONEL İZİN";
+            this.ButtonEmployeVacation.UseVisualStyleBackColor = true;
+            this.ButtonEmployeVacation.Click += new System.EventHandler(this.ButtonEmployeVacation_Click);
+            // 
+            // ButtonEmployeeListing
+            // 
+            this.ButtonEmployeeListing.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonEmployeeListing.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonEmployeeListing.FlatAppearance.BorderSize = 0;
+            this.ButtonEmployeeListing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonEmployeeListing.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonEmployeeListing.ForeColor = System.Drawing.Color.White;
+            this.ButtonEmployeeListing.Location = new System.Drawing.Point(231, 0);
+            this.ButtonEmployeeListing.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonEmployeeListing.Name = "ButtonEmployeeListing";
+            this.ButtonEmployeeListing.Size = new System.Drawing.Size(160, 35);
+            this.ButtonEmployeeListing.TabIndex = 5;
+            this.ButtonEmployeeListing.Text = "PERSONEL LİSTELEME";
+            this.ButtonEmployeeListing.UseVisualStyleBackColor = true;
+            this.ButtonEmployeeListing.Click += new System.EventHandler(this.ButtonEmployeeListing_Click);
+            // 
+            // ButtonMainPage
+            // 
+            this.ButtonMainPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonMainPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonMainPage.FlatAppearance.BorderSize = 0;
+            this.ButtonMainPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonMainPage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ButtonMainPage.ForeColor = System.Drawing.Color.White;
+            this.ButtonMainPage.Location = new System.Drawing.Point(71, 0);
+            this.ButtonMainPage.Margin = new System.Windows.Forms.Padding(0);
+            this.ButtonMainPage.Name = "ButtonMainPage";
+            this.ButtonMainPage.Size = new System.Drawing.Size(160, 35);
+            this.ButtonMainPage.TabIndex = 3;
+            this.ButtonMainPage.Text = "ANASAYFA";
+            this.ButtonMainPage.UseVisualStyleBackColor = true;
+            this.ButtonMainPage.Click += new System.EventHandler(this.ButtonMainPage_Click);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
@@ -159,6 +306,16 @@ namespace IKYv4.Forms
             this.LabelUserName.TabIndex = 2;
             this.LabelUserName.Text = "Adı Soyadı";
             // 
+            // ButtonLogOut
+            // 
+            this.ButtonLogOut.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonLogOut.Image = global::IKYv4.Properties.Resources.Power_Off_Button_16px;
+            this.ButtonLogOut.Location = new System.Drawing.Point(237, 3);
+            this.ButtonLogOut.Name = "ButtonLogOut";
+            this.ButtonLogOut.Size = new System.Drawing.Size(26, 22);
+            this.ButtonLogOut.TabIndex = 1;
+            this.ButtonLogOut.UseVisualStyleBackColor = true;
+            // 
             // LabelHeader
             // 
             this.LabelHeader.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -192,163 +349,6 @@ namespace IKYv4.Forms
             this.PanelContent.Size = new System.Drawing.Size(1264, 569);
             this.PanelContent.TabIndex = 3;
             // 
-            // ButtonLogOut
-            // 
-            this.ButtonLogOut.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonLogOut.Image = global::IKYv4.Properties.Resources.Power_Off_Button_16px;
-            this.ButtonLogOut.Location = new System.Drawing.Point(237, 3);
-            this.ButtonLogOut.Name = "ButtonLogOut";
-            this.ButtonLogOut.Size = new System.Drawing.Size(26, 22);
-            this.ButtonLogOut.TabIndex = 1;
-            this.ButtonLogOut.UseVisualStyleBackColor = true;
-            // 
-            // ButtonMainPage
-            // 
-            this.ButtonMainPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonMainPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonMainPage.FlatAppearance.BorderSize = 0;
-            this.ButtonMainPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonMainPage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonMainPage.ForeColor = System.Drawing.Color.White;
-            this.ButtonMainPage.Location = new System.Drawing.Point(71, 0);
-            this.ButtonMainPage.Margin = new System.Windows.Forms.Padding(0);
-            this.ButtonMainPage.Name = "ButtonMainPage";
-            this.ButtonMainPage.Size = new System.Drawing.Size(160, 35);
-            this.ButtonMainPage.TabIndex = 3;
-            this.ButtonMainPage.Text = "ANASAYFA";
-            this.ButtonMainPage.UseVisualStyleBackColor = true;
-            this.ButtonMainPage.Click += new System.EventHandler(this.ButtonMainPage_Click);
-            // 
-            // ButtonEmployeeListing
-            // 
-            this.ButtonEmployeeListing.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonEmployeeListing.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonEmployeeListing.FlatAppearance.BorderSize = 0;
-            this.ButtonEmployeeListing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonEmployeeListing.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonEmployeeListing.ForeColor = System.Drawing.Color.White;
-            this.ButtonEmployeeListing.Location = new System.Drawing.Point(391, 0);
-            this.ButtonEmployeeListing.Margin = new System.Windows.Forms.Padding(0);
-            this.ButtonEmployeeListing.Name = "ButtonEmployeeListing";
-            this.ButtonEmployeeListing.Size = new System.Drawing.Size(160, 35);
-            this.ButtonEmployeeListing.TabIndex = 5;
-            this.ButtonEmployeeListing.Text = "PERSONEL LİSTELEME";
-            this.ButtonEmployeeListing.UseVisualStyleBackColor = true;
-            this.ButtonEmployeeListing.Click += new System.EventHandler(this.ButtonEmployeeListing_Click);
-            // 
-            // ButtonEmployeVacation
-            // 
-            this.ButtonEmployeVacation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonEmployeVacation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonEmployeVacation.FlatAppearance.BorderSize = 0;
-            this.ButtonEmployeVacation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonEmployeVacation.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonEmployeVacation.ForeColor = System.Drawing.Color.White;
-            this.ButtonEmployeVacation.Location = new System.Drawing.Point(551, 0);
-            this.ButtonEmployeVacation.Margin = new System.Windows.Forms.Padding(0);
-            this.ButtonEmployeVacation.Name = "ButtonEmployeVacation";
-            this.ButtonEmployeVacation.Size = new System.Drawing.Size(160, 35);
-            this.ButtonEmployeVacation.TabIndex = 7;
-            this.ButtonEmployeVacation.Text = "PERSONEL İZİN";
-            this.ButtonEmployeVacation.UseVisualStyleBackColor = true;
-            this.ButtonEmployeVacation.Click += new System.EventHandler(this.ButtonEmployeVacation_Click);
-            // 
-            // ButtonPuantage
-            // 
-            this.ButtonPuantage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonPuantage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonPuantage.FlatAppearance.BorderSize = 0;
-            this.ButtonPuantage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonPuantage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonPuantage.ForeColor = System.Drawing.Color.White;
-            this.ButtonPuantage.Location = new System.Drawing.Point(871, 0);
-            this.ButtonPuantage.Margin = new System.Windows.Forms.Padding(0);
-            this.ButtonPuantage.Name = "ButtonPuantage";
-            this.ButtonPuantage.Size = new System.Drawing.Size(160, 35);
-            this.ButtonPuantage.TabIndex = 8;
-            this.ButtonPuantage.Text = "PUANTAJ";
-            this.ButtonPuantage.UseVisualStyleBackColor = true;
-            this.ButtonPuantage.Click += new System.EventHandler(this.ButtonPuantage_Click);
-            // 
-            // ButtonHelp
-            // 
-            this.ButtonHelp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonHelp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonHelp.FlatAppearance.BorderSize = 0;
-            this.ButtonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonHelp.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonHelp.ForeColor = System.Drawing.Color.White;
-            this.ButtonHelp.Location = new System.Drawing.Point(1031, 0);
-            this.ButtonHelp.Margin = new System.Windows.Forms.Padding(0);
-            this.ButtonHelp.Name = "ButtonHelp";
-            this.ButtonHelp.Size = new System.Drawing.Size(160, 35);
-            this.ButtonHelp.TabIndex = 9;
-            this.ButtonHelp.Text = "İLETİŞİM";
-            this.ButtonHelp.UseVisualStyleBackColor = true;
-            // 
-            // ButtonEmployeeShift
-            // 
-            this.ButtonEmployeeShift.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonEmployeeShift.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonEmployeeShift.FlatAppearance.BorderSize = 0;
-            this.ButtonEmployeeShift.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonEmployeeShift.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonEmployeeShift.ForeColor = System.Drawing.Color.White;
-            this.ButtonEmployeeShift.Location = new System.Drawing.Point(711, 0);
-            this.ButtonEmployeeShift.Margin = new System.Windows.Forms.Padding(0);
-            this.ButtonEmployeeShift.Name = "ButtonEmployeeShift";
-            this.ButtonEmployeeShift.Size = new System.Drawing.Size(160, 35);
-            this.ButtonEmployeeShift.TabIndex = 10;
-            this.ButtonEmployeeShift.Text = "PERSONEL MESAİ";
-            this.ButtonEmployeeShift.UseVisualStyleBackColor = true;
-            this.ButtonEmployeeShift.Click += new System.EventHandler(this.ButtonEmployeeShift_Click);
-            // 
-            // ButtonStaffs
-            // 
-            this.ButtonStaffs.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonStaffs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonStaffs.FlatAppearance.BorderSize = 0;
-            this.ButtonStaffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonStaffs.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonStaffs.ForeColor = System.Drawing.Color.White;
-            this.ButtonStaffs.Location = new System.Drawing.Point(231, 0);
-            this.ButtonStaffs.Margin = new System.Windows.Forms.Padding(0);
-            this.ButtonStaffs.Name = "ButtonStaffs";
-            this.ButtonStaffs.Size = new System.Drawing.Size(160, 35);
-            this.ButtonStaffs.TabIndex = 11;
-            this.ButtonStaffs.Text = "KADROLAR";
-            this.ButtonStaffs.UseVisualStyleBackColor = true;
-            this.ButtonStaffs.Click += new System.EventHandler(this.ButtonStaffs_Click);
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.BackColor = System.Drawing.Color.DarkRed;
-            this.tableLayoutPanel5.ColumnCount = 9;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.696203F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.65823F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.696203F));
-            this.tableLayoutPanel5.Controls.Add(this.ButtonStaffs, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.ButtonEmployeeShift, 5, 0);
-            this.tableLayoutPanel5.Controls.Add(this.ButtonHelp, 7, 0);
-            this.tableLayoutPanel5.Controls.Add(this.ButtonPuantage, 6, 0);
-            this.tableLayoutPanel5.Controls.Add(this.ButtonEmployeVacation, 4, 0);
-            this.tableLayoutPanel5.Controls.Add(this.ButtonEmployeeListing, 3, 0);
-            this.tableLayoutPanel5.Controls.Add(this.ButtonMainPage, 1, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 4);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1264, 35);
-            this.tableLayoutPanel5.TabIndex = 6;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,11 +364,11 @@ namespace IKYv4.Forms
             this.SizeChanged += new System.EventHandler(this.FormMain_SizeChanged);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

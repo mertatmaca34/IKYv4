@@ -41,5 +41,17 @@ namespace IKYv4.Utilities.Extensions
             }
             return str;
         }
+
+        public static string TryNull(this string str)
+        {
+            if (str == null)
+            {
+                return "";
+            }
+            else
+            {
+                return str;
+            }
+        }
     }
 }

@@ -3,6 +3,7 @@ using Business.Constants;
 using Core.Constants;
 using Entities.Concrete;
 using Entities.Enums;
+using IKYv4.Utilities.Extensions;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -27,6 +28,7 @@ namespace IKYv4.Forms
         private void FrormStaffs_Load(object sender, EventArgs e)
         {
             #region Müdürlük ComboBox'ına default değerlerin atanması
+
             var resMudurlukler = _mudurlukManager.GetAll().Data;
 
             foreach (var mudurluk in resMudurlukler)
@@ -39,6 +41,7 @@ namespace IKYv4.Forms
 
             ComboBoxMudurlukFilter.Text = ComboBoxMudurlukFilter.SelectedIndex < 0 ? "MÜDÜRLÜK"
                 : ComboBoxMudurlukFilter.Text = ComboBoxMudurlukFilter.SelectedText;
+
             #endregion
         }
 
@@ -75,7 +78,46 @@ namespace IKYv4.Forms
 
         private void ComboBoxSeflikFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ResetTextBoxes();
 
+            var seflik = _seflikManager.GetAll(x => x.SeflikAdi == ComboBoxSeflikFilter.Text);
+
+            if (seflik.Data.Count > 0)
+            {
+                var seflikId = seflik.Data.FirstOrDefault().Id;
+
+                var kadroDurumlari = _kadroDurumlariManager.GetAll(x => x.SeflikId == seflikId).Data;
+
+                if (kadroDurumlari.Count > 0)
+                {
+                    TextBoxDeneyimliMuhendis.Text          = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.DeneyimliMuhendis).KadroSayisi.ToString().TryNull();
+                    TextBoxMuhendis.Text                   = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.Muhendis).KadroSayisi.ToString().TryNull();
+                    TextBoxScadaSorumlusu.Text             = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.ScadaSorumlusu).KadroSayisi.ToString().TryNull();
+                    TextBoxLaboratuvarAnalizcisi.Text      = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.LaboratuvarAnalizcisi).KadroSayisi.ToString().TryNull();
+                    TextBoxFormen.Text                     = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.Formen).KadroSayisi.ToString().TryNull();
+                    TextBoxCamurVardiyaAmiri.Text          = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.CamurVardiyaAmiri).KadroSayisi.ToString().TryNull();
+                    TextBoxBolgeScadaSistemBakim.Text      = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.BolgeScadaSistemBakim).KadroSayisi.ToString().TryNull();
+                    TextBoxNumuneAlmaAnalizGorevlisi.Text  = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.NumuneAlmaAnalizGorevlisi).KadroSayisi.ToString().TryNull();
+                    TextBoxBakimOperatoru.Text             = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.BakimOperatoru).KadroSayisi.ToString().TryNull();
+                    TextBoxInsanKaynaklari.Text            = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.InsanKaynaklari).KadroSayisi.ToString().TryNull();
+                    TextBoxTerfiMerkezOperatorleri.Text    = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.TerfiMerkeziOperatorleri).KadroSayisi.ToString().TryNull();
+                    TextBoxSofor.Text                      = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.Sofor).KadroSayisi.ToString().TryNull();
+                    TextBoxGenelHizmetliPersoenl.Text      = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.GenelHizmetliPersonel).KadroSayisi.ToString().TryNull();
+                    TextBoxKoyMahallePersoneli.Text        = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.KoyMahallePersoneli).KadroSayisi.ToString().TryNull();
+                    TextBoxKoyMahalleOperatoru.Text        = kadroDurumlari.Find(x => x.UnvanGrubuId == (int) UnvanGruplari.KoyMahalleOperatoru).KadroSayisi.ToString().TryNull();
+                }
+            }
+        }
+
+        private void ResetTextBoxes()
+        {
+            foreach (var item in TableLayoutPanelKadrolar.Controls)
+            {
+                if (item is TextBox textBox)
+                {
+                    textBox.Text = "";
+                }
+            }
         }
 
         private void ButtonSaveStaff_Click(object sender, EventArgs e)
@@ -127,7 +169,7 @@ namespace IKYv4.Forms
                 case "TextBoxFormen":
                     return (int)UnvanGruplari.Formen;
                 case "TextBoxCamurVardiyaAmiri":
-                    return (int)UnvanGruplari.CamirVardiyaAmiri;
+                    return (int)UnvanGruplari.CamurVardiyaAmiri;
                 case "TextBoxBolgeScadaSistemBakim":
                     return (int)UnvanGruplari.BolgeScadaSistemBakim;
                 case "TextBoxNumuneAlmaAnalizGorevlisi":

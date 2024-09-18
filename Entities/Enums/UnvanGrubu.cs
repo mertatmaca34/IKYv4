@@ -13,7 +13,7 @@ namespace Entities.Enums
         ScadaSorumlusu = 3,
         LaboratuvarAnalizcisi = 4,
         Formen = 5,
-        CamirVardiyaAmiri = 6,
+        CamurVardiyaAmiri = 6,
         BolgeScadaSistemBakim = 7,
         NumuneAlmaAnalizGorevlisi = 8,
         BakimOperatoru = 9,
