@@ -5,6 +5,7 @@ using Entities.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace IKYv4.Forms
@@ -15,6 +16,7 @@ namespace IKYv4.Forms
         private readonly ISeflikManager _seflikManager;
         private readonly IPersonelManager _personelManager;
         private readonly INufusManager _nufusManager;
+        private readonly ITahsilManager _tahsilManager;
 
         private readonly int _stationId;
 
@@ -25,12 +27,14 @@ namespace IKYv4.Forms
             ISeflikManager seflikManager, 
             IPersonelManager personelManager, 
             INufusManager nufusManager,
+            ITahsilManager tahsilManager,
             Stations station)
         {
             _kadroDurumlariManager = kadroDurumlariManager;
             _seflikManager = seflikManager;
             _personelManager = personelManager;
             _nufusManager = nufusManager;
+            _tahsilManager = tahsilManager;
 
             _stationId = Convert.ToInt16(station);
 
@@ -114,7 +118,6 @@ namespace IKYv4.Forms
             var seflik = _seflikManager.GetAll(s => s.Id == _stationId).Data.FirstOrDefault();
 
             var personeller = _personelManager.GetAll(x => x.Seflik == seflik.SeflikAdi).Data;
-
         }
     }
 }
