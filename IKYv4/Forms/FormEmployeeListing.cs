@@ -801,43 +801,48 @@ namespace IKYv4.Forms
                 {
                     filterTahsilLisansUstu = t => t.TahsilTuru == "YÜKSEK LİSANS" || t.TahsilTuru == "DOKTORA";
                 }
-                else if (lisans == true)
+                if (lisans == true)
                 {
-                    filterTahsilLisans = t => t.TahsilTuru == CheckBoxYuksekLisans.Text;
+                    filterTahsilLisans = t => t.TahsilTuru == "LİSANS";
                 }
-                else if (onLisans == true)
+                if (onLisans == true)
                 {
-                    filterTahsilOnLisans = t => t.TahsilTuru == CheckBoxOnLisans.Text;
+                    filterTahsilOnLisans = t => t.TahsilTuru == "ÖN LİSANS";
                 }
-                else if (lise == true)
+                if (lise == true)
                 {
-                    filterTahsilLise = t => t.TahsilTuru == CheckBoxLise.Text;
+                    filterTahsilLise = t => t.TahsilTuru == "LİSE";
                 }
-                else if (ortaOkul == true)
+                if (ortaOkul == true)
                 {
-                    filterTahsilOrtaokul = t => t.TahsilTuru == CheckBoxOrtaokul.Text;
+                    filterTahsilOrtaokul = t => t.TahsilTuru == "ORTAOKUL";
                 }
-                else if (ilkOkul == true)
+                if (ilkOkul == true)
                 {
-                    filterTahsilIlokul = t => t.TahsilTuru == CheckBoxIlkokul.Text;
+                    filterTahsilIlokul = t => t.TahsilTuru == "İLKOKUL";
                 }
 
-                filterTahsil = filterTahsilLisansUstu != null && filterTahsilLisans != null ? PredicateBuilder.And(filterTahsilLisansUstu, filterTahsilLisans)
+                filterTahsil = filterTahsilLisansUstu != null && filterTahsilLisans != null ? PredicateBuilder.Or(filterTahsilLisansUstu, filterTahsilLisans)
                     : filterTahsilLisansUstu != null && filterTahsilLisans == null ? filterTahsilLisansUstu
                     : filterTahsilLisans != null && filterTahsilLisansUstu == null ? filterTahsilLisans
                     : null;
 
-                filterTahsil = filterTahsilLise != null && filterTahsil != null ? PredicateBuilder.And(filterTahsilLise, filterTahsil)
+                filterTahsil = filterTahsilOnLisans != null && filterTahsil != null ? PredicateBuilder.Or(filterTahsilOnLisans, filterTahsil)
+                    : filterTahsilOnLisans != null && filterTahsil == null ? filterTahsilOnLisans
+                    : filterTahsilOnLisans == null && filterTahsil != null ? filterTahsil
+                    : null;
+
+                filterTahsil = filterTahsilLise != null && filterTahsil != null ? PredicateBuilder.Or(filterTahsilLise, filterTahsil)
                     : filterTahsilLise != null && filterTahsil == null ? filterTahsilLise
                     : filterTahsilLise == null && filterTahsil != null ? filterTahsil
                     : null;
 
-                filterTahsil = filterTahsilOrtaokul != null && filterTahsil != null ? PredicateBuilder.And(filterTahsilOrtaokul, filterTahsil)
+                filterTahsil = filterTahsilOrtaokul != null && filterTahsil != null ? PredicateBuilder.Or(filterTahsilOrtaokul, filterTahsil)
                     : filterTahsilOrtaokul != null && filterTahsil == null ? filterTahsilOrtaokul
                     : filterTahsilOrtaokul == null && filterTahsil != null ? filterTahsil
                     : null;
 
-                filterTahsil = filterTahsilIlokul != null && filterTahsil != null ? PredicateBuilder.And(filterTahsilIlokul, filterTahsil)
+                filterTahsil = filterTahsilIlokul != null && filterTahsil != null ? PredicateBuilder.Or(filterTahsilIlokul, filterTahsil)
                     : filterTahsilIlokul != null && filterTahsil == null ? filterTahsilIlokul
                     : filterTahsilIlokul == null && filterTahsil != null ? filterTahsil
                     : null;

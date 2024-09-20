@@ -41,6 +41,7 @@ namespace IKYv4.Forms
         {
             DataGridViewCustomization();
             AssignChartAges();
+            AssignChartExperiences();
         }
 
         private void DataGridViewCustomization()
@@ -90,6 +91,30 @@ namespace IKYv4.Forms
 
                 ChartAges.Series[0].Points.AddXY(0, personelYasi);
             }
+        }
+
+        private void AssignChartExperiences()
+        {
+            var seflik = _seflikManager.GetAll(s => s.Id == _stationId).Data.FirstOrDefault();
+
+            var personeller = _personelManager.GetAll(x => x.Seflik == seflik.SeflikAdi).Data;
+
+            foreach (var personel in personeller)
+            {
+                var deneyimTimestamp = DateTime.Now - personel.IseGirisTarihi;
+
+                var deneyimYil = deneyimTimestamp.TotalDays / 365;
+
+                ChartExperiences.Series[0].Points.AddY(deneyimYil);
+            }
+        }
+
+        private void AssignChartEducations()
+        {
+            var seflik = _seflikManager.GetAll(s => s.Id == _stationId).Data.FirstOrDefault();
+
+            var personeller = _personelManager.GetAll(x => x.Seflik == seflik.SeflikAdi).Data;
+
         }
     }
 }
