@@ -255,7 +255,7 @@ namespace IKYv4.Forms
             this.ButtonMainPage.Name = "ButtonMainPage";
             this.ButtonMainPage.Size = new System.Drawing.Size(160, 35);
             this.ButtonMainPage.TabIndex = 3;
-            this.ButtonMainPage.Text = "ANASAYFA";
+            this.ButtonMainPage.Text = "TESİSLER";
             this.ButtonMainPage.UseVisualStyleBackColor = true;
             this.ButtonMainPage.Click += new System.EventHandler(this.ButtonMainPage_Click);
             // 

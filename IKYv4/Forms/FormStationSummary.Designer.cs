@@ -168,8 +168,9 @@
             this.ChartEducations.Location = new System.Drawing.Point(3, 36);
             this.ChartEducations.Name = "ChartEducations";
             series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.DarkRed;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "Tahsil";
             this.ChartEducations.Series.Add(series1);
             this.ChartEducations.Size = new System.Drawing.Size(602, 134);
             this.ChartEducations.TabIndex = 4;
@@ -231,8 +232,9 @@
             this.ChartExperiences.Location = new System.Drawing.Point(3, 36);
             this.ChartExperiences.Name = "ChartExperiences";
             series2.ChartArea = "ChartArea1";
+            series2.Color = System.Drawing.Color.DarkRed;
             series2.Legend = "Legend1";
-            series2.Name = "Series1";
+            series2.Name = "Yıl";
             this.ChartExperiences.Series.Add(series2);
             this.ChartExperiences.Size = new System.Drawing.Size(602, 134);
             this.ChartExperiences.TabIndex = 4;
@@ -294,8 +296,9 @@
             this.ChartAges.Location = new System.Drawing.Point(3, 36);
             this.ChartAges.Name = "ChartAges";
             series3.ChartArea = "ChartArea1";
+            series3.Color = System.Drawing.Color.DarkRed;
             series3.Legend = "Legend1";
-            series3.Name = "Yaşlar";
+            series3.Name = "Yaş";
             this.ChartAges.Series.Add(series3);
             this.ChartAges.Size = new System.Drawing.Size(602, 134);
             this.ChartAges.TabIndex = 4;

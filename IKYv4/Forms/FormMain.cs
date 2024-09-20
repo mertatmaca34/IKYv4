@@ -151,7 +151,7 @@ namespace IKYv4.Forms
 
         private void ButtonMainPage_Click(object sender, EventArgs e)
         {
-            PageChange.Change(this.PanelContent, this, new FormHomePage(_kadroDurumlariManager, _seflikManager, _personelManager));
+            PageChange.Change(this.PanelContent, this, new FormHomePage(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager));
         }
 
         private void ButtonStaffs_Click(object sender, EventArgs e)

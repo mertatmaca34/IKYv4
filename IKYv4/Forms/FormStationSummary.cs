@@ -63,21 +63,33 @@ namespace IKYv4.Forms
             DataGridViewKadroDurumlari.Refresh();
         }
 
+
         private void AssignChartAges()
         {
             var seflik = _seflikManager.GetAll(s=> s.Id == _stationId).Data.FirstOrDefault();
 
             var personeller = _personelManager.GetAll(x => x.Seflik == seflik.SeflikAdi).Data;
 
+            List<Nufus> personelNufuslari = new List<Nufus>();
 
             foreach (var personel in personeller)
             {
-                //ChartAges.Series[0].Points.AddXY()
+                var res = _nufusManager.GetAll(n=> n.PersonelId == personel.Id);
+
+                if (res.Data.Count > 0)
+                {
+                    personelNufuslari.Add(res.Data.FirstOrDefault());
+                }
             }
 
-            ChartAges.Series[0].Points.AddXY(0, 1);
-            ChartAges.Series[0].Points.AddXY(0, 2);
-            ChartAges.Series[0].Points.AddXY(0, 3);
+            foreach (var personelNufusu in personelNufuslari)
+            {
+                var personelYasiTimestamp = DateTime.Now - personelNufusu.DogumTarihi;
+
+                var personelYasi = personelYasiTimestamp.Value.TotalDays / 365;
+
+                ChartAges.Series[0].Points.AddXY(0, personelYasi);
+            }
         }
     }
 }

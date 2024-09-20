@@ -15,12 +15,14 @@ namespace IKYv4.Forms
         IKadroDurumlariManager _kadroDurumlariManager;
         ISeflikManager _seflikManager;
         IPersonelManager _personelManager;
+        INufusManager _nufusManager;
 
-        public FormHomePage(IKadroDurumlariManager kadroDurumlariManager, ISeflikManager seflikManager, IPersonelManager personelManager)
+        public FormHomePage(IKadroDurumlariManager kadroDurumlariManager, ISeflikManager seflikManager, IPersonelManager personelManager, INufusManager nufusManager)
         {
             _kadroDurumlariManager = kadroDurumlariManager;
             _seflikManager = seflikManager;
             _personelManager = personelManager;
+            _nufusManager = nufusManager;
 
             InitializeComponent();
         }
@@ -61,7 +63,7 @@ namespace IKYv4.Forms
         {
             if (item.Position == new PointLatLng(41.0084, 29.2851))
             {
-                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, Stations.Pasakoy));
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, Stations.Pasakoy));
             }
         }
     }
