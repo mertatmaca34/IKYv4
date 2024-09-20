@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Business.Abstract;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -7,13 +8,12 @@ namespace IKYv4.Forms
 {
     public partial class FormStationSummary : Form
     {
-        readonly List<KadroDurumlari> _kadroDurumlari;
+        private readonly IKadroDurumlariManager _kadroDurumlariManager;
 
-        public FormStationSummary(List<KadroDurumlari> kadroDurumlari)
+
+        public FormStationSummary(IKadroDurumlariManager kadroDurumlariManager)
         {
-            InitializeComponent();
-
-            _kadroDurumlari = kadroDurumlari;
+            _kadroDurumlariManager = kadroDurumlariManager;
         }
 
         private void FormStationSummary_Load(object sender, EventArgs e)

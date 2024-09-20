@@ -2,6 +2,7 @@
 using Entities.Concrete;
 using Entities.Concrete.TurkeyModel;
 using IKYv4.Utilities;
+using IKYv4.Utilities.Extensions;
 using LinqKit;
 using System;
 using System.Collections.Generic;
@@ -947,7 +948,7 @@ namespace IKYv4.Forms
         private void ButtonExportToExcel_Click(object sender, EventArgs e)
         {
             DataGridView _dataGridViewEmployees = new DataGridView();
-            _dataGridViewEmployees = DataGridViewEmployees;
+            _dataGridViewEmployees = DataGridViewEmployees.DeepCopy();
 
             _dataGridViewEmployees.Columns.RemoveAt(0);
             _dataGridViewEmployees.Columns.RemoveAt(0);
@@ -955,6 +956,8 @@ namespace IKYv4.Forms
             _dataGridViewEmployees.Columns.RemoveAt(0);
 
             Export.ToExcel(_dataGridViewEmployees);
+
+            DataGridViewCustomization();
         }
 
         private void ButtonEditColumns_Click(object sender, EventArgs e)
