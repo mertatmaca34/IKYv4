@@ -63,6 +63,7 @@
     <Compile Include="Concrete\UnvanGrubu.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="DTOs\PersonelDTO.cs" />
+    <Compile Include="Enums\Stations.cs" />
     <Compile Include="Enums\UnvanGrubu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

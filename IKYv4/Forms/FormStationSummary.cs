@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
+using Entities.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,24 +12,37 @@ namespace IKYv4.Forms
     {
         private readonly IKadroDurumlariManager _kadroDurumlariManager;
         private readonly ISeflikManager _seflikManager;
-        private readonly string _stationName;
+        private readonly int _stationId;
 
-        public FormStationSummary(IKadroDurumlariManager kadroDurumlariManager, string stationName)
+        List<KadroDurumlari> _kadroDurumlari;
+
+        public FormStationSummary(IKadroDurumlariManager kadroDurumlariManager, ISeflikManager seflikManager, Stations station)
         {
             _kadroDurumlariManager = kadroDurumlariManager;
-            _stationName = stationName;
+            _seflikManager = seflikManager;
+            _stationId = Convert.ToInt16(station);
+
+            InitializeComponent();
         }
 
         private void FormStationSummary_Load(object sender, EventArgs e)
         {
-            var seflik = _seflikManager.GetAll(s => s.SeflikAdi == _stationName).Data.FirstOrDefault();
+            DataGridViewCustomization();
+        }
 
-            var kadroDurumlari = _kadroDurumlariManager.GetAll(k => k.SeflikId == seflik.Id).Data;
+        private void DataGridViewCustomization()
+        {
+            var seflik = _seflikManager.GetAll(s => s.Id == _stationId).Data.FirstOrDefault();
 
-            foreach (var kadro in kadroDurumlari)
-            {
-                kadro.
-            }
+            _kadroDurumlari = _kadroDurumlariManager.GetAll(k => k.SeflikId == seflik.Id).Data;
+
+            DataGridViewKadroDurumlari.DataSource = _kadroDurumlari;
+
+            DataGridViewKadroDurumlari.Columns.RemoveAt(0);
+            DataGridViewKadroDurumlari.Columns.RemoveAt(0);
+            DataGridViewKadroDurumlari.Columns.RemoveAt(0);
+
+            DataGridViewKadroDurumlari.Refresh();
         }
     }
 }

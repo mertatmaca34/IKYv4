@@ -1,25 +1,25 @@
-﻿using Entities.Concrete;
+﻿using Business.Abstract;
+using Entities.Enums;
 using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using IKYv4.Properties;
 using IKYv4.Utilities;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IKYv4.Forms
 {
     public partial class FormHomePage : Form
     {
-        public FormHomePage()
+        IKadroDurumlariManager _kadroDurumlariManager;
+        ISeflikManager _seflikManager;
+
+        public FormHomePage(IKadroDurumlariManager kadroDurumlariManager, ISeflikManager seflikManager)
         {
+            _kadroDurumlariManager = kadroDurumlariManager;
+            _seflikManager = seflikManager;
+
             InitializeComponent();
         }
 
@@ -57,9 +57,9 @@ namespace IKYv4.Forms
 
         private void OnMarkerClick(GMapMarker item, MouseEventArgs e)
         {
-            if(item.Position == new PointLatLng(41.0084, 29.2851))
+            if (item.Position == new PointLatLng(41.0084, 29.2851))
             {
-                PageChange.Change(PanelContent, this, new FormStationSummary(new List<KadroDurumlari>()));
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, Stations.Pasakoy));
             }
         }
     }

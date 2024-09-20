@@ -14,14 +14,16 @@ namespace IKYv4.Forms
     {
         private readonly IMudurlukManager _mudurlukManager;
         private readonly ISeflikManager _seflikManager;
+        private readonly IUnvanGrubuManager _unvanGrubuManager;
         private readonly IKadroDurumlariManager _kadroDurumlariManager;
 
-        public FormStaffs(IMudurlukManager mudurlukManager, ISeflikManager seflikManager, IKadroDurumlariManager kadroDurumlariManager)
+        public FormStaffs(IMudurlukManager mudurlukManager, ISeflikManager seflikManager, IUnvanGrubuManager uvanGrubuManager, IKadroDurumlariManager kadroDurumlariManager)
         {
             InitializeComponent();
 
             _mudurlukManager = mudurlukManager;
             _seflikManager = seflikManager;
+            _unvanGrubuManager = uvanGrubuManager;
             _kadroDurumlariManager = kadroDurumlariManager;
         }
 
@@ -124,7 +126,7 @@ namespace IKYv4.Forms
         {
             if (ComboBoxSeflikFilter.Text != "ŞEFLİK")
             {
-                var seflikId = _seflikManager.GetAll(x => x.SeflikAdi == ComboBoxSeflikFilter.Text).Data.FirstOrDefault().Id;
+                var seflik = _seflikManager.GetAll(x => x.SeflikAdi == ComboBoxSeflikFilter.Text).Data.FirstOrDefault();
 
                 foreach (var item in TableLayoutPanelKadrolar.Controls)
                 {
@@ -132,10 +134,15 @@ namespace IKYv4.Forms
                     {
                         int.TryParse(textBox.Text, out var kadroSayisi);
 
+                        int unvanGrubuId = GetUnvanId(textBox);
+                        var unvanGrubu = _unvanGrubuManager.GetAll(u=> u.Id == unvanGrubuId).Data.FirstOrDefault();
+
                         KadroDurumlari kadroDurumlari = new KadroDurumlari
                         {
-                            SeflikId = seflikId,
+                            SeflikId = seflik.Id,
                             UnvanGrubuId = GetUnvanId(textBox),
+                            SeflikAdi = seflik.SeflikAdi,
+                            UnvanGrubuAdi = unvanGrubu.UnvanGrubuAdi,
                             KadroSayisi = kadroSayisi,
                         };
 
