@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.TableLayoutPanelKadrolar = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.ComboBoxSeflikFilter = new System.Windows.Forms.ComboBox();
-            this.ComboBoxMudurlukFilter = new System.Windows.Forms.ComboBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
@@ -85,11 +79,17 @@
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.ButtonSaveStaff = new System.Windows.Forms.Button();
+            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.ComboBoxMudurlukFilter = new System.Windows.Forms.ComboBox();
+            this.ComboBoxSeflikFilter = new System.Windows.Forms.ComboBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.TableLayoutPanelKadrolar.SuspendLayout();
-            this.tableLayoutPanel19.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel20.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel19.SuspendLayout();
+            this.tableLayoutPanel20.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // TableLayoutPanelKadrolar
@@ -189,89 +189,6 @@
             this.TableLayoutPanelKadrolar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.TableLayoutPanelKadrolar.Size = new System.Drawing.Size(1178, 482);
             this.TableLayoutPanelKadrolar.TabIndex = 1;
-            // 
-            // tableLayoutPanel19
-            // 
-            this.tableLayoutPanel19.ColumnCount = 1;
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel19.Controls.Add(this.flowLayoutPanel1, 0, 0);
-            this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(0, 26);
-            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(0, 26, 0, 0);
-            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
-            this.tableLayoutPanel19.RowCount = 1;
-            this.TableLayoutPanelKadrolar.SetRowSpan(this.tableLayoutPanel19, 34);
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 745F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(235, 745);
-            this.tableLayoutPanel19.TabIndex = 9;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel20);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(229, 739);
-            this.flowLayoutPanel1.TabIndex = 3;
-            // 
-            // tableLayoutPanel20
-            // 
-            this.tableLayoutPanel20.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel20.ColumnCount = 1;
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel20.Controls.Add(this.ComboBoxSeflikFilter, 0, 2);
-            this.tableLayoutPanel20.Controls.Add(this.ComboBoxMudurlukFilter, 0, 1);
-            this.tableLayoutPanel20.Controls.Add(this.label18, 0, 0);
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
-            this.tableLayoutPanel20.RowCount = 3;
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(229, 101);
-            this.tableLayoutPanel20.TabIndex = 1;
-            // 
-            // ComboBoxSeflikFilter
-            // 
-            this.ComboBoxSeflikFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxSeflikFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxSeflikFilter.Enabled = false;
-            this.ComboBoxSeflikFilter.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.ComboBoxSeflikFilter.FormattingEnabled = true;
-            this.ComboBoxSeflikFilter.Location = new System.Drawing.Point(7, 67);
-            this.ComboBoxSeflikFilter.Margin = new System.Windows.Forms.Padding(7);
-            this.ComboBoxSeflikFilter.Name = "ComboBoxSeflikFilter";
-            this.ComboBoxSeflikFilter.Size = new System.Drawing.Size(215, 23);
-            this.ComboBoxSeflikFilter.TabIndex = 3;
-            this.ComboBoxSeflikFilter.SelectedIndexChanged += new System.EventHandler(this.ComboBoxSeflikFilter_SelectedIndexChanged);
-            // 
-            // ComboBoxMudurlukFilter
-            // 
-            this.ComboBoxMudurlukFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBoxMudurlukFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxMudurlukFilter.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.ComboBoxMudurlukFilter.FormattingEnabled = true;
-            this.ComboBoxMudurlukFilter.Location = new System.Drawing.Point(7, 37);
-            this.ComboBoxMudurlukFilter.Margin = new System.Windows.Forms.Padding(7);
-            this.ComboBoxMudurlukFilter.Name = "ComboBoxMudurlukFilter";
-            this.ComboBoxMudurlukFilter.Size = new System.Drawing.Size(215, 23);
-            this.ComboBoxMudurlukFilter.TabIndex = 2;
-            this.ComboBoxMudurlukFilter.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMudurlukFilter_SelectedIndexChanged);
-            // 
-            // label18
-            // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label18.Location = new System.Drawing.Point(7, 7);
-            this.label18.Margin = new System.Windows.Forms.Padding(7);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(39, 16);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "Birim";
             // 
             // tableLayoutPanel18
             // 
@@ -900,6 +817,89 @@
             this.ButtonSaveStaff.UseVisualStyleBackColor = false;
             this.ButtonSaveStaff.Click += new System.EventHandler(this.ButtonSaveStaff_Click);
             // 
+            // tableLayoutPanel19
+            // 
+            this.tableLayoutPanel19.ColumnCount = 1;
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel19.Controls.Add(this.flowLayoutPanel1, 0, 0);
+            this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(0, 26);
+            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(0, 26, 0, 0);
+            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
+            this.tableLayoutPanel19.RowCount = 1;
+            this.TableLayoutPanelKadrolar.SetRowSpan(this.tableLayoutPanel19, 34);
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 745F));
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(235, 745);
+            this.tableLayoutPanel19.TabIndex = 9;
+            // 
+            // tableLayoutPanel20
+            // 
+            this.tableLayoutPanel20.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tableLayoutPanel20.ColumnCount = 1;
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel20.Controls.Add(this.ComboBoxSeflikFilter, 0, 2);
+            this.tableLayoutPanel20.Controls.Add(this.ComboBoxMudurlukFilter, 0, 1);
+            this.tableLayoutPanel20.Controls.Add(this.label18, 0, 0);
+            this.tableLayoutPanel20.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
+            this.tableLayoutPanel20.RowCount = 3;
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(229, 101);
+            this.tableLayoutPanel20.TabIndex = 1;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label18.Location = new System.Drawing.Point(7, 7);
+            this.label18.Margin = new System.Windows.Forms.Padding(7);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(39, 16);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Birim";
+            // 
+            // ComboBoxMudurlukFilter
+            // 
+            this.ComboBoxMudurlukFilter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxMudurlukFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxMudurlukFilter.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxMudurlukFilter.FormattingEnabled = true;
+            this.ComboBoxMudurlukFilter.Location = new System.Drawing.Point(7, 37);
+            this.ComboBoxMudurlukFilter.Margin = new System.Windows.Forms.Padding(7);
+            this.ComboBoxMudurlukFilter.Name = "ComboBoxMudurlukFilter";
+            this.ComboBoxMudurlukFilter.Size = new System.Drawing.Size(215, 23);
+            this.ComboBoxMudurlukFilter.TabIndex = 2;
+            this.ComboBoxMudurlukFilter.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMudurlukFilter_SelectedIndexChanged);
+            // 
+            // ComboBoxSeflikFilter
+            // 
+            this.ComboBoxSeflikFilter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComboBoxSeflikFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxSeflikFilter.Enabled = false;
+            this.ComboBoxSeflikFilter.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxSeflikFilter.FormattingEnabled = true;
+            this.ComboBoxSeflikFilter.Location = new System.Drawing.Point(7, 67);
+            this.ComboBoxSeflikFilter.Margin = new System.Windows.Forms.Padding(7);
+            this.ComboBoxSeflikFilter.Name = "ComboBoxSeflikFilter";
+            this.ComboBoxSeflikFilter.Size = new System.Drawing.Size(215, 23);
+            this.ComboBoxSeflikFilter.TabIndex = 3;
+            this.ComboBoxSeflikFilter.SelectedIndexChanged += new System.EventHandler(this.ComboBoxSeflikFilter_SelectedIndexChanged);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel20);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(229, 739);
+            this.flowLayoutPanel1.TabIndex = 3;
+            // 
             // FormStaffs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -914,12 +914,12 @@
             this.Load += new System.EventHandler(this.FrormStaffs_Load);
             this.TableLayoutPanelKadrolar.ResumeLayout(false);
             this.TableLayoutPanelKadrolar.PerformLayout();
-            this.tableLayoutPanel19.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel20.ResumeLayout(false);
-            this.tableLayoutPanel20.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.tableLayoutPanel19.ResumeLayout(false);
+            this.tableLayoutPanel20.ResumeLayout(false);
+            this.tableLayoutPanel20.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -976,12 +976,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
+        private System.Windows.Forms.Button ButtonSaveStaff;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
         private System.Windows.Forms.ComboBox ComboBoxSeflikFilter;
         private System.Windows.Forms.ComboBox ComboBoxMudurlukFilter;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button ButtonSaveStaff;
     }
 }

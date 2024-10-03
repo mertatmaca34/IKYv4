@@ -46,6 +46,7 @@ namespace IKYv4.Forms
             DataGridViewCustomization();
             AssignChartAges();
             AssignChartExperiences();
+            AssignChartEducations();
         }
 
         private void DataGridViewCustomization()
@@ -59,15 +60,14 @@ namespace IKYv4.Forms
             DataGridViewKadroDurumlari.Columns[0].Visible = false;
             DataGridViewKadroDurumlari.Columns[1].Visible = false;
             DataGridViewKadroDurumlari.Columns[2].Visible = false;
+            DataGridViewKadroDurumlari.Columns[3].Visible = false;
 
-            DataGridViewKadroDurumlari.Columns[3].HeaderText = "Şeflik";
             DataGridViewKadroDurumlari.Columns[4].HeaderText = "Ünvan Grubu";
             DataGridViewKadroDurumlari.Columns[5].HeaderText = "Kadro";
             DataGridViewKadroDurumlari.Columns[6].HeaderText = "Mevcut Personel";
 
             DataGridViewKadroDurumlari.Refresh();
         }
-
 
         private void AssignChartAges()
         {
@@ -118,6 +118,18 @@ namespace IKYv4.Forms
             var seflik = _seflikManager.GetAll(s => s.Id == _stationId).Data.FirstOrDefault();
 
             var personeller = _personelManager.GetAll(x => x.Seflik == seflik.SeflikAdi).Data;
+
+            var lisansUstuCount = _tahsilManager.GetAll(x => x.TahsilTuru == "YÜKSEK LİSANS" || x.TahsilTuru == "DOKTORA").Data.Count;
+            var lisansCount = _tahsilManager.GetAll(x => x.TahsilTuru == "LİSANS").Data.Count;
+            var liseCount = _tahsilManager.GetAll(x => x.TahsilTuru == "LİSE").Data.Count;
+            var ortaOkulCount = _tahsilManager.GetAll(x => x.TahsilTuru == "ORTAOKUL").Data.Count;
+            var ilkOkulCount = _tahsilManager.GetAll(x => x.TahsilTuru == "İLKOKUL").Data.Count;
+
+            ChartEducations.Series[0].Points.AddXY("LİSANS ÜSTÜ", lisansUstuCount);
+            ChartEducations.Series[0].Points.AddXY("LİSANS", lisansCount);
+            ChartEducations.Series[0].Points.AddXY("LİSE", liseCount);
+            ChartEducations.Series[0].Points.AddXY("ORTAOKUL", ortaOkulCount);
+            ChartEducations.Series[0].Points.AddXY("İLKOKUL", ilkOkulCount);
         }
     }
 }

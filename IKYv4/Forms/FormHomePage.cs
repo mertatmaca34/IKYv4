@@ -63,9 +63,24 @@ namespace IKYv4.Forms
 
         private void OnMarkerClick(GMapMarker item, MouseEventArgs e)
         {
-            if (item.Position == new PointLatLng(41.0084, 29.2851))
+            if (item.Position == new PointLatLng(StationPositions.PasakoyX, StationPositions.PasakoyY))
             {
                 PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Pasakoy));
+            }
+            else if (item.Position == new PointLatLng(StationPositions.SileX, StationPositions.SileY))
+            {
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Sile));
+            }
+        }
+
+        private void FormHomePage_SizeChanged(object sender, EventArgs e)
+        {
+            foreach (var control in PanelContent.Controls)
+            {
+                if (control is Form controlForm)
+                {
+                    controlForm.Size = PanelContent.Size;
+                }
             }
         }
     }

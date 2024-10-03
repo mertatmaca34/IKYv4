@@ -194,12 +194,6 @@
     <Compile Include="Forms\FormNewTahsil.Designer.cs">
       <DependentUpon>FormNewTahsil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormOverview.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormOverview.Designer.cs">
-      <DependentUpon>FormOverview.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormPuantage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,12 +205,6 @@
     </Compile>
     <Compile Include="Forms\FormSelectColumns.Designer.cs">
       <DependentUpon>FormSelectColumns.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FormStationOverview.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormStationOverview.Designer.cs">
-      <DependentUpon>FormStationOverview.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormStationSummary.cs">
       <SubType>Form</SubType>
@@ -274,17 +262,11 @@
     <EmbeddedResource Include="Forms\FormNewTahsil.resx">
       <DependentUpon>FormNewTahsil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormOverview.resx">
-      <DependentUpon>FormOverview.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormPuantage.resx">
       <DependentUpon>FormPuantage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormSelectColumns.resx">
       <DependentUpon>FormSelectColumns.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormStationOverview.resx">
-      <DependentUpon>FormStationOverview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormStationSummary.resx">
       <DependentUpon>FormStationSummary.cs</DependentUpon>

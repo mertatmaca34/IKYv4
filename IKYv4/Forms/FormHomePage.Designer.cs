@@ -81,6 +81,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormHomePage";
             this.Load += new System.EventHandler(this.FormHomePage_Load);
+            this.SizeChanged += new System.EventHandler(this.FormHomePage_SizeChanged);
             this.PanelContent.ResumeLayout(false);
             this.ResumeLayout(false);
 
