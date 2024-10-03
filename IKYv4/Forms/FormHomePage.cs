@@ -71,6 +71,18 @@ namespace IKYv4.Forms
             {
                 PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Sile));
             }
+            else if (item.Position == new PointLatLng(StationPositions.KadikoyX, StationPositions.KadikoyY))
+            {
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Kadikoy));
+            }
+            else if (item.Position == new PointLatLng(StationPositions.KucuksuX, StationPositions.KucuksuY))
+            {
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Kucuksu));
+            }
+            else if (item.Position == new PointLatLng(StationPositions.TuzlaX, StationPositions.TuzlaY))
+            {
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Tuzla));
+            }
         }
 
         private void FormHomePage_SizeChanged(object sender, EventArgs e)
