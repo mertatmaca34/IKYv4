@@ -1,11 +1,9 @@
 ﻿using Business.Abstract;
-using Business.Concrete;
 using Entities.Concrete;
 using Entities.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace IKYv4.Forms
@@ -23,9 +21,9 @@ namespace IKYv4.Forms
         List<KadroDurumlari> _kadroDurumlari;
 
         public FormStationSummary(
-            IKadroDurumlariManager kadroDurumlariManager, 
-            ISeflikManager seflikManager, 
-            IPersonelManager personelManager, 
+            IKadroDurumlariManager kadroDurumlariManager,
+            ISeflikManager seflikManager,
+            IPersonelManager personelManager,
             INufusManager nufusManager,
             ITahsilManager tahsilManager,
             Stations station)
@@ -71,7 +69,7 @@ namespace IKYv4.Forms
 
         private void AssignChartAges()
         {
-            var seflik = _seflikManager.GetAll(s=> s.Id == _stationId).Data.FirstOrDefault();
+            var seflik = _seflikManager.GetAll(s => s.Id == _stationId).Data.FirstOrDefault();
 
             var personeller = _personelManager.GetAll(x => x.Seflik == seflik.SeflikAdi).Data;
 
@@ -79,7 +77,7 @@ namespace IKYv4.Forms
 
             foreach (var personel in personeller)
             {
-                var res = _nufusManager.GetAll(n=> n.PersonelId == personel.Id);
+                var res = _nufusManager.GetAll(n => n.PersonelId == personel.Id);
 
                 if (res.Data.Count > 0)
                 {
@@ -119,17 +117,48 @@ namespace IKYv4.Forms
 
             var personeller = _personelManager.GetAll(x => x.Seflik == seflik.SeflikAdi).Data;
 
-            var lisansUstuCount = _tahsilManager.GetAll(x => x.TahsilTuru == "YÜKSEK LİSANS" || x.TahsilTuru == "DOKTORA").Data.Count;
-            var lisansCount = _tahsilManager.GetAll(x => x.TahsilTuru == "LİSANS").Data.Count;
-            var liseCount = _tahsilManager.GetAll(x => x.TahsilTuru == "LİSE").Data.Count;
-            var ortaOkulCount = _tahsilManager.GetAll(x => x.TahsilTuru == "ORTAOKUL").Data.Count;
-            var ilkOkulCount = _tahsilManager.GetAll(x => x.TahsilTuru == "İLKOKUL").Data.Count;
+            List<Tahsil> personelTahislleri = new List<Tahsil>();
 
-            ChartEducations.Series[0].Points.AddXY("LİSANS ÜSTÜ", lisansUstuCount);
-            ChartEducations.Series[0].Points.AddXY("LİSANS", lisansCount);
-            ChartEducations.Series[0].Points.AddXY("LİSE", liseCount);
-            ChartEducations.Series[0].Points.AddXY("ORTAOKUL", ortaOkulCount);
-            ChartEducations.Series[0].Points.AddXY("İLKOKUL", ilkOkulCount);
+            foreach (var personel in personeller)
+            {
+                var tahsil = _tahsilManager.GetAll(x => x.PersonelId == personel.Id).Data.FirstOrDefault();
+
+                if (tahsil != null)
+                {
+                    personelTahislleri.Add(tahsil);
+
+                }
+            }
+
+            if (personelTahislleri != null && personelTahislleri.Count > 0)
+            {
+                var lisansUstuCount = personelTahislleri.FindAll(x => x.TahsilTuru == "YÜKSEK LİSANS" || x.TahsilTuru == "DOKTORA");
+                var lisansCount = personelTahislleri.FindAll(x => x.TahsilTuru == "LİSANS");
+                var liseCount = personelTahislleri.FindAll(x => x.TahsilTuru == "LİSE");
+                var ortaOkulCount = personelTahislleri.FindAll(x => x.TahsilTuru == "ORTAOKUL");
+                var ilkOkulCount = personelTahislleri.FindAll(x => x.TahsilTuru == "İLKOKUL");
+
+                if (lisansUstuCount != null && lisansUstuCount.Count > 0)
+                {
+                    ChartEducations.Series[0].Points.AddXY("LİSANS ÜSTÜ", lisansUstuCount.Count);
+                }
+                if (lisansCount != null && lisansCount.Count > 0)
+                {
+                    ChartEducations.Series[0].Points.AddXY("LİSANS", lisansCount.Count);
+                }
+                if (liseCount != null && liseCount.Count > 0)
+                {
+                    ChartEducations.Series[0].Points.AddXY("LİSE", liseCount.Count);
+                }
+                if (ortaOkulCount != null && ortaOkulCount.Count > 0)
+                {
+                    ChartEducations.Series[0].Points.AddXY("ORTAOKUL", ortaOkulCount.Count);
+                }
+                if (ilkOkulCount != null && ilkOkulCount.Count > 0)
+                {
+                    ChartEducations.Series[0].Points.AddXY("İLKOKUL", ilkOkulCount.Count);
+                }
+            }
         }
     }
 }
