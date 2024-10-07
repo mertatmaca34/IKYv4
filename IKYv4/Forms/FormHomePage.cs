@@ -45,6 +45,14 @@ namespace IKYv4.Forms
             GMapMarker gMapMarkerKucuksu = new GMarkerGoogle(new PointLatLng(41.0410, 29.0429), Resources._3_0);
             GMapMarker gMapMarkerTuzla = new GMarkerGoogle(new PointLatLng(40.8242, 29.2908), Resources._3_0);
 
+            GMapMarker gMapMarkerBaltalimani = new GMarkerGoogle(new PointLatLng(41.0989, 29.0373), Resources._3_0);
+            GMapMarker gMapMarkerYenikapi = new GMarkerGoogle(new PointLatLng(40.9760, 28.8430), Resources._3_0);
+            GMapMarker gMapMarkerAtakoy = new GMarkerGoogle(new PointLatLng(41.0025, 28.9496), Resources._3_0);
+            GMapMarker gMapMarkerKucukcekmece = new GMarkerGoogle(new PointLatLng(40.9806, 28.7566), Resources._3_0);
+            GMapMarker gMapMarkerAmbarli = new GMarkerGoogle(new PointLatLng(40.9895, 28.6869), Resources._3_0);
+            GMapMarker gMapMarkerBuyukcekmece = new GMarkerGoogle(new PointLatLng(41.0450, 28.5531), Resources._3_0);
+            GMapMarker gMapMarkerCanta = new GMarkerGoogle(new PointLatLng(41.0670, 28.1004), Resources._3_0);
+
             GmapControlStations.OnMarkerClick += new MarkerClick(OnMarkerClick);
 
             GmapControlStations.Overlays.Add(gMapOverlay);
@@ -54,6 +62,14 @@ namespace IKYv4.Forms
             gMapOverlay.Markers.Add(gMapMarkerKadikoy);
             gMapOverlay.Markers.Add(gMapMarkerKucuksu);
             gMapOverlay.Markers.Add(gMapMarkerTuzla);
+
+            gMapOverlay.Markers.Add(gMapMarkerBaltalimani);
+            gMapOverlay.Markers.Add(gMapMarkerYenikapi);
+            gMapOverlay.Markers.Add(gMapMarkerAtakoy);
+            gMapOverlay.Markers.Add(gMapMarkerKucukcekmece);
+            gMapOverlay.Markers.Add(gMapMarkerAmbarli);
+            gMapOverlay.Markers.Add(gMapMarkerBuyukcekmece);
+            gMapOverlay.Markers.Add(gMapMarkerCanta);
 
             GmapControlStations.Invalidate();
             GmapControlStations.Update();
@@ -82,6 +98,34 @@ namespace IKYv4.Forms
             else if (item.Position == new PointLatLng(StationPositions.TuzlaX, StationPositions.TuzlaY))
             {
                 PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Tuzla));
+            }
+            else if (item.Position == new PointLatLng(StationPositions.BaltalimaniX, StationPositions.BaltalimaniY))
+            {
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Baltalimani));
+            }
+            else if (item.Position == new PointLatLng(StationPositions.YenikapiX, StationPositions.YenikapiY))
+            {
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Yenikapi));
+            }
+            else if (item.Position == new PointLatLng(StationPositions.AtakoyX, StationPositions.AtakoyY))
+            {
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Atakoy));
+            }
+            else if (item.Position == new PointLatLng(StationPositions.KucukcekmeceX, StationPositions.KucukcekmeceY))
+            {
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Kucukcekmece));
+            }
+            else if (item.Position == new PointLatLng(StationPositions.AmbarliX, StationPositions.AmbarliY))
+            {
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Ambarli));
+            }
+            else if (item.Position == new PointLatLng(StationPositions.BuyukcekmeceX, StationPositions.BuyukcekmeceY))
+            {
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Buyukcekmece));
+            }
+            else if (item.Position == new PointLatLng(StationPositions.CantaX, StationPositions.CantaY))
+            {
+                PageChange.Change(PanelContent, this, new FormStationSummary(_kadroDurumlariManager, _seflikManager, _personelManager, _nufusManager, _tahsilManager, Stations.Canta));
             }
         }
 
