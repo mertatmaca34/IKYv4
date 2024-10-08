@@ -152,6 +152,12 @@
     <Compile Include="Forms\FormEmployeeVacation.Designer.cs">
       <DependentUpon>FormEmployeeVacation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormEmployeeVacationListing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEmployeeVacationListing.Designer.cs">
+      <DependentUpon>FormEmployeeVacationListing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormHomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEmployeeVacation.resx">
       <DependentUpon>FormEmployeeVacation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEmployeeVacationListing.resx">
+      <DependentUpon>FormEmployeeVacationListing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormHomePage.resx">
       <DependentUpon>FormHomePage.cs</DependentUpon>

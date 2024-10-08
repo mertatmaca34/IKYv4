@@ -94,6 +94,10 @@
     <Compile Include="Migrations\202409200805277_updateKadros.Designer.cs">
       <DependentUpon>202409200805277_updateKadros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202410080847574_kalanizin.cs" />
+    <Compile Include="Migrations\202410080847574_kalanizin.Designer.cs">
+      <DependentUpon>202410080847574_kalanizin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -117,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202409200805277_updateKadros.resx">
       <DependentUpon>202409200805277_updateKadros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410080847574_kalanizin.resx">
+      <DependentUpon>202410080847574_kalanizin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

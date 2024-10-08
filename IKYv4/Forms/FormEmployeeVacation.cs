@@ -2,6 +2,7 @@
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -69,9 +70,13 @@ namespace IKYv4.Forms
         {
             if (SecilmisPersonel != null)
             {
-                var puantaj = _puantajManager.GetAll(p => p.PersonelId == SecilmisPersonel.Id && p.YilAy.Month == DateTimePickerVacationStart.Value.Month).Data.FirstOrDefault();
+                var puantajRes = _puantajManager.GetAll(p => p.PersonelId == SecilmisPersonel.Id);
 
-                var gunler = new List<string>
+                if (puantajRes.Data != null)
+                {
+                    var puantaj = puantajRes.Data.FindAll(p => p.YilAy.Month == DateTimePickerVacationStart.Value.Month).FirstOrDefault();
+
+                    var gunler = new List<string>
                 {
                     nameof(puantaj.Gun1),
                     nameof(puantaj.Gun2),
@@ -106,43 +111,72 @@ namespace IKYv4.Forms
                     nameof(puantaj.Gun31)
                 };
 
-                // DateTimePickerVacationStart.Value.Day ile ilgili günü al
-                int startDay = DateTimePickerVacationStart.Value.Day;
-                int endDay = DateTimePickerVacationEnd.Value.Day;
+                    // DateTimePickerVacationStart.Value.Day ile ilgili günü al
+                    int startDay = DateTimePickerVacationStart.Value.Day;
+                    int endDay = DateTimePickerVacationEnd.Value.Day;
 
-                // Günü dizin olarak kullanarak uygun property'yi ayarla
-                if (startDay >= 1 && startDay <= gunler.Count)
-                {
-                    for (int i = startDay; i <= endDay; i++)
+                    // Günü dizin olarak kullanarak uygun property'yi ayarla
+                    if (startDay >= 1 && startDay <= gunler.Count)
                     {
-                        var property = puantaj.GetType().GetProperty(gunler[i - 1]);
-                        if (property != null && property.CanWrite)
+                        for (int i = startDay; i <= endDay; i++)
                         {
-                            property.SetValue(puantaj, GetIzinValue(izinler,ComboBoxVacationType.Text));
+                            var property = puantaj.GetType().GetProperty(gunler[i - 1]);
+                            if (property != null && property.CanWrite)
+                            {
+                                property.SetValue(puantaj, GetIzinValue(izinler, ComboBoxVacationType.Text));
+                            }
                         }
                     }
+
+                    DateTime start = DateTimePickerVacationStart.Value;
+                    DateTime end = DateTimePickerVacationEnd.Value;
+
+                    DateTime vacationStart = new DateTime(start.Year, start.Month, start.Day);
+                    DateTime vacationEnd = new DateTime(end.Year, end.Month, end.Day);
+
+                    Izin izin = new Izin
+                    {
+                        IzinBaslama = vacationStart,
+                        IzinBitis = vacationEnd,
+                        PersonelId = SecilmisPersonel.Id,
+                        IzinTuru = ComboBoxVacationType.Text
+                    };
+
+                    var res = _izinManager.Add(izin);
+                    _puantajManager.Add(puantaj);
+
+                    MessageBox.Show(res.Message);
+
                 }
+            }
 
-                DateTime start = DateTimePickerVacationStart.Value;
-                DateTime end = DateTimePickerVacationEnd.Value;
+            this.Close();
+        }
 
-                DateTime vacationStart = new DateTime(start.Year, start.Month, start.Day);
-                DateTime vacationEnd = new DateTime(end.Year, end.Month, end.Day);
+        private void TextBoxEmployee_TextChanged(object sender, EventArgs e)
+        {
+            if (SecilmisPersonel != null)
+            {
+                var res = _izinManager.GetAll(p => p.PersonelId == SecilmisPersonel.Id);
 
-                Izin izin = new Izin
+                if (res.Data.Count > 0)
                 {
-                    IzinBaslama = vacationStart,
-                    IzinBitis = vacationEnd,
-                    PersonelId = SecilmisPersonel.Id,
-                    IzinTuru = ComboBoxVacationType.Text
-                };
+                    #region Yıllık İzin
 
-                var res = _izinManager.Add(izin);
-                _puantajManager.Add(puantaj);
+                    var kullanilanYillikIzin = res.Data.FindAll(x => x.IzinTuru == "YILLIK İZİN");
 
-                MessageBox.Show(res.Message);
+                    TimeSpan toplamGun = new TimeSpan(0,0,0,0);
 
-                this.Close();
+                    foreach (var izin in kullanilanYillikIzin)
+                    {
+                        toplamGun = izin.IzinBitis - izin.IzinBaslama;
+                    }
+
+                    LabelYillikIzinKullanilan.Text = toplamGun.Days.ToString();
+                    LabelYillikIzinKalan.Text = SecilmisPersonel.KalanYillikIzinSayisi.ToString();
+
+                    #endregion
+                }
             }
         }
     }

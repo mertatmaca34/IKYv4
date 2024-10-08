@@ -24,5 +24,6 @@ namespace Entities.Concrete
         public string ToplamKatsayi { get; set; }
         public bool? CalisiyorMu { get; set; }
         public int YillikIzinSayisi { get; set; }
+        public int KalanYillikIzinSayisi { get; set; }
     }
 }

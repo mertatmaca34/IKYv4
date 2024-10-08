@@ -114,7 +114,6 @@ namespace IKYv4.Forms
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.ButtonNewEmployee = new System.Windows.Forms.Button();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-            this.ButtonEditColumns = new System.Windows.Forms.Button();
             this.ComboBoxSort = new System.Windows.Forms.ComboBox();
             this.TextBoxSmartFilter = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -1296,7 +1295,6 @@ namespace IKYv4.Forms
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 204F));
-            this.tableLayoutPanel18.Controls.Add(this.ButtonEditColumns, 2, 0);
             this.tableLayoutPanel18.Controls.Add(this.ComboBoxSort, 1, 0);
             this.tableLayoutPanel18.Controls.Add(this.TextBoxSmartFilter, 4, 0);
             this.tableLayoutPanel18.Controls.Add(this.label14, 0, 0);
@@ -1309,23 +1307,6 @@ namespace IKYv4.Forms
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel18.Size = new System.Drawing.Size(934, 35);
             this.tableLayoutPanel18.TabIndex = 0;
-            // 
-            // ButtonEditColumns
-            // 
-            this.ButtonEditColumns.BackColor = System.Drawing.Color.Brown;
-            this.ButtonEditColumns.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonEditColumns.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonEditColumns.FlatAppearance.BorderSize = 0;
-            this.ButtonEditColumns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonEditColumns.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ButtonEditColumns.ForeColor = System.Drawing.Color.White;
-            this.ButtonEditColumns.Location = new System.Drawing.Point(247, 3);
-            this.ButtonEditColumns.Name = "ButtonEditColumns";
-            this.ButtonEditColumns.Size = new System.Drawing.Size(180, 29);
-            this.ButtonEditColumns.TabIndex = 7;
-            this.ButtonEditColumns.Text = "Sütunları Düzenle";
-            this.ButtonEditColumns.UseVisualStyleBackColor = false;
-            this.ButtonEditColumns.Click += new System.EventHandler(this.ButtonEditColumns_Click);
             // 
             // ComboBoxSort
             // 
@@ -1638,6 +1619,5 @@ namespace IKYv4.Forms
         private Label label7;
         private CheckBox CheckBoxEskiCalisan;
         private Button ButtonExportToExcel;
-        private Button ButtonEditColumns;
     }
 }
