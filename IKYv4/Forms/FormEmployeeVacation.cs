@@ -73,14 +73,16 @@ namespace IKYv4.Forms
         {
             if (SecilmisPersonel != null)
             {
-                var puantajRes = _puantajManager.GetAll(p => p.PersonelId == SecilmisPersonel.Id);
-
                 var izinBaslamaAy = DateTimePickerVacationStart.Value.Month;
                 var izinBitmeAy = DateTimePickerVacationEnd.Value.Month;
 
+                for (int i = izinBaslamaAy; i <= izinBitmeAy; i++)
+                {
+                    UpdatePuantageTable(new DateTime(DateTimePickerVacationStart.Value.Year, i, DateTimePickerVacationStart.Value.Day));
+                }
 
+                var puantajRes = _puantajManager.GetAll(p => p.PersonelId == SecilmisPersonel.Id);
 
-                //    UpdatePuantageTable();
 
                 if (puantajRes.Data != null)
                 {

@@ -140,7 +140,7 @@ namespace IKYv4.Forms
 
         private void ButtonEmployeVacation_Click(object sender, EventArgs e)
         {
-            FormEmployeeVacation formEmployeeVacation = new FormEmployeeVacation(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _izinManager, _puantajManager);
+            FormEmployeeVacation formEmployeeVacation = new FormEmployeeVacation(_personelManager, _mudurlukManager, _seflikManager, _tesisManager, _izinManager, _puantajManager, _calismaSaatleriManager);
             formEmployeeVacation.ShowDialog();
         }
 
